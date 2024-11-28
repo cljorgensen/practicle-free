@@ -1,0 +1,3055 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Practicle\n"
+"POT-Creation-Date: 2019-05-16 11:25+0200\n"
+"PO-Revision-Date: 2019-07-11 13:00+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.2.3\n"
+"X-Poedit-Basepath: .\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: da_DK\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+
+msgid "A customer contact person must be chosen - please create customer contact person before creating"
+msgstr "En kundekontaktperson skal vælges - opret venligst kundekontaktpersonen, før du opretter"
+
+msgid "Account number"
+msgstr "Kontonummer"
+
+msgid "Actions"
+msgstr "Handlinger"
+
+msgid "Active"
+msgstr "Aktiv"
+
+msgid "Active projects"
+msgstr "Aktive projekter"
+
+msgid "Activity"
+msgstr "Aktivitet"
+
+msgid "Add"
+msgstr "Tilføj"
+
+msgid "Add News"
+msgstr "Tilføj nyhed"
+
+msgid "Add as favorite"
+msgstr "Tilføj som favorit"
+
+msgid "Add as task"
+msgstr "Tilføj som opgave"
+
+msgid "Add document"
+msgstr "Tilføj dokument"
+
+msgid "Add new task"
+msgstr "Tilføj ny opgave"
+
+msgid "Add to existing problem"
+msgstr "Tilføj til eksisterende problem"
+
+msgid "Address"
+msgstr "Adresse"
+
+msgid "Administrate News"
+msgstr "Administrer nyheder"
+
+msgid "Affected Company"
+msgstr "Berørt virksomhed"
+
+msgid "Alerts"
+msgstr "Notifikationer"
+
+msgid "All News"
+msgstr "Alle nyheder"
+
+msgid "All active"
+msgstr "Alle aktive"
+
+msgid "All closed"
+msgstr "Alle afsluttede"
+
+msgid "All overdue"
+msgstr "Alle forsinkede"
+
+msgid "Amount spend"
+msgstr "Beløb brugt"
+
+msgid "Anniversarys"
+msgstr "Mærkedage"
+
+msgid "Answer"
+msgstr "Svar"
+
+msgid "Approval Tasks"
+msgstr "Godkendelsesopgaver"
+
+msgid "Approver"
+msgstr "Godkender"
+
+msgid "Assess"
+msgstr "Vurdér"
+
+msgid "Assets"
+msgstr "Aktiver"
+
+msgid "Assigned"
+msgstr "Tildelt"
+
+msgid "Assigned Team"
+msgstr "Tildelt hold"
+
+msgid "Assigned to responsible"
+msgstr "Tildelt ansvarlig"
+
+msgid "Assigned to team"
+msgstr "Tildelt hold"
+
+msgid "Attach a workflow"
+msgstr "Vedhæft en arbejdsgang"
+
+msgid "Authorize"
+msgstr "Autoriser"
+
+msgid "Average solution time"
+msgstr "Gennemsnitlig løsningstid"
+
+msgid "Await Customer"
+msgstr "Afventer kunde"
+
+msgid "Awaiting"
+msgstr "Afventer"
+
+msgid "Awaiting customer"
+msgstr "Afventer kunde"
+
+msgid "Backout Plan"
+msgstr "Tilbagerulningsplan"
+
+msgid "Bank"
+msgstr "Bank"
+
+msgid "Birthday"
+msgstr "Fødselsdag"
+
+msgid "Birthdays"
+msgstr "Fødselsdage"
+
+msgid "Board"
+msgstr "Board"
+
+msgid "Boards"
+msgstr "Boards"
+
+msgid "Bought"
+msgstr "Købt"
+
+msgid "Branche news"
+msgstr "Afdelingsnyheder"
+
+msgid "Bronze"
+msgstr "Bronze"
+
+msgid "Budget Spend"
+msgstr "Budgetforbrug"
+
+msgid "CBR"
+msgstr "CVR"
+
+msgid "Cancel"
+msgstr "Annuller"
+
+msgid "Canceled"
+msgstr "Aflyst"
+
+msgid "Categories"
+msgstr "Kategorier"
+
+msgid "Category"
+msgstr "Kategori"
+
+msgid "Category Administration"
+msgstr "Kategori administration"
+
+msgid "Certificates"
+msgstr "Certifikater"
+
+msgid "Change"
+msgstr "Ændring"
+
+msgid "Change Password"
+msgstr "Skift adgangskode"
+
+msgid "Change password"
+msgstr "Skift adgangskode"
+
+msgid "Changes"
+msgstr "Ændringer"
+
+msgid "Changes saved"
+msgstr "Ændringer gemt"
+
+msgid "Choose file"
+msgstr "Vælg fil"
+
+msgid "City"
+msgstr "By"
+
+msgid "Close"
+msgstr "Luk"
+
+msgid "Closed"
+msgstr "Lukket"
+
+msgid "Comment"
+msgstr "Kommentar"
+
+msgid "Companies"
+msgstr "Virksomheder"
+
+msgid "Company"
+msgstr "Virksomhed"
+
+msgid "Company Name"
+msgstr "Virksomhedsnavn"
+
+msgid "Complete"
+msgstr "Komplet"
+
+msgid "Completed"
+msgstr "Fuldført"
+
+msgid "Content"
+msgstr "Indhold"
+
+msgid "Contracts"
+msgstr "Kontrakter"
+
+msgid "Corporate Links"
+msgstr "Firma Links"
+
+msgid "Country"
+msgstr "Land"
+
+msgid "Create"
+msgstr "Opret"
+
+msgid "Create as new problem"
+msgstr "Opret som nyt problem"
+
+msgid "Create document"
+msgstr "Opret dokument"
+
+msgid "Create favorite from this"
+msgstr "Opret favorit fra dette"
+
+msgid "Create new"
+msgstr "Opret ny"
+
+msgid "Create random password"
+msgstr "Opret tilfældig adgangskode"
+
+msgid "Create task from this"
+msgstr "Opret opgave fra dette"
+
+msgid "Created"
+msgstr "Oprettet"
+
+msgid "Customer"
+msgstr "Kunde"
+
+msgid "Customer Companies"
+msgstr "Kundevirksomheder"
+
+msgid "Customer Contacts"
+msgstr "Kundekontakter"
+
+msgid "Customer contacts"
+msgstr "Kundekontakter"
+
+msgid "Customers"
+msgstr "Kunder"
+
+msgid "Dashboards"
+msgstr "Dashboards"
+
+msgid "Data not yet registered"
+msgstr "Data endnu ikke registreret"
+
+msgid "Date"
+msgstr "Dato"
+
+msgid "Date performed"
+msgstr "Dato udført"
+
+msgid "Deadline"
+msgstr "Deadline"
+
+msgid "Deadline Review"
+msgstr "Deadline Review"
+
+msgid "Deadline for review"
+msgstr "Frist for anmeldelse"
+
+msgid "Delete"
+msgstr "Slet"
+
+msgid "Deleted"
+msgstr "Slettet"
+
+msgid "Description"
+msgstr "Beskrivelse"
+
+msgid "Descriptions"
+msgstr "Beskrivelser"
+
+msgid "Design"
+msgstr "Design"
+
+msgid "Destination"
+msgstr "Destination"
+
+msgid "Details"
+msgstr "Detaljer"
+
+msgid "Dispatch que"
+msgstr "Dispatch kø"
+
+msgid "Document Name"
+msgstr "Dokumentnavn"
+
+msgid "Documents"
+msgstr "Dokumenter"
+
+msgid "Edit"
+msgstr "Rediger"
+
+msgid "Edit Task"
+msgstr "Rediger opgave"
+
+msgid "Edit Userprofile"
+msgstr "Rediger brugerprofil"
+
+msgid "Email"
+msgstr "E-mail"
+
+msgid "Employees"
+msgstr "Medarbejdere"
+
+msgid "Enable Google Authenticator"
+msgstr "Aktiver Google Authenticator"
+
+msgid "End"
+msgstr "Slut"
+
+msgid "Error updating password"
+msgstr "Fejl ved opdatering af adgangskode"
+
+msgid "Estimated Budget"
+msgstr "Estimeret budget"
+
+msgid "Estimated Hours"
+msgstr "Estimerede timer"
+
+msgid "Estimated budget"
+msgstr "Estimeret budget"
+
+msgid "Expiration Date"
+msgstr "Udløbsdato"
+
+msgid "Expires"
+msgstr "Udløber"
+
+msgid "Favorite"
+msgstr "Favorit"
+
+msgid "Favorites"
+msgstr "Favoritter"
+
+msgid "File"
+msgstr "Fil"
+
+msgid "Filename"
+msgstr "Filnavn"
+
+msgid "Files"
+msgstr "Filer"
+
+msgid "Finished projects"
+msgstr "Færdige projekter"
+
+msgid "First Name"
+msgstr "Fornavn"
+
+msgid "Firstname"
+msgstr "Fornavn"
+
+msgid "From"
+msgstr "Fra"
+
+msgid "Full history"
+msgstr "Fuld historie"
+
+msgid "Generate files"
+msgstr "Generer filer"
+
+msgid "Generated password"
+msgstr "Genereret adgangskode"
+
+msgid "Go"
+msgstr "Gå"
+
+msgid "Go to favorites"
+msgstr "Gå til favoritter"
+
+msgid "Gold"
+msgstr "Guld"
+
+msgid "Group"
+msgstr "Gruppe"
+
+msgid "Group Access"
+msgstr "Gruppeadgang"
+
+msgid "Handheld Devices"
+msgstr "Håndholdte enheder"
+
+msgid "Handheld device updated"
+msgstr "Håndholdt enhed opdateret"
+
+msgid "Headquarters"
+msgstr "Hovedkvarter"
+
+msgid "Help"
+msgstr "Hjælp"
+
+msgid "High"
+msgstr "Høj"
+
+msgid "History"
+msgstr "Historik"
+
+msgid "Hostname"
+msgstr "Værtsnavn"
+
+msgid "Hours spend"
+msgstr "Timer brugt"
+
+msgid "Implementing"
+msgstr "Implementering"
+
+msgid "In Assessment"
+msgstr "I vurdering"
+
+msgid "In Authorization"
+msgstr "I autorisation"
+
+msgid "In Resolution Process"
+msgstr "I løsningsproces"
+
+msgid "In Review"
+msgstr "Til gennemgang"
+
+msgid "In Scheduling"
+msgstr "I planlægning"
+
+msgid "In resolution process"
+msgstr "I løsningsproces"
+
+msgid "In review"
+msgstr "Til gennemgang"
+
+msgid "Incident"
+msgstr "Hændelse"
+
+msgid "Incidents"
+msgstr "Hændelser"
+
+msgid "Internal Comment"
+msgstr "Intern kommentar"
+
+msgid "Invoice"
+msgstr "Faktura"
+
+msgid "Item number"
+msgstr "Varenummer"
+
+msgid "Job Titel"
+msgstr "Jobtitel"
+
+msgid "Language"
+msgstr "Sprog"
+
+msgid "Languages"
+msgstr "Sprog"
+
+msgid "Last Logon"
+msgstr "Sidste logon"
+
+msgid "Last Name"
+msgstr "Efternavn"
+
+msgid "Last changed"
+msgstr "Sidst ændret"
+
+msgid "Last changed by"
+msgstr "Sidst ændret af"
+
+msgid "Last logged on"
+msgstr "Sidst logget ind"
+
+msgid "Lastlogon"
+msgstr "Sidste logon"
+
+msgid "Lastname"
+msgstr "Efternavn"
+
+msgid "Latest Activity"
+msgstr "Seneste aktivitet"
+
+msgid "Licenses"
+msgstr "Licenser"
+
+msgid "Links added"
+msgstr "Links tilføjet"
+
+msgid "Links available"
+msgstr "Links tilgængelige"
+
+msgid "Lock"
+msgstr "Lås"
+
+msgid "Log out"
+msgstr "Log ud"
+
+msgid "Logout"
+msgstr "Log ud"
+
+msgid "Low"
+msgstr "Lav"
+
+msgid "Main Menu"
+msgstr "Hovedmenu"
+
+msgid "Manager"
+msgstr "Manager"
+
+msgid "Mark all as read"
+msgstr "Markér alle som læste"
+
+msgid "Menu"
+msgstr "Menu"
+
+msgid "Messages"
+msgstr "Beskeder"
+
+msgid "Mobile Phone"
+msgstr "Mobiltelefon"
+
+msgid "Mobile Phones"
+msgstr "Mobiltelefoner"
+
+msgid "Mobile Subscription"
+msgstr "Mobilabonnement"
+
+msgid "Mobile Subscriptions"
+msgstr "Mobilabonnementer"
+
+msgid "Model"
+msgstr "Model"
+
+msgid "My"
+msgstr "Min"
+
+msgid "My Tasks"
+msgstr "Mine opgaver"
+
+msgid "My Team"
+msgstr "Mit team"
+
+msgid "My favorites"
+msgstr "Mine favoritter"
+
+msgid "My orders"
+msgstr "Mine ordrer"
+
+msgid "My projects"
+msgstr "Mine projekter"
+
+msgid "My teams"
+msgstr "Mine hold"
+
+msgid "Name"
+msgstr "Navn"
+
+msgid "Name for new category"
+msgstr "Navn for ny kategori"
+
+msgid "Nearest Manager"
+msgstr "Nærmeste leder"
+
+msgid "New"
+msgstr "Ny"
+
+msgid "New Project Task"
+msgstr "Ny projekt opgave"
+
+msgid "New Task"
+msgstr "Ny opgave"
+
+msgid "New activity"
+msgstr "Ny aktivitet"
+
+msgid "New password randomizer"
+msgstr "Ny password randomizer"
+
+msgid "News"
+msgstr "Nyheder"
+
+msgid "No"
+msgstr "Nej"
+
+msgid "No Comments yet"
+msgstr "Ingen kommentarer endnu"
+
+msgid "No account found with that username"
+msgstr "Ingen konto fundet med det brugernavn"
+
+msgid "No workflow"
+msgstr "Ingen arbejdsproces"
+
+msgid "No."
+msgstr "Nr."
+
+msgid "None registered"
+msgstr "Ingen registreret"
+
+msgid "Normal"
+msgstr "Normal"
+
+msgid "Not assigned responsible"
+msgstr "Ikke tildelt ansvarlig"
+
+msgid "Not assigned team"
+msgstr "Ikke tildelt hold"
+
+msgid "Notifications"
+msgstr "Notifikationer"
+
+msgid "Notify Customer"
+msgstr "Underret kunden"
+
+msgid "Now download Google Authenticator App on your smartphone and scan this QR code - Do not Log Out before you have scanned this QR code successfully in the Google Authenticator App!"
+msgstr "Download nu Google Authenticator-appen på din smartphone og scan denne QR-kode - Log ikke ud, før du har scannet denne QR-kode succesfuldt i Google Authenticator-appen!"
+
+msgid "Open"
+msgstr "Åben"
+
+msgid "Order"
+msgstr "Orden"
+
+msgid "Orders"
+msgstr "Ordre"
+
+msgid "Organization"
+msgstr "Organisation"
+
+msgid "Overdue"
+msgstr "Forfalden"
+
+msgid "Overdue projects"
+msgstr "Forfaldne projekter"
+
+msgid "Overdue status"
+msgstr "Forfalden status"
+
+msgid "Overview"
+msgstr "Oversigt"
+
+msgid "Owner"
+msgstr "Ejer"
+
+msgid "Participants"
+msgstr "Deltagere"
+
+msgid "Password"
+msgstr "Adgangskode"
+
+msgid "Passwords"
+msgstr "Adgangskoder"
+
+msgid "Payment Due"
+msgstr "Betaling forfalder"
+
+msgid "Payment informations"
+msgstr "Betalingsoplysninger"
+
+msgid "Personal skills"
+msgstr "Personlige færdigheder"
+
+msgid "Phone"
+msgstr "Telefon"
+
+msgid "Phone number"
+msgstr "Telefonnummer"
+
+msgid "Preview"
+msgstr "Forhåndsvisning"
+
+msgid "Price each"
+msgstr "Pris hver"
+
+msgid "Print"
+msgstr "Udskriv"
+
+msgid "Priority"
+msgstr "Prioritet"
+
+msgid "Problem description"
+msgstr "Problem beskrivelse"
+
+msgid "Problem descriptions"
+msgstr "Problem beskrivelser"
+
+msgid "Problem text"
+msgstr "Problemtekst"
+
+msgid "Problems"
+msgstr "Problemer"
+
+msgid "Producer"
+msgstr "Producent"
+
+msgid "Professional skills"
+msgstr "Professionelle færdigheder"
+
+msgid "Profile"
+msgstr "Profil"
+
+msgid "Profile picture"
+msgstr "Profilbillede"
+
+msgid "Progress"
+msgstr "Fremdrift"
+
+msgid "Project"
+msgstr "Projekt"
+
+msgid "Project Completed"
+msgstr "Projekt fuldført"
+
+msgid "Project Deadline"
+msgstr "Projekt deadline"
+
+msgid "Project Description"
+msgstr "Projekt beskrivelse"
+
+msgid "Project Manager"
+msgstr "Projektleder"
+
+msgid "Project Name"
+msgstr "Projekt navn"
+
+msgid "Project Responsible"
+msgstr "Projektansvarlig"
+
+msgid "Project Start Date"
+msgstr "Projekt startdato"
+
+msgid "Project Task Completed"
+msgstr "Projektopgave fuldført"
+
+msgid "Project Tasks"
+msgstr "Projektopgaver"
+
+msgid "Project participants"
+msgstr "Projektdeltagere"
+
+msgid "Projects"
+msgstr "Projekter"
+
+msgid "Public"
+msgstr "Offentlig"
+
+msgid "Public category"
+msgstr "Offentlig kategori"
+
+msgid "Qty"
+msgstr "Antal"
+
+msgid "Quick Actions"
+msgstr "Hurtige handlinger"
+
+msgid "Quick Launch Menu"
+msgstr "Hurtig startmenu"
+
+msgid "Read all"
+msgstr "Læs alle"
+
+msgid "Received"
+msgstr "Modtaget"
+
+msgid "Recieve"
+msgstr "Modtag"
+
+msgid "Related"
+msgstr "Relateret"
+
+msgid "Related Module"
+msgstr "Relateret modul"
+
+msgid "Related problems"
+msgstr "Relaterede problemer"
+
+msgid "Related projects"
+msgstr "Relaterede projekter"
+
+msgid "Related task"
+msgstr "Relateret opgave"
+
+msgid "Related tickets"
+msgstr "Relaterede billetter"
+
+msgid "Relations"
+msgstr "Relationer"
+
+msgid "Remove"
+msgstr "Fjern"
+
+msgid "Request"
+msgstr "Anmodning"
+
+msgid "Requester"
+msgstr "Anmoder"
+
+msgid "Requests"
+msgstr "Anmodninger"
+
+msgid "Reset"
+msgstr "Nulstil"
+
+msgid "Resolve"
+msgstr "Løs"
+
+msgid "Resolved"
+msgstr "Løst"
+
+msgid "Resolved or workaround"
+msgstr "Løst eller workaround"
+
+msgid "Responsible"
+msgstr "Ansvarlig"
+
+msgid "Review Tasks"
+msgstr "Gennemgå opgaver"
+
+msgid "Reviewer"
+msgstr "Anmelder"
+
+msgid "Roles"
+msgstr "Roller"
+
+msgid "Save"
+msgstr "Gem"
+
+msgid "Scheduled"
+msgstr "Planlagt"
+
+msgid "Search"
+msgstr "Søg"
+
+msgid "Search document attachement content"
+msgstr "Søg i dokumentvedhæftningsindhold"
+
+msgid "Search document content"
+msgstr "Søg i dokumentindhold"
+
+msgid "Search document name"
+msgstr "Søg dokumentnavn"
+
+msgid "Search document names"
+msgstr "Søg i dokumentnavne"
+
+msgid "Search for"
+msgstr "Søg efter"
+
+msgid "Search in"
+msgstr "Søg i"
+
+msgid "Search in document attachements"
+msgstr "Søg i dokumentvedhæftninger"
+
+msgid "Search in document attachment content"
+msgstr "Søg i dokumentvedhæftningsindhold"
+
+msgid "Search problem descriptions"
+msgstr "Søg problem beskrivelser"
+
+msgid "Select News Channel"
+msgstr "Vælg nyhedskanal"
+
+msgid "Select Workflow"
+msgstr "Vælg workflow"
+
+msgid "Select to delete"
+msgstr "Vælg at slette"
+
+msgid "Send Message"
+msgstr "Send besked"
+
+msgid "Serial Number"
+msgstr "Serienummer"
+
+msgid "Servers"
+msgstr "Servere"
+
+msgid "Service Level Agreement"
+msgstr "Service Niveau Aftale"
+
+msgid "Settings"
+msgstr "Indstillinger"
+
+msgid "Viser"
+msgstr "Viser"
+
+msgid "Sidebar Image"
+msgstr "Sidebjælke billede"
+
+msgid "Silver"
+msgstr "Sølv"
+
+msgid "Since"
+msgstr "Siden"
+
+msgid "Skills"
+msgstr "Færdigheder"
+
+msgid "Solution"
+msgstr "Løsning"
+
+msgid "Solution text"
+msgstr "Løsningstekst"
+
+msgid "Solutions"
+msgstr "Løsninger"
+
+msgid "Something went wrong, please try again later"
+msgstr "Noget gik galt. Prøv igen senere"
+
+msgid "Soon overdue"
+msgstr "Snart forsinket"
+
+msgid "Standard Answers"
+msgstr "Standard svar"
+
+msgid "Start"
+msgstr "Start"
+
+msgid "Start Date"
+msgstr "Startdato"
+
+msgid "Start solution"
+msgstr "Start løsning"
+
+msgid "Status"
+msgstr "Status"
+
+msgid "Step"
+msgstr "Trin"
+
+msgid "Subject"
+msgstr "Emne"
+
+msgid "Subjects"
+msgstr "Emner"
+
+msgid "Submit Payment"
+msgstr "Indsend betaling"
+
+msgid "Subtotal"
+msgstr "Subtotal"
+
+msgid "Tablet"
+msgstr "Tablet"
+
+msgid "Task"
+msgstr "Opgave"
+
+msgid "Task Deadline"
+msgstr "Opgavefrist"
+
+msgid "Task Description"
+msgstr "Opgavebeskrivelse"
+
+msgid "Task Manager"
+msgstr "Jobliste"
+
+msgid "Task Name"
+msgstr "Opgavenavn"
+
+msgid "Task Participants"
+msgstr "Opgavedeltagere"
+
+msgid "Task Responsible"
+msgstr "Opgaveansvarlig"
+
+msgid "Task Started"
+msgstr "Opgave startet"
+
+msgid "Task Status"
+msgstr "Opgavestatus"
+
+msgid "Task activities"
+msgstr "Opgaveaktiviteter"
+
+msgid "Task created"
+msgstr "Opgave oprettet"
+
+msgid "Task deadline"
+msgstr "Opgavefrist"
+
+msgid "Task history"
+msgstr "Opgavehistorik"
+
+msgid "Task progress"
+msgstr "Opgavefremskridt"
+
+msgid "Taskboard"
+msgstr "Opgavetavle"
+
+msgid "Tasks"
+msgstr "Opgaver"
+
+msgid "Team"
+msgstr "Team"
+
+msgid "Text"
+msgstr "Tekst"
+
+msgid "Time Zone"
+msgstr "Tidszone"
+
+msgid "Time registrations"
+msgstr "Tidsregistreringer"
+
+msgid "Time spend"
+msgstr "Tidsforbrug"
+
+msgid "Timeline"
+msgstr "Tidslinje"
+
+msgid "To"
+msgstr "Til"
+
+msgid "Total"
+msgstr "Total"
+
+msgid "Type"
+msgstr "Type"
+
+msgid "Type Description"
+msgstr "Type beskrivelse"
+
+msgid "Type new password"
+msgstr "Indtast ny adgangskode"
+
+msgid "Unread"
+msgstr "Ulæst"
+
+msgid "Update"
+msgstr "Opdater"
+
+msgid "Update Task"
+msgstr "Opdater opgave"
+
+msgid "Upload"
+msgstr "Upload"
+
+msgid "Urgent"
+msgstr "Presserende"
+
+msgid "User"
+msgstr "Bruger"
+
+msgid "Username"
+msgstr "Brugernavn"
+
+msgid "Users"
+msgstr "Brugere"
+
+msgid "Users Available"
+msgstr "Brugere tilgængelige"
+
+msgid "Users Online"
+msgstr "Brugere online"
+
+msgid "Users in CAB"
+msgstr "Brugere i CAB"
+
+msgid "Usertype"
+msgstr "Brugertype"
+
+msgid "Vat"
+msgstr "Moms"
+
+msgid "Version"
+msgstr "Version"
+
+msgid "View"
+msgstr "Visning"
+
+msgid "Weather"
+msgstr "Vejr"
+
+msgid "Webpage"
+msgstr "Hjemmeside"
+
+msgid "When you have scanned the QR code with success - log off and login again. You will from now on be required to use Google Authenticator to finish your logins"
+msgstr "Når du har scannet QR-koden med succes - log af og log ind igen. Du vil fra nu af blive bedt om at bruge Google Authenticator for at afslutte dine logins"
+
+msgid "Widgets added"
+msgstr "Widgets tilføjet"
+
+msgid "Widgets available"
+msgstr "Widgets tilgængelige"
+
+msgid "Workflow"
+msgstr "Arbejdsgang"
+
+msgid "Workflows"
+msgstr "Arbejdsgange"
+
+msgid "Workstations"
+msgstr "Arbejdsstationer"
+
+msgid "Yes"
+msgstr "Ja"
+
+msgid "You are not allowed access to this module"
+msgstr "Du har ikke adgang til dette modul"
+
+msgid "Zip Code"
+msgstr "Postnummer"
+
+msgid "account"
+msgstr "konto"
+
+msgid "assets"
+msgstr "aktiver"
+
+msgid "assigned responsible"
+msgstr "tildelt ansvarlig"
+
+msgid "assigned team"
+msgstr "tildelt team"
+
+msgid "change"
+msgstr "ændring"
+
+msgid "changes"
+msgstr "ændringer"
+
+msgid "close"
+msgstr "luk"
+
+msgid "companies"
+msgstr "virksomheder"
+
+msgid "complete"
+msgstr "fuldføre"
+
+msgid "created"
+msgstr "oprettet"
+
+msgid "customers"
+msgstr "kunder"
+
+msgid "delete"
+msgstr "slet"
+
+msgid "exceeded"
+msgstr "overskredet"
+
+msgid "hours in total"
+msgstr "timer i alt"
+
+msgid "in"
+msgstr "i"
+
+msgid "incident"
+msgstr "hændelse"
+
+msgid "incidents"
+msgstr "hændelser"
+
+msgid "no"
+msgstr "ingen"
+
+msgid "now recieved"
+msgstr "modtaget nu"
+
+msgid "of"
+msgstr "af"
+
+msgid "open"
+msgstr "åben"
+
+msgid "overview"
+msgstr "oversigt"
+
+msgid "password"
+msgstr "adgangskode"
+
+msgid "passwords"
+msgstr "adgangskoder"
+
+msgid "preview"
+msgstr "forhåndsvisning"
+
+msgid "problems"
+msgstr "problemer"
+
+msgid "records"
+msgstr "poster"
+
+msgid "requests"
+msgstr "anmodninger"
+
+msgid "settings"
+msgstr "indstillinger"
+
+msgid "solutions"
+msgstr "løsninger"
+
+msgid "to"
+msgstr "til"
+
+msgid "to existing problem"
+msgstr "til eksisterende problem"
+
+msgid "total"
+msgstr "total"
+
+msgid "username"
+msgstr "brugernavn"
+
+msgid "view"
+msgstr "visning"
+
+msgid "yes"
+msgstr "ja"
+
+msgid "No data available in table"
+msgstr "Ingen data tilgængelig i tabellen"
+
+msgid "No entries to show"
+msgstr "Ingen poster at vise"
+
+msgid "No records to display"
+msgstr "Ingen poster at vise"
+
+msgid "Archive"
+msgstr "Arkiv"
+
+msgid "Timeregistrations"
+msgstr "Tidsregistreringer"
+
+msgid "Dispatch"
+msgstr "Ekspedition"
+
+msgid "Report"
+msgstr "Rapport"
+
+msgid "Me as Participant"
+msgstr "Mig som deltager"
+
+msgid "Me as Manager"
+msgstr "Mig som leder"
+
+msgid "Me as Responsible"
+msgstr "Mig som ansvarlig"
+
+msgid "Expiration"
+msgstr "Udløb"
+
+msgid "Similarity"
+msgstr "Lighed"
+
+msgid "An indicative comparison of words between the version and the previous version"
+msgstr "En vejledende sammenligning af ord mellem versionen og den tidligere version"
+
+msgid "Asset"
+msgstr "Aktiv"
+
+msgid "asset"
+msgstr "aktiv"
+
+msgid "Resolution"
+msgstr "Opløsning"
+
+msgid "deadline"
+msgstr "sidste frist"
+
+msgid "subject"
+msgstr "emne"
+
+msgid "subjects"
+msgstr "emner"
+
+msgid "taskboard"
+msgstr "opgavetavle"
+
+msgid "Create New"
+msgstr "Opret ny"
+
+msgid "Your"
+msgstr "Din"
+
+msgid "Dispatch view"
+msgstr "Visning af afsendelse"
+
+msgid "All open"
+msgstr "Alle åbne"
+
+msgid "Export"
+msgstr "Eksport"
+
+msgid "Export view"
+msgstr "Eksportvisning"
+
+msgid "Problems are much easier to create directly via incidents, requests, changes etc."
+msgstr "Problemer er meget nemmere at oprette direkte via hændelser, anmodninger, ændringer osv."
+
+msgid "Add to taskboard"
+msgstr "Føj til opgavetavle"
+
+msgid "Deadline Backout"
+msgstr "Tidsfrist tilbage"
+
+msgid "New message"
+msgstr "Ny besked"
+
+msgid "Recipient"
+msgstr "Modtager"
+
+msgid "Message"
+msgstr "Besked"
+
+msgid "Answer Templates"
+msgstr "Svarskabeloner"
+
+msgid "not assigned team"
+msgstr "ikke tildelt hold"
+
+msgid "not assigned responsible"
+msgstr "ikke tildelt ansvarlig"
+
+msgid "created from"
+msgstr "oprettet fra"
+
+msgid "Personal"
+msgstr "Personlig"
+
+msgid "users"
+msgstr "brugere"
+
+msgid "Created By"
+msgstr "Oprettet af"
+
+msgid "Todays time registration"
+msgstr "Dagens tidsregistrering"
+
+msgid "Create new project"
+msgstr "Opret nyt projekt"
+
+msgid "Group Managers"
+msgstr "Gruppemanagere"
+
+msgid "User group that can administrate this project"
+msgstr "Brugergruppe, der kan administrere dette projekt"
+
+msgid "User group that can participate in this project"
+msgstr "Brugergruppe, der kan deltage i dette projekt"
+
+msgid "Related Customer"
+msgstr "Relateret kunde"
+
+msgid "Customer that this project is to be related to"
+msgstr "Kunden, som dette projekt skal relateres til"
+
+msgid "Create password"
+msgstr "Opret adgangskode"
+
+msgid "Enabled"
+msgstr "Aktiveret"
+
+msgid "Disabled"
+msgstr "Deaktiveret"
+
+msgid "Workstation"
+msgstr "Arbejdsstation"
+
+msgid "Certificate"
+msgstr "Certifikat"
+
+msgid "New project"
+msgstr "Nyt projekt"
+
+msgid "Add to your watchlist"
+msgstr "Tilføj til din overvågningsliste"
+
+msgid "Quick search"
+msgstr "Hurtigsøgning"
+
+msgid "Related sprint"
+msgstr "Relateret sprint"
+
+msgid "Task participants"
+msgstr "Opgavedeltagere"
+
+msgid "Delete project"
+msgstr "Slet projekt"
+
+msgid "Project Sprint"
+msgstr "Projektsprint"
+
+msgid "Generate project tasks"
+msgstr "Generer projektopgaver"
+
+msgid "Remove project tasks"
+msgstr "Fjern projektopgaver"
+
+msgid "Real hours spend"
+msgstr "Brugt rigtige timer"
+
+msgid "Calculated from real timeregistrations"
+msgstr "Beregnet ud fra reelle tidregistreringer"
+
+msgid "Open Projects"
+msgstr "Åbne projekter"
+
+msgid "Overall process"
+msgstr "Samlet proces"
+
+msgid "Budget spend"
+msgstr "Udgiftsbudget"
+
+msgid "Time registered"
+msgstr "Tid registreret"
+
+msgid "Create baseline"
+msgstr "Opret grundlinje"
+
+msgid "Create *.ics file"
+msgstr "Opret *.ics-fil"
+
+msgid "Create ICS file"
+msgstr "Opret ICS-fil"
+
+msgid "Archive project"
+msgstr "Arkiver projekt"
+
+msgid "Add task"
+msgstr "Tilføj opgave"
+
+msgid "today"
+msgstr "i dag"
+
+msgid "month"
+msgstr "måned"
+
+msgid "week"
+msgstr "uge"
+
+msgid "day"
+msgstr "dag"
+
+msgid "list"
+msgstr "liste"
+
+msgid "Create duplicate"
+msgstr "Opret kopi"
+
+msgid "Withdrawn"
+msgstr "Tilbagetrukket"
+
+msgid "In construction"
+msgstr "Under konstruktion"
+
+msgid "In approval"
+msgstr "Til godkendelse"
+
+msgid "Published"
+msgstr "Offentliggjort"
+
+msgid "Your open"
+msgstr "Din åben"
+
+msgid "This task is private and you are not added as project task participant"
+msgstr "Denne opgave er privat, og du er ikke tilføjet som deltagende opgave i projektet"
+
+msgid "You are not added as project participant, so you cannot see this project task"
+msgstr "Du er ikke tilføjet som deltager i projektet, så du kan ikke se denne projektopgave"
+
+msgid "Existing Categorys"
+msgstr "Eksisterende kategorier"
+
+msgid "Category Name"
+msgstr "Kategorinavn"
+
+msgid "Project Task Categories"
+msgstr "Projektopgavekategorier"
+
+msgid "Project Categories"
+msgstr "Projektkategorier"
+
+msgid "Project Task Category Administration"
+msgstr "Administration af projektopgavekategori"
+
+msgid "articles"
+msgstr "artikler"
+
+msgid "Articles"
+msgstr "Artikler"
+
+msgid "Article"
+msgstr "Artikel"
+
+msgid "article"
+msgstr "artikel"
+
+msgid "My articles"
+msgstr "Mine artikler"
+
+msgid "My Articles"
+msgstr "Mine Artikler"
+
+msgid "Create Article"
+msgstr "Opret artikel"
+
+msgid "Article name"
+msgstr "Artikelnavn"
+
+msgid "Article content"
+msgstr "Artikelindhold"
+
+msgid "Article attachments"
+msgstr "Artikelvedhæftninger"
+
+msgid "This task is delayed"
+msgstr "Denne opgave er forsinket"
+
+msgid "Statistics"
+msgstr "Statistik"
+
+msgid "Estimated hours completed"
+msgstr "Forventede timer fuldført"
+
+msgid "Number Of Project Tasks"
+msgstr "Antal projektopgaver"
+
+msgid "Number Of Sprints"
+msgstr "Antal sprints"
+
+msgid "Project Tasks Completed"
+msgstr "Fuldførte projektopgaver"
+
+msgid "Create project"
+msgstr "Opret projekt"
+
+msgid "Open projects"
+msgstr "Åbne projekter"
+
+msgid "Closed projects"
+msgstr "Lukkede projekter"
+
+msgid "All projects"
+msgstr "Alle projekter"
+
+msgid "Search projects"
+msgstr "Søg projekter"
+
+msgid "updated"
+msgstr "opdateret"
+
+msgid "Push tasks ahead"
+msgstr "Flyt opgaver frem"
+
+msgid "This is used for pushing future tasks, including this, a number of days forward"
+msgstr "Dette bruges til at skubbe fremtidige opgaver, herunder denne, et antal dage frem"
+
+msgid "For how many days forward should tasks from this tasks start day be moved? Note: you can use minus to subtract days instead!"
+msgstr "Hvor mange dage frem skal opgaver fra denne opgaves startdag flyttes? Bemærk: Du kan bruge minus til at trække dage fra i stedet!"
+
+msgid "Active inquiries"
+msgstr "Aktive henvendelser"
+
+msgid "Your active inquiries"
+msgstr "Dine aktive henvendelser"
+
+msgid "Your closed inquiries"
+msgstr "Dine lukkede henvendelser"
+
+msgid "Your companys active inquiries"
+msgstr "Dit firms aktive henvendelser"
+
+msgid "Your companys closed inquiries"
+msgstr "Dit firms lukkede henvendelser"
+
+msgid "Search for help in our knowledge database"
+msgstr "Søg efter hjælp i vores vidensdatabase"
+
+msgid "Search here"
+msgstr "Søg her"
+
+msgid "Your Companys SLA Agreement is:"
+msgstr "Dit firms SLA-aftale er:"
+
+msgid "This means you can expect the following reaction times within opening hours from us."
+msgstr "Dette betyder, at du kan forvente følgende reaktionstider inden for vores åbningstider."
+
+msgid "Did you know... that you can also contact us and create tickets via our mail"
+msgstr "Vidste du... at du også kan kontakte os og oprette billetter via vores mail"
+
+msgid "Approve"
+msgstr "Godkend"
+
+msgid "Change end"
+msgstr "Ændre slut"
+
+msgid "Change Advisory Board, change approvers"
+msgstr "Change Advisory Board, skift godkendere"
+
+msgid "Valid reason"
+msgstr "Gyldig grund"
+
+msgid "Implementation Plan"
+msgstr "Implementeringsplan"
+
+msgid "Contact"
+msgstr "Kontakt"
+
+msgid "Comments"
+msgstr "Kommentarer"
+
+msgid "allready added to your task board"
+msgstr "allerede tilføjet til din opgavetavle"
+
+msgid "added to your task board"
+msgstr "tilføjet til din opgavetavle"
+
+msgid "task"
+msgstr "opgave"
+
+msgid "You need to relate a project before you can relate project tasks"
+msgstr "Du skal knytte et projekt, før du kan relatere projektopgaver"
+
+msgid "This taskboard is a kanban based task board. You can add incidents, request, project tasks etc. to your taskboard to manage all your tasks on daily basis."
+msgstr "Denne opgavetavle er en kanban-baseret opgavetavle. Du kan tilføje hændelser, anmodninger, projektopgaver osv. til din opgavetavle for at håndtere alle dine opgaver dagligt."
+
+msgid "Timeregistration"
+msgstr "Timeregistrering"
+
+msgid "News archive"
+msgstr "Nyhedsarkiv"
+
+msgid "Read"
+msgstr "Læs"
+
+msgid "Assets expired"
+msgstr "Aktiver udløbet"
+
+msgid "Change approvals"
+msgstr "Godkendelser af ændringer"
+
+msgid "Document approvals"
+msgstr "Dokumentgodkendelser"
+
+msgid "Documents expired"
+msgstr "Dokumenter udløbet"
+
+msgid "or"
+msgstr "eller"
+
+msgid "Sign in"
+msgstr "Log ind"
+
+msgid "Dont have an account?"
+msgstr "Har du ikke en konto?"
+
+msgid "Sign up"
+msgstr "Opret konto"
+
+msgid "Forgot password?"
+msgstr "Glemt adgangskode?"
+
+msgid "Reset now"
+msgstr "Nulstil nu"
+
+msgid "About"
+msgstr "Om"
+
+msgid "Try"
+msgstr "Prøv"
+
+msgid "Business Services"
+msgstr "Forretningsservices"
+
+msgid "Are you sure? Tasks for all involved users will be created"
+msgstr "Er du sikker? Der vil blive oprettet opgaver for alle involverede brugere"
+
+msgid "Are you sure? Tasks for all involved users will be deleted"
+msgstr "Er du sikker? Opgaver for alle involverede brugere vil blive slettet"
+
+msgid "Doubleclick to visit"
+msgstr "Dobbeltklik for at besøge"
+
+msgid "Decommissioned"
+msgstr "Udfaset"
+
+msgid "Quick Menu"
+msgstr "Hurtig menu"
+
+msgid "Sidenav Mini"
+msgstr "Sidenav Mini"
+
+msgid "Light"
+msgstr "Lys"
+
+msgid "Dark"
+msgstr "Mørk"
+
+msgid "Time registration"
+msgstr "Tidregistrering"
+
+msgid "Manage time registration"
+msgstr "Administrer tidregistrering"
+
+msgid "New Timeregistration"
+msgstr "Ny tidregistrering"
+
+msgid "Reactive"
+msgstr "Reaktiv"
+
+msgid "Proactive"
+msgstr "Proaktiv"
+
+msgid "Forgot password"
+msgstr "Glemt password"
+
+msgid "You will receive an e-mail typically within 60 seconds"
+msgstr "Du vil modtage en e-mail typisk inden for 60 sekunder"
+
+msgid "Reset password"
+msgstr "Nulstil password"
+
+msgid "Password must contain: Minimum 8 characters, at least 1 alphabet and 1 number"
+msgstr "Passwordet skal indeholde: Minimum 8 tegn, mindst 1 bogstav og 1 tal"
+
+msgid "New Password"
+msgstr "Nyt password"
+
+msgid "Repeat"
+msgstr "Gentag"
+
+msgid "Repeat Password"
+msgstr "Gentag password"
+
+msgid "Already have an account?"
+msgstr "Har du allerede en konto?"
+
+msgid "Login"
+msgstr "Log ind"
+
+msgid "Inactive"
+msgstr "Inaktiv"
+
+msgid "Back"
+msgstr "Tilbage"
+
+msgid "Me participating"
+msgstr "Deltager"
+
+msgid "Modules"
+msgstr "Moduler"
+
+msgid "Inquiries"
+msgstr "Forespørgsler"
+
+msgid "My active"
+msgstr "Mine aktive"
+
+msgid "My closed"
+msgstr "Mine lukkede"
+
+msgid "Groups"
+msgstr "Grupper"
+
+msgid "Teams"
+msgstr "Teams"
+
+msgid "Users in group"
+msgstr "Brugere i gruppen"
+
+msgid "Group name"
+msgstr "Gruppenavn"
+
+msgid "module"
+msgstr "modul"
+
+msgid "Role name"
+msgstr "Rollenavn"
+
+msgid "Related module"
+msgstr "Relateret modul"
+
+msgid "Notes"
+msgstr "Noter"
+
+msgid "Memberships"
+msgstr "Medlemskaber"
+
+msgid "Group Status"
+msgstr "Gruppestatus"
+
+msgid "Users in role"
+msgstr "Brugere i rolle"
+
+msgid "Groups in role"
+msgstr "Grupper i rolle"
+
+msgid "Groups Available"
+msgstr "Grupper tilgængelige"
+
+msgid "Role Status"
+msgstr "Rollestatus"
+
+msgid "Members Available"
+msgstr "Tilgængelige medlemmer"
+
+msgid "Members"
+msgstr "Medlemmer"
+
+msgid "Load Templates"
+msgstr "Indlæs skabeloner"
+
+msgid "Templates"
+msgstr "Skabeloner"
+
+msgid "Module"
+msgstr "Modul"
+
+msgid "Removed"
+msgstr "Fjernet"
+
+msgid "End Date"
+msgstr "Slutdato"
+
+msgid "Shortname"
+msgstr "Kortnavn"
+
+msgid "Tablename"
+msgstr "Tabelnavn"
+
+msgid "Icon"
+msgstr "Ikon"
+
+msgid "Product Owner"
+msgstr "Produktejer"
+
+msgid "Short Name"
+msgstr "Kort navn"
+
+msgid "Developer Team"
+msgstr "Udviklerteam"
+
+msgid "Related User"
+msgstr "Relateret bruger"
+
+msgid "Related Company"
+msgstr "Relateret virksomhed"
+
+msgid "Last Updated"
+msgstr "Sidst opdateret"
+
+msgid "Business Service"
+msgstr "Forretnings Service"
+
+msgid "More"
+msgstr "Mere"
+
+msgid "Internal"
+msgstr "Intern"
+
+msgid "Clone"
+msgstr "Klon"
+
+msgid "Create incident from this"
+msgstr "Opret hændelse fra dette"
+
+msgid "Create request from this"
+msgstr "Opret anmodning fra dette"
+
+msgid "Create change from this"
+msgstr "Opret ændring fra dette"
+
+msgid "Create problem from this"
+msgstr "Opret problem fra dette"
+
+msgid "Users in team"
+msgstr "Brugere i team"
+
+msgid "Team name"
+msgstr "Teamnavn"
+
+msgid "Team colour"
+msgstr "Teamfarve"
+
+msgid "Team Leader"
+msgstr "Teamleder"
+
+msgid "Team Manager"
+msgstr "Teamleder"
+
+msgid "colour"
+msgstr "farve"
+
+msgid "Colour"
+msgstr "Farve"
+
+msgid "Approvals"
+msgstr "Godkendelser"
+
+msgid "Follow-ups"
+msgstr "Opfølgninger"
+
+msgid "Role"
+msgstr "Rolle"
+
+msgid "Last Edited By"
+msgstr "Sidst redigeret af"
+
+msgid "Last Edited"
+msgstr "Sidst redigeret"
+
+msgid "Show in relations"
+msgstr "Vis i relationer"
+
+msgid "Field Name"
+msgstr "Feltnavn"
+
+msgid "Fields"
+msgstr "Felter"
+
+msgid "Status Codes"
+msgstr "Statuskoder"
+
+msgid "Lookup Table"
+msgstr "Opslagstabel"
+
+msgid "Lookup Field"
+msgstr "Opslagsfelt"
+
+msgid "Done Status"
+msgstr "Færdig status"
+
+msgid "SLA Supported"
+msgstr "SLA-understøttet"
+
+msgid "Closed Status"
+msgstr "Lukket status"
+
+msgid "Restore Points"
+msgstr "Gendannelsespunkter"
+
+msgid "ITSM Relations"
+msgstr "ITSM-relationer"
+
+msgid "CI Relations"
+msgstr "CI-relationer"
+
+msgid "ITSM Types"
+msgstr "ITSM-typer"
+
+msgid "CI Types"
+msgstr "CI-typer"
+
+msgid "Tableview"
+msgstr "Tabelvisning"
+
+msgid "Parent Task"
+msgstr "Overordnet opgave"
+
+msgid "Push in next status"
+msgstr "Skub til næste status"
+
+msgid "Notify by email"
+msgstr "Underret via e-mail"
+
+msgid "Notify"
+msgstr "Underret"
+
+msgid "Text templates"
+msgstr "Tekstskabeloner"
+
+msgid "Widgets on frontpage"
+msgstr "Widgets på forsiden"
+
+msgid "Available"
+msgstr "Tilgængelig"
+
+msgid "Added"
+msgstr "Tilføjet"
+
+msgid "Code"
+msgstr "Kode"
+
+msgid "Personal Meeting Room"
+msgstr "Personligt mødelokale"
+
+msgid "These are text shortcuts you can define a text code and a text template that is inserted when you type the text code in text boxes"
+msgstr "Dette er tekstgenveje, hvor du kan definere en tekstkode og en tekstskabelon, der indsættes, når du skriver tekstkoden i tekstfelter"
+
+msgid "½ Day"
+msgstr "½ dag"
+
+msgid "Day"
+msgstr "Dag"
+
+msgid "Week"
+msgstr "Uge"
+
+msgid "Month"
+msgstr "Måned"
+
+msgid "Today"
+msgstr "I dag"
+
+msgid "End date cannot be before start date"
+msgstr "Slutdato kan ikke være før startdato"
+
+msgid "Updated"
+msgstr "Opdateret"
+
+msgid "Other searches"
+msgstr "Andre søgninger"
+
+msgid "Scan for CVR numbers in WIKI"
+msgstr "Skan efter CVR-numre i WIKI"
+
+msgid "Group Name"
+msgstr "Gruppenavn"
+
+msgid "Expired CI's"
+msgstr "Udløbne CI'er"
+
+msgid "API configuration"
+msgstr "API konfiguration"
+
+msgid "Test update user"
+msgstr "Test opdatering af bruger"
+
+msgid "Delete user (careful it will delete the user)"
+msgstr "Slet bruger (vær forsigtig, det vil slette brugeren)"
+
+msgid "Shared"
+msgstr "Delt"
+
+msgid "made by"
+msgstr "lavet af"
+
+msgid "making better web for small business."
+msgstr "gøre web bedre for små virksomheder."
+
+msgid "Support"
+msgstr "Support"
+
+msgid "Changelog"
+msgstr "Ændringslog"
+
+msgid "Duplicate"
+msgstr "Duplikere"
+
+msgid "Latest activity in the project"
+msgstr "Seneste aktivitet i projektet"
+
+msgid "Latest activity"
+msgstr "Seneste aktivitet"
+
+msgid "Activity Stream"
+msgstr "Aktivitetsstrøm"
+
+msgid "Remaining"
+msgstr "Tilbage"
+
+msgid "Password generator"
+msgstr "Adgangskode generator"
+
+msgid "Forms"
+msgstr "Formularer"
+
+msgid "Mail Templates"
+msgstr "Mail skabeloner"
+
+msgid "Maintenance"
+msgstr "Vedligeholdelse"
+
+msgid "API"
+msgstr "API"
+
+msgid "Active Directory"
+msgstr "Active Directory"
+
+msgid "Helpdesk"
+msgstr "Helpdesk"
+
+msgid "System Configurator"
+msgstr "Systemkonfigurator"
+
+msgid "Administration"
+msgstr "Administration"
+
+msgid "Email account for sending emails from"
+msgstr "E-mail-konto til at sende e-mails fra"
+
+msgid "SMTP Port"
+msgstr "SMTP Port"
+
+msgid "SMTP Host"
+msgstr "SMTP Vært"
+
+msgid "SMTP Username"
+msgstr "SMTP Brugernavn"
+
+msgid "SMTP Password"
+msgstr "SMTP Adgangskode"
+
+msgid "Max 25 characters"
+msgstr "Max 25 tegn"
+
+msgid "Name of the system"
+msgstr "Systemets navn"
+
+msgid "Allow people to activate google authenticater for 2 faktor validation?"
+msgstr "Vil du tillade folk at aktivere Google verificering for 2 faktor validering?"
+
+msgid "IMAP Host"
+msgstr "IMAP vært"
+
+msgid "IMAP Username"
+msgstr "IMAP brugernavn"
+
+msgid "IMAP Password"
+msgstr "IMAP adgangskode"
+
+msgid "Please make a long token"
+msgstr "Lav venligst et langt token"
+
+msgid "These are the links on the login page"
+msgstr "Dette er links på login-siden"
+
+msgid "Frontpage links"
+msgstr "Forside links"
+
+msgid "You company Facebook page"
+msgstr "Din virksomheds Facebook-side"
+
+msgid "You company page"
+msgstr "Din virksomhedsside"
+
+msgid "Company Website"
+msgstr "Firmaets hjemmeside"
+
+msgid "You company LinkedIn page"
+msgstr "Din virksomheds LinkedIn side"
+
+msgid "Registration options"
+msgstr "Registreringsmuligheder"
+
+msgid "Allow user registrations via email?"
+msgstr "Tillad brugerregistreringer via e-mail?"
+
+msgid "Default company assignment for new user registrations?"
+msgstr "Standard virksomhedstildeling for nye brugerregistreringer?"
+
+msgid "Default Company?"
+msgstr "Standardfirma?"
+
+msgid "You are done"
+msgstr "Du er færdig"
+
+msgid "Submit to save your settings"
+msgstr "Send for at gemme dine indstillinger"
+
+msgid "Previous"
+msgstr "Tidligere"
+
+msgid "Next"
+msgstr "Næste"
+
+msgid "Submit"
+msgstr "Indsend"
+
+msgid "Settings did not get updated"
+msgstr "Indstillinger blev ikke opdateret"
+
+msgid "Settings updated"
+msgstr "Indstillinger opdateret"
+
+msgid "Default Design"
+msgstr "Standarddesign"
+
+msgid "Google Authenticate"
+msgstr "Google Verificering"
+
+msgid "System"
+msgstr "System"
+
+msgid "Wiki"
+msgstr "Wiki"
+
+msgid "Mail templates"
+msgstr "Mail skabeloner"
+
+msgid "Knowledge base"
+msgstr "Vidensbase"
+
+msgid "queue"
+msgstr "kø"
+
+msgid "Queue"
+msgstr "Kø"
+
+msgid "Doing"
+msgstr "Igangværende"
+
+msgid "Done"
+msgstr "Færdige"
+
+msgid "done"
+msgstr "færdige"
+
+msgid "doing"
+msgstr "igangværende"
+
+msgid "Monday"
+msgstr "Mandag"
+
+msgid "Tuesday"
+msgstr "Tirsdag"
+
+msgid "Wednesday"
+msgstr "Onsdag"
+
+msgid "Thursdag"
+msgstr "Torsdag"
+
+msgid "Friday"
+msgstr "Fredag"
+
+msgid "Saturday"
+msgstr "Lørdag"
+
+msgid "Sunday"
+msgstr "Søndag"
+
+msgid "Thursday"
+msgstr "Torsdag"
+
+msgid "Management functions"
+msgstr "Ledelsesfunktioner"
+
+msgid "This weeks time registrations for team"
+msgstr "Denne uges tidsregisteringer for team"
+
+msgid "Employee"
+msgstr "Medarbejder"
+
+msgid "Solved with solution"
+msgstr "Løst med løsningen"
+
+msgid "Solved"
+msgstr "Løst"
+
+msgid "Parent Assets"
+msgstr "Overordnede aktiver"
+
+msgid "Child Assets"
+msgstr "Underordnede aktiver"
+
+msgid "This relation will make current assets child"
+msgstr "Denne relation vil gøre det nuværende aktiv til underordnet aktiv"
+
+msgid "Create a parent relation"
+msgstr "Opret en forældre-relation"
+
+msgid "This relation will make current asset parent"
+msgstr "Denne relation vil gøre det nuværende aktiv til forælder"
+
+msgid "Create a child relation"
+msgstr "Opret en børne-relation"
+
+msgid "Service"
+msgstr "Service"
+
+msgid "Overall"
+msgstr "Overordnet"
+
+msgid "Subordinate"
+msgstr "Underordnet"
+
+msgid "Create relation"
+msgstr "Opret relation"
+
+msgid "Get direct link"
+msgstr "Få direkte link"
+
+msgid "Problem report"
+msgstr "Problemrapport"
+
+msgid "Please explain the problem"
+msgstr "Forklar venligst problemet"
+
+msgid "this will create a ticket at Practicle Support so please dont abuse this!"
+msgstr "dette vil oprette en henvendelse hos Practicle Supporten, så misbrug ikke denne funktion!"
+
+msgid "Report a problem"
+msgstr "Rapporter et problem"
+
+msgid "Category administration"
+msgstr "Kategori administration"
+
+msgid "Create News Article"
+msgstr "Opret nyhedsartikel"
+
+msgid "Date to be published"
+msgstr "Dato, der skal offentliggøres"
+
+msgid "Writer"
+msgstr "Forfatter"
+
+msgid "Headline"
+msgstr "Overskrift"
+
+msgid "Add new category"
+msgstr "Tilføj ny kategori"
+
+msgid "Usergroup"
+msgstr "Brugergruppe"
+
+msgid "News Article"
+msgstr "Nyhedsartikel"
+
+msgid "Get latest CVE news entries"
+msgstr "Hent seneste CVE-nyhedsindlæg"
+
+msgid "Delete all CVE news entries"
+msgstr "Slet alle CVE-nyhedsindlæg"
+
+msgid "Fetch"
+msgstr "Hent"
+
+msgid "Add filter"
+msgstr "Tilføj filter"
+
+msgid "Miscellaneous"
+msgstr "Diverse"
+
+msgid "miscellaneous"
+msgstr "diverse"
+
+msgid "CVE Filters"
+msgstr "CVE Filtre"
+
+msgid "Documentation"
+msgstr "Dokumentation"
+
+msgid "last 2 months"
+msgstr "seneste 2 måneder"
+
+msgid "Date worked"
+msgstr "Dato for udført arbejde"
+
+msgid "Duration"
+msgstr "Varighed"
+
+msgid "Billable"
+msgstr "Fakturerbar"
+
+msgid "Date for registration"
+msgstr "Dato for registrering"
+
+msgid "All"
+msgstr "Alle"
+
+msgid "Daily"
+msgstr "Daglig"
+
+msgid "Duration minutes"
+msgstr "Varighed minutter"
+
+msgid "Duration hours"
+msgstr "Varighed timer"
+
+msgid "Number of registrations"
+msgstr "Antal registreringer"
+
+msgid "Daily basis"
+msgstr "Dagsbasis"
+
+msgid "Create Relations"
+msgstr "Opret relationer"
+
+msgid "Table Name"
+msgstr "Tabel navn"
+
+msgid "Import Source"
+msgstr "Importkilde"
+
+msgid "Synchronization"
+msgstr "Synkronisering"
+
+msgid "Sync Time"
+msgstr "Synkroniseringstid"
+
+msgid "Last Synced"
+msgstr "Sidst synkroniseret"
+
+msgid "Label"
+msgstr "Etiket"
+
+msgid "Default value"
+msgstr "Standard værdi"
+
+msgid "Field title"
+msgstr "Felt titel"
+
+msgid "Field Width"
+msgstr "Feltbredde"
+
+msgid "Lookup Field Result (Table View)"
+msgstr "Opslagsfelt resultat (tabelvisning)"
+
+msgid "Lookup Field Result (Modal View)"
+msgstr "Opslagsfelt resultat (modal visning)"
+
+msgid "Primary Relation Field"
+msgstr "Primært relationsfelt"
+
+msgid "Import Source Field"
+msgstr "Importkilde felt"
+
+msgid "Sync Source Field"
+msgstr "Synkroniseringskilde felt"
+
+msgid "Addon"
+msgstr "Tilføjelse"
+
+msgid "Select Field Options"
+msgstr "Vælg felt muligheder"
+
+msgid "Child relations lookup"
+msgstr "Barnrelationer opslag"
+
+msgid "Locked"
+msgstr "Låst"
+
+msgid "Required"
+msgstr "Påkrævet"
+
+msgid "Searchable"
+msgstr "Søgbart"
+
+msgid "Hide Tables"
+msgstr "Skjul i tabel oversigten"
+
+msgid "Hide Forms"
+msgstr "Skjul i modal form visning"
+
+msgid "Syncronize"
+msgstr "Synkroniser"
+
+msgid "Reset field sort order"
+msgstr "Nulstil felt sorteringsrækkefølge"
+
+msgid "Related workflow"
+msgstr "Relateret arbejdsgang"
+
+msgid "Reset forms data"
+msgstr "Nulstil formulardata"
+
+msgid "Check Table Consistency"
+msgstr "Tjek tabelkonsistens"
+
+msgid "Priority 1"
+msgstr "Prioritet 1"
+
+msgid "Priority 2"
+msgstr "Prioritet 2"
+
+msgid "Priority 3"
+msgstr "Prioritet 3"
+
+msgid "Priority 4"
+msgstr "Prioritet 4"
+
+msgid "Field Label"
+msgstr "Feltmærke"
+
+msgid "Features"
+msgstr "Funktioner"
+
+msgid "Create Incident"
+msgstr "Opret hændelse"
+
+msgid "Create Change"
+msgstr "Opret ændring"
+
+msgid "Create Problem"
+msgstr "Opret problem"
+
+msgid "Create Request"
+msgstr "Opret anmodning"
+
+msgid "Incidents dispatch view"
+msgstr "Hændelser modtagelses visning"
+
+msgid "Requests dispatch view"
+msgstr "Anmodninger modtagelses visning"
+
+msgid "Changes dispatch view"
+msgstr "Ændringer modtagelses visning"
+
+msgid "Problems dispatch view"
+msgstr "Problemer modtagelses visning"
+
+msgid "Shortcuts"
+msgstr "Genveje"
+
+msgid "Watch list"
+msgstr "Overvågningsliste"
+
+msgid "Generic forms"
+msgstr "Generiske formularer"
+
+msgid "Authorizer"
+msgstr "Autorisator"
+
+msgid "Reason"
+msgstr "Årsag"
+
+msgid "Administrators"
+msgstr "Administratorer"
+
+msgid "Updated by"
+msgstr "Opdateret af"
+
+msgid "Image"
+msgstr "Billede"
+
+msgid "Click to see"
+msgstr "Klik for at se"
+
+msgid "this is essential in the subject for the mail reply by the customer to land on specific type and number"
+msgstr "dette er essentielt i emnet for, at kundens mailsvar lander på en bestemt type og nummer"
+
+msgid "this is essential in the subject for the mail reply by the customer to land on specific type"
+msgstr "dette er essentielt i emnet for, at kundens mailsvar lander på en bestemt type"
+
+msgid "placeholder for current incident/change/request/problem number"
+msgstr "pladsholder for aktuel hændelse/ændring/anmodning/problem nummer"
+
+msgid "placeholder for customers firstname"
+msgstr "pladsholder for kundernes fornavn"
+
+msgid "placeholder for customers lastname"
+msgstr "pladsholder for kundernes efternavn"
+
+msgid "if action is a comment - this is the placeholder for the comment"
+msgstr "hvis handling er en kommentar - så er dette pladsholderen for kommentaren"
+
+msgid "placeholder for the system name"
+msgstr "pladsholder for systemnavnet"
+
+msgid "placeholder for the system url"
+msgstr "pladsholder for systemets url"
+
+msgid "placeholder for the name of the type"
+msgstr "pladsholder for navnet på typen"
+
+msgid "placeholder for direct link to the specific incident/change/request/problem (can not be accessed by customers)"
+msgstr "pladsholder for direkte link til den specifikke hændelse/ændring/anmodning/problem (kan ikke tilgås af kunder)"
+
+msgid "Placeholders"
+msgstr "Pladsholdere"
+
+msgid "Password must contain: minimum 8 characters, at least 1 alphabet, 1 number and 1 special character"
+msgstr "Adgangskoden skal indeholde: minimum 8 tegn, mindst 1 alfabet, 1 tal og 1 specialtegn"
+
+msgid "This email allready exists"
+msgstr "Denne e-mail findes allerede"
+
+msgid "Please confirm password"
+msgstr "Bekræft venligst adgangskoden"
+
+msgid "Passwords did not match"
+msgstr "Adgangskoder matchede ikke"
+
+msgid "Please enter a password"
+msgstr "Indtast venligst en adgangskode"
+
+msgid "Please enter a lastname"
+msgstr "Indtast venligst et efternavn"
+
+msgid "Please enter a firstname"
+msgstr "Indtast venligst et fornavn"
+
+msgid "Email user"
+msgstr "Email bruger"
+
+msgid "Preview group members"
+msgstr "Forhåndsvisning af gruppemedlemmer"
+
+msgid "All Users"
+msgstr "Alle brugere"
+
+msgid "Change Administrators"
+msgstr "Ændringer administratorer"
+
+msgid "Change Users"
+msgstr "Ændringer brugere"
+
+msgid "CMDB Administrators"
+msgstr "CMDB Administratorer"
+
+msgid "CMDB Users"
+msgstr "CMDB brugere"
+
+msgid "Company Administrators"
+msgstr "Virksomheder administratorer"
+
+msgid "Default CAB"
+msgstr "Standard CAB"
+
+msgid "Default group messages"
+msgstr "Standard gruppemeddelelser"
+
+msgid "Document Administrators"
+msgstr "Dokumentadministratorer"
+
+msgid "Document Users"
+msgstr "Dokumentbrugere"
+
+msgid "Forms administrators"
+msgstr "Formularadministratorer"
+
+msgid "Forms users"
+msgstr "Formularbrugere"
+
+msgid "Incident Administrators"
+msgstr "Hændelseradministratorer"
+
+msgid "Incident Users"
+msgstr "Hændelserbrugere"
+
+msgid "Module Administrators"
+msgstr "Moduladministratorer"
+
+msgid "News Administrators"
+msgstr "Nyhederadministratorer"
+
+msgid "News Writer"
+msgstr "Nyhederforfatter"
+
+msgid "Problem Administrators"
+msgstr "Problemeradministratorer"
+
+msgid "Problem Users"
+msgstr "Problemerbrugere"
+
+msgid "Project Administrators"
+msgstr "Projektadministratorer"
+
+msgid "Project Users"
+msgstr "Projektbrugere"
+
+msgid "Request Administrators"
+msgstr "Anmodningeradministratorer"
+
+msgid "Request Users"
+msgstr "Anmodningerbrugere"
+
+msgid "Timeregistration Administrators"
+msgstr "Tidsregistreringadministratorer"
+
+msgid "User Administrator"
+msgstr "Brugeradministrator"
+
+msgid "Workflow Administrators"
+msgstr "Arbejdsgangeadministratorer"
+
+msgid "Default"
+msgstr "Standard"
+
+msgid "Generic Forms"
+msgstr "Generiske formularer"
+
+msgid "Group updated"
+msgstr "Gruppeopdateret"
+
+msgid "All employee users"
+msgstr "Alle ansattebrugere"
+
+msgid "Group Administrators"
+msgstr "Gruppeadministratorer"
+
+msgid "Role created"
+msgstr "Rolleoprettet"
+
+msgid "Preview team members"
+msgstr "Forhåndsvisning af teammedlemmer"
+
+msgid "Role memberships"
+msgstr "Rolle medlemsskaber"
+
+msgid "Group memberships"
+msgstr "Gruppe medlemsskaber"
+
+msgid "Roles Available"
+msgstr "Roller tilgængelige"
+
+msgid "Team memberships"
+msgstr "Team medlemsskaber"
+
+msgid "Teams Available"
+msgstr "Teams tilgængelige"
+
+msgid "Consultant"
+msgstr "Konsulent"
+
+msgid "Members of this group possess unrestricted privileges to the overall system. Administrators can access the administration module. Only a select few should belong to this group."
+msgstr "Medlemmer af denne gruppe har ubegrænsede rettigheder til hele systemet. Administratorer kan få adgang til administrationsmodulet. Kun et fåtal bør tilhøre denne gruppe."
+
+msgid "This group can be used as a collector group for all users of type employees - in general - if this group is chosen, all employee users will have access."
+msgstr "Denne gruppe kan bruges som samlergruppe for alle brugere af type medarbejdere - generelt - hvis denne gruppe vælges, vil alle medarbejderbrugere have adgang."
+
+msgid "This group gives advanced access to to the request module. Users in this group will be able to update request informations in general and is not limited in access rights in general.  This should only be granted to central administrators and not more then very few people."
+msgstr "Denne gruppe giver avanceret adgang til anmodningsmodulet. Brugere i denne gruppe vil være i stand til at opdatere anmodningsoplysninger generelt og er ikke begrænset i adgangsrettigheder generelt.  Dette bør kun gives til centrale administratorer og ikke mere end meget få personer."
+
+msgid "Standard group for request module. Users have to be part of this group in order to be able to use standard request module."
+msgstr "Standardgruppe for anmodningsmodul. Brugere skal være en del af denne gruppe for at kunne bruge standard anmodningsmodul."
+
+msgid "This group is for people that needs to be able to be assigned as responsible on workflows and thereby also can edit it."
+msgstr "Denne gruppe er for personer, der skal kunne udpeges som ansvarlige på arbejdsgange og derved også kan redigere den."
+
+msgid "Has the rights to modify and oversee users and their permissions."
+msgstr "Har rettigheder til at ændre og overvåge brugere og deres tilladelser."
+
+msgid "Username already exists"
+msgstr "Brugernavn eksisterer i forvejen"
+
+msgid "Required fields are missing values"
+msgstr "Påkrævede felter mangler værdier"
+
+msgid "This email already exists for"
+msgstr "Denne e-mail findes allerede for"
+
+msgid "Email cannot be empty"
+msgstr "E-mail må ikke være tom"
+
+msgid "Firstname is required"
+msgstr "Fornavn er påkrævet"
+
+msgid "Username cannot be empty"
+msgstr "Brugernavnet må ikke være tomt"
+
+msgid "This username already exists for"
+msgstr "Dette brugernavn eksisterer allerede for"
+
+msgid "Write words seperated by ; if you want an empty value as select option - write NULL"
+msgstr "Skriv ord adskilt af ; hvis du ønsker en tom værdi som valgmulighed - skriv NULL"
+
+msgid "Create project task from this"
+msgstr "Opret projektopgave ud fra denne"
+
+msgid "Select user for add"
+msgstr "Vælg bruger der skal tilføjes"
+
+msgid "Select user for removal"
+msgstr "Vælg bruger der skal fjernes"
+
+msgid "No Sprint"
+msgstr "Intet sprint"
+
+msgid "Parent"
+msgstr "Overliggende"
+
+msgid "Private"
+msgstr "Privat"
+
+msgid "Show members"
+msgstr "Vis medlemmer"
+
+msgid "Last login"
+msgstr "Sidste login"
+
+msgid "Create Project Task"
+msgstr "Opret projekt opgave"
+
+msgid "Simple"
+msgstr "Simpel"
+
+msgid "Log Book"
+msgstr "Logbog"
+
+msgid "Related number"
+msgstr "Relateret nummer"
+
+msgid "Add empty row"
+msgstr "Tilføj tom række"
+
+msgid "This adds an empty value to a select box and only for that"
+msgstr "Dette tilføjer en tom værdi til en valgboks og kun for disse"
+
+msgid "Mine"
+msgstr "Mine"
+
+msgid "mine"
+msgstr "mine"
+
+msgid "Search results"
+msgstr "Søgeresultater"
+
+msgid "Select Options"
+msgstr "Opslags muligheder"
+
+msgid "Options"
+msgstr "Muligheder"
+
+msgid "Lookup"
+msgstr "Opslag"
+
+msgid "Syncronization"
+msgstr "Synkronisering"
+
+msgid "relations"
+msgstr "relationer"
+
+msgid "Primary"
+msgstr "Primært"
+
+msgid "Full view height"
+msgstr "Fuld visnings højde"
+
+msgid "Table view"
+msgstr "Tabel visning"
+
+msgid "Timeline view"
+msgstr "Timeline visning"
+
+msgid "Deactivate"
+msgstr "Deaktiver"
+
+msgid "Transfer"
+msgstr "Overfør"
+
+msgid "Transfer elements to other user"
+msgstr "Overfør elementer til en anden bruger"
+
+msgid "Other"
+msgstr "Andre"
+
+msgid "Select a user"
+msgstr "Vælg en bruger"
+
+msgid "Select all / Deselect all"
+msgstr "Vælg alle / Fravælg alle"
+
+msgid "CMDB, ITSM and other objects are getting moved to the selected user (responsible is getting changed). Transfer can not be transfered to user type customer. Transfer of Roles and Group means that memberships that the current user has, is getting added to the selected user."
+msgstr "CMDB-, ITSM- og andre objekter bliver flyttet til den valgte bruger (ansvarlig bliver ændret). Overførsel kan ikke ske til brugertypen kunde. Overførsel af roller og grupper betyder, at medlemskaber, som den nuværende bruger har, bliver tilføjet til den valgte bruger."
+
+msgid "Workflow Tasks"
+msgstr "Workflow opgaver"
+
+msgid "KanBan Tasks"
+msgstr "KanBan opgaver"
+
+msgid "ITSM elements"
+msgstr "ITSM elementer"
+
+msgid "CMDB elements"
+msgstr "CMDB elementer"
+
+msgid "We are missing a primary field for this type"
+msgstr "Vi mangler et primært felt for denne type"
+
+msgid "Result field"
+msgstr "Resultat felt"
+
+msgid "Choose which field should be returned as result in the select box"
+msgstr "Vælg hvilket felt der skal returneres som resultat i valgfeltet"
+
+msgid "User fullname and username"
+msgstr "Brugers fulde navn og brugernavn"
+
+msgid "User fullname"
+msgstr "Brugers fulde navn"
+
+msgid "Select this if you want a result with users fullname"
+msgstr "Vælg dette, hvis du ønsker et resultat med brugernes fulde navn"
+
+msgid "Select this if you want a result with users fullname and username"
+msgstr "Vælg dette, hvis du ønsker et resultat med brugernes fulde navn og brugernavn"
+
+msgid "Place on right side"
+msgstr "Placer på højre side"
+
+msgid "Place field on the right side of form"
+msgstr "Placer feltet i højre side af formularer"
+
+msgid "This will make the field a normal and simple text result"
+msgstr "Dette vil gøre feltet til et normalt og enkelt tekstresultat"
+
+msgid "Simple text"
+msgstr "Simpel tekst"
+
+msgid "Make field disabled on create"
+msgstr "Gør feltet deaktiveret for oprettelse"
+
+msgid "Make field required"
+msgstr "Gør felt påkrævet"
+
+msgid "Make searchable from search bar on content of this field"
+msgstr "Gør søgbar fra søgelinjen på indholdet af dette felt"
+
+msgid "Notes fields can get full height so all content is shown on view page"
+msgstr "Bemærkningsfelter kan få fuld højde, så alt indhold vises på visningssiden"
+
+msgid "Deactivate this field from Table views"
+msgstr "Deaktiver dette felt fra tabelvisninger"
+
+msgid "Deactivate this field from Form views"
+msgstr "Deaktiver dette felt fra formularvisninger"
+
+msgid "Reset module data"
+msgstr "Nulstil modul data"
+
+msgid "This deletes all data records for this module including logs, files, relations, workflows and more"
+msgstr "Dette sletter alle dataposter for dette modul inklusive logfiler, filer, relationer, arbejdsgange og mere"
+
+msgid "Reset all modules (data only)"
+msgstr "Nulstil alle moduler (kun data)"
+
+msgid "Reset all modules to standard"
+msgstr "Nulstil alle moduler til standard"
+
+msgid "Tasks completed"
+msgstr "Opgaver fuldført"
+
+msgid "Unread comments"
+msgstr "Ulæste kommentarer"
+
+msgid "Password Module Administrators"
+msgstr "Adgangskode modul administratorer"
+
+msgid "Password Module Users"
+msgstr "Adgangskode modul brugere"
+
+msgid "Field design"
+msgstr "Felt design"
+
+msgid "General"
+msgstr "Generel"
+
+msgid "Create a template based on the completed form below"
+msgstr "Opret skabelon ud fra nedenstående udfyldt formular"
+
+msgid "Delete the current selected template"
+msgstr "Slet den aktuelle valgte skabelon"
+
+msgid "Create public template that all users can choose"
+msgstr "Opret offentlig skabelon, som alle brugere kan vælge"
+
+msgid "Choose template"
+msgstr "Vælg skabelon"
+
+msgid "Are you sure?"
+msgstr "Er du sikker?"
+
+msgid "Make field disabled on view/edit"
+msgstr "Gør feltet deaktiveret ved visning/redigering"
+
+msgid "Locked on create"
+msgstr "Låst på oprettelse"
+
+msgid "Locked on view"
+msgstr "Låst på visning"
+
+msgid "Group filter"
+msgstr "Gruppefilter"
+
+msgid "Deactivate Forms"
+msgstr "Deaktiver formularer"
+
+msgid "Deactivate Tables"
+msgstr "Deaktiver tabeller"
+
+msgid "Retrieve field but hide it"
+msgstr "Hent feltet, men skjul det"
+
+msgid "Hidden"
+msgstr "Skjult"
+
+msgid "Preview of team members"
+msgstr "Forhåndsvisning af teammedlemmer"
+
+msgid "Groups added"
+msgstr "Grupper tilføjet"
+
+msgid "Quarantene state"
+msgstr "Karantenetilstand"
+
+msgid "Email to send to"
+msgstr "E-mail at sende til"
+
+msgid "Or choose prepared email"
+msgstr "Eller vælg forberedt e-mail"
+
+msgid "Attach PDF"
+msgstr "Vedhæft PDF"
+
+msgid "Create PDF"
+msgstr "Opret PDF"
+
+msgid "Found in field"
+msgstr "Fundet i felt"
+
+msgid "Standard values"
+msgstr "Standardværdier"
+
+msgid "If you want check fields to be default checked you must add the text checked to the default value"
+msgstr "Hvis du ønsker, at afkrydsningsfelter skal være standardmarkerede, skal du tilføje den markerede tekst til standardværdien"
+
+msgid "Remove fields"
+msgstr "Fjern felter"
+
+msgid "Do not delete standard fields. If you feel they are not necessary - disable them in table view and modal view"
+msgstr "Slet ikke standardfelter. Hvis du føler, at de ikke er nødvendige - deaktiver dem i tabelvisning og modalvisning"
+
+msgid "Field widths"
+msgstr "Feltbredder"
+
+msgid "Field widths are determined using Bootstrap's grid system. A row is 12 blocks wide, so you can set a field's width by specifying how many blocks it should occupy. For example, setting the width to 6 will make the field half the row's width"
+msgstr "Feltbredder bestemmes ved hjælp af Bootstraps gittersystem. En række er 12 blokke bred, så du kan indstille et felts bredde ved at angive, hvor mange blokke det skal optage. Hvis du f.eks. indstiller bredden til 6, bliver feltet halvdelen af ​​rækkens bredde"
+
+msgid "Create Project"
+msgstr "Opret Projekt"
+
+msgid "Transfer elments to other user"
+msgstr "Overfør elementer til en anden bruger"
+

@@ -1,0 +1,3055 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Practicle\n"
+"POT-Creation-Date: 2019-05-16 11:25+0200\n"
+"PO-Revision-Date: 2019-07-11 13:00+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.2.3\n"
+"X-Poedit-Basepath: .\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: zh_CN\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+
+msgid "A customer contact person must be chosen - please create customer contact person before creating"
+msgstr "创建之前必须选择客户联系人 - 请先创建客户联系人"
+
+msgid "Account number"
+msgstr "账号"
+
+msgid "Actions"
+msgstr "操作"
+
+msgid "Active"
+msgstr "活动"
+
+msgid "Active projects"
+msgstr "活动项目"
+
+msgid "Activity"
+msgstr "活动"
+
+msgid "Add"
+msgstr "添加"
+
+msgid "Add News"
+msgstr "添加新闻"
+
+msgid "Add as favorite"
+msgstr "添加为收藏"
+
+msgid "Add as task"
+msgstr "添加为任务"
+
+msgid "Add document"
+msgstr "添加文档"
+
+msgid "Add new task"
+msgstr "添加新任务"
+
+msgid "Add to existing problem"
+msgstr "添加到现有问题"
+
+msgid "Address"
+msgstr "地址"
+
+msgid "Administrate News"
+msgstr "管理新闻"
+
+msgid "Affected Company"
+msgstr "受影响公司"
+
+msgid "Alerts"
+msgstr "警报"
+
+msgid "All News"
+msgstr "所有新闻"
+
+msgid "All active"
+msgstr "所有活动"
+
+msgid "All closed"
+msgstr "所有已关闭"
+
+msgid "All overdue"
+msgstr "所有过期"
+
+msgid "Amount spend"
+msgstr "花费金额"
+
+msgid "Anniversarys"
+msgstr "纪念日"
+
+msgid "Answer"
+msgstr "回答"
+
+msgid "Approval Tasks"
+msgstr "批准任务"
+
+msgid "Approver"
+msgstr "批准人"
+
+msgid "Assess"
+msgstr "评估"
+
+msgid "Assets"
+msgstr "资产"
+
+msgid "Assigned"
+msgstr "已分配"
+
+msgid "Assigned Team"
+msgstr "已分配团队"
+
+msgid "Assigned to responsible"
+msgstr "已分配给责任人"
+
+msgid "Assigned to team"
+msgstr "已分配给团队"
+
+msgid "Attach a workflow"
+msgstr "附加工作流程"
+
+msgid "Authorize"
+msgstr "授权"
+
+msgid "Average solution time"
+msgstr "平均解决时间"
+
+msgid "Await Customer"
+msgstr "等待客户"
+
+msgid "Awaiting"
+msgstr "等待中"
+
+msgid "Awaiting customer"
+msgstr "等待客户"
+
+msgid "Backout Plan"
+msgstr "回退计划"
+
+msgid "Bank"
+msgstr "银行"
+
+msgid "Birthday"
+msgstr "生日"
+
+msgid "Birthdays"
+msgstr "生日"
+
+msgid "Board"
+msgstr "看板"
+
+msgid "Boards"
+msgstr "看板"
+
+msgid "Bought"
+msgstr "已购买"
+
+msgid "Branche news"
+msgstr "分支新闻"
+
+msgid "Bronze"
+msgstr "铜牌"
+
+msgid "Budget Spend"
+msgstr "预算支出"
+
+msgid "CBR"
+msgstr "CBR"
+
+msgid "Cancel"
+msgstr "取消"
+
+msgid "Canceled"
+msgstr "已取消"
+
+msgid "Categories"
+msgstr "分类"
+
+msgid "Category"
+msgstr "类别"
+
+msgid "Category Administration"
+msgstr "类别管理"
+
+msgid "Certificates"
+msgstr "证书"
+
+msgid "Change"
+msgstr "更改"
+
+msgid "Change Password"
+msgstr "更改密码"
+
+msgid "Change password"
+msgstr "更改密码"
+
+msgid "Changes"
+msgstr "更改"
+
+msgid "Changes saved"
+msgstr "更改已保存"
+
+msgid "Choose file"
+msgstr "选择文件"
+
+msgid "City"
+msgstr "城市"
+
+msgid "Close"
+msgstr "关闭"
+
+msgid "Closed"
+msgstr "已关闭"
+
+msgid "Comment"
+msgstr "评论"
+
+msgid "Companies"
+msgstr "公司"
+
+msgid "Company"
+msgstr "公司"
+
+msgid "Company Name"
+msgstr "公司名称"
+
+msgid "Complete"
+msgstr "完成"
+
+msgid "Completed"
+msgstr "已完成"
+
+msgid "Content"
+msgstr "内容"
+
+msgid "Contracts"
+msgstr "合同"
+
+msgid "Corporate Links"
+msgstr "公司链接"
+
+msgid "Country"
+msgstr "国家"
+
+msgid "Create"
+msgstr "创建"
+
+msgid "Create as new problem"
+msgstr "创建为新问题"
+
+msgid "Create document"
+msgstr "创建文档"
+
+msgid "Create favorite from this"
+msgstr "从这个创建喜欢"
+
+msgid "Create new"
+msgstr "创建新的"
+
+msgid "Create random password"
+msgstr "创建随机密码"
+
+msgid "Create task from this"
+msgstr "从这个创建任务"
+
+msgid "Created"
+msgstr "已创建"
+
+msgid "Customer"
+msgstr "客户"
+
+msgid "Customer Companies"
+msgstr "客户公司"
+
+msgid "Customer Contacts"
+msgstr "客户联系人"
+
+msgid "Customer contacts"
+msgstr "客户联系人"
+
+msgid "Customers"
+msgstr "客户"
+
+msgid "Dashboards"
+msgstr "仪表板"
+
+msgid "Data not yet registered"
+msgstr "尚未注册数据"
+
+msgid "Date"
+msgstr "日期"
+
+msgid "Date performed"
+msgstr "执行日期"
+
+msgid "Deadline"
+msgstr "截止日期"
+
+msgid "Deadline Review"
+msgstr "期限レビュー"
+
+msgid "Deadline for review"
+msgstr "审核截止日期"
+
+msgid "Delete"
+msgstr "删除"
+
+msgid "Deleted"
+msgstr "已删除"
+
+msgid "Description"
+msgstr "描述"
+
+msgid "Descriptions"
+msgstr "描述"
+
+msgid "Design"
+msgstr "设计"
+
+msgid "Destination"
+msgstr "目的地"
+
+msgid "Details"
+msgstr "详细信息"
+
+msgid "Dispatch que"
+msgstr "发货队列"
+
+msgid "Document Name"
+msgstr "文档名称"
+
+msgid "Documents"
+msgstr "文件"
+
+msgid "Edit"
+msgstr "编辑"
+
+msgid "Edit Task"
+msgstr "编辑任务"
+
+msgid "Edit Userprofile"
+msgstr "编辑用户配置文件"
+
+msgid "Email"
+msgstr "电子邮件"
+
+msgid "Employees"
+msgstr "员工"
+
+msgid "Enable Google Authenticator"
+msgstr "启用Google Authenticator"
+
+msgid "End"
+msgstr "结束"
+
+msgid "Error updating password"
+msgstr "更新密码时出错"
+
+msgid "Estimated Budget"
+msgstr "预算"
+
+msgid "Estimated Hours"
+msgstr "预计时间"
+
+msgid "Estimated budget"
+msgstr "预算"
+
+msgid "Expiration Date"
+msgstr "到期日"
+
+msgid "Expires"
+msgstr "到期"
+
+msgid "Favorite"
+msgstr "收藏夹"
+
+msgid "Favorites"
+msgstr "收藏夹"
+
+msgid "File"
+msgstr "文件"
+
+msgid "Filename"
+msgstr "文件名"
+
+msgid "Files"
+msgstr "文件"
+
+msgid "Finished projects"
+msgstr "已完成的项目"
+
+msgid "First Name"
+msgstr "名"
+
+msgid "Firstname"
+msgstr "名"
+
+msgid "From"
+msgstr "从"
+
+msgid "Full history"
+msgstr "完整历史记录"
+
+msgid "Generate files"
+msgstr "生成文件"
+
+msgid "Generated password"
+msgstr "生成的密码"
+
+msgid "Go"
+msgstr "前往"
+
+msgid "Go to favorites"
+msgstr "转到收藏夹"
+
+msgid "Gold"
+msgstr "金"
+
+msgid "Group"
+msgstr "组"
+
+msgid "Group Access"
+msgstr "组访问"
+
+msgid "Handheld Devices"
+msgstr "便携设备"
+
+msgid "Handheld device updated"
+msgstr "手持ちデバイスが更新されました"
+
+msgid "Headquarters"
+msgstr "总部"
+
+msgid "Help"
+msgstr "帮助"
+
+msgid "High"
+msgstr "高"
+
+msgid "History"
+msgstr "历史"
+
+msgid "Hostname"
+msgstr "主机名"
+
+msgid "Hours spend"
+msgstr "消耗时间"
+
+msgid "Implementing"
+msgstr "实施中"
+
+msgid "In Assessment"
+msgstr "评估中"
+
+msgid "In Authorization"
+msgstr "授权中"
+
+msgid "In Resolution Process"
+msgstr "解决中"
+
+msgid "In Review"
+msgstr "审核中"
+
+msgid "In Scheduling"
+msgstr "调度中"
+
+msgid "In resolution process"
+msgstr "解决中"
+
+msgid "In review"
+msgstr "审核中"
+
+msgid "Incident"
+msgstr "事件"
+
+msgid "Incidents"
+msgstr "事件"
+
+msgid "Internal Comment"
+msgstr "内部评论"
+
+msgid "Invoice"
+msgstr "发票"
+
+msgid "Item number"
+msgstr "物品编号"
+
+msgid "Job Titel"
+msgstr "职位"
+
+msgid "Language"
+msgstr "语言"
+
+msgid "Languages"
+msgstr "语言"
+
+msgid "Last Logon"
+msgstr "上次登录时间"
+
+msgid "Last Name"
+msgstr "姓"
+
+msgid "Last changed"
+msgstr "上次修改时间"
+
+msgid "Last changed by"
+msgstr "上次修改人"
+
+msgid "Last logged on"
+msgstr "上次登录时间"
+
+msgid "Lastlogon"
+msgstr "上次登录时间"
+
+msgid "Lastname"
+msgstr "姓"
+
+msgid "Latest Activity"
+msgstr "最新活动"
+
+msgid "Licenses"
+msgstr "许可证"
+
+msgid "Links added"
+msgstr "添加的链接"
+
+msgid "Links available"
+msgstr "可用链接"
+
+msgid "Lock"
+msgstr "锁定"
+
+msgid "Log out"
+msgstr "登出"
+
+msgid "Logout"
+msgstr "登出"
+
+msgid "Low"
+msgstr "低"
+
+msgid "Main Menu"
+msgstr "主菜单"
+
+msgid "Manager"
+msgstr "经理"
+
+msgid "Mark all as read"
+msgstr "全部标记为已读"
+
+msgid "Menu"
+msgstr "菜单"
+
+msgid "Messages"
+msgstr "消息"
+
+msgid "Mobile Phone"
+msgstr "手机"
+
+msgid "Mobile Phones"
+msgstr "手机"
+
+msgid "Mobile Subscription"
+msgstr "手机订阅"
+
+msgid "Mobile Subscriptions"
+msgstr "手机订阅"
+
+msgid "Model"
+msgstr "模型"
+
+msgid "My"
+msgstr "我的"
+
+msgid "My Tasks"
+msgstr "我的任务"
+
+msgid "My Team"
+msgstr "我的团队"
+
+msgid "My favorites"
+msgstr "我的收藏夹"
+
+msgid "My orders"
+msgstr "我的订单"
+
+msgid "My projects"
+msgstr "我的项目"
+
+msgid "My teams"
+msgstr "我的团队"
+
+msgid "Name"
+msgstr "名字"
+
+msgid "Name for new category"
+msgstr "新类别的名称"
+
+msgid "Nearest Manager"
+msgstr "最近的经理"
+
+msgid "New"
+msgstr "新"
+
+msgid "New Project Task"
+msgstr "新项目任务"
+
+msgid "New Task"
+msgstr "新任务"
+
+msgid "New activity"
+msgstr "新活动"
+
+msgid "New password randomizer"
+msgstr "新密码随机生成器"
+
+msgid "News"
+msgstr "新闻"
+
+msgid "No"
+msgstr "不"
+
+msgid "No Comments yet"
+msgstr "暂无评论"
+
+msgid "No account found with that username"
+msgstr "未找到使用该用户名的帐户"
+
+msgid "No workflow"
+msgstr "无工作流程"
+
+msgid "No."
+msgstr "号码"
+
+msgid "None registered"
+msgstr "未注册"
+
+msgid "Normal"
+msgstr "正常"
+
+msgid "Not assigned responsible"
+msgstr "未指定负责人"
+
+msgid "Not assigned team"
+msgstr "未指定团队"
+
+msgid "Notifications"
+msgstr "通知"
+
+msgid "Notify Customer"
+msgstr "通知客户"
+
+msgid "Now download Google Authenticator App on your smartphone and scan this QR code - Do not Log Out before you have scanned this QR code successfully in the Google Authenticator App!"
+msgstr "现在在智能手机上下载 Google Authenticator 应用程序并扫描此 QR 码 - 在成功在 Google Authenticator 应用程序中扫描此 QR 码之前，请不要退出登录！"
+
+msgid "Open"
+msgstr "打开"
+
+msgid "Order"
+msgstr "订购"
+
+msgid "Orders"
+msgstr "订单"
+
+msgid "Organization"
+msgstr "组织"
+
+msgid "Overdue"
+msgstr "过期"
+
+msgid "Overdue projects"
+msgstr "过期项目"
+
+msgid "Overdue status"
+msgstr "过期状态"
+
+msgid "Overview"
+msgstr "概览"
+
+msgid "Owner"
+msgstr "所有者"
+
+msgid "Participants"
+msgstr "参与者"
+
+msgid "Password"
+msgstr "密码"
+
+msgid "Passwords"
+msgstr "密码"
+
+msgid "Payment Due"
+msgstr "付款到期"
+
+msgid "Payment informations"
+msgstr "付款信息"
+
+msgid "Personal skills"
+msgstr "个人技能"
+
+msgid "Phone"
+msgstr "电话"
+
+msgid "Phone number"
+msgstr "电话号码"
+
+msgid "Preview"
+msgstr "预览"
+
+msgid "Price each"
+msgstr "每个价格"
+
+msgid "Print"
+msgstr "打印"
+
+msgid "Priority"
+msgstr "优先级"
+
+msgid "Problem description"
+msgstr "问题描述"
+
+msgid "Problem descriptions"
+msgstr "问题描述"
+
+msgid "Problem text"
+msgstr "问题文本"
+
+msgid "Problems"
+msgstr "问题"
+
+msgid "Producer"
+msgstr "生产商"
+
+msgid "Professional skills"
+msgstr "职业技能"
+
+msgid "Profile"
+msgstr "个人资料"
+
+msgid "Profile picture"
+msgstr "个人资料图片"
+
+msgid "Progress"
+msgstr "进展"
+
+msgid "Project"
+msgstr "项目"
+
+msgid "Project Completed"
+msgstr "项目完成"
+
+msgid "Project Deadline"
+msgstr "项目截止日期"
+
+msgid "Project Description"
+msgstr "项目描述"
+
+msgid "Project Manager"
+msgstr "项目经理"
+
+msgid "Project Name"
+msgstr "项目名称"
+
+msgid "Project Responsible"
+msgstr "项目负责人"
+
+msgid "Project Start Date"
+msgstr "项目开始日期"
+
+msgid "Project Task Completed"
+msgstr "项目任务已完成"
+
+msgid "Project Tasks"
+msgstr "项目任务"
+
+msgid "Project participants"
+msgstr "项目参与者"
+
+msgid "Projects"
+msgstr "项目"
+
+msgid "Public"
+msgstr "公开"
+
+msgid "Public category"
+msgstr "公共类别"
+
+msgid "Qty"
+msgstr "数量"
+
+msgid "Quick Actions"
+msgstr "快速操作"
+
+msgid "Quick Launch Menu"
+msgstr "快速启动菜单"
+
+msgid "Read all"
+msgstr "全部阅读"
+
+msgid "Received"
+msgstr "已收到"
+
+msgid "Recieve"
+msgstr "接收"
+
+msgid "Related"
+msgstr "相关"
+
+msgid "Related Module"
+msgstr "相关模块"
+
+msgid "Related problems"
+msgstr "相关问题"
+
+msgid "Related projects"
+msgstr "相关项目"
+
+msgid "Related task"
+msgstr "相关任务"
+
+msgid "Related tickets"
+msgstr "相关票务"
+
+msgid "Relations"
+msgstr "关系"
+
+msgid "Remove"
+msgstr "移除"
+
+msgid "Request"
+msgstr "请求"
+
+msgid "Requester"
+msgstr "请求者"
+
+msgid "Requests"
+msgstr "请求"
+
+msgid "Reset"
+msgstr "重置"
+
+msgid "Resolve"
+msgstr "解决"
+
+msgid "Resolved"
+msgstr "已解决"
+
+msgid "Resolved or workaround"
+msgstr "已解决或解决方法"
+
+msgid "Responsible"
+msgstr "负责人"
+
+msgid "Review Tasks"
+msgstr "审查任务"
+
+msgid "Reviewer"
+msgstr "审核人"
+
+msgid "Roles"
+msgstr "角色"
+
+msgid "Save"
+msgstr "保存"
+
+msgid "Scheduled"
+msgstr "计划"
+
+msgid "Search"
+msgstr "搜索"
+
+msgid "Search document attachement content"
+msgstr "搜索文档附件内容"
+
+msgid "Search document content"
+msgstr "搜索文档内容"
+
+msgid "Search document name"
+msgstr "搜索文档名称"
+
+msgid "Search document names"
+msgstr "搜索文档名称"
+
+msgid "Search for"
+msgstr "搜索"
+
+msgid "Search in"
+msgstr "搜索"
+
+msgid "Search in document attachements"
+msgstr "搜索文档附件"
+
+msgid "Search in document attachment content"
+msgstr "搜索文档附件内容"
+
+msgid "Search problem descriptions"
+msgstr "搜索问题描述"
+
+msgid "Select News Channel"
+msgstr "选择新闻频道"
+
+msgid "Select Workflow"
+msgstr "选择工作流程"
+
+msgid "Select to delete"
+msgstr "选择以删除"
+
+msgid "Send Message"
+msgstr "发送消息"
+
+msgid "Serial Number"
+msgstr "序列号"
+
+msgid "Servers"
+msgstr "服务器"
+
+msgid "Service Level Agreement"
+msgstr "服务级别协议"
+
+msgid "Settings"
+msgstr "设置"
+
+msgid "Viser"
+msgstr "显示"
+
+msgid "Sidebar Image"
+msgstr "侧边栏图片"
+
+msgid "Silver"
+msgstr "银"
+
+msgid "Since"
+msgstr "自从"
+
+msgid "Skills"
+msgstr "技能"
+
+msgid "Solution"
+msgstr "解决方案"
+
+msgid "Solution text"
+msgstr "解决方案文本"
+
+msgid "Solutions"
+msgstr "解决方案"
+
+msgid "Something went wrong, please try again later"
+msgstr "出了些问题，请稍后再试"
+
+msgid "Soon overdue"
+msgstr "即将过期"
+
+msgid "Standard Answers"
+msgstr "标准答案"
+
+msgid "Start"
+msgstr "开始"
+
+msgid "Start Date"
+msgstr "开始日期"
+
+msgid "Start solution"
+msgstr "开始解决方案"
+
+msgid "Status"
+msgstr "状态"
+
+msgid "Step"
+msgstr "步骤"
+
+msgid "Subject"
+msgstr "主题"
+
+msgid "Subjects"
+msgstr "主题"
+
+msgid "Submit Payment"
+msgstr "提交付款"
+
+msgid "Subtotal"
+msgstr "小计"
+
+msgid "Tablet"
+msgstr "平板电脑"
+
+msgid "Task"
+msgstr "任务"
+
+msgid "Task Deadline"
+msgstr "任务截止日期"
+
+msgid "Task Description"
+msgstr "任务描述"
+
+msgid "Task Manager"
+msgstr "任务管理器"
+
+msgid "Task Name"
+msgstr "任务名称"
+
+msgid "Task Participants"
+msgstr "任务参与者"
+
+msgid "Task Responsible"
+msgstr "任务负责人"
+
+msgid "Task Started"
+msgstr "任务已开始"
+
+msgid "Task Status"
+msgstr "任务状态"
+
+msgid "Task activities"
+msgstr "任务活动"
+
+msgid "Task created"
+msgstr "任务已创建"
+
+msgid "Task deadline"
+msgstr "任务截止日期"
+
+msgid "Task history"
+msgstr "任务历史"
+
+msgid "Task progress"
+msgstr "任务进度"
+
+msgid "Taskboard"
+msgstr "任务看板"
+
+msgid "Tasks"
+msgstr "任务"
+
+msgid "Team"
+msgstr "团队"
+
+msgid "Text"
+msgstr "文本"
+
+msgid "Time Zone"
+msgstr "时区"
+
+msgid "Time registrations"
+msgstr "时间注册"
+
+msgid "Time spend"
+msgstr "花费的时间"
+
+msgid "Timeline"
+msgstr "时间轴"
+
+msgid "To"
+msgstr "至"
+
+msgid "Total"
+msgstr "总计"
+
+msgid "Type"
+msgstr "类型"
+
+msgid "Type Description"
+msgstr "类型说明"
+
+msgid "Type new password"
+msgstr "输入新密码"
+
+msgid "Unread"
+msgstr "未读"
+
+msgid "Update"
+msgstr "更新"
+
+msgid "Update Task"
+msgstr "更新任务"
+
+msgid "Upload"
+msgstr "上传"
+
+msgid "Urgent"
+msgstr "紧急"
+
+msgid "User"
+msgstr "用户"
+
+msgid "Username"
+msgstr "用户名"
+
+msgid "Users"
+msgstr "用户"
+
+msgid "Users Available"
+msgstr "可用用户"
+
+msgid "Users Online"
+msgstr "在线用户"
+
+msgid "Users in CAB"
+msgstr "CAB中的用户"
+
+msgid "Usertype"
+msgstr "用户类型"
+
+msgid "Vat"
+msgstr "增值税"
+
+msgid "Version"
+msgstr "版本"
+
+msgid "View"
+msgstr "查看"
+
+msgid "Weather"
+msgstr "天气"
+
+msgid "Webpage"
+msgstr "网页"
+
+msgid "When you have scanned the QR code with success - log off and login again. You will from now on be required to use Google Authenticator to finish your logins"
+msgstr "成功扫描QR码后-注销并重新登录。 从现在开始，您将需要使用Google Authenticator完成登录"
+
+msgid "Widgets added"
+msgstr "小部件已添加"
+
+msgid "Widgets available"
+msgstr "可用小部件"
+
+msgid "Workflow"
+msgstr "工作流程"
+
+msgid "Workflows"
+msgstr "工作流程"
+
+msgid "Workstations"
+msgstr "工作站"
+
+msgid "Yes"
+msgstr "是"
+
+msgid "You are not allowed access to this module"
+msgstr "您无权访问此模块"
+
+msgid "Zip Code"
+msgstr "邮政编码"
+
+msgid "account"
+msgstr "账户"
+
+msgid "assets"
+msgstr "资产"
+
+msgid "assigned responsible"
+msgstr "分配的负责人"
+
+msgid "assigned team"
+msgstr "分配的团队"
+
+msgid "change"
+msgstr "更改"
+
+msgid "changes"
+msgstr "更改"
+
+msgid "close"
+msgstr "关闭"
+
+msgid "companies"
+msgstr "公司"
+
+msgid "complete"
+msgstr "完成"
+
+msgid "created"
+msgstr "已创建"
+
+msgid "customers"
+msgstr "客户"
+
+msgid "delete"
+msgstr "删除"
+
+msgid "exceeded"
+msgstr "超过"
+
+msgid "hours in total"
+msgstr "总计小时"
+
+msgid "in"
+msgstr "在"
+
+msgid "incident"
+msgstr "事件"
+
+msgid "incidents"
+msgstr "事件"
+
+msgid "no"
+msgstr "没有"
+
+msgid "now recieved"
+msgstr "现在收到"
+
+msgid "of"
+msgstr "的"
+
+msgid "open"
+msgstr "打开"
+
+msgid "overview"
+msgstr "概览"
+
+msgid "password"
+msgstr "密码"
+
+msgid "passwords"
+msgstr "密码"
+
+msgid "preview"
+msgstr "预览"
+
+msgid "problems"
+msgstr "问题"
+
+msgid "records"
+msgstr "记录"
+
+msgid "requests"
+msgstr "请求"
+
+msgid "settings"
+msgstr "设置"
+
+msgid "solutions"
+msgstr "解决方案"
+
+msgid "to"
+msgstr "到"
+
+msgid "to existing problem"
+msgstr "对现有问题"
+
+msgid "total"
+msgstr "总计"
+
+msgid "username"
+msgstr "用户名"
+
+msgid "view"
+msgstr "查看"
+
+msgid "yes"
+msgstr "是"
+
+msgid "No data available in table"
+msgstr "表中没有可用数据"
+
+msgid "No entries to show"
+msgstr "没有可显示的条目"
+
+msgid "No records to display"
+msgstr "没有记录可显示"
+
+msgid "Archive"
+msgstr "存档"
+
+msgid "Timeregistrations"
+msgstr "时间记录"
+
+msgid "Dispatch"
+msgstr "调度"
+
+msgid "Report"
+msgstr "报告"
+
+msgid "Me as Participant"
+msgstr "作为参与者的我"
+
+msgid "Me as Manager"
+msgstr "作为负责人的我"
+
+msgid "Me as Responsible"
+msgstr "作为负责人的我"
+
+msgid "Expiration"
+msgstr "到期"
+
+msgid "Similarity"
+msgstr "相似性"
+
+msgid "An indicative comparison of words between the version and the previous version"
+msgstr "版本与上一个版本之间词语的指示性比较"
+
+msgid "Asset"
+msgstr "资产"
+
+msgid "asset"
+msgstr "分辨率"
+
+msgid "Resolution"
+msgstr "分辨率"
+
+msgid "deadline"
+msgstr "截止日期"
+
+msgid "subject"
+msgstr "主题"
+
+msgid "subjects"
+msgstr "主题"
+
+msgid "taskboard"
+msgstr "任务看板"
+
+msgid "Create New"
+msgstr "创建新"
+
+msgid "Your"
+msgstr "你的"
+
+msgid "Dispatch view"
+msgstr "发件视图"
+
+msgid "All open"
+msgstr "所有打开"
+
+msgid "Export"
+msgstr "导出"
+
+msgid "Export view"
+msgstr "导出视图"
+
+msgid "Problems are much easier to create directly via incidents, requests, changes etc."
+msgstr "问题很容易通过事件、请求、更改等直接创建。"
+
+msgid "Add to taskboard"
+msgstr "添加到任务板"
+
+msgid "Deadline Backout"
+msgstr "截止日期回退"
+
+msgid "New message"
+msgstr "新消息"
+
+msgid "Recipient"
+msgstr "收件人"
+
+msgid "Message"
+msgstr "消息"
+
+msgid "Answer Templates"
+msgstr "答复模板"
+
+msgid "not assigned team"
+msgstr "未分配团队"
+
+msgid "not assigned responsible"
+msgstr "未分配负责人"
+
+msgid "created from"
+msgstr "由...创建"
+
+msgid "Personal"
+msgstr "个人"
+
+msgid "users"
+msgstr "用户"
+
+msgid "Created By"
+msgstr "由...创建"
+
+msgid "Todays time registration"
+msgstr "今天时间登记"
+
+msgid "Create new project"
+msgstr "创建新项目"
+
+msgid "Group Managers"
+msgstr "组管理员"
+
+msgid "User group that can administrate this project"
+msgstr "可以管理此项目的用户组"
+
+msgid "User group that can participate in this project"
+msgstr "可以参与此项目的用户组"
+
+msgid "Related Customer"
+msgstr "相关客户"
+
+msgid "Customer that this project is to be related to"
+msgstr "与该项目相关的客户"
+
+msgid "Create password"
+msgstr "创建密码"
+
+msgid "Enabled"
+msgstr "已启用"
+
+msgid "Disabled"
+msgstr "已停用"
+
+msgid "Workstation"
+msgstr "工作站"
+
+msgid "Certificate"
+msgstr "证书"
+
+msgid "New project"
+msgstr "新项目"
+
+msgid "Add to your watchlist"
+msgstr "添加到您的观察列表中"
+
+msgid "Quick search"
+msgstr "快速搜索"
+
+msgid "Related sprint"
+msgstr "相关冲刺"
+
+msgid "Task participants"
+msgstr "任务参与者"
+
+msgid "Delete project"
+msgstr "删除项目"
+
+msgid "Project Sprint"
+msgstr "项目冲刺"
+
+msgid "Generate project tasks"
+msgstr "生成项目任务"
+
+msgid "Remove project tasks"
+msgstr "删除项目任务"
+
+msgid "Real hours spend"
+msgstr "实际花费的时间"
+
+msgid "Calculated from real timeregistrations"
+msgstr "根据实际的时间记录计算"
+
+msgid "Open Projects"
+msgstr "打开的项目"
+
+msgid "Overall process"
+msgstr "总体过程"
+
+msgid "Budget spend"
+msgstr "预算支出"
+
+msgid "Time registered"
+msgstr "时间注册"
+
+msgid "Create baseline"
+msgstr "创建基线"
+
+msgid "Create *.ics file"
+msgstr "创建.ics文件"
+
+msgid "Create ICS file"
+msgstr "创建ICS文件"
+
+msgid "Archive project"
+msgstr "存档项目"
+
+msgid "Add task"
+msgstr "添加任务"
+
+msgid "today"
+msgstr "今天"
+
+msgid "month"
+msgstr "月"
+
+msgid "week"
+msgstr "星期"
+
+msgid "day"
+msgstr "天"
+
+msgid "list"
+msgstr "名单"
+
+msgid "Create duplicate"
+msgstr "创建副本"
+
+msgid "Withdrawn"
+msgstr "已撤回"
+
+msgid "In construction"
+msgstr "在建"
+
+msgid "In approval"
+msgstr "审批中"
+
+msgid "Published"
+msgstr "已发布"
+
+msgid "Your open"
+msgstr "您的开放"
+
+msgid "This task is private and you are not added as project task participant"
+msgstr "此任务为私人任务，您没有添加为项目任务参与者"
+
+msgid "You are not added as project participant, so you cannot see this project task"
+msgstr "您没有添加为项目参与者，因此无法查看此项目任务"
+
+msgid "Existing Categorys"
+msgstr "现有类别"
+
+msgid "Category Name"
+msgstr "类别名称"
+
+msgid "Project Task Categories"
+msgstr "项目任务类别"
+
+msgid "Project Categories"
+msgstr "项目类别"
+
+msgid "Project Task Category Administration"
+msgstr "项目任务类别管理"
+
+msgid "articles"
+msgstr "文章"
+
+msgid "Articles"
+msgstr "文章"
+
+msgid "Article"
+msgstr "文章"
+
+msgid "article"
+msgstr "文章"
+
+msgid "My articles"
+msgstr "我的文章"
+
+msgid "My Articles"
+msgstr "我的文章"
+
+msgid "Create Article"
+msgstr "创建文章"
+
+msgid "Article name"
+msgstr "文章名称"
+
+msgid "Article content"
+msgstr "文章内容"
+
+msgid "Article attachments"
+msgstr "文章附件"
+
+msgid "This task is delayed"
+msgstr "此任务延迟"
+
+msgid "Statistics"
+msgstr "统计数据"
+
+msgid "Estimated hours completed"
+msgstr "预计完成的小时"
+
+msgid "Number Of Project Tasks"
+msgstr "项目任务数量"
+
+msgid "Number Of Sprints"
+msgstr "迭代数量"
+
+msgid "Project Tasks Completed"
+msgstr "已完成的项目任务"
+
+msgid "Create project"
+msgstr "创建项目"
+
+msgid "Open projects"
+msgstr "打开的项目"
+
+msgid "Closed projects"
+msgstr "关闭的项目"
+
+msgid "All projects"
+msgstr "所有项目"
+
+msgid "Search projects"
+msgstr "搜索项目"
+
+msgid "updated"
+msgstr "已更新"
+
+msgid "Push tasks ahead"
+msgstr "推迟任务"
+
+msgid "This is used for pushing future tasks, including this, a number of days forward"
+msgstr "此选项用于将未来的任务向前推移，包括此任务在内，推移一定天数"
+
+msgid "For how many days forward should tasks from this tasks start day be moved? Note: you can use minus to subtract days instead!"
+msgstr "从任务开始日起，任务应向前推进多少天？注意：您可以使用负号来减去天数！"
+
+msgid "Active inquiries"
+msgstr "活跃查询"
+
+msgid "Your active inquiries"
+msgstr "您的活跃查询"
+
+msgid "Your closed inquiries"
+msgstr "您的关闭的查询"
+
+msgid "Your companys active inquiries"
+msgstr "您公司的活跃查询"
+
+msgid "Your companys closed inquiries"
+msgstr "您公司的关闭的查询"
+
+msgid "Search for help in our knowledge database"
+msgstr "在我们的知识数据库中搜索帮助"
+
+msgid "Search here"
+msgstr "在此处搜索"
+
+msgid "Your Companys SLA Agreement is:"
+msgstr "您公司的SLA协议是："
+
+msgid "This means you can expect the following reaction times within opening hours from us."
+msgstr "这意味着您可以在我们的营业时间内期待以下反应时间。"
+
+msgid "Did you know... that you can also contact us and create tickets via our mail"
+msgstr "你知道...您也可以通过电子邮件与我们联系并创建工单"
+
+msgid "Approve"
+msgstr "批准"
+
+msgid "Change end"
+msgstr "更改结束"
+
+msgid "Change Advisory Board, change approvers"
+msgstr "变更咨询委员会，更改批准者"
+
+msgid "Valid reason"
+msgstr "有效原因"
+
+msgid "Implementation Plan"
+msgstr "实施计划"
+
+msgid "Contact"
+msgstr "联系方式"
+
+msgid "Comments"
+msgstr "评论"
+
+msgid "allready added to your task board"
+msgstr "已添加到您的任务板"
+
+msgid "added to your task board"
+msgstr "添加到您的任务板"
+
+msgid "task"
+msgstr "任务"
+
+msgid "You need to relate a project before you can relate project tasks"
+msgstr "您必须在关联项目任务之前关联一个项目"
+
+msgid "This taskboard is a kanban based task board. You can add incidents, request, project tasks etc. to your taskboard to manage all your tasks on daily basis."
+msgstr "该任务板基于看板。您可以将事故、请求、项目任务等添加到您的任务板中，以便每天管理所有任务。"
+
+msgid "Timeregistration"
+msgstr "时间注册"
+
+msgid "News archive"
+msgstr "新闻档案"
+
+msgid "Read"
+msgstr "阅读"
+
+msgid "Assets expired"
+msgstr "资产已过期"
+
+msgid "Change approvals"
+msgstr "变更审批"
+
+msgid "Document approvals"
+msgstr "文件审批"
+
+msgid "Documents expired"
+msgstr "文件已过期"
+
+msgid "or"
+msgstr "要么"
+
+msgid "Sign in"
+msgstr "登录"
+
+msgid "Dont have an account?"
+msgstr "还没有账号吗？"
+
+msgid "Sign up"
+msgstr "注册"
+
+msgid "Forgot password?"
+msgstr "忘记密码？"
+
+msgid "Reset now"
+msgstr "立即重置"
+
+msgid "About"
+msgstr "关于"
+
+msgid "Try"
+msgstr "尝试"
+
+msgid "Business Services"
+msgstr "商业服务"
+
+msgid "Are you sure? Tasks for all involved users will be created"
+msgstr "您确定吗？将为所有涉及的用户创建任务"
+
+msgid "Are you sure? Tasks for all involved users will be deleted"
+msgstr "您确定吗？将删除所有涉及的用户的任务"
+
+msgid "Doubleclick to visit"
+msgstr "双击以访问"
+
+msgid "Decommissioned"
+msgstr "已停用"
+
+msgid "Quick Menu"
+msgstr "快速菜单"
+
+msgid "Sidenav Mini"
+msgstr "Sidenav Mini"
+
+msgid "Light"
+msgstr "光"
+
+msgid "Dark"
+msgstr "黑暗"
+
+msgid "Time registration"
+msgstr "时间注册"
+
+msgid "Manage time registration"
+msgstr "管理时间注册"
+
+msgid "New Timeregistration"
+msgstr "新的时间注册"
+
+msgid "Reactive"
+msgstr "反应"
+
+msgid "Proactive"
+msgstr "主动"
+
+msgid "Forgot password"
+msgstr "忘记密码"
+
+msgid "You will receive an e-mail typically within 60 seconds"
+msgstr "通常60秒以内にメールが届きます"
+
+msgid "Reset password"
+msgstr "重设密码"
+
+msgid "Password must contain: Minimum 8 characters, at least 1 alphabet and 1 number"
+msgstr "密码必须包含：最少8个字符，至少1个字母和1个数字"
+
+msgid "New Password"
+msgstr "新密码"
+
+msgid "Repeat"
+msgstr "重复"
+
+msgid "Repeat Password"
+msgstr "重复密码"
+
+msgid "Already have an account?"
+msgstr "已经有一个帐户了吗？"
+
+msgid "Login"
+msgstr "登录"
+
+msgid "Inactive"
+msgstr "待机"
+
+msgid "Back"
+msgstr "返回"
+
+msgid "Me participating"
+msgstr "我参与"
+
+msgid "Modules"
+msgstr "模块"
+
+msgid "Inquiries"
+msgstr "查询"
+
+msgid "My active"
+msgstr "我的活跃"
+
+msgid "My closed"
+msgstr "我的关闭"
+
+msgid "Groups"
+msgstr "群组"
+
+msgid "Teams"
+msgstr "团队"
+
+msgid "Users in group"
+msgstr "群组中的用户"
+
+msgid "Group name"
+msgstr "群组名称"
+
+msgid "module"
+msgstr "模块"
+
+msgid "Role name"
+msgstr "角色名称"
+
+msgid "Related module"
+msgstr "相关模块"
+
+msgid "Notes"
+msgstr "注释"
+
+msgid "Memberships"
+msgstr "会员资格"
+
+msgid "Group Status"
+msgstr "群组状态"
+
+msgid "Users in role"
+msgstr "角色中的用户"
+
+msgid "Groups in role"
+msgstr "角色中的群组"
+
+msgid "Groups Available"
+msgstr "可用的群组"
+
+msgid "Role Status"
+msgstr "角色状态"
+
+msgid "Members Available"
+msgstr "可用的成员"
+
+msgid "Members"
+msgstr "成员"
+
+msgid "Load Templates"
+msgstr "加载模板"
+
+msgid "Templates"
+msgstr "模板"
+
+msgid "Module"
+msgstr "模块"
+
+msgid "Removed"
+msgstr "已删除"
+
+msgid "End Date"
+msgstr "结束日期"
+
+msgid "Shortname"
+msgstr "简称"
+
+msgid "Tablename"
+msgstr "表名称"
+
+msgid "Icon"
+msgstr "图标"
+
+msgid "Product Owner"
+msgstr "产品所有者"
+
+msgid "Short Name"
+msgstr "简称"
+
+msgid "Developer Team"
+msgstr "开发团队"
+
+msgid "Related User"
+msgstr "相关用户"
+
+msgid "Related Company"
+msgstr "相关公司"
+
+msgid "Last Updated"
+msgstr "最后更新"
+
+msgid "Business Service"
+msgstr "业务服务"
+
+msgid "More"
+msgstr "更多"
+
+msgid "Internal"
+msgstr "内部"
+
+msgid "Clone"
+msgstr "克隆"
+
+msgid "Create incident from this"
+msgstr "从中创建事件"
+
+msgid "Create request from this"
+msgstr "从中创建请求"
+
+msgid "Create change from this"
+msgstr "从中创建更改"
+
+msgid "Create problem from this"
+msgstr "从中创建问题"
+
+msgid "Users in team"
+msgstr "团队中的用户"
+
+msgid "Team name"
+msgstr "团队名称"
+
+msgid "Team colour"
+msgstr "团队颜色"
+
+msgid "Team Leader"
+msgstr "团队领导"
+
+msgid "Team Manager"
+msgstr "团队经理"
+
+msgid "colour"
+msgstr "颜色"
+
+msgid "Colour"
+msgstr "颜色"
+
+msgid "Approvals"
+msgstr "批准"
+
+msgid "Follow-ups"
+msgstr "后续"
+
+msgid "Role"
+msgstr "角色"
+
+msgid "Last Edited By"
+msgstr "最后编辑者"
+
+msgid "Last Edited"
+msgstr "最后编辑"
+
+msgid "Show in relations"
+msgstr "在关系中显示"
+
+msgid "Field Name"
+msgstr "字段名称"
+
+msgid "Fields"
+msgstr "字段"
+
+msgid "Status Codes"
+msgstr "状态代码"
+
+msgid "Lookup Table"
+msgstr "查找表"
+
+msgid "Lookup Field"
+msgstr "查找字段"
+
+msgid "Done Status"
+msgstr "完成状态"
+
+msgid "SLA Supported"
+msgstr "支持的SLA"
+
+msgid "Closed Status"
+msgstr "关闭状态"
+
+msgid "Restore Points"
+msgstr "恢复点"
+
+msgid "ITSM Relations"
+msgstr "ITSM关系"
+
+msgid "CI Relations"
+msgstr "CI关系"
+
+msgid "ITSM Types"
+msgstr "ITSM类型"
+
+msgid "CI Types"
+msgstr "CI类型"
+
+msgid "Tableview"
+msgstr "表视图"
+
+msgid "Parent Task"
+msgstr "父任务"
+
+msgid "Push in next status"
+msgstr "推到下一个状态"
+
+msgid "Notify by email"
+msgstr "通过电子邮件通知"
+
+msgid "Notify"
+msgstr "通知"
+
+msgid "Text templates"
+msgstr "文本模板"
+
+msgid "Widgets on frontpage"
+msgstr "主页上的小部件"
+
+msgid "Available"
+msgstr "可用"
+
+msgid "Added"
+msgstr "添加"
+
+msgid "Code"
+msgstr "代码"
+
+msgid "Personal Meeting Room"
+msgstr "个人会议室"
+
+msgid "These are text shortcuts you can define a text code and a text template that is inserted when you type the text code in text boxes"
+msgstr "这些是文本快捷方式，您可以定义一个文本代码和一个文本模板，当您在文本框中键入文本代码时，它会被插入"
+
+msgid "½ Day"
+msgstr "½天"
+
+msgid "Day"
+msgstr "天"
+
+msgid "Week"
+msgstr "周"
+
+msgid "Month"
+msgstr "月"
+
+msgid "Today"
+msgstr "今天"
+
+msgid "End date cannot be before start date"
+msgstr "结束日期不能早于开始日期"
+
+msgid "Updated"
+msgstr "已更新"
+
+msgid "Other searches"
+msgstr "其他搜索"
+
+msgid "Scan for CVR numbers in WIKI"
+msgstr "在WIKI中扫描CVR号码"
+
+msgid "Group Name"
+msgstr "群组名称"
+
+msgid "Expired CI's"
+msgstr "过期的CI"
+
+msgid "API configuration"
+msgstr "API配置"
+
+msgid "Test update user"
+msgstr "测试更新用户"
+
+msgid "Delete user (careful it will delete the user)"
+msgstr "删除用户（小心，将删除用户）"
+
+msgid "Shared"
+msgstr "共享"
+
+msgid "made by"
+msgstr "由...制作"
+
+msgid "making better web for small business."
+msgstr "为小型企业打造更好的网站。"
+
+msgid "Support"
+msgstr "支持"
+
+msgid "Changelog"
+msgstr "更改日志"
+
+msgid "Duplicate"
+msgstr "复制"
+
+msgid "Latest activity in the project"
+msgstr "项目中最新活动"
+
+msgid "Latest activity"
+msgstr "最新活动"
+
+msgid "Activity Stream"
+msgstr "活动流"
+
+msgid "Remaining"
+msgstr "剩余"
+
+msgid "Password generator"
+msgstr "密码生成器"
+
+msgid "Forms"
+msgstr "表格"
+
+msgid "Mail Templates"
+msgstr "邮件模板"
+
+msgid "Maintenance"
+msgstr "维护"
+
+msgid "API"
+msgstr "API"
+
+msgid "Active Directory"
+msgstr "Active Directory"
+
+msgid "Helpdesk"
+msgstr "Helpdesk"
+
+msgid "System Configurator"
+msgstr "系统配置器"
+
+msgid "Administration"
+msgstr "管理"
+
+msgid "Email account for sending emails from"
+msgstr "用于发送电子邮件的电子邮件帐户"
+
+msgid "SMTP Port"
+msgstr "SMTP端口"
+
+msgid "SMTP Host"
+msgstr "SMTP主机"
+
+msgid "SMTP Username"
+msgstr "SMTP用户名"
+
+msgid "SMTP Password"
+msgstr "SMTP密码"
+
+msgid "Max 25 characters"
+msgstr "最多25个字符"
+
+msgid "Name of the system"
+msgstr "系统名称"
+
+msgid "Allow people to activate google authenticater for 2 faktor validation?"
+msgstr "允许人们激活Google身份验证器以进行两步验证？"
+
+msgid "IMAP Host"
+msgstr "IMAP主机"
+
+msgid "IMAP Username"
+msgstr "IMAP用户名"
+
+msgid "IMAP Password"
+msgstr "IMAP密码"
+
+msgid "Please make a long token"
+msgstr "请生成一个长令牌"
+
+msgid "These are the links on the login page"
+msgstr "这些是登录页面上的链接"
+
+msgid "Frontpage links"
+msgstr "首页链接"
+
+msgid "You company Facebook page"
+msgstr "公司Facebook页面"
+
+msgid "You company page"
+msgstr "公司页面"
+
+msgid "Company Website"
+msgstr "公司网站"
+
+msgid "You company LinkedIn page"
+msgstr "公司LinkedIn页面"
+
+msgid "Registration options"
+msgstr "注册选项"
+
+msgid "Allow user registrations via email?"
+msgstr "通过电子邮件允许用户注册？"
+
+msgid "Default company assignment for new user registrations?"
+msgstr "新用户注册的默认公司分配？"
+
+msgid "Default Company?"
+msgstr "默认公司？"
+
+msgid "You are done"
+msgstr "你完成了"
+
+msgid "Submit to save your settings"
+msgstr "提交以保存您的设置"
+
+msgid "Previous"
+msgstr "上一个"
+
+msgid "Next"
+msgstr "下一个"
+
+msgid "Submit"
+msgstr "提交"
+
+msgid "Settings did not get updated"
+msgstr "设置未更新"
+
+msgid "Settings updated"
+msgstr "设置已更新"
+
+msgid "Default Design"
+msgstr "默认设计"
+
+msgid "Google Authenticate"
+msgstr "Google身份验证"
+
+msgid "System"
+msgstr "系统"
+
+msgid "Wiki"
+msgstr "Wiki"
+
+msgid "Mail templates"
+msgstr "邮件模板"
+
+msgid "Knowledge base"
+msgstr "知识库"
+
+msgid "queue"
+msgstr "队列"
+
+msgid "Queue"
+msgstr "队列"
+
+msgid "Doing"
+msgstr "进行中"
+
+msgid "Done"
+msgstr "完成"
+
+msgid "done"
+msgstr "完成"
+
+msgid "doing"
+msgstr "进行中"
+
+msgid "Monday"
+msgstr "星期一"
+
+msgid "Tuesday"
+msgstr "星期二"
+
+msgid "Wednesday"
+msgstr "星期三"
+
+msgid "Thursdag"
+msgstr "星期四"
+
+msgid "Friday"
+msgstr "星期五"
+
+msgid "Saturday"
+msgstr "星期六"
+
+msgid "Sunday"
+msgstr "星期日"
+
+msgid "Thursday"
+msgstr "星期四"
+
+msgid "Management functions"
+msgstr "管理功能"
+
+msgid "This weeks time registrations for team"
+msgstr "本周团队的时间注册"
+
+msgid "Employee"
+msgstr "员工"
+
+msgid "Solved with solution"
+msgstr "解决方案解决"
+
+msgid "Solved"
+msgstr "解决"
+
+msgid "Parent Assets"
+msgstr "母资产"
+
+msgid "Child Assets"
+msgstr "子资产"
+
+msgid "This relation will make current assets child"
+msgstr "此关系将使当前资产成为子资产"
+
+msgid "Create a parent relation"
+msgstr "创建一个父关系"
+
+msgid "This relation will make current asset parent"
+msgstr "此关系将使当前资产成为父资产"
+
+msgid "Create a child relation"
+msgstr "创建一个子关系"
+
+msgid "Service"
+msgstr "服务"
+
+msgid "Overall"
+msgstr "总体的"
+
+msgid "Subordinate"
+msgstr "下级"
+
+msgid "Create relation"
+msgstr "创建关系"
+
+msgid "Get direct link"
+msgstr "获取直接链接"
+
+msgid "Problem report"
+msgstr "问题报告"
+
+msgid "Please explain the problem"
+msgstr "请解释问题"
+
+msgid "this will create a ticket at Practicle Support so please dont abuse this!"
+msgstr "这将在实践支持处创建一个工单，请不要滥用这一点！"
+
+msgid "Report a problem"
+msgstr "报告问题"
+
+msgid "Category administration"
+msgstr "类别管理"
+
+msgid "Create News Article"
+msgstr "创建新闻文章"
+
+msgid "Date to be published"
+msgstr "发布日期"
+
+msgid "Writer"
+msgstr "作家"
+
+msgid "Headline"
+msgstr "标题"
+
+msgid "Add new category"
+msgstr "添加新分类"
+
+msgid "Usergroup"
+msgstr "用户组"
+
+msgid "News Article"
+msgstr "新闻文章"
+
+msgid "Get latest CVE news entries"
+msgstr "获取最新的CVE新闻条目"
+
+msgid "Delete all CVE news entries"
+msgstr "删除所有CVE新闻条目"
+
+msgid "Fetch"
+msgstr "抓取"
+
+msgid "Add filter"
+msgstr "添加过滤器"
+
+msgid "Miscellaneous"
+msgstr "杂项"
+
+msgid "miscellaneous"
+msgstr "杂项"
+
+msgid "CVE Filters"
+msgstr "CVE过滤器"
+
+msgid "Documentation"
+msgstr "文档"
+
+msgid "last 2 months"
+msgstr "最近2个月"
+
+msgid "Date worked"
+msgstr "工作日期"
+
+msgid "Duration"
+msgstr "持续时间"
+
+msgid "Billable"
+msgstr "计费"
+
+msgid "Date for registration"
+msgstr "注册日期"
+
+msgid "All"
+msgstr "所有"
+
+msgid "Daily"
+msgstr "每天"
+
+msgid "Duration minutes"
+msgstr "持续时间（分钟）"
+
+msgid "Duration hours"
+msgstr "持续时间（小时）"
+
+msgid "Number of registrations"
+msgstr "注册数量"
+
+msgid "Daily basis"
+msgstr "每日基础"
+
+msgid "Create Relations"
+msgstr "创建关系"
+
+msgid "Table Name"
+msgstr "表名"
+
+msgid "Import Source"
+msgstr "导入源"
+
+msgid "Synchronization"
+msgstr "同步"
+
+msgid "Sync Time"
+msgstr "同步时间"
+
+msgid "Last Synced"
+msgstr "上次同步"
+
+msgid "Label"
+msgstr "标签"
+
+msgid "Default value"
+msgstr "默认值"
+
+msgid "Field title"
+msgstr "字段标题"
+
+msgid "Field Width"
+msgstr "字段宽度"
+
+msgid "Lookup Field Result (Table View)"
+msgstr "查找字段结果（表格视图）"
+
+msgid "Lookup Field Result (Modal View)"
+msgstr "查找字段结果（模态视图）"
+
+msgid "Primary Relation Field"
+msgstr "主关系字段"
+
+msgid "Import Source Field"
+msgstr "导入源字段"
+
+msgid "Sync Source Field"
+msgstr "同步源字段"
+
+msgid "Addon"
+msgstr "插件"
+
+msgid "Select Field Options"
+msgstr "选择字段选项"
+
+msgid "Child relations lookup"
+msgstr "子关系查找"
+
+msgid "Locked"
+msgstr "已锁定"
+
+msgid "Required"
+msgstr "需要"
+
+msgid "Searchable"
+msgstr "可搜索"
+
+msgid "Hide Tables"
+msgstr "隐藏表"
+
+msgid "Hide Forms"
+msgstr "隐藏表单"
+
+msgid "Syncronize"
+msgstr "同步"
+
+msgid "Reset field sort order"
+msgstr "重置字段排序顺序"
+
+msgid "Related workflow"
+msgstr "相关工作流程"
+
+msgid "Reset forms data"
+msgstr "重置表单数据"
+
+msgid "Check Table Consistency"
+msgstr "检查表一致性"
+
+msgid "Priority 1"
+msgstr "优先级 1"
+
+msgid "Priority 2"
+msgstr "优先级 2"
+
+msgid "Priority 3"
+msgstr "优先级 3"
+
+msgid "Priority 4"
+msgstr "优先级 4"
+
+msgid "Field Label"
+msgstr "字段标签"
+
+msgid "Features"
+msgstr "特征"
+
+msgid "Create Incident"
+msgstr "创建事件"
+
+msgid "Create Change"
+msgstr "创建变更"
+
+msgid "Create Problem"
+msgstr "创建问题"
+
+msgid "Create Request"
+msgstr "创建请求"
+
+msgid "Incidents dispatch view"
+msgstr "事件分发视图"
+
+msgid "Requests dispatch view"
+msgstr "请求分发视图"
+
+msgid "Changes dispatch view"
+msgstr "更改分发视图"
+
+msgid "Problems dispatch view"
+msgstr "问题分发视图"
+
+msgid "Shortcuts"
+msgstr "快捷方式"
+
+msgid "Watch list"
+msgstr "观察列表"
+
+msgid "Generic forms"
+msgstr "通用表单"
+
+msgid "Authorizer"
+msgstr "授权人"
+
+msgid "Reason"
+msgstr "理由"
+
+msgid "Administrators"
+msgstr "管理员"
+
+msgid "Updated by"
+msgstr "更新者"
+
+msgid "Image"
+msgstr "图像"
+
+msgid "Click to see"
+msgstr "点击查看"
+
+msgid "this is essential in the subject for the mail reply by the customer to land on specific type and number"
+msgstr "这对于邮件回复客户的主题至关重要，以便回复邮件落在特定类型和编号上"
+
+msgid "this is essential in the subject for the mail reply by the customer to land on specific type"
+msgstr "这对于邮件回复客户的主题至关重要，以便回复邮件落在特定类型上"
+
+msgid "placeholder for current incident/change/request/problem number"
+msgstr "当前事件/更改/请求/问题编号的占位符"
+
+msgid "placeholder for customers firstname"
+msgstr "客户名的占位符"
+
+msgid "placeholder for customers lastname"
+msgstr "客户姓的占位符"
+
+msgid "if action is a comment - this is the placeholder for the comment"
+msgstr "如果操作是评论 - 这是评论的占位符"
+
+msgid "placeholder for the system name"
+msgstr "系统名称的占位符"
+
+msgid "placeholder for the system url"
+msgstr "系统网址的占位符"
+
+msgid "placeholder for the name of the type"
+msgstr "类型名称的占位符"
+
+msgid "placeholder for direct link to the specific incident/change/request/problem (can not be accessed by customers)"
+msgstr "指向特定事件/变更/请求/问题的直接链接的占位符（客户无法访问）"
+
+msgid "Placeholders"
+msgstr "占位符"
+
+msgid "Password must contain: minimum 8 characters, at least 1 alphabet, 1 number and 1 special character"
+msgstr "密码必须包含：至少8个字符，至少1个字母，1个数字和1个特殊字符"
+
+msgid "This email allready exists"
+msgstr "此电子邮件已存在"
+
+msgid "Please confirm password"
+msgstr "请确认密码"
+
+msgid "Passwords did not match"
+msgstr "密码不匹配"
+
+msgid "Please enter a password"
+msgstr "请输入密码"
+
+msgid "Please enter a lastname"
+msgstr "请输入姓氏"
+
+msgid "Please enter a firstname"
+msgstr "请输入名字"
+
+msgid "Email user"
+msgstr "电子邮件用户"
+
+msgid "Preview group members"
+msgstr "预览组成员"
+
+msgid "All Users"
+msgstr "所有用户"
+
+msgid "Change Administrators"
+msgstr "更改管理员"
+
+msgid "Change Users"
+msgstr "更改用户"
+
+msgid "CMDB Administrators"
+msgstr "CMDB管理员"
+
+msgid "CMDB Users"
+msgstr "CMDB用户"
+
+msgid "Company Administrators"
+msgstr "公司管理员"
+
+msgid "Default CAB"
+msgstr "默认 CAB"
+
+msgid "Default group messages"
+msgstr "默认组消息"
+
+msgid "Document Administrators"
+msgstr "Администраторы документов"
+
+msgid "Document Users"
+msgstr "Пользователи документов"
+
+msgid "Forms administrators"
+msgstr "Формы администраторы"
+
+msgid "Forms users"
+msgstr "Пользователи формы"
+
+msgid "Incident Administrators"
+msgstr "Администраторы инцидентов"
+
+msgid "Incident Users"
+msgstr "Пользователи инцидентов"
+
+msgid "Module Administrators"
+msgstr "Администраторы модуля"
+
+msgid "News Administrators"
+msgstr "Администраторы новостей"
+
+msgid "News Writer"
+msgstr "Писатель новостей"
+
+msgid "Problem Administrators"
+msgstr "Администраторы проблем"
+
+msgid "Problem Users"
+msgstr "Пользователи проблем"
+
+msgid "Project Administrators"
+msgstr "Администраторы проекта"
+
+msgid "Project Users"
+msgstr "Пользователи проекта"
+
+msgid "Request Administrators"
+msgstr "Администраторы запросов"
+
+msgid "Request Users"
+msgstr "Пользователи запросов"
+
+msgid "Timeregistration Administrators"
+msgstr "Администраторы учета времени"
+
+msgid "User Administrator"
+msgstr "Администратор пользователя"
+
+msgid "Workflow Administrators"
+msgstr "Администраторы рабочего процесса"
+
+msgid "Default"
+msgstr "По умолчанию"
+
+msgid "Generic Forms"
+msgstr "Общие формы"
+
+msgid "Group updated"
+msgstr "Группа обновлена"
+
+msgid "All employee users"
+msgstr "Все пользователи сотрудников"
+
+msgid "Group Administrators"
+msgstr "Администраторы группы"
+
+msgid "Role created"
+msgstr "Роль создана"
+
+msgid "Preview team members"
+msgstr "Просмотр членов команды"
+
+msgid "Role memberships"
+msgstr "Ролевые членства"
+
+msgid "Group memberships"
+msgstr "Членства в группах"
+
+msgid "Roles Available"
+msgstr "Доступные роли"
+
+msgid "Team memberships"
+msgstr "Членства в команде"
+
+msgid "Teams Available"
+msgstr ""
+
+msgid "Consultant"
+msgstr "Консультант"
+
+msgid "Members of this group possess unrestricted privileges to the overall system. Administrators can access the administration module. Only a select few should belong to this group."
+msgstr "Члены этой группы обладают неограниченными привилегиями по всей системе. Администраторы могут получить доступ к модулю администрирования. В эту группу должны входить только избранные."
+
+msgid "This group can be used as a collector group for all users of type employees - in general - if this group is chosen, all employee users will have access."
+msgstr "Эта группа может использоваться в качестве группы сбора для всех пользователей типа сотрудников - в общем - если выбрана эта группа, все пользователи сотрудники получат доступ."
+
+msgid "This group gives advanced access to to the request module. Users in this group will be able to update request informations in general and is not limited in access rights in general.  This should only be granted to central administrators and not more then very few people."
+msgstr "Эта группа дает расширенный доступ к модулю запроса. Пользователи в этой группе смогут обновлять информацию о запросе в общем и не ограничены в правах доступа в общем. Это должно быть предоставлено только центральным администраторам и не более чем немногим людям."
+
+msgid "Standard group for request module. Users have to be part of this group in order to be able to use standard request module."
+msgstr "Стандартная группа для модуля запроса. Пользователи должны быть частью этой группы, чтобы иметь возможность использовать стандартный модуль запроса."
+
+msgid "This group is for people that needs to be able to be assigned as responsible on workflows and thereby also can edit it."
+msgstr "Эта группа предназначена для людей, которым нужно иметь возможность быть ответственными за рабочие процессы и, таким образом, также их редактировать."
+
+msgid "Has the rights to modify and oversee users and their permissions."
+msgstr "Имеет право изменять и надзирать за пользователями и их разрешениями."
+
+msgid "Username already exists"
+msgstr "Имя пользователя уже существует"
+
+msgid "Required fields are missing values"
+msgstr "Отсутствуют обязательные поля"
+
+msgid "This email already exists for"
+msgstr "Этот адрес электронной почты уже существует для"
+
+msgid "Email cannot be empty"
+msgstr "Электронная почта не может быть пустой"
+
+msgid "Firstname is required"
+msgstr "Имя обязательно"
+
+msgid "Username cannot be empty"
+msgstr "Имя пользователя не может быть пустым"
+
+msgid "This username already exists for"
+msgstr "Это имя пользователя уже существует для"
+
+msgid "Write words seperated by ; if you want an empty value as select option - write NULL"
+msgstr "Напишите слова, разделенные символом ";" , если вы хотите пустое значение в качестве опции выбора - напишите NULL"
+
+msgid "Create project task from this"
+msgstr "Создать задачу проекта из этого"
+
+msgid "Select user for add"
+msgstr "Выберите пользователя для добавления"
+
+msgid "Select user for removal"
+msgstr "Выберите пользователя для удаления"
+
+msgid "No Sprint"
+msgstr "Нет спринта"
+
+msgid "Parent"
+msgstr "Родитель"
+
+msgid "Private"
+msgstr "私人"
+
+msgid "Show members"
+msgstr "显示成员"
+
+msgid "Last login"
+msgstr "上次登录"
+
+msgid "Create Project Task"
+msgstr "创建项目任务"
+
+msgid "Simple"
+msgstr "简单"
+
+msgid "Log Book"
+msgstr "日志本"
+
+msgid "Related number"
+msgstr "相关号码"
+
+msgid "Add empty row"
+msgstr "添加空行"
+
+msgid "This adds an empty value to a select box and only for that"
+msgstr "这将向选择框中添加一个空值，仅此而已"
+
+msgid "Mine"
+msgstr "我的"
+
+msgid "mine"
+msgstr "我的"
+
+msgid "Search results"
+msgstr "搜索结果"
+
+msgid "Select Options"
+msgstr "选择选项"
+
+msgid "Options"
+msgstr "选项"
+
+msgid "Lookup"
+msgstr "查找"
+
+msgid "Syncronization"
+msgstr "同步"
+
+msgid "relations"
+msgstr "关系"
+
+msgid "Primary"
+msgstr "主要的"
+
+msgid "Full view height"
+msgstr "全视图高度"
+
+msgid "Table view"
+msgstr "表格视图"
+
+msgid "Timeline view"
+msgstr "时间线视图"
+
+msgid "Deactivate"
+msgstr "停用"
+
+msgid "Transfer"
+msgstr "传输"
+
+msgid "Transfer elements to other user"
+msgstr "将元素传输到其他用户"
+
+msgid "Other"
+msgstr "其他"
+
+msgid "Select a user"
+msgstr "选择用户"
+
+msgid "Select all / Deselect all"
+msgstr "全选 / 全不选"
+
+msgid "CMDB, ITSM and other objects are getting moved to the selected user (responsible is getting changed). Transfer can not be transfered to user type customer. Transfer of Roles and Group means that memberships that the current user has, is getting added to the selected user."
+msgstr "CMDB、ITSM和其他对象正在移动到所选用户（负责人正在更改）。 传输不能传输给用户类型客户。 角色和组的传输意味着当前用户拥有的成员资格将添加到所选用户。"
+
+msgid "Workflow Tasks"
+msgstr "工作流任务"
+
+msgid "KanBan Tasks"
+msgstr "看板任务"
+
+msgid "ITSM elements"
+msgstr "ITSM元素"
+
+msgid "CMDB elements"
+msgstr "CMDB元素"
+
+msgid "We are missing a primary field for this type"
+msgstr "我们缺少此类型的主字段"
+
+msgid "Result field"
+msgstr "结果字段"
+
+msgid "Choose which field should be returned as result in the select box"
+msgstr "选择应在选择框中返回结果的字段"
+
+msgid "User fullname and username"
+msgstr "用户全名和用户名"
+
+msgid "User fullname"
+msgstr "用户全名"
+
+msgid "Select this if you want a result with users fullname"
+msgstr "如果您希望结果包含用户全名，请选择此项"
+
+msgid "Select this if you want a result with users fullname and username"
+msgstr "如果您希望结果包含用户全名和用户名，请选择此项"
+
+msgid "Place on right side"
+msgstr "放在右侧"
+
+msgid "Place field on the right side of form"
+msgstr "将字段放在表单的右侧"
+
+msgid "This will make the field a normal and simple text result"
+msgstr "这将使该字段成为一个普通且简单的文本结果"
+
+msgid "Simple text"
+msgstr "简单文本"
+
+msgid "Make field disabled on create"
+msgstr "在创建时禁用字段"
+
+msgid "Make field required"
+msgstr "使字段必填"
+
+msgid "Make searchable from search bar on content of this field"
+msgstr "从搜索栏中使该字段的内容可搜索"
+
+msgid "Notes fields can get full height so all content is shown on view page"
+msgstr "注释字段可以获得全高度，以便在查看页面上显示所有内容"
+
+msgid "Deactivate this field from Table views"
+msgstr "从表视图中停用此字段"
+
+msgid "Deactivate this field from Form views"
+msgstr "从表单视图中停用此字段"
+
+msgid "Reset module data"
+msgstr "重置模块数据"
+
+msgid "This deletes all data records for this module including logs, files, relations, workflows and more"
+msgstr "这将删除该模块的所有数据记录，包括日志、文件、关系、工作流程等"
+
+msgid "Reset all modules (data only)"
+msgstr "重置所有模块（仅数据）"
+
+msgid "Reset all modules to standard"
+msgstr "将所有模块重置为标准"
+
+msgid "Tasks completed"
+msgstr "任务完成"
+
+msgid "Unread comments"
+msgstr "未读评论"
+
+msgid "Password Module Administrators"
+msgstr "密码模块管理员"
+
+msgid "Password Module Users"
+msgstr "密码模块用户"
+
+msgid "Field design"
+msgstr "字段设计"
+
+msgid "General"
+msgstr "一般"
+
+msgid "Create a template based on the completed form below"
+msgstr "根据以下填写的表单创建模板"
+
+msgid "Delete the current selected template"
+msgstr "删除当前选择的模板"
+
+msgid "Create public template that all users can choose"
+msgstr "创建所有用户都可以选择的公共模板"
+
+msgid "Choose template"
+msgstr "选择模板"
+
+msgid "Are you sure?"
+msgstr "你确定吗？"
+
+msgid "Make field disabled on view/edit"
+msgstr "在查看/编辑时禁用字段"
+
+msgid "Locked on create"
+msgstr "创建时锁定"
+
+msgid "Locked on view"
+msgstr "查看时锁定"
+
+msgid "Group filter"
+msgstr "组过滤器"
+
+msgid "Deactivate Forms"
+msgstr "停用表单"
+
+msgid "Deactivate Tables"
+msgstr "停用表格"
+
+msgid "Retrieve field but hide it"
+msgstr "检索字段但隐藏"
+
+msgid "Hidden"
+msgstr "隐藏"
+
+msgid "Preview of team members"
+msgstr "团队成员预览"
+
+msgid "Groups added"
+msgstr "已添加组"
+
+msgid "Quarantene state"
+msgstr "隔离状态"
+
+msgid "Email to send to"
+msgstr "要发送的电子邮件"
+
+msgid "Or choose prepared email"
+msgstr "或选择已准备好的电子邮件"
+
+msgid "Attach PDF"
+msgstr "附加PDF"
+
+msgid "Create PDF"
+msgstr "创建PDF"
+
+msgid "Found in field"
+msgstr "在字段中找到"
+
+msgid "Standard values"
+msgstr ""
+
+msgid "If you want check fields to be default checked you must add the text checked to the default value"
+msgstr ""
+
+msgid "Remove fields"
+msgstr ""
+
+msgid "Do not delete standard fields. If you feel they are not necessary - disable them in table view and modal view"
+msgstr ""
+
+msgid "Field widths"
+msgstr ""
+
+msgid "Field widths are determined using Bootstrap's grid system. A row is 12 blocks wide, so you can set a field's width by specifying how many blocks it should occupy. For example, setting the width to 6 will make the field half the row's width"
+msgstr ""
+
+msgid "Create Project"
+msgstr ""
+
+msgid "Transfer elments to other user"
+msgstr ""
+

@@ -1,0 +1,3055 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Practicle\n"
+"POT-Creation-Date: 2019-05-16 11:25+0200\n"
+"PO-Revision-Date: 2019-07-11 13:00+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.2.3\n"
+"X-Poedit-Basepath: .\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: ru_RU\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+
+msgid "A customer contact person must be chosen - please create customer contact person before creating"
+msgstr "Необходимо выбрать контактное лицо клиента - пожалуйста, создайте контактное лицо клиента перед созданием"
+
+msgid "Account number"
+msgstr "Номер счета"
+
+msgid "Actions"
+msgstr "Действия"
+
+msgid "Active"
+msgstr "Активно"
+
+msgid "Active projects"
+msgstr "Активные проекты"
+
+msgid "Activity"
+msgstr "Деятельность"
+
+msgid "Add"
+msgstr "Добавить"
+
+msgid "Add News"
+msgstr "Добавить новость"
+
+msgid "Add as favorite"
+msgstr "Добавить в избранное"
+
+msgid "Add as task"
+msgstr "Добавить как задачу"
+
+msgid "Add document"
+msgstr "Добавить документ"
+
+msgid "Add new task"
+msgstr "Добавить новую задачу"
+
+msgid "Add to existing problem"
+msgstr "Добавить к существующей проблеме"
+
+msgid "Address"
+msgstr "Адрес"
+
+msgid "Administrate News"
+msgstr "Управление новостями"
+
+msgid "Affected Company"
+msgstr "Затронутая компания"
+
+msgid "Alerts"
+msgstr "Оповещения"
+
+msgid "All News"
+msgstr "Все новости"
+
+msgid "All active"
+msgstr "Все активные"
+
+msgid "All closed"
+msgstr "Все закрытые"
+
+msgid "All overdue"
+msgstr "Все просроченные"
+
+msgid "Amount spend"
+msgstr "Сумма расходов"
+
+msgid "Anniversarys"
+msgstr "Годовщины"
+
+msgid "Answer"
+msgstr "Ответ"
+
+msgid "Approval Tasks"
+msgstr "Задачи на утверждение"
+
+msgid "Approver"
+msgstr "Утверждающий"
+
+msgid "Assess"
+msgstr "Оценить"
+
+msgid "Assets"
+msgstr "Активы"
+
+msgid "Assigned"
+msgstr "Назначено"
+
+msgid "Assigned Team"
+msgstr "Назначенная команда"
+
+msgid "Assigned to responsible"
+msgstr "Назначено ответственному"
+
+msgid "Assigned to team"
+msgstr "Назначено команде"
+
+msgid "Attach a workflow"
+msgstr "Прикрепить рабочий процесс"
+
+msgid "Authorize"
+msgstr "Авторизовать"
+
+msgid "Average solution time"
+msgstr "Среднее время решения"
+
+msgid "Await Customer"
+msgstr "Ожидание клиента"
+
+msgid "Awaiting"
+msgstr "В ожидании"
+
+msgid "Awaiting customer"
+msgstr "Ожидание клиента"
+
+msgid "Backout Plan"
+msgstr "План отката"
+
+msgid "Bank"
+msgstr "Банк"
+
+msgid "Birthday"
+msgstr "День рождения"
+
+msgid "Birthdays"
+msgstr "Дни рождения"
+
+msgid "Board"
+msgstr "Доска"
+
+msgid "Boards"
+msgstr "Доски"
+
+msgid "Bought"
+msgstr "Куплено"
+
+msgid "Branche news"
+msgstr "Новости филиала"
+
+msgid "Bronze"
+msgstr "Бронзовый"
+
+msgid "Budget Spend"
+msgstr "Бюджетные затраты"
+
+msgid "CBR"
+msgstr "CBR"
+
+msgid "Cancel"
+msgstr "Отмена"
+
+msgid "Canceled"
+msgstr "Отменено"
+
+msgid "Categories"
+msgstr "Категории"
+
+msgid "Category"
+msgstr "Категория"
+
+msgid "Category Administration"
+msgstr "Администрирование категорий"
+
+msgid "Certificates"
+msgstr "Сертификаты"
+
+msgid "Change"
+msgstr "Изменить"
+
+msgid "Change Password"
+msgstr "Изменить пароль"
+
+msgid "Change password"
+msgstr "Изменить пароль"
+
+msgid "Changes"
+msgstr "Изменения"
+
+msgid "Changes saved"
+msgstr "Изменения сохранены"
+
+msgid "Choose file"
+msgstr "Выбрать файл"
+
+msgid "City"
+msgstr "Город"
+
+msgid "Close"
+msgstr "Закрыть"
+
+msgid "Closed"
+msgstr "Закрыто"
+
+msgid "Comment"
+msgstr "Комментарий"
+
+msgid "Companies"
+msgstr "Компании"
+
+msgid "Company"
+msgstr "Компания"
+
+msgid "Company Name"
+msgstr "Название компании"
+
+msgid "Complete"
+msgstr "Завершено"
+
+msgid "Completed"
+msgstr "Завершено"
+
+msgid "Content"
+msgstr "Содержание"
+
+msgid "Contracts"
+msgstr "Контракты"
+
+msgid "Corporate Links"
+msgstr "Корпоративные ссылки"
+
+msgid "Country"
+msgstr "Страна"
+
+msgid "Create"
+msgstr "Создать"
+
+msgid "Create as new problem"
+msgstr "Создать как новую проблему"
+
+msgid "Create document"
+msgstr "Создать документ"
+
+msgid "Create favorite from this"
+msgstr "Создать избранное из этого"
+
+msgid "Create new"
+msgstr "Создать новый"
+
+msgid "Create random password"
+msgstr "Создать случайный пароль"
+
+msgid "Create task from this"
+msgstr "Создать задачу из этого"
+
+msgid "Created"
+msgstr "Создано"
+
+msgid "Customer"
+msgstr "Клиент"
+
+msgid "Customer Companies"
+msgstr "Клиентские компании"
+
+msgid "Customer Contacts"
+msgstr "Контакты клиентов"
+
+msgid "Customer contacts"
+msgstr "Контакты клиентов"
+
+msgid "Customers"
+msgstr "Клиенты"
+
+msgid "Dashboards"
+msgstr "Информационные панели"
+
+msgid "Data not yet registered"
+msgstr "Данные еще не зарегистрированы"
+
+msgid "Date"
+msgstr "Дата"
+
+msgid "Date performed"
+msgstr "Дата выполнения"
+
+msgid "Deadline"
+msgstr "Крайний срок"
+
+msgid "Deadline Review"
+msgstr "Проверка крайнего срока"
+
+msgid "Deadline for review"
+msgstr "Крайний срок для рассмотрения"
+
+msgid "Delete"
+msgstr "Удалить"
+
+msgid "Deleted"
+msgstr "Удалено"
+
+msgid "Description"
+msgstr "Описание"
+
+msgid "Descriptions"
+msgstr "Описания"
+
+msgid "Design"
+msgstr "Дизайн"
+
+msgid "Destination"
+msgstr "Назначение"
+
+msgid "Details"
+msgstr "Детали"
+
+msgid "Dispatch que"
+msgstr "Очередь отправки"
+
+msgid "Document Name"
+msgstr "Название документа"
+
+msgid "Documents"
+msgstr "Документы"
+
+msgid "Edit"
+msgstr "Редактировать"
+
+msgid "Edit Task"
+msgstr "Редактировать задачу"
+
+msgid "Edit Userprofile"
+msgstr "Редактировать профиль пользователя"
+
+msgid "Email"
+msgstr "Эл. почта"
+
+msgid "Employees"
+msgstr "Сотрудники"
+
+msgid "Enable Google Authenticator"
+msgstr "Включить Google Authenticator"
+
+msgid "End"
+msgstr "Конец"
+
+msgid "Error updating password"
+msgstr "Ошибка при обновлении пароля"
+
+msgid "Estimated Budget"
+msgstr "Предполагаемый бюджет"
+
+msgid "Estimated Hours"
+msgstr "Оценочное время"
+
+msgid "Estimated budget"
+msgstr "Предполагаемый бюджет"
+
+msgid "Expiration Date"
+msgstr "Дата истечения срока"
+
+msgid "Expires"
+msgstr "Истекает"
+
+msgid "Favorite"
+msgstr "Избранное"
+
+msgid "Favorites"
+msgstr "Избранное"
+
+msgid "File"
+msgstr "Файл"
+
+msgid "Filename"
+msgstr "Имя файла"
+
+msgid "Files"
+msgstr "Файлы"
+
+msgid "Finished projects"
+msgstr "Завершенные проекты"
+
+msgid "First Name"
+msgstr "Имя"
+
+msgid "Firstname"
+msgstr "Имя"
+
+msgid "From"
+msgstr "От"
+
+msgid "Full history"
+msgstr "Полная история"
+
+msgid "Generate files"
+msgstr "Генерировать файлы"
+
+msgid "Generated password"
+msgstr "Сгенерированный пароль"
+
+msgid "Go"
+msgstr "Идти"
+
+msgid "Go to favorites"
+msgstr "Перейти к избранному"
+
+msgid "Gold"
+msgstr "Золото"
+
+msgid "Group"
+msgstr "Группа"
+
+msgid "Group Access"
+msgstr "Групповой доступ"
+
+msgid "Handheld Devices"
+msgstr "Портативные устройства"
+
+msgid "Handheld device updated"
+msgstr "Портативное устройство обновлено"
+
+msgid "Headquarters"
+msgstr "Штаб-квартира"
+
+msgid "Help"
+msgstr "Помощь"
+
+msgid "High"
+msgstr "Высокий"
+
+msgid "History"
+msgstr "История"
+
+msgid "Hostname"
+msgstr "Имя хоста"
+
+msgid "Hours spend"
+msgstr "Часы, проведенные"
+
+msgid "Implementing"
+msgstr "Внедрение"
+
+msgid "In Assessment"
+msgstr "В оценке"
+
+msgid "In Authorization"
+msgstr "В авторизации"
+
+msgid "In Resolution Process"
+msgstr "В процессе решения"
+
+msgid "In Review"
+msgstr "На рассмотрении"
+
+msgid "In Scheduling"
+msgstr "В планировании"
+
+msgid "In resolution process"
+msgstr "В процессе решения"
+
+msgid "In review"
+msgstr "На рассмотрении"
+
+msgid "Incident"
+msgstr "Инцидент"
+
+msgid "Incidents"
+msgstr "Инциденты"
+
+msgid "Internal Comment"
+msgstr "Внутренний комментарий"
+
+msgid "Invoice"
+msgstr "Счет"
+
+msgid "Item number"
+msgstr "Номер товара"
+
+msgid "Job Titel"
+msgstr "Должность"
+
+msgid "Language"
+msgstr "Язык"
+
+msgid "Languages"
+msgstr "Языки"
+
+msgid "Last Logon"
+msgstr "Последний вход в систему"
+
+msgid "Last Name"
+msgstr "Фамилия"
+
+msgid "Last changed"
+msgstr "Последнее изменение"
+
+msgid "Last changed by"
+msgstr "Последнее изменение сделано"
+
+msgid "Last logged on"
+msgstr "Последний вход в систему"
+
+msgid "Lastlogon"
+msgstr "Последний вход в систему"
+
+msgid "Lastname"
+msgstr "Фамилия"
+
+msgid "Latest Activity"
+msgstr "Последняя активность"
+
+msgid "Licenses"
+msgstr "Лицензии"
+
+msgid "Links added"
+msgstr "Ссылки добавлены"
+
+msgid "Links available"
+msgstr "Доступные ссылки"
+
+msgid "Lock"
+msgstr "Блокировка"
+
+msgid "Log out"
+msgstr "Выйти"
+
+msgid "Logout"
+msgstr "Выйти"
+
+msgid "Low"
+msgstr "Низкий"
+
+msgid "Main Menu"
+msgstr "Главное меню"
+
+msgid "Manager"
+msgstr "Менеджер"
+
+msgid "Mark all as read"
+msgstr "Отметить все как прочитанное"
+
+msgid "Menu"
+msgstr "Меню"
+
+msgid "Messages"
+msgstr "Сообщения"
+
+msgid "Mobile Phone"
+msgstr "Мобильный телефон"
+
+msgid "Mobile Phones"
+msgstr "Мобильные телефоны"
+
+msgid "Mobile Subscription"
+msgstr "Мобильная подписка"
+
+msgid "Mobile Subscriptions"
+msgstr "Мобильные подписки"
+
+msgid "Model"
+msgstr "Модель"
+
+msgid "My"
+msgstr "Мои"
+
+msgid "My Tasks"
+msgstr "Мои задачи"
+
+msgid "My Team"
+msgstr "Моя команда"
+
+msgid "My favorites"
+msgstr "Мои избранные"
+
+msgid "My orders"
+msgstr "Мои заказы"
+
+msgid "My projects"
+msgstr "Мои проекты"
+
+msgid "My teams"
+msgstr "Мои команды"
+
+msgid "Name"
+msgstr "Имя"
+
+msgid "Name for new category"
+msgstr "Название новой категории"
+
+msgid "Nearest Manager"
+msgstr "Ближайший руководитель"
+
+msgid "New"
+msgstr "Новый"
+
+msgid "New Project Task"
+msgstr "Новая задача по проекту"
+
+msgid "New Task"
+msgstr "Новая задача"
+
+msgid "New activity"
+msgstr "Новая активность"
+
+msgid "New password randomizer"
+msgstr "Новый генератор случайных паролей"
+
+msgid "News"
+msgstr "Новости"
+
+msgid "No"
+msgstr "Нет"
+
+msgid "No Comments yet"
+msgstr "Комментарии отсутствуют"
+
+msgid "No account found with that username"
+msgstr "Не найдено учетной записи с таким именем пользователя"
+
+msgid "No workflow"
+msgstr "Без рабочего процесса"
+
+msgid "No."
+msgstr "№"
+
+msgid "None registered"
+msgstr "Не зарегистрирован"
+
+msgid "Normal"
+msgstr "Нормально"
+
+msgid "Not assigned responsible"
+msgstr "Ответственный не назначен"
+
+msgid "Not assigned team"
+msgstr "Команда не назначена"
+
+msgid "Notifications"
+msgstr "Уведомления"
+
+msgid "Notify Customer"
+msgstr "Уведомить клиента"
+
+msgid "Now download Google Authenticator App on your smartphone and scan this QR code - Do not Log Out before you have scanned this QR code successfully in the Google Authenticator App!"
+msgstr "Скачайте приложение Google Authenticator на ваш смартфон и отсканируйте этот QR-код. Не выходите из системы, пока вы успешно не отсканируете этот QR-код в приложении Google Authenticator!"
+
+msgid "Open"
+msgstr "Открыть"
+
+msgid "Order"
+msgstr "Заказ"
+
+msgid "Orders"
+msgstr "Заказы"
+
+msgid "Organization"
+msgstr "Организация"
+
+msgid "Overdue"
+msgstr "Просроченный"
+
+msgid "Overdue projects"
+msgstr "Просроченные проекты"
+
+msgid "Overdue status"
+msgstr "Статус просроченности"
+
+msgid "Overview"
+msgstr "Обзор"
+
+msgid "Owner"
+msgstr "Владелец"
+
+msgid "Participants"
+msgstr "Участники"
+
+msgid "Password"
+msgstr "Пароль"
+
+msgid "Passwords"
+msgstr "Пароли"
+
+msgid "Payment Due"
+msgstr "Срок оплаты"
+
+msgid "Payment informations"
+msgstr "Платежная информация"
+
+msgid "Personal skills"
+msgstr "Личные навыки"
+
+msgid "Phone"
+msgstr "Телефон"
+
+msgid "Phone number"
+msgstr "Номер телефона"
+
+msgid "Preview"
+msgstr "Предварительный просмотр"
+
+msgid "Price each"
+msgstr "Цена за каждый"
+
+msgid "Print"
+msgstr "Печать"
+
+msgid "Priority"
+msgstr "Приоритет"
+
+msgid "Problem description"
+msgstr "Описание проблемы"
+
+msgid "Problem descriptions"
+msgstr "Описания проблем"
+
+msgid "Problem text"
+msgstr "Текст проблемы"
+
+msgid "Problems"
+msgstr "Проблемы"
+
+msgid "Producer"
+msgstr "Производитель"
+
+msgid "Professional skills"
+msgstr "Профессиональные навыки"
+
+msgid "Profile"
+msgstr "Профиль"
+
+msgid "Profile picture"
+msgstr "Фото профиля"
+
+msgid "Progress"
+msgstr "Прогресс"
+
+msgid "Project"
+msgstr "Проект"
+
+msgid "Project Completed"
+msgstr "Проект завершен"
+
+msgid "Project Deadline"
+msgstr "Срок проекта"
+
+msgid "Project Description"
+msgstr "Описание проекта"
+
+msgid "Project Manager"
+msgstr "Менеджер проекта"
+
+msgid "Project Name"
+msgstr "Название проекта"
+
+msgid "Project Responsible"
+msgstr "Ответственный за проект"
+
+msgid "Project Start Date"
+msgstr "Дата начала проекта"
+
+msgid "Project Task Completed"
+msgstr "Задача проекта выполнена"
+
+msgid "Project Tasks"
+msgstr "Задачи проекта"
+
+msgid "Project participants"
+msgstr "Участники проекта"
+
+msgid "Projects"
+msgstr "Проекты"
+
+msgid "Public"
+msgstr "Общественность"
+
+msgid "Public category"
+msgstr "Общественная категория"
+
+msgid "Qty"
+msgstr "Количество"
+
+msgid "Quick Actions"
+msgstr "Быстрые действия"
+
+msgid "Quick Launch Menu"
+msgstr "Меню быстрого запуска"
+
+msgid "Read all"
+msgstr "Читать все"
+
+msgid "Received"
+msgstr "Получено"
+
+msgid "Recieve"
+msgstr "Получить"
+
+msgid "Related"
+msgstr "Связанные"
+
+msgid "Related Module"
+msgstr "Связанный модуль"
+
+msgid "Related problems"
+msgstr "Связанные проблемы"
+
+msgid "Related projects"
+msgstr "Связанные проекты"
+
+msgid "Related task"
+msgstr "Связанная задача"
+
+msgid "Related tickets"
+msgstr "Связанные билеты"
+
+msgid "Relations"
+msgstr "Отношения"
+
+msgid "Remove"
+msgstr "Удалить"
+
+msgid "Request"
+msgstr "Запрос"
+
+msgid "Requester"
+msgstr "Запрашивающий"
+
+msgid "Requests"
+msgstr "Запросы"
+
+msgid "Reset"
+msgstr "Сброс"
+
+msgid "Resolve"
+msgstr "Решить"
+
+msgid "Resolved"
+msgstr "Решено"
+
+msgid "Resolved or workaround"
+msgstr "Решено или обходное решение"
+
+msgid "Responsible"
+msgstr "Ответственный"
+
+msgid "Review Tasks"
+msgstr "Проверка задач"
+
+msgid "Reviewer"
+msgstr "Рецензент"
+
+msgid "Roles"
+msgstr "Роли"
+
+msgid "Save"
+msgstr "Сохранить"
+
+msgid "Scheduled"
+msgstr "Запланировано"
+
+msgid "Search"
+msgstr "Поиск"
+
+msgid "Search document attachement content"
+msgstr "Поиск в содержимом вложения документа"
+
+msgid "Search document content"
+msgstr "Поиск в содержимом документа"
+
+msgid "Search document name"
+msgstr "Поиск по названию документа"
+
+msgid "Search document names"
+msgstr "Поиск по названиям документов"
+
+msgid "Search for"
+msgstr "Искать"
+
+msgid "Search in"
+msgstr "Поиск в"
+
+msgid "Search in document attachements"
+msgstr "Поиск в приложениях к документам"
+
+msgid "Search in document attachment content"
+msgstr "Поиск в содержимом вложения документа"
+
+msgid "Search problem descriptions"
+msgstr "Поиск описаний проблем"
+
+msgid "Select News Channel"
+msgstr "Выберите канал новостей"
+
+msgid "Select Workflow"
+msgstr "Выберите рабочий процесс"
+
+msgid "Select to delete"
+msgstr "Выберите для удаления"
+
+msgid "Send Message"
+msgstr "Отправить сообщение"
+
+msgid "Serial Number"
+msgstr "Серийный номер"
+
+msgid "Servers"
+msgstr "Серверы"
+
+msgid "Service Level Agreement"
+msgstr "Соглашение об уровне обслуживания"
+
+msgid "Settings"
+msgstr "Настройки"
+
+msgid "Viser"
+msgstr "Показаны"
+
+msgid "Sidebar Image"
+msgstr "Изображение боковой панели"
+
+msgid "Silver"
+msgstr "Серебро"
+
+msgid "Since"
+msgstr "С"
+
+msgid "Skills"
+msgstr "Навыки"
+
+msgid "Solution"
+msgstr "Решение"
+
+msgid "Solution text"
+msgstr "Текст решения"
+
+msgid "Solutions"
+msgstr "Решения"
+
+msgid "Something went wrong, please try again later"
+msgstr "Что-то пошло не так. Пожалуйста, повторите попытку позже"
+
+msgid "Soon overdue"
+msgstr "Скоро просрочено"
+
+msgid "Standard Answers"
+msgstr "Стандартные ответы"
+
+msgid "Start"
+msgstr "Начинать"
+
+msgid "Start Date"
+msgstr "Дата начала"
+
+msgid "Start solution"
+msgstr "Запустить решение"
+
+msgid "Status"
+msgstr "Положение дел"
+
+msgid "Step"
+msgstr "Шаг"
+
+msgid "Subject"
+msgstr "Предмет"
+
+msgid "Subjects"
+msgstr "Темы"
+
+msgid "Submit Payment"
+msgstr "Отправить платеж"
+
+msgid "Subtotal"
+msgstr "Промежуточный итог"
+
+msgid "Tablet"
+msgstr "планшет"
+
+msgid "Task"
+msgstr "Задача"
+
+msgid "Task Deadline"
+msgstr "Крайний срок задачи"
+
+msgid "Task Description"
+msgstr "Описание задания"
+
+msgid "Task Manager"
+msgstr "Диспетчер задач"
+
+msgid "Task Name"
+msgstr "Название задачи"
+
+msgid "Task Participants"
+msgstr "Участники задачи"
+
+msgid "Task Responsible"
+msgstr "Задача Ответственный"
+
+msgid "Task Started"
+msgstr "Задача запущена"
+
+msgid "Task Status"
+msgstr "Статус задачи"
+
+msgid "Task activities"
+msgstr "Задачи"
+
+msgid "Task created"
+msgstr "Задача создана"
+
+msgid "Task deadline"
+msgstr "Крайний срок задачи"
+
+msgid "Task history"
+msgstr "История задач"
+
+msgid "Task progress"
+msgstr "Ход выполнения задачи"
+
+msgid "Taskboard"
+msgstr "Доска задач"
+
+msgid "Tasks"
+msgstr "Задания"
+
+msgid "Team"
+msgstr "Команда"
+
+msgid "Text"
+msgstr "Текст"
+
+msgid "Time Zone"
+msgstr "Часовой пояс"
+
+msgid "Time registrations"
+msgstr "Регистрация времени"
+
+msgid "Time spend"
+msgstr "Тратить время"
+
+msgid "Timeline"
+msgstr "График"
+
+msgid "To"
+msgstr "К"
+
+msgid "Total"
+msgstr "Общий"
+
+msgid "Type"
+msgstr "модель"
+
+msgid "Type Description"
+msgstr "Тип Описание"
+
+msgid "Type new password"
+msgstr "Введите новый пароль"
+
+msgid "Unread"
+msgstr "Не прочитано"
+
+msgid "Update"
+msgstr "Обновлять"
+
+msgid "Update Task"
+msgstr "Обновление задачи"
+
+msgid "Upload"
+msgstr "Загрузить"
+
+msgid "Urgent"
+msgstr "Срочный"
+
+msgid "User"
+msgstr "Пользователь"
+
+msgid "Username"
+msgstr "Имя пользователя"
+
+msgid "Users"
+msgstr "Пользователи"
+
+msgid "Users Available"
+msgstr "Доступные пользователи"
+
+msgid "Users Online"
+msgstr "Пользователи онлайн"
+
+msgid "Users in CAB"
+msgstr "Пользователи в CAB"
+
+msgid "Usertype"
+msgstr "Тип пользователя"
+
+msgid "Vat"
+msgstr "НДС"
+
+msgid "Version"
+msgstr "Версия"
+
+msgid "View"
+msgstr "Вид"
+
+msgid "Weather"
+msgstr "Погода"
+
+msgid "Webpage"
+msgstr "Веб-страница"
+
+msgid "When you have scanned the QR code with success - log off and login again. You will from now on be required to use Google Authenticator to finish your logins"
+msgstr "Когда вы успешно отсканировали QR-код, выйдите из системы и войдите снова. Отныне вам необходимо будет использовать Google Authenticator для завершения входа в систему."
+
+msgid "Widgets added"
+msgstr "Добавлены виджеты"
+
+msgid "Widgets available"
+msgstr "Доступны виджеты"
+
+msgid "Workflow"
+msgstr "Рабочий процесс"
+
+msgid "Workflows"
+msgstr "Рабочие процессы"
+
+msgid "Workstations"
+msgstr "Рабочие станции"
+
+msgid "Yes"
+msgstr "Да"
+
+msgid "You are not allowed access to this module"
+msgstr "У вас нет доступа к этому модулю"
+
+msgid "Zip Code"
+msgstr "Почтовый индекс"
+
+msgid "account"
+msgstr "счет"
+
+msgid "assets"
+msgstr "активы"
+
+msgid "assigned responsible"
+msgstr "назначен ответственный"
+
+msgid "assigned team"
+msgstr "назначенная команда"
+
+msgid "change"
+msgstr "изменение"
+
+msgid "changes"
+msgstr "изменения"
+
+msgid "close"
+msgstr "закрыть"
+
+msgid "companies"
+msgstr "компании"
+
+msgid "complete"
+msgstr "завершить"
+
+msgid "created"
+msgstr "создано"
+
+msgid "customers"
+msgstr "клиенты"
+
+msgid "delete"
+msgstr "удалить"
+
+msgid "exceeded"
+msgstr "превышено"
+
+msgid "hours in total"
+msgstr "всего часов"
+
+msgid "in"
+msgstr "в"
+
+msgid "incident"
+msgstr "инцидент"
+
+msgid "incidents"
+msgstr "инциденты"
+
+msgid "no"
+msgstr "нет"
+
+msgid "now recieved"
+msgstr "теперь получено"
+
+msgid "of"
+msgstr "из"
+
+msgid "open"
+msgstr "открыто"
+
+msgid "overview"
+msgstr "обзор"
+
+msgid "password"
+msgstr "пароль"
+
+msgid "passwords"
+msgstr "пароли"
+
+msgid "preview"
+msgstr "предварительный просмотр"
+
+msgid "problems"
+msgstr "проблемы"
+
+msgid "records"
+msgstr "записи"
+
+msgid "requests"
+msgstr "запросы"
+
+msgid "settings"
+msgstr "настройки"
+
+msgid "solutions"
+msgstr "решения"
+
+msgid "to"
+msgstr "к"
+
+msgid "to existing problem"
+msgstr "к существующей проблеме"
+
+msgid "total"
+msgstr "всего"
+
+msgid "username"
+msgstr "имя пользователя"
+
+msgid "view"
+msgstr "просмотр"
+
+msgid "yes"
+msgstr "да"
+
+msgid "No data available in table"
+msgstr "Нет данных в таблице"
+
+msgid "No entries to show"
+msgstr "Нет записей для отображения"
+
+msgid "No records to display"
+msgstr "Нет записей для отображения"
+
+msgid "Archive"
+msgstr "Архив"
+
+msgid "Timeregistrations"
+msgstr "Регистрация времени"
+
+msgid "Dispatch"
+msgstr "Диспетчирование"
+
+msgid "Report"
+msgstr "Отчет"
+
+msgid "Me as Participant"
+msgstr "Я как участник"
+
+msgid "Me as Manager"
+msgstr "Я как руководитель"
+
+msgid "Me as Responsible"
+msgstr "Я как ответственный"
+
+msgid "Expiration"
+msgstr "Истечение"
+
+msgid "Similarity"
+msgstr "Подобие"
+
+msgid "An indicative comparison of words between the version and the previous version"
+msgstr "Ориентировочное сравнение слов между версией и предыдущей версией"
+
+msgid "Asset"
+msgstr "Актив"
+
+msgid "asset"
+msgstr "разрешение"
+
+msgid "Resolution"
+msgstr "Разрешение"
+
+msgid "deadline"
+msgstr "крайний срок"
+
+msgid "subject"
+msgstr "тема"
+
+msgid "subjects"
+msgstr "темы"
+
+msgid "taskboard"
+msgstr "доска задач"
+
+msgid "Create New"
+msgstr "Создать"
+
+msgid "Your"
+msgstr "Ваш"
+
+msgid "Dispatch view"
+msgstr "Просмотр отправки"
+
+msgid "All open"
+msgstr "Все открыто"
+
+msgid "Export"
+msgstr "Экспорт"
+
+msgid "Export view"
+msgstr "Просмотр экспорта"
+
+msgid "Problems are much easier to create directly via incidents, requests, changes etc."
+msgstr "Проблемы намного легче создавать напрямую через инциденты, запросы, изменения и т. д."
+
+msgid "Add to taskboard"
+msgstr "Добавить в доску задач"
+
+msgid "Deadline Backout"
+msgstr "Отменить срок"
+
+msgid "New message"
+msgstr "Новое сообщение"
+
+msgid "Recipient"
+msgstr "Получатель"
+
+msgid "Message"
+msgstr "Сообщение"
+
+msgid "Answer Templates"
+msgstr "Шаблоны ответов"
+
+msgid "not assigned team"
+msgstr "Команда не назначена"
+
+msgid "not assigned responsible"
+msgstr "Ответственный не назначен"
+
+msgid "created from"
+msgstr "Создано из"
+
+msgid "Personal"
+msgstr "Личное"
+
+msgid "users"
+msgstr "Пользователи"
+
+msgid "Created By"
+msgstr "Создано"
+
+msgid "Todays time registration"
+msgstr "Регистрация сегодня"
+
+msgid "Create new project"
+msgstr "Создать новый проект"
+
+msgid "Group Managers"
+msgstr "Менеджеры группы"
+
+msgid "User group that can administrate this project"
+msgstr "Группа пользователей, которая может управлять этим проектом"
+
+msgid "User group that can participate in this project"
+msgstr "Группа пользователей, которая может участвовать в этом проекте"
+
+msgid "Related Customer"
+msgstr "Связанный клиент"
+
+msgid "Customer that this project is to be related to"
+msgstr "Клиент, к которому относится этот проект"
+
+msgid "Create password"
+msgstr "Создать пароль"
+
+msgid "Enabled"
+msgstr "Включено"
+
+msgid "Disabled"
+msgstr "Отключено"
+
+msgid "Workstation"
+msgstr "Рабочая станция"
+
+msgid "Certificate"
+msgstr "Сертификат"
+
+msgid "New project"
+msgstr "Новый проект"
+
+msgid "Add to your watchlist"
+msgstr "Добавить в список отслеживания"
+
+msgid "Quick search"
+msgstr "Быстрый поиск"
+
+msgid "Related sprint"
+msgstr "Связанный спринт"
+
+msgid "Task participants"
+msgstr "Участники задачи"
+
+msgid "Delete project"
+msgstr "Удалить проект"
+
+msgid "Project Sprint"
+msgstr "Проектный спринт"
+
+msgid "Generate project tasks"
+msgstr "Создать задачи проекта"
+
+msgid "Remove project tasks"
+msgstr "Удалить задачи проекта"
+
+msgid "Real hours spend"
+msgstr "Фактически затраченные часы"
+
+msgid "Calculated from real timeregistrations"
+msgstr "Рассчитано на основе реальных временных регистраций"
+
+msgid "Open Projects"
+msgstr "Открытые проекты"
+
+msgid "Overall process"
+msgstr "Общий процесс"
+
+msgid "Budget spend"
+msgstr "Бюджетные расходы"
+
+msgid "Time registered"
+msgstr "Время зарегистрировано"
+
+msgid "Create baseline"
+msgstr "Создать базовую линию"
+
+msgid "Create *.ics file"
+msgstr "Создать файл .ics"
+
+msgid "Create ICS file"
+msgstr "Создать файл ICS"
+
+msgid "Archive project"
+msgstr "Архивировать проект"
+
+msgid "Add task"
+msgstr "Добавить задачу"
+
+msgid "today"
+msgstr "сегодня"
+
+msgid "month"
+msgstr "месяц"
+
+msgid "week"
+msgstr "неделя"
+
+msgid "day"
+msgstr "день"
+
+msgid "list"
+msgstr "список"
+
+msgid "Create duplicate"
+msgstr "Создать дубликат"
+
+msgid "Withdrawn"
+msgstr "Отозвано"
+
+msgid "In construction"
+msgstr "В процессе строительства"
+
+msgid "In approval"
+msgstr "На утверждении"
+
+msgid "Published"
+msgstr "Опубликовано"
+
+msgid "Your open"
+msgstr "Ваше открыто"
+
+msgid "This task is private and you are not added as project task participant"
+msgstr "Эта задача является конфиденциальной, и вас не добавлено в качестве участника задачи проекта"
+
+msgid "You are not added as project participant, so you cannot see this project task"
+msgstr "Вы не добавлены в качестве участника проекта, поэтому вы не можете видеть эту задачу проекта"
+
+msgid "Existing Categorys"
+msgstr "Существующие категории"
+
+msgid "Category Name"
+msgstr "Имя категории"
+
+msgid "Project Task Categories"
+msgstr "Категории проектных задач"
+
+msgid "Project Categories"
+msgstr "Категории проектов"
+
+msgid "Project Task Category Administration"
+msgstr "Администрирование категорий проектных задач"
+
+msgid "articles"
+msgstr "статьи"
+
+msgid "Articles"
+msgstr "Статьи"
+
+msgid "Article"
+msgstr "Статья"
+
+msgid "article"
+msgstr "статья"
+
+msgid "My articles"
+msgstr "Мои статьи"
+
+msgid "My Articles"
+msgstr "Мои Статьи"
+
+msgid "Create Article"
+msgstr "Создать статью"
+
+msgid "Article name"
+msgstr "Название статьи"
+
+msgid "Article content"
+msgstr "Содержание статьи"
+
+msgid "Article attachments"
+msgstr "Вложения статьи"
+
+msgid "This task is delayed"
+msgstr "Эта задача задерживается"
+
+msgid "Statistics"
+msgstr "Статистика"
+
+msgid "Estimated hours completed"
+msgstr "Оценочно выполнено часов"
+
+msgid "Number Of Project Tasks"
+msgstr "Количество проектных задач"
+
+msgid "Number Of Sprints"
+msgstr "Количество спринтов"
+
+msgid "Project Tasks Completed"
+msgstr "Выполненные проектные задачи"
+
+msgid "Create project"
+msgstr "Создать проект"
+
+msgid "Open projects"
+msgstr "Открытые проекты"
+
+msgid "Closed projects"
+msgstr "Закрытые проекты"
+
+msgid "All projects"
+msgstr "Все проекты"
+
+msgid "Search projects"
+msgstr "Поиск проектов"
+
+msgid "updated"
+msgstr "обновлено"
+
+msgid "Push tasks ahead"
+msgstr "Перенести задачи вперед"
+
+msgid "This is used for pushing future tasks, including this, a number of days forward"
+msgstr "Используется для переноса будущих задач, включая эту, на определенное количество дней вперед"
+
+msgid "For how many days forward should tasks from this tasks start day be moved? Note: you can use minus to subtract days instead!"
+msgstr "На сколько дней вперед следует переносить задачи от дня начала этой задачи? Примечание: вы можете использовать минус для вычета дней вместо этого!"
+
+msgid "Active inquiries"
+msgstr "Активные запросы"
+
+msgid "Your active inquiries"
+msgstr "Ваши активные запросы"
+
+msgid "Your closed inquiries"
+msgstr "Ваши закрытые запросы"
+
+msgid "Your companys active inquiries"
+msgstr "Активные запросы вашей компании"
+
+msgid "Your companys closed inquiries"
+msgstr "Закрытые запросы вашей компании"
+
+msgid "Search for help in our knowledge database"
+msgstr "Ищите помощь в нашей базе знаний"
+
+msgid "Search here"
+msgstr "Искать здесь"
+
+msgid "Your Companys SLA Agreement is:"
+msgstr "Соглашение SLA вашей компании:"
+
+msgid "This means you can expect the following reaction times within opening hours from us."
+msgstr "Это означает, что вы можете ожидать следующих временных интервалов реакции в наши рабочие часы."
+
+msgid "Did you know... that you can also contact us and create tickets via our mail"
+msgstr "Знаете ли вы ... что вы также можете связаться с нами и создавать заявки через нашу почту"
+
+msgid "Approve"
+msgstr "Утвердить"
+
+msgid "Change end"
+msgstr "Изменить конец"
+
+msgid "Change Advisory Board, change approvers"
+msgstr "Комитет по изменениям, изменение утверждающих"
+
+msgid "Valid reason"
+msgstr "Действительная причина"
+
+msgid "Implementation Plan"
+msgstr "План внедрения"
+
+msgid "Contact"
+msgstr "Контакт"
+
+msgid "Comments"
+msgstr "Комментарии"
+
+msgid "allready added to your task board"
+msgstr "уже добавлено в вашу доску задач"
+
+msgid "added to your task board"
+msgstr "добавлено в вашу доску задач"
+
+msgid "task"
+msgstr "задача"
+
+msgid "You need to relate a project before you can relate project tasks"
+msgstr "Прежде чем вы сможете связывать задачи проекта, вам необходимо связать проект"
+
+msgid "This taskboard is a kanban based task board. You can add incidents, request, project tasks etc. to your taskboard to manage all your tasks on daily basis."
+msgstr "Данная доска задач основана на методике Kanban. Вы можете добавлять инциденты, запросы, проектные задачи и т. д. на свою доску задач, чтобы управлять всеми задачами ежедневно."
+
+msgid "Timeregistration"
+msgstr "Учет времени"
+
+msgid "News archive"
+msgstr "Архив новостей"
+
+msgid "Read"
+msgstr "Читать"
+
+msgid "Assets expired"
+msgstr "Истекшие активы"
+
+msgid "Change approvals"
+msgstr "Утверждения изменений"
+
+msgid "Document approvals"
+msgstr "Утверждения документов"
+
+msgid "Documents expired"
+msgstr "Документ истек"
+
+msgid "or"
+msgstr "или"
+
+msgid "Sign in"
+msgstr "Войти"
+
+msgid "Dont have an account?"
+msgstr "У вас нет аккаунта?"
+
+msgid "Sign up"
+msgstr "Зарегистрироваться"
+
+msgid "Forgot password?"
+msgstr "Забыли пароль?"
+
+msgid "Reset now"
+msgstr "Сбросить сейчас"
+
+msgid "About"
+msgstr "О нас"
+
+msgid "Try"
+msgstr "Попробовать"
+
+msgid "Business Services"
+msgstr "Бизнес-услуги"
+
+msgid "Are you sure? Tasks for all involved users will be created"
+msgstr "Вы уверены? Будут созданы задачи для всех участников"
+
+msgid "Are you sure? Tasks for all involved users will be deleted"
+msgstr "Вы уверены? Задачи для всех участников будут удалены"
+
+msgid "Doubleclick to visit"
+msgstr "Дважды щелкните, чтобы посетить"
+
+msgid "Decommissioned"
+msgstr "Вне эксплуатации"
+
+msgid "Quick Menu"
+msgstr "Быстрое меню"
+
+msgid "Sidenav Mini"
+msgstr "Sidenav Mini"
+
+msgid "Light"
+msgstr "Светлый"
+
+msgid "Dark"
+msgstr "Темный"
+
+msgid "Time registration"
+msgstr "Учет времени"
+
+msgid "Manage time registration"
+msgstr "Управление учетом времени"
+
+msgid "New Timeregistration"
+msgstr "Новая запись времени"
+
+msgid "Reactive"
+msgstr "Реактивный"
+
+msgid "Proactive"
+msgstr "Проактивный"
+
+msgid "Forgot password"
+msgstr "Забыли пароль"
+
+msgid "You will receive an e-mail typically within 60 seconds"
+msgstr "Обычно вы получите электронное письмо в течение 60 секунд"
+
+msgid "Reset password"
+msgstr "Сбросить пароль"
+
+msgid "Password must contain: Minimum 8 characters, at least 1 alphabet and 1 number"
+msgstr "Пароль должен содержать: не менее 8 символов, как минимум 1 букву и 1 цифру"
+
+msgid "New Password"
+msgstr "Новый пароль"
+
+msgid "Repeat"
+msgstr "Повторить"
+
+msgid "Repeat Password"
+msgstr "Повторить пароль"
+
+msgid "Already have an account?"
+msgstr "У вас уже есть аккаунт?"
+
+msgid "Login"
+msgstr "Войти"
+
+msgid "Inactive"
+msgstr "Неактивный"
+
+msgid "Back"
+msgstr "Назад"
+
+msgid "Me participating"
+msgstr "Я участвую"
+
+msgid "Modules"
+msgstr "Модули"
+
+msgid "Inquiries"
+msgstr "Запросы"
+
+msgid "My active"
+msgstr "Мои активы"
+
+msgid "My closed"
+msgstr "Мои закрытые"
+
+msgid "Groups"
+msgstr "Группы"
+
+msgid "Teams"
+msgstr "Команды"
+
+msgid "Users in group"
+msgstr "Пользователи в группе"
+
+msgid "Group name"
+msgstr "Название группы"
+
+msgid "module"
+msgstr "модуль"
+
+msgid "Role name"
+msgstr "Имя роли"
+
+msgid "Related module"
+msgstr "Связанный модуль"
+
+msgid "Notes"
+msgstr "Заметки"
+
+msgid "Memberships"
+msgstr "Членства"
+
+msgid "Group Status"
+msgstr "Статус группы"
+
+msgid "Users in role"
+msgstr "Пользователи в роли"
+
+msgid "Groups in role"
+msgstr "Группы в роли"
+
+msgid "Groups Available"
+msgstr "Доступные группы"
+
+msgid "Role Status"
+msgstr "Статус роли"
+
+msgid "Members Available"
+msgstr "Доступные участники"
+
+msgid "Members"
+msgstr "Участники"
+
+msgid "Load Templates"
+msgstr "Загрузить шаблоны"
+
+msgid "Templates"
+msgstr "Шаблоны"
+
+msgid "Module"
+msgstr "Модуль"
+
+msgid "Removed"
+msgstr "Удалено"
+
+msgid "End Date"
+msgstr "Дата окончания"
+
+msgid "Shortname"
+msgstr "Краткое название"
+
+msgid "Tablename"
+msgstr "Имя таблицы"
+
+msgid "Icon"
+msgstr "Значок"
+
+msgid "Product Owner"
+msgstr "Владелец продукта"
+
+msgid "Short Name"
+msgstr "Краткое имя"
+
+msgid "Developer Team"
+msgstr "Команда разработчиков"
+
+msgid "Related User"
+msgstr "Связанный пользователь"
+
+msgid "Related Company"
+msgstr "Связанная компания"
+
+msgid "Last Updated"
+msgstr "Последнее обновление"
+
+msgid "Business Service"
+msgstr "Бизнес-сервис"
+
+msgid "More"
+msgstr "Больше"
+
+msgid "Internal"
+msgstr "Внутренний"
+
+msgid "Clone"
+msgstr "Клонировать"
+
+msgid "Create incident from this"
+msgstr "Создать инцидент из этого"
+
+msgid "Create request from this"
+msgstr "Создать запрос из этого"
+
+msgid "Create change from this"
+msgstr "Создать изменение из этого"
+
+msgid "Create problem from this"
+msgstr "Создать проблему из этого"
+
+msgid "Users in team"
+msgstr "Пользователи в команде"
+
+msgid "Team name"
+msgstr "Имя команды"
+
+msgid "Team colour"
+msgstr "Цвет команды"
+
+msgid "Team Leader"
+msgstr "Руководитель команды"
+
+msgid "Team Manager"
+msgstr "Менеджер команды"
+
+msgid "colour"
+msgstr "цвет"
+
+msgid "Colour"
+msgstr "Цвет"
+
+msgid "Approvals"
+msgstr "Утверждения"
+
+msgid "Follow-ups"
+msgstr "Следования"
+
+msgid "Role"
+msgstr "Роль"
+
+msgid "Last Edited By"
+msgstr "Последнее редактирование"
+
+msgid "Last Edited"
+msgstr "Последнее редактирование"
+
+msgid "Show in relations"
+msgstr "Показать в связях"
+
+msgid "Field Name"
+msgstr "Имя поля"
+
+msgid "Fields"
+msgstr "Поля"
+
+msgid "Status Codes"
+msgstr "Коды статуса"
+
+msgid "Lookup Table"
+msgstr "Таблица поиска"
+
+msgid "Lookup Field"
+msgstr "Поле поиска"
+
+msgid "Done Status"
+msgstr "Статус выполнено"
+
+msgid "SLA Supported"
+msgstr "SLA поддерживается"
+
+msgid "Closed Status"
+msgstr "Закрытый статус"
+
+msgid "Restore Points"
+msgstr "Точки восстановления"
+
+msgid "ITSM Relations"
+msgstr "Отношения ITSM"
+
+msgid "CI Relations"
+msgstr "Отношения CI"
+
+msgid "ITSM Types"
+msgstr "Типы ITSM"
+
+msgid "CI Types"
+msgstr "Типы CI"
+
+msgid "Tableview"
+msgstr "Табличный вид"
+
+msgid "Parent Task"
+msgstr "Родительская задача"
+
+msgid "Push in next status"
+msgstr "Перейти к следующему статусу"
+
+msgid "Notify by email"
+msgstr "Уведомить по электронной почте"
+
+msgid "Notify"
+msgstr "Уведомить"
+
+msgid "Text templates"
+msgstr "Текстовые шаблоны"
+
+msgid "Widgets on frontpage"
+msgstr "Виджеты на главной странице"
+
+msgid "Available"
+msgstr "Доступно"
+
+msgid "Added"
+msgstr "Добавлено"
+
+msgid "Code"
+msgstr "Код"
+
+msgid "Personal Meeting Room"
+msgstr "Личная переговорная"
+
+msgid "These are text shortcuts you can define a text code and a text template that is inserted when you type the text code in text boxes"
+msgstr "Это текстовые ярлыки, где вы можете определить текстовый код и текстовый шаблон, который вставляется, когда вы вводите текстовый код в текстовые поля"
+
+msgid "½ Day"
+msgstr "½ День"
+
+msgid "Day"
+msgstr "День"
+
+msgid "Week"
+msgstr "Неделя"
+
+msgid "Month"
+msgstr "Месяц"
+
+msgid "Today"
+msgstr "Сегодня"
+
+msgid "End date cannot be before start date"
+msgstr "Дата окончания не может быть раньше даты начала"
+
+msgid "Updated"
+msgstr "Обновлено"
+
+msgid "Other searches"
+msgstr "Другие поиски"
+
+msgid "Scan for CVR numbers in WIKI"
+msgstr "Сканирование номеров CVR в WIKI"
+
+msgid "Group Name"
+msgstr "Название группы"
+
+msgid "Expired CI's"
+msgstr "Просроченные CI"
+
+msgid "API configuration"
+msgstr "Настройка API"
+
+msgid "Test update user"
+msgstr "Обновление тестового пользователя"
+
+msgid "Delete user (careful it will delete the user)"
+msgstr "Удалить пользователя (осторожно, будет удален пользователь)"
+
+msgid "Shared"
+msgstr "Общий доступ"
+
+msgid "made by"
+msgstr "сделано"
+
+msgid "making better web for small business."
+msgstr "делая веб-сайты лучше для малого бизнеса."
+
+msgid "Support"
+msgstr "Поддержка"
+
+msgid "Changelog"
+msgstr "Журнал изменений"
+
+msgid "Duplicate"
+msgstr "Дублировать"
+
+msgid "Latest activity in the project"
+msgstr "Последняя активность в проекте"
+
+msgid "Latest activity"
+msgstr "Последняя активность"
+
+msgid "Activity Stream"
+msgstr "Поток активности"
+
+msgid "Remaining"
+msgstr "Осталось"
+
+msgid "Password generator"
+msgstr "Генератор паролей"
+
+msgid "Forms"
+msgstr "Формы"
+
+msgid "Mail Templates"
+msgstr "Почтовые шаблоны"
+
+msgid "Maintenance"
+msgstr "Обслуживание"
+
+msgid "API"
+msgstr "API"
+
+msgid "Active Directory"
+msgstr "Active Directory"
+
+msgid "Helpdesk"
+msgstr "Helpdesk"
+
+msgid "System Configurator"
+msgstr "Системный конфигуратор"
+
+msgid "Administration"
+msgstr "Администрирование"
+
+msgid "Email account for sending emails from"
+msgstr "Электронная почта для отправки писем от"
+
+msgid "SMTP Port"
+msgstr "SMTP-порт"
+
+msgid "SMTP Host"
+msgstr "SMTP-хост"
+
+msgid "SMTP Username"
+msgstr "SMTP имя пользователя"
+
+msgid "SMTP Password"
+msgstr "SMTP пароль"
+
+msgid "Max 25 characters"
+msgstr "Максимум 25 символов"
+
+msgid "Name of the system"
+msgstr "Имя системы"
+
+msgid "Allow people to activate google authenticater for 2 faktor validation?"
+msgstr "Разрешить людям активировать Google Authenticator для двухфакторной проверки?"
+
+msgid "IMAP Host"
+msgstr "IMAP-хост"
+
+msgid "IMAP Username"
+msgstr "IMAP имя пользователя"
+
+msgid "IMAP Password"
+msgstr "IMAP пароль"
+
+msgid "Please make a long token"
+msgstr "Пожалуйста, создайте длинный токен"
+
+msgid "These are the links on the login page"
+msgstr "Это ссылки на странице входа"
+
+msgid "Frontpage links"
+msgstr "Ссылки на главной странице"
+
+msgid "You company Facebook page"
+msgstr "Facebook-страница вашей компании"
+
+msgid "You company page"
+msgstr "Страница вашей компании"
+
+msgid "Company Website"
+msgstr "Веб-сайт компании"
+
+msgid "You company LinkedIn page"
+msgstr "LinkedIn-страница вашей компании"
+
+msgid "Registration options"
+msgstr "Варианты регистрации"
+
+msgid "Allow user registrations via email?"
+msgstr "Разрешить регистрацию пользователей по электронной почте?"
+
+msgid "Default company assignment for new user registrations?"
+msgstr "Назначение предприятия по умолчанию для новых регистраций пользователей?"
+
+msgid "Default Company?"
+msgstr "Компания по умолчанию?"
+
+msgid "You are done"
+msgstr "Вы закончили"
+
+msgid "Submit to save your settings"
+msgstr "Отправить для сохранения ваших настроек"
+
+msgid "Previous"
+msgstr "Предыдущий"
+
+msgid "Next"
+msgstr "Следующий"
+
+msgid "Submit"
+msgstr "Отправить"
+
+msgid "Settings did not get updated"
+msgstr "Настройки не обновлены"
+
+msgid "Settings updated"
+msgstr "Настройки обновлены"
+
+msgid "Default Design"
+msgstr "Стандартный дизайн"
+
+msgid "Google Authenticate"
+msgstr "Аутентификация Google"
+
+msgid "System"
+msgstr "Система"
+
+msgid "Wiki"
+msgstr "Wiki"
+
+msgid "Mail templates"
+msgstr "Почтовые шаблоны"
+
+msgid "Knowledge base"
+msgstr "База знаний"
+
+msgid "queue"
+msgstr "очередь"
+
+msgid "Queue"
+msgstr "Очередь"
+
+msgid "Doing"
+msgstr "Делается"
+
+msgid "Done"
+msgstr "Сделано"
+
+msgid "done"
+msgstr "сделано"
+
+msgid "doing"
+msgstr "делается"
+
+msgid "Monday"
+msgstr "Понедельник"
+
+msgid "Tuesday"
+msgstr "Вторник"
+
+msgid "Wednesday"
+msgstr "Среда"
+
+msgid "Thursdag"
+msgstr "Четверг"
+
+msgid "Friday"
+msgstr "Пятница"
+
+msgid "Saturday"
+msgstr "Суббота"
+
+msgid "Sunday"
+msgstr "Воскресенье"
+
+msgid "Thursday"
+msgstr "Четверг"
+
+msgid "Management functions"
+msgstr "Функции управления"
+
+msgid "This weeks time registrations for team"
+msgstr "Регистрации времени на этой неделе для команды"
+
+msgid "Employee"
+msgstr "Сотрудник"
+
+msgid "Solved with solution"
+msgstr "Решено с решением"
+
+msgid "Solved"
+msgstr "Решено"
+
+msgid "Parent Assets"
+msgstr "Родительские активы"
+
+msgid "Child Assets"
+msgstr "Дочерние активы"
+
+msgid "This relation will make current assets child"
+msgstr "Это отношение сделает текущие активы дочерними"
+
+msgid "Create a parent relation"
+msgstr "Создать отношение родителя"
+
+msgid "This relation will make current asset parent"
+msgstr "Это отношение сделает текущий актив родителем"
+
+msgid "Create a child relation"
+msgstr "Создать дочернее отношение"
+
+msgid "Service"
+msgstr "Служба"
+
+msgid "Overall"
+msgstr "Общий"
+
+msgid "Subordinate"
+msgstr "Подчиненный"
+
+msgid "Create relation"
+msgstr "Создать отношение"
+
+msgid "Get direct link"
+msgstr "Получить прямую ссылку"
+
+msgid "Problem report"
+msgstr "Сообщение о проблеме"
+
+msgid "Please explain the problem"
+msgstr "Пожалуйста, объясните проблему"
+
+msgid "this will create a ticket at Practicle Support so please dont abuse this!"
+msgstr "это создаст билет в Практической поддержке, поэтому, пожалуйста, не злоупотребляйте этим!"
+
+msgid "Report a problem"
+msgstr "Сообщить о проблеме"
+
+msgid "Category administration"
+msgstr "Управление категориями"
+
+msgid "Create News Article"
+msgstr "Создать новостную статью"
+
+msgid "Date to be published"
+msgstr "Дата публикации"
+
+msgid "Writer"
+msgstr "Писатель"
+
+msgid "Headline"
+msgstr "Заголовок"
+
+msgid "Add new category"
+msgstr "Добавить новую категорию"
+
+msgid "Usergroup"
+msgstr "Группа пользователей"
+
+msgid "News Article"
+msgstr "Новостная статья"
+
+msgid "Get latest CVE news entries"
+msgstr "Получить последние новости о CVE"
+
+msgid "Delete all CVE news entries"
+msgstr "Удалить все новости о CVE"
+
+msgid "Fetch"
+msgstr "Получить"
+
+msgid "Add filter"
+msgstr "Добавить фильтр"
+
+msgid "Miscellaneous"
+msgstr "Разное"
+
+msgid "miscellaneous"
+msgstr "разное"
+
+msgid "CVE Filters"
+msgstr "Фильтры CVE"
+
+msgid "Documentation"
+msgstr "Документация"
+
+msgid "last 2 months"
+msgstr "последние 2 месяца"
+
+msgid "Date worked"
+msgstr "Дата работы"
+
+msgid "Duration"
+msgstr "Продолжительность"
+
+msgid "Billable"
+msgstr "Платный"
+
+msgid "Date for registration"
+msgstr "Дата регистрации"
+
+msgid "All"
+msgstr "Все"
+
+msgid "Daily"
+msgstr "Ежедневно"
+
+msgid "Duration minutes"
+msgstr "Продолжительность минуты"
+
+msgid "Duration hours"
+msgstr "Продолжительность часы"
+
+msgid "Number of registrations"
+msgstr "Количество регистраций"
+
+msgid "Daily basis"
+msgstr "Ежедневная основа"
+
+msgid "Create Relations"
+msgstr "Создать отношения"
+
+msgid "Table Name"
+msgstr "Имя таблицы"
+
+msgid "Import Source"
+msgstr "Импорт источника"
+
+msgid "Synchronization"
+msgstr "Синхронизация"
+
+msgid "Sync Time"
+msgstr "Время синхронизации"
+
+msgid "Last Synced"
+msgstr "Последняя синхронизация"
+
+msgid "Label"
+msgstr "Этикетка"
+
+msgid "Default value"
+msgstr "Значение по умолчанию"
+
+msgid "Field title"
+msgstr "Название поля"
+
+msgid "Field Width"
+msgstr "Ширина поля"
+
+msgid "Lookup Field Result (Table View)"
+msgstr "Результат поиска поля (вид таблицы)"
+
+msgid "Lookup Field Result (Modal View)"
+msgstr "Результат поиска поля (модальное представление)"
+
+msgid "Primary Relation Field"
+msgstr "Первичное поле отношений"
+
+msgid "Import Source Field"
+msgstr "Поле источника импорта"
+
+msgid "Sync Source Field"
+msgstr "Поле источника синхронизации"
+
+msgid "Addon"
+msgstr "Дополнение"
+
+msgid "Select Field Options"
+msgstr "Выберите параметры поля"
+
+msgid "Child relations lookup"
+msgstr "Поиск дочерних отношений"
+
+msgid "Locked"
+msgstr "Заблокирован"
+
+msgid "Required"
+msgstr "Обязательный"
+
+msgid "Searchable"
+msgstr "Поиск"
+
+msgid "Hide Tables"
+msgstr "Скрыть таблицы"
+
+msgid "Hide Forms"
+msgstr "Скрыть формы"
+
+msgid "Syncronize"
+msgstr "Синхронизировать"
+
+msgid "Reset field sort order"
+msgstr "Сбросить порядок сортировки поля"
+
+msgid "Related workflow"
+msgstr "Связанный рабочий процесс"
+
+msgid "Reset forms data"
+msgstr "Сбросить данные формы"
+
+msgid "Check Table Consistency"
+msgstr "Проверить согласованность таблицы"
+
+msgid "Priority 1"
+msgstr "Приоритет 1"
+
+msgid "Priority 2"
+msgstr "Приоритет 2"
+
+msgid "Priority 3"
+msgstr "Приоритет 3"
+
+msgid "Priority 4"
+msgstr "Приоритет 4"
+
+msgid "Field Label"
+msgstr "Метка поля"
+
+msgid "Features"
+msgstr "Особенности"
+
+msgid "Create Incident"
+msgstr "Создать инцидент"
+
+msgid "Create Change"
+msgstr "Создать изменение"
+
+msgid "Create Problem"
+msgstr "Создать проблему"
+
+msgid "Create Request"
+msgstr "Создать запрос"
+
+msgid "Incidents dispatch view"
+msgstr "Просмотр доставки инцидентов"
+
+msgid "Requests dispatch view"
+msgstr "Просмотр доставки запросов"
+
+msgid "Changes dispatch view"
+msgstr "Просмотр доставки изменений"
+
+msgid "Problems dispatch view"
+msgstr "Просмотр доставки проблем"
+
+msgid "Shortcuts"
+msgstr "Ярлыки"
+
+msgid "Watch list"
+msgstr "Список наблюдения"
+
+msgid "Generic forms"
+msgstr "Общие формы"
+
+msgid "Authorizer"
+msgstr "Авторизатор"
+
+msgid "Reason"
+msgstr "Причина"
+
+msgid "Administrators"
+msgstr "Администраторы"
+
+msgid "Updated by"
+msgstr "Обновлено"
+
+msgid "Image"
+msgstr "Изображение"
+
+msgid "Click to see"
+msgstr "Нажмите, чтобы увидеть"
+
+msgid "this is essential in the subject for the mail reply by the customer to land on specific type and number"
+msgstr "это важно в теме, чтобы ответ на электронное письмо клиента приземлялся на конкретный тип и номер"
+
+msgid "this is essential in the subject for the mail reply by the customer to land on specific type"
+msgstr "это важно в теме, чтобы ответ на электронное письмо клиента приземлялся на конкретный тип"
+
+msgid "placeholder for current incident/change/request/problem number"
+msgstr "заполнитель для текущего номера инцидента/изменения/запроса/проблемы"
+
+msgid "placeholder for customers firstname"
+msgstr "заполнитель для имени клиента"
+
+msgid "placeholder for customers lastname"
+msgstr "заполнитель для фамилии клиента"
+
+msgid "if action is a comment - this is the placeholder for the comment"
+msgstr "если действие - это комментарий, это заполнитель для комментария"
+
+msgid "placeholder for the system name"
+msgstr "заполнитель для имени системы"
+
+msgid "placeholder for the system url"
+msgstr "заполнитель для URL-адреса системы"
+
+msgid "placeholder for the name of the type"
+msgstr "заполнитель для имени типа"
+
+msgid "placeholder for direct link to the specific incident/change/request/problem (can not be accessed by customers)"
+msgstr "заполнитель для прямой ссылки на конкретный инцидент/изменение/запрос/проблему (недоступно для клиентов)"
+
+msgid "Placeholders"
+msgstr "заполнители"
+
+msgid "Password must contain: minimum 8 characters, at least 1 alphabet, 1 number and 1 special character"
+msgstr "Пароль должен содержать: минимум 8 символов, минимум 1 букву, 1 цифру и 1 специальный символ"
+
+msgid "This email allready exists"
+msgstr "Этот адрес электронной почты уже существует"
+
+msgid "Please confirm password"
+msgstr "Пожалуйста, подтвердите пароль"
+
+msgid "Passwords did not match"
+msgstr "Пароли не совпадают"
+
+msgid "Please enter a password"
+msgstr "Пожалуйста, введите пароль"
+
+msgid "Please enter a lastname"
+msgstr "Пожалуйста, введите фамилию"
+
+msgid "Please enter a firstname"
+msgstr "Пожалуйста, введите имя"
+
+msgid "Email user"
+msgstr "Пользователь электронной почты"
+
+msgid "Preview group members"
+msgstr "Просмотр участников группы"
+
+msgid "All Users"
+msgstr "Все пользователи"
+
+msgid "Change Administrators"
+msgstr "Администраторы изменений"
+
+msgid "Change Users"
+msgstr "Пользователи изменений"
+
+msgid "CMDB Administrators"
+msgstr "Администраторы CMDB"
+
+msgid "CMDB Users"
+msgstr "Пользователи CMDB"
+
+msgid "Company Administrators"
+msgstr "Администраторы компании"
+
+msgid "Default CAB"
+msgstr "По умолчанию CAB"
+
+msgid "Default group messages"
+msgstr "Сообщения группы по умолчанию"
+
+msgid "Document Administrators"
+msgstr "Администраторы документов"
+
+msgid "Document Users"
+msgstr "Пользователи документов"
+
+msgid "Forms administrators"
+msgstr "Администраторы форм"
+
+msgid "Forms users"
+msgstr "Пользователи форм"
+
+msgid "Incident Administrators"
+msgstr "Администраторы инцидентов"
+
+msgid "Incident Users"
+msgstr "Пользователи инцидентов"
+
+msgid "Module Administrators"
+msgstr "Администраторы модуля"
+
+msgid "News Administrators"
+msgstr "Администраторы новостей"
+
+msgid "News Writer"
+msgstr "Писатель новостей"
+
+msgid "Problem Administrators"
+msgstr "Администраторы проблем"
+
+msgid "Problem Users"
+msgstr "Пользователи проблем"
+
+msgid "Project Administrators"
+msgstr "Администраторы проекта"
+
+msgid "Project Users"
+msgstr "Пользователи проекта"
+
+msgid "Request Administrators"
+msgstr "Администраторы запросов"
+
+msgid "Request Users"
+msgstr "Пользователи запросов"
+
+msgid "Timeregistration Administrators"
+msgstr "Администраторы учета времени"
+
+msgid "User Administrator"
+msgstr "Администратор пользователя"
+
+msgid "Workflow Administrators"
+msgstr "Администраторы рабочего процесса"
+
+msgid "Default"
+msgstr "По умолчанию"
+
+msgid "Generic Forms"
+msgstr "Общие формы"
+
+msgid "Group updated"
+msgstr "Группа обновлена"
+
+msgid "All employee users"
+msgstr "Все пользователи сотрудников"
+
+msgid "Group Administrators"
+msgstr "Администраторы группы"
+
+msgid "Role created"
+msgstr "Роль создана"
+
+msgid "Preview team members"
+msgstr "Просмотр членов команды"
+
+msgid "Role memberships"
+msgstr "Ролевые членства"
+
+msgid "Group memberships"
+msgstr "Членства в группах"
+
+msgid "Roles Available"
+msgstr "Доступные роли"
+
+msgid "Team memberships"
+msgstr "Членства в команде"
+
+msgid "Teams Available"
+msgstr ""
+
+msgid "Consultant"
+msgstr "Консультант"
+
+msgid "Members of this group possess unrestricted privileges to the overall system. Administrators can access the administration module. Only a select few should belong to this group."
+msgstr "Члены этой группы обладают неограниченными привилегиями по всей системе. Администраторы могут получить доступ к модулю администрирования. В эту группу должны входить только избранные."
+
+msgid "This group can be used as a collector group for all users of type employees - in general - if this group is chosen, all employee users will have access."
+msgstr "Эта группа может использоваться в качестве группы сбора для всех пользователей типа сотрудников - в общем - если выбрана эта группа, все пользователи сотрудники получат доступ."
+
+msgid "This group gives advanced access to to the request module. Users in this group will be able to update request informations in general and is not limited in access rights in general.  This should only be granted to central administrators and not more then very few people."
+msgstr "Эта группа дает расширенный доступ к модулю запроса. Пользователи в этой группе смогут обновлять информацию о запросе в общем и не ограничены в правах доступа в общем. Это должно быть предоставлено только центральным администраторам и не более чем немногим людям."
+
+msgid "Standard group for request module. Users have to be part of this group in order to be able to use standard request module."
+msgstr "Стандартная группа для модуля запроса. Пользователи должны быть частью этой группы, чтобы иметь возможность использовать стандартный модуль запроса."
+
+msgid "This group is for people that needs to be able to be assigned as responsible on workflows and thereby also can edit it."
+msgstr "Эта группа предназначена для людей, которым нужно иметь возможность быть ответственными за рабочие процессы и, таким образом, также их редактировать."
+
+msgid "Has the rights to modify and oversee users and their permissions."
+msgstr "Имеет право изменять и надзирать за пользователями и их разрешениями."
+
+msgid "Username already exists"
+msgstr "Имя пользователя уже существует"
+
+msgid "Required fields are missing values"
+msgstr "Отсутствуют обязательные поля"
+
+msgid "This email already exists for"
+msgstr "Этот адрес электронной почты уже существует для"
+
+msgid "Email cannot be empty"
+msgstr "Электронная почта не может быть пустой"
+
+msgid "Firstname is required"
+msgstr "Имя обязательно"
+
+msgid "Username cannot be empty"
+msgstr "Имя пользователя не может быть пустым"
+
+msgid "This username already exists for"
+msgstr "Это имя пользователя уже существует для"
+
+msgid "Write words seperated by ; if you want an empty value as select option - write NULL"
+msgstr "Напишите слова, разделенные символом ";" , если вы хотите пустое значение в качестве опции выбора - напишите NULL"
+
+msgid "Create project task from this"
+msgstr "Создать задачу проекта из этого"
+
+msgid "Select user for add"
+msgstr "Выберите пользователя для добавления"
+
+msgid "Select user for removal"
+msgstr "Выберите пользователя для удаления"
+
+msgid "No Sprint"
+msgstr "Нет спринта"
+
+msgid "Parent"
+msgstr "Родитель"
+
+msgid "Private"
+msgstr "Частный"
+
+msgid "Show members"
+msgstr "Показать участников"
+
+msgid "Last login"
+msgstr "Последний вход"
+
+msgid "Create Project Task"
+msgstr "Создать задачу проекта"
+
+msgid "Simple"
+msgstr "Простой"
+
+msgid "Log Book"
+msgstr "Журнал"
+
+msgid "Related number"
+msgstr "Связанный номер"
+
+msgid "Add empty row"
+msgstr "Добавить пустую строку"
+
+msgid "This adds an empty value to a select box and only for that"
+msgstr "Это добавляет пустое значение в поле выбора и только для этого"
+
+msgid "Mine"
+msgstr "Мой"
+
+msgid "mine"
+msgstr "мой"
+
+msgid "Search results"
+msgstr "Результаты поиска"
+
+msgid "Select Options"
+msgstr "Выбрать параметры"
+
+msgid "Options"
+msgstr "Опции"
+
+msgid "Lookup"
+msgstr "Поиск"
+
+msgid "Syncronization"
+msgstr "Синхронизация"
+
+msgid "relations"
+msgstr "Связи"
+
+msgid "Primary"
+msgstr "Основной"
+
+msgid "Full view height"
+msgstr "Полная высота просмотра"
+
+msgid "Table view"
+msgstr "Табличный вид"
+
+msgid "Timeline view"
+msgstr "Вид временной шкалы"
+
+msgid "Deactivate"
+msgstr "Деактивировать"
+
+msgid "Transfer"
+msgstr "Перевод"
+
+msgid "Transfer elements to other user"
+msgstr "Перевести элементы на другого пользователя"
+
+msgid "Other"
+msgstr "Другой"
+
+msgid "Select a user"
+msgstr "Выберите пользователя"
+
+msgid "Select all / Deselect all"
+msgstr "Выбрать все / Снять выделение со всех"
+
+msgid "CMDB, ITSM and other objects are getting moved to the selected user (responsible is getting changed). Transfer can not be transfered to user type customer. Transfer of Roles and Group means that memberships that the current user has, is getting added to the selected user."
+msgstr "CMDB, ITSM и другие объекты перемещаются к выбранному пользователю (ответственный изменяется). Перенос не может быть перенесен на пользователя типа клиент. Перенос ролей и групп означает, что членства, которые есть у текущего пользователя, добавляются к выбранному пользователю."
+
+msgid "Workflow Tasks"
+msgstr "Задачи рабочего процесса"
+
+msgid "KanBan Tasks"
+msgstr "Задачи KanBan"
+
+msgid "ITSM elements"
+msgstr "Элементы ITSM"
+
+msgid "CMDB elements"
+msgstr "Элементы CMDB"
+
+msgid "We are missing a primary field for this type"
+msgstr "Нам не хватает основного поля для этого типа"
+
+msgid "Result field"
+msgstr "Поле результата"
+
+msgid "Choose which field should be returned as result in the select box"
+msgstr "Выберите, какое поле должно быть возвращено в качестве результата в поле выбора"
+
+msgid "User fullname and username"
+msgstr "Полное имя пользователя и имя пользователя"
+
+msgid "User fullname"
+msgstr "Полное имя пользователя"
+
+msgid "Select this if you want a result with users fullname"
+msgstr "Выберите это, если хотите получить результат с полным именем пользователя"
+
+msgid "Select this if you want a result with users fullname and username"
+msgstr "Выберите это, если хотите получить результат с полным именем пользователя и именем пользователя"
+
+msgid "Place on right side"
+msgstr "Разместить с правой стороны"
+
+msgid "Place field on the right side of form"
+msgstr "Разместите поле на правой стороне формы"
+
+msgid "This will make the field a normal and simple text result"
+msgstr "Это сделает поле обычным и простым текстовым результатом"
+
+msgid "Simple text"
+msgstr "Простой текст"
+
+msgid "Make field disabled on create"
+msgstr "Отключить поле при создании"
+
+msgid "Make field required"
+msgstr "Сделать поле обязательным"
+
+msgid "Make searchable from search bar on content of this field"
+msgstr "Сделать доступным для поиска из строки поиска по содержимому этого поля"
+
+msgid "Notes fields can get full height so all content is shown on view page"
+msgstr "Поля заметок могут быть полной высоты, чтобы все содержимое отображалось на странице просмотра"
+
+msgid "Deactivate this field from Table views"
+msgstr "Деактивировать это поле из представлений таблицы"
+
+msgid "Deactivate this field from Form views"
+msgstr "Деактивировать это поле из представлений формы"
+
+msgid "Reset module data"
+msgstr "Сбросить данные модуля"
+
+msgid "This deletes all data records for this module including logs, files, relations, workflows and more"
+msgstr "Это удаляет все записи данных для этого модуля, включая журналы, файлы, связи, рабочие процессы и многое другое"
+
+msgid "Reset all modules (data only)"
+msgstr "Сбросить все модули (только данные)"
+
+msgid "Reset all modules to standard"
+msgstr "Сбросить все модули к стандартным настройкам"
+
+msgid "Tasks completed"
+msgstr "Задачи выполнены"
+
+msgid "Unread comments"
+msgstr "Непрочитанные комментарии"
+
+msgid "Password Module Administrators"
+msgstr "Администраторы модуля паролей"
+
+msgid "Password Module Users"
+msgstr "Пользователи модуля паролей"
+
+msgid "Field design"
+msgstr "Дизайн поля"
+
+msgid "General"
+msgstr "Общий"
+
+msgid "Create a template based on the completed form below"
+msgstr "Создайте шаблон на основе заполненной ниже формы"
+
+msgid "Delete the current selected template"
+msgstr "Удалите текущий выбранный шаблон"
+
+msgid "Create public template that all users can choose"
+msgstr "Создайте общедоступный шаблон, который могут выбрать все пользователи"
+
+msgid "Choose template"
+msgstr "Выбрать шаблон"
+
+msgid "Are you sure?"
+msgstr "Вы уверены?"
+
+msgid "Make field disabled on view/edit"
+msgstr "Отключить поле при просмотре/редактировании"
+
+msgid "Locked on create"
+msgstr "Заблокировано при создании"
+
+msgid "Locked on view"
+msgstr "Заблокировано при просмотре"
+
+msgid "Group filter"
+msgstr "Групповой фильтр"
+
+msgid "Deactivate Forms"
+msgstr "Отключить формы"
+
+msgid "Deactivate Tables"
+msgstr "Отключить таблицы"
+
+msgid "Retrieve field but hide it"
+msgstr "Получить поле, но скрыть его"
+
+msgid "Hidden"
+msgstr "Скрытый"
+
+msgid "Preview of team members"
+msgstr "Предварительный просмотр членов команды"
+
+msgid "Groups added"
+msgstr "Группы добавлены"
+
+msgid "Quarantene state"
+msgstr "Состояние карантина"
+
+msgid "Email to send to"
+msgstr "Электронная почта для отправки"
+
+msgid "Or choose prepared email"
+msgstr "Или выберите подготовленное письмо"
+
+msgid "Attach PDF"
+msgstr "Прикрепить PDF"
+
+msgid "Create PDF"
+msgstr "Создать PDF"
+
+msgid "Found in field"
+msgstr "Найдено в поле"
+
+msgid "Standard values"
+msgstr ""
+
+msgid "If you want check fields to be default checked you must add the text checked to the default value"
+msgstr ""
+
+msgid "Remove fields"
+msgstr ""
+
+msgid "Do not delete standard fields. If you feel they are not necessary - disable them in table view and modal view"
+msgstr ""
+
+msgid "Field widths"
+msgstr ""
+
+msgid "Field widths are determined using Bootstrap's grid system. A row is 12 blocks wide, so you can set a field's width by specifying how many blocks it should occupy. For example, setting the width to 6 will make the field half the row's width"
+msgstr ""
+
+msgid "Create Project"
+msgstr ""
+
+msgid "Transfer elments to other user"
+msgstr ""
+

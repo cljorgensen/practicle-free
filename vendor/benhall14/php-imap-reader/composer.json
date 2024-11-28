@@ -1,0 +1,25 @@
+{
+    "name": "benhall14/php-imap-reader",
+    "description": "A PHP class that makes working with IMAP in PHP simple.",
+    "homepage": "https://github.com/benhall14/php-imap-reader",
+    "keywords": ["imap", "mail", "php", "pop3", "mailbox", "email"],
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Benjamin Hall",
+            "email": "ben@conobe.co.uk",
+            "homepage": "https://conobe.co.uk",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=5.3",
+        "ext-imap": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "benhall14\\": "src/"
+        }
+    }
+}

@@ -1,0 +1,16 @@
+{
+	"source" : {
+		"host" : "",
+		"user" : "",
+		"password" : "",
+		"database" : "",
+        "port" : "3306"
+	},
+	"dest" : {
+		"host" : "",
+		"user" : "",
+		"password" : "",
+		"database" : "",
+        "port" : "3306"
+	}
+}

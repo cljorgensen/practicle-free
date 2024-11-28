@@ -1,0 +1,3055 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Practicle\n"
+"POT-Creation-Date: 2019-05-16 11:25+0200\n"
+"PO-Revision-Date: 2019-07-11 13:00+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.2.3\n"
+"X-Poedit-Basepath: .\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: ja_JP\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+
+msgid "A customer contact person must be chosen - please create customer contact person before creating"
+msgstr "顧客の連絡先担当者を選択する必要があります - 顧客の連絡先担当者を作成してから作成してください"
+
+msgid "Account number"
+msgstr "口座番号"
+
+msgid "Actions"
+msgstr "アクション"
+
+msgid "Active"
+msgstr "アクティブ"
+
+msgid "Active projects"
+msgstr "アクティブなプロジェクト"
+
+msgid "Activity"
+msgstr "アクティビティ"
+
+msgid "Add"
+msgstr "追加"
+
+msgid "Add News"
+msgstr "ニュースを追加"
+
+msgid "Add as favorite"
+msgstr "お気に入りに追加"
+
+msgid "Add as task"
+msgstr "タスクとして追加"
+
+msgid "Add document"
+msgstr "ドキュメントを追加"
+
+msgid "Add new task"
+msgstr "新しいタスクを追加"
+
+msgid "Add to existing problem"
+msgstr "既存の問題に追加"
+
+msgid "Address"
+msgstr "住所"
+
+msgid "Administrate News"
+msgstr "ニュースを管理"
+
+msgid "Affected Company"
+msgstr "影響を受ける会社"
+
+msgid "Alerts"
+msgstr "アラート"
+
+msgid "All News"
+msgstr "すべてのニュース"
+
+msgid "All active"
+msgstr "すべてのアクティブ"
+
+msgid "All closed"
+msgstr "すべての終了済み"
+
+msgid "All overdue"
+msgstr "すべての期限切れ"
+
+msgid "Amount spend"
+msgstr "費用"
+
+msgid "Anniversarys"
+msgstr "記念日"
+
+msgid "Answer"
+msgstr "回答"
+
+msgid "Approval Tasks"
+msgstr "承認タスク"
+
+msgid "Approver"
+msgstr "承認者"
+
+msgid "Assess"
+msgstr "評価する"
+
+msgid "Assets"
+msgstr "資産"
+
+msgid "Assigned"
+msgstr "割り当て済み"
+
+msgid "Assigned Team"
+msgstr "割り当てられたチーム"
+
+msgid "Assigned to responsible"
+msgstr "責任者に割り当て済み"
+
+msgid "Assigned to team"
+msgstr "チームに割り当て済み"
+
+msgid "Attach a workflow"
+msgstr "ワークフローを添付する"
+
+msgid "Authorize"
+msgstr "承認する"
+
+msgid "Average solution time"
+msgstr "平均解決時間"
+
+msgid "Await Customer"
+msgstr "顧客待ち"
+
+msgid "Awaiting"
+msgstr "保留中"
+
+msgid "Awaiting customer"
+msgstr "顧客待ち"
+
+msgid "Backout Plan"
+msgstr "バックアウト計画"
+
+msgid "Bank"
+msgstr "銀行"
+
+msgid "Birthday"
+msgstr "誕生日"
+
+msgid "Birthdays"
+msgstr "誕生日"
+
+msgid "Board"
+msgstr "ボード"
+
+msgid "Boards"
+msgstr "ボード"
+
+msgid "Bought"
+msgstr "購入済み"
+
+msgid "Branche news"
+msgstr "支店ニュース"
+
+msgid "Bronze"
+msgstr "ブロンズ"
+
+msgid "Budget Spend"
+msgstr "予算消費"
+
+msgid "CBR"
+msgstr "CBR"
+
+msgid "Cancel"
+msgstr "キャンセル"
+
+msgid "Canceled"
+msgstr "キャンセルされた"
+
+msgid "Categories"
+msgstr "カテゴリー"
+
+msgid "Category"
+msgstr "カテゴリ"
+
+msgid "Category Administration"
+msgstr "カテゴリ管理"
+
+msgid "Certificates"
+msgstr "証明書"
+
+msgid "Change"
+msgstr "変更する"
+
+msgid "Change Password"
+msgstr "パスワードを変更する"
+
+msgid "Change password"
+msgstr "パスワードを変更する"
+
+msgid "Changes"
+msgstr "変更"
+
+msgid "Changes saved"
+msgstr "変更が保存されました"
+
+msgid "Choose file"
+msgstr "ファイルを選択する"
+
+msgid "City"
+msgstr "市"
+
+msgid "Close"
+msgstr "閉じる"
+
+msgid "Closed"
+msgstr "閉じられた"
+
+msgid "Comment"
+msgstr "コメント"
+
+msgid "Companies"
+msgstr "企業"
+
+msgid "Company"
+msgstr "会社"
+
+msgid "Company Name"
+msgstr "会社名"
+
+msgid "Complete"
+msgstr "完了"
+
+msgid "Completed"
+msgstr "完了"
+
+msgid "Content"
+msgstr "コンテンツ"
+
+msgid "Contracts"
+msgstr "契約"
+
+msgid "Corporate Links"
+msgstr "企業リンク"
+
+msgid "Country"
+msgstr "国"
+
+msgid "Create"
+msgstr "作成する"
+
+msgid "Create as new problem"
+msgstr "新しい問題として作成する"
+
+msgid "Create document"
+msgstr "ドキュメントを作成する"
+
+msgid "Create favorite from this"
+msgstr "これからお気に入りを作成"
+
+msgid "Create new"
+msgstr "新規作成"
+
+msgid "Create random password"
+msgstr "ランダムなパスワードを作成する"
+
+msgid "Create task from this"
+msgstr "これからタスクを作成する"
+
+msgid "Created"
+msgstr "作成された"
+
+msgid "Customer"
+msgstr "顧客"
+
+msgid "Customer Companies"
+msgstr "顧客企業"
+
+msgid "Customer Contacts"
+msgstr "顧客連絡先"
+
+msgid "Customer contacts"
+msgstr "顧客連絡先"
+
+msgid "Customers"
+msgstr "顧客"
+
+msgid "Dashboards"
+msgstr "ダッシュボード"
+
+msgid "Data not yet registered"
+msgstr "データはまだ登録されていません"
+
+msgid "Date"
+msgstr "日付"
+
+msgid "Date performed"
+msgstr "実行日"
+
+msgid "Deadline"
+msgstr "締め切り"
+
+msgid "Deadline Review"
+msgstr "締切日のレビュー"
+
+msgid "Deadline for review"
+msgstr "レビューの期限"
+
+msgid "Delete"
+msgstr "削除"
+
+msgid "Deleted"
+msgstr "削除済み"
+
+msgid "Description"
+msgstr "説明"
+
+msgid "Descriptions"
+msgstr "説明"
+
+msgid "Design"
+msgstr "デザイン"
+
+msgid "Destination"
+msgstr "目的地"
+
+msgid "Details"
+msgstr "詳細"
+
+msgid "Dispatch que"
+msgstr "ディスパッチキュー"
+
+msgid "Document Name"
+msgstr "ドキュメント名"
+
+msgid "Documents"
+msgstr "ドキュメント"
+
+msgid "Edit"
+msgstr "編集"
+
+msgid "Edit Task"
+msgstr "タスクを編集"
+
+msgid "Edit Userprofile"
+msgstr "ユーザープロファイルを編集"
+
+msgid "Email"
+msgstr "電子メール"
+
+msgid "Employees"
+msgstr "従業員"
+
+msgid "Enable Google Authenticator"
+msgstr "Google Authenticatorを有効にする"
+
+msgid "End"
+msgstr "終わり"
+
+msgid "Error updating password"
+msgstr "パスワードの更新中にエラーが発生しました"
+
+msgid "Estimated Budget"
+msgstr "予算"
+
+msgid "Estimated Hours"
+msgstr "予想時間"
+
+msgid "Estimated budget"
+msgstr "予算"
+
+msgid "Expiration Date"
+msgstr "有効期限"
+
+msgid "Expires"
+msgstr "有効期限が切れます"
+
+msgid "Favorite"
+msgstr "お気に入り"
+
+msgid "Favorites"
+msgstr "お気に入り"
+
+msgid "File"
+msgstr "ファイル"
+
+msgid "Filename"
+msgstr "ファイル名"
+
+msgid "Files"
+msgstr "ファイル"
+
+msgid "Finished projects"
+msgstr "完成したプロジェクト"
+
+msgid "First Name"
+msgstr "名"
+
+msgid "Firstname"
+msgstr "名"
+
+msgid "From"
+msgstr "から"
+
+msgid "Full history"
+msgstr "完全な履歴"
+
+msgid "Generate files"
+msgstr "ファイルを生成する"
+
+msgid "Generated password"
+msgstr "生成されたパスワード"
+
+msgid "Go"
+msgstr "進む"
+
+msgid "Go to favorites"
+msgstr "お気に入りに移動"
+
+msgid "Gold"
+msgstr "ゴールド"
+
+msgid "Group"
+msgstr "グループ"
+
+msgid "Group Access"
+msgstr "グループアクセス"
+
+msgid "Handheld Devices"
+msgstr "携帯機器"
+
+msgid "Handheld device updated"
+msgstr "携帯機器が更新されました"
+
+msgid "Headquarters"
+msgstr "本社"
+
+msgid "Help"
+msgstr "ヘルプ"
+
+msgid "High"
+msgstr "高い"
+
+msgid "History"
+msgstr "履歴"
+
+msgid "Hostname"
+msgstr "ホスト名"
+
+msgid "Hours spend"
+msgstr "消費された時間"
+
+msgid "Implementing"
+msgstr "実装中"
+
+msgid "In Assessment"
+msgstr "評価中"
+
+msgid "In Authorization"
+msgstr "認可中"
+
+msgid "In Resolution Process"
+msgstr "解決中"
+
+msgid "In Review"
+msgstr "レビュー中"
+
+msgid "In Scheduling"
+msgstr "スケジューリング中"
+
+msgid "In resolution process"
+msgstr "解決中"
+
+msgid "In review"
+msgstr "レビュー中"
+
+msgid "Incident"
+msgstr "インシデント"
+
+msgid "Incidents"
+msgstr "インシデント"
+
+msgid "Internal Comment"
+msgstr "内部コメント"
+
+msgid "Invoice"
+msgstr "請求書"
+
+msgid "Item number"
+msgstr "商品番号"
+
+msgid "Job Titel"
+msgstr "ジョブタイトル"
+
+msgid "Language"
+msgstr "言語"
+
+msgid "Languages"
+msgstr "言語"
+
+msgid "Last Logon"
+msgstr "最後のログオン"
+
+msgid "Last Name"
+msgstr "名字"
+
+msgid "Last changed"
+msgstr "最後の変更"
+
+msgid "Last changed by"
+msgstr "最後の変更者"
+
+msgid "Last logged on"
+msgstr "最後のログオン"
+
+msgid "Lastlogon"
+msgstr "最後のログオン"
+
+msgid "Lastname"
+msgstr "名字"
+
+msgid "Latest Activity"
+msgstr "最新のアクティビティ"
+
+msgid "Licenses"
+msgstr "ライセンス"
+
+msgid "Links added"
+msgstr "リンクが追加されました"
+
+msgid "Links available"
+msgstr "利用可能なリンク"
+
+msgid "Lock"
+msgstr "ロック"
+
+msgid "Log out"
+msgstr "ログアウト"
+
+msgid "Logout"
+msgstr "ログアウト"
+
+msgid "Low"
+msgstr "低"
+
+msgid "Main Menu"
+msgstr "メインメニュー"
+
+msgid "Manager"
+msgstr "マネージャー"
+
+msgid "Mark all as read"
+msgstr "すべてを既読にする"
+
+msgid "Menu"
+msgstr "メニュー"
+
+msgid "Messages"
+msgstr "メッセージ"
+
+msgid "Mobile Phone"
+msgstr "携帯電話"
+
+msgid "Mobile Phones"
+msgstr "携帯電話"
+
+msgid "Mobile Subscription"
+msgstr "モバイルサブスクリプション"
+
+msgid "Mobile Subscriptions"
+msgstr "モバイルサブスクリプション"
+
+msgid "Model"
+msgstr "モデル"
+
+msgid "My"
+msgstr "私の"
+
+msgid "My Tasks"
+msgstr "私のタスク"
+
+msgid "My Team"
+msgstr "私のチーム"
+
+msgid "My favorites"
+msgstr "私のお気に入り"
+
+msgid "My orders"
+msgstr "私の注文"
+
+msgid "My projects"
+msgstr "私のプロジェクト"
+
+msgid "My teams"
+msgstr "私のチーム"
+
+msgid "Name"
+msgstr "名前"
+
+msgid "Name for new category"
+msgstr "新しいカテゴリの名前"
+
+msgid "Nearest Manager"
+msgstr "最寄りのマネージャー"
+
+msgid "New"
+msgstr "新しい"
+
+msgid "New Project Task"
+msgstr "新しいプロジェクトタスク"
+
+msgid "New Task"
+msgstr "新しいタスク"
+
+msgid "New activity"
+msgstr "新しいアクティビティ"
+
+msgid "New password randomizer"
+msgstr "新しいパスワードランダマイザー"
+
+msgid "News"
+msgstr "ニュース"
+
+msgid "No"
+msgstr "いいえ"
+
+msgid "No Comments yet"
+msgstr "まだコメントがありません"
+
+msgid "No account found with that username"
+msgstr "そのユーザー名のアカウントは見つかりませんでした"
+
+msgid "No workflow"
+msgstr "ワークフローはありません"
+
+msgid "No."
+msgstr "番号"
+
+msgid "None registered"
+msgstr "登録されていません"
+
+msgid "Normal"
+msgstr "通常"
+
+msgid "Not assigned responsible"
+msgstr "担当者が割り当てられていません"
+
+msgid "Not assigned team"
+msgstr "チームが割り当てられていません"
+
+msgid "Notifications"
+msgstr "通知"
+
+msgid "Notify Customer"
+msgstr "顧客に通知する"
+
+msgid "Now download Google Authenticator App on your smartphone and scan this QR code - Do not Log Out before you have scanned this QR code successfully in the Google Authenticator App!"
+msgstr "スマートフォンで Google Authenticator アプリをダウンロードして、この QR コードをスキャンしてください。Google Authenticator アプリでこの QR コードを正常にスキャンするまでログアウトしないでください！"
+
+msgid "Open"
+msgstr "開く"
+
+msgid "Order"
+msgstr "注文"
+
+msgid "Orders"
+msgstr "注文"
+
+msgid "Organization"
+msgstr "組織"
+
+msgid "Overdue"
+msgstr "期限切れ"
+
+msgid "Overdue projects"
+msgstr "期限切れのプロジェクト"
+
+msgid "Overdue status"
+msgstr "期限切れステータス"
+
+msgid "Overview"
+msgstr "概要"
+
+msgid "Owner"
+msgstr "所有者"
+
+msgid "Participants"
+msgstr "参加者"
+
+msgid "Password"
+msgstr "パスワード"
+
+msgid "Passwords"
+msgstr "パスワード"
+
+msgid "Payment Due"
+msgstr "支払期限"
+
+msgid "Payment informations"
+msgstr "支払情報"
+
+msgid "Personal skills"
+msgstr "個人のスキル"
+
+msgid "Phone"
+msgstr "電話"
+
+msgid "Phone number"
+msgstr "電話番号"
+
+msgid "Preview"
+msgstr "プレビュー"
+
+msgid "Price each"
+msgstr "一つの価格"
+
+msgid "Print"
+msgstr "印刷"
+
+msgid "Priority"
+msgstr "優先度"
+
+msgid "Problem description"
+msgstr "問題の説明"
+
+msgid "Problem descriptions"
+msgstr "問題の説明"
+
+msgid "Problem text"
+msgstr "問題のテキスト"
+
+msgid "Problems"
+msgstr "問題"
+
+msgid "Producer"
+msgstr "製造業者"
+
+msgid "Professional skills"
+msgstr "プロのスキル"
+
+msgid "Profile"
+msgstr "プロフィール"
+
+msgid "Profile picture"
+msgstr "プロフィール画像"
+
+msgid "Progress"
+msgstr "進捗"
+
+msgid "Project"
+msgstr "プロジェクト"
+
+msgid "Project Completed"
+msgstr "プロジェクト完了"
+
+msgid "Project Deadline"
+msgstr "プロジェクトの締め切り"
+
+msgid "Project Description"
+msgstr "プロジェクトの説明"
+
+msgid "Project Manager"
+msgstr "プロジェクトマネージャー"
+
+msgid "Project Name"
+msgstr "プロジェクト名"
+
+msgid "Project Responsible"
+msgstr "プロジェクト責任者"
+
+msgid "Project Start Date"
+msgstr "プロジェクトの開始日"
+
+msgid "Project Task Completed"
+msgstr "プロジェクトのタスク完了"
+
+msgid "Project Tasks"
+msgstr "プロジェクトタスク"
+
+msgid "Project participants"
+msgstr "プロジェクト参加者"
+
+msgid "Projects"
+msgstr "プロジェクト"
+
+msgid "Public"
+msgstr "パブリック"
+
+msgid "Public category"
+msgstr "パブリックカテゴリ"
+
+msgid "Qty"
+msgstr "数量"
+
+msgid "Quick Actions"
+msgstr "クイックアクション"
+
+msgid "Quick Launch Menu"
+msgstr "クイックランチメニュー"
+
+msgid "Read all"
+msgstr "すべて読む"
+
+msgid "Received"
+msgstr "受け取り済み"
+
+msgid "Recieve"
+msgstr "受け取る"
+
+msgid "Related"
+msgstr "関連"
+
+msgid "Related Module"
+msgstr "関連モジュール"
+
+msgid "Related problems"
+msgstr "関連する問題"
+
+msgid "Related projects"
+msgstr "関連プロジェクト"
+
+msgid "Related task"
+msgstr "関連するタスク"
+
+msgid "Related tickets"
+msgstr "関連チケット"
+
+msgid "Relations"
+msgstr "関係"
+
+msgid "Remove"
+msgstr "削除する"
+
+msgid "Request"
+msgstr "リクエスト"
+
+msgid "Requester"
+msgstr "リクエスタ"
+
+msgid "Requests"
+msgstr "リクエスト"
+
+msgid "Reset"
+msgstr "リセット"
+
+msgid "Resolve"
+msgstr "解決"
+
+msgid "Resolved"
+msgstr "解決済み"
+
+msgid "Resolved or workaround"
+msgstr "解決済みまたは回避策"
+
+msgid "Responsible"
+msgstr "責任者"
+
+msgid "Review Tasks"
+msgstr "タスクの確認"
+
+msgid "Reviewer"
+msgstr "レビューア"
+
+msgid "Roles"
+msgstr "役割"
+
+msgid "Save"
+msgstr "保存"
+
+msgid "Scheduled"
+msgstr "予定"
+
+msgid "Search"
+msgstr "検索"
+
+msgid "Search document attachement content"
+msgstr "文書添付ファイルの内容を検索"
+
+msgid "Search document content"
+msgstr "文書の内容を検索"
+
+msgid "Search document name"
+msgstr "文書名を検索"
+
+msgid "Search document names"
+msgstr "文書名を検索"
+
+msgid "Search for"
+msgstr "検索"
+
+msgid "Search in"
+msgstr "検索"
+
+msgid "Search in document attachements"
+msgstr "文書の添付ファイルを検索"
+
+msgid "Search in document attachment content"
+msgstr "文書添付ファイルの内容を検索"
+
+msgid "Search problem descriptions"
+msgstr "問題の説明を検索"
+
+msgid "Select News Channel"
+msgstr "ニュースチャンネルを選択"
+
+msgid "Select Workflow"
+msgstr "ワークフローを選択"
+
+msgid "Select to delete"
+msgstr "削除するために選択"
+
+msgid "Send Message"
+msgstr "メッセージを送信する"
+
+msgid "Serial Number"
+msgstr "シリアル番号"
+
+msgid "Servers"
+msgstr "サーバー"
+
+msgid "Service Level Agreement"
+msgstr "サービスレベル契約"
+
+msgid "Settings"
+msgstr "設定"
+
+msgid "Viser"
+msgstr "表示"
+
+msgid "Sidebar Image"
+msgstr "サイドバー画像"
+
+msgid "Silver"
+msgstr "銀"
+
+msgid "Since"
+msgstr "以来"
+
+msgid "Skills"
+msgstr "スキル"
+
+msgid "Solution"
+msgstr "ソリューション"
+
+msgid "Solution text"
+msgstr "ソリューションテキスト"
+
+msgid "Solutions"
+msgstr "ソリューション"
+
+msgid "Something went wrong, please try again later"
+msgstr "何か問題が発生しました。後でもう一度やり直してください"
+
+msgid "Soon overdue"
+msgstr "すぐに期限切れ"
+
+msgid "Standard Answers"
+msgstr "標準の回答"
+
+msgid "Start"
+msgstr "スタート"
+
+msgid "Start Date"
+msgstr "開始日"
+
+msgid "Start solution"
+msgstr "ソリューションを開始"
+
+msgid "Status"
+msgstr "状態"
+
+msgid "Step"
+msgstr "ステップ"
+
+msgid "Subject"
+msgstr "件名"
+
+msgid "Subjects"
+msgstr "サブジェクト"
+
+msgid "Submit Payment"
+msgstr "支払いを送信する"
+
+msgid "Subtotal"
+msgstr "小計"
+
+msgid "Tablet"
+msgstr "タブレット"
+
+msgid "Task"
+msgstr "タスク"
+
+msgid "Task Deadline"
+msgstr "タスクの締め切り"
+
+msgid "Task Description"
+msgstr "タスクの説明"
+
+msgid "Task Manager"
+msgstr "タスクマネージャー"
+
+msgid "Task Name"
+msgstr "タスク名"
+
+msgid "Task Participants"
+msgstr "タスクの参加者"
+
+msgid "Task Responsible"
+msgstr "タスクの責任者"
+
+msgid "Task Started"
+msgstr "タスクが開始されました"
+
+msgid "Task Status"
+msgstr "タスクのステータス"
+
+msgid "Task activities"
+msgstr "タスクのアクティビティ"
+
+msgid "Task created"
+msgstr "タスクが作成されました"
+
+msgid "Task deadline"
+msgstr "タスクの締め切り"
+
+msgid "Task history"
+msgstr "タスクの履歴"
+
+msgid "Task progress"
+msgstr "タスクの進捗"
+
+msgid "Taskboard"
+msgstr "タスクボード"
+
+msgid "Tasks"
+msgstr "タスク"
+
+msgid "Team"
+msgstr "チーム"
+
+msgid "Text"
+msgstr "テキスト"
+
+msgid "Time Zone"
+msgstr "タイムゾーン"
+
+msgid "Time registrations"
+msgstr "時間の登録"
+
+msgid "Time spend"
+msgstr "費やした時間"
+
+msgid "Timeline"
+msgstr "タイムライン"
+
+msgid "To"
+msgstr "まで"
+
+msgid "Total"
+msgstr "合計"
+
+msgid "Type"
+msgstr "タイプ"
+
+msgid "Type Description"
+msgstr "タイプの説明"
+
+msgid "Type new password"
+msgstr "新しいパスワードを入力"
+
+msgid "Unread"
+msgstr "未読"
+
+msgid "Update"
+msgstr "更新する"
+
+msgid "Update Task"
+msgstr "タスクの更新"
+
+msgid "Upload"
+msgstr "アップロード"
+
+msgid "Urgent"
+msgstr "緊急"
+
+msgid "User"
+msgstr "ユーザー"
+
+msgid "Username"
+msgstr "ユーザー名"
+
+msgid "Users"
+msgstr "ユーザー"
+
+msgid "Users Available"
+msgstr "利用可能なユーザー"
+
+msgid "Users Online"
+msgstr "オンラインのユーザー"
+
+msgid "Users in CAB"
+msgstr "CAB内のユーザー"
+
+msgid "Usertype"
+msgstr "ユーザータイプ"
+
+msgid "Vat"
+msgstr "消費税"
+
+msgid "Version"
+msgstr "バージョン"
+
+msgid "View"
+msgstr "ビュー"
+
+msgid "Weather"
+msgstr "天気"
+
+msgid "Webpage"
+msgstr "ウェブページ"
+
+msgid "When you have scanned the QR code with success - log off and login again. You will from now on be required to use Google Authenticator to finish your logins"
+msgstr "QRコードを正常にスキャンしたらログアウトしてもう一度ログインしてください。 これ以降、ログインを完了するためにGoogle Authenticatorを使用する必要があります"
+
+msgid "Widgets added"
+msgstr "ウィジェットが追加されました"
+
+msgid "Widgets available"
+msgstr "利用可能なウィジェット"
+
+msgid "Workflow"
+msgstr "ワークフロー"
+
+msgid "Workflows"
+msgstr "ワークフロー"
+
+msgid "Workstations"
+msgstr "ワークステーション"
+
+msgid "Yes"
+msgstr "はい"
+
+msgid "You are not allowed access to this module"
+msgstr "このモジュールにアクセスする権限がありません"
+
+msgid "Zip Code"
+msgstr "郵便番号"
+
+msgid "account"
+msgstr "アカウント"
+
+msgid "assets"
+msgstr "資産"
+
+msgid "assigned responsible"
+msgstr "割り当てられた責任者"
+
+msgid "assigned team"
+msgstr "割り当てられたチーム"
+
+msgid "change"
+msgstr "変更"
+
+msgid "changes"
+msgstr "変更"
+
+msgid "close"
+msgstr "閉じる"
+
+msgid "companies"
+msgstr "企業"
+
+msgid "complete"
+msgstr "完了する"
+
+msgid "created"
+msgstr "作成済み"
+
+msgid "customers"
+msgstr "顧客"
+
+msgid "delete"
+msgstr "削除する"
+
+msgid "exceeded"
+msgstr "超過した"
+
+msgid "hours in total"
+msgstr "合計時間"
+
+msgid "in"
+msgstr "で"
+
+msgid "incident"
+msgstr "事件"
+
+msgid "incidents"
+msgstr "事件"
+
+msgid "no"
+msgstr "いいえ"
+
+msgid "now recieved"
+msgstr "今受け取られた"
+
+msgid "of"
+msgstr "の"
+
+msgid "open"
+msgstr "開く"
+
+msgid "overview"
+msgstr "概要"
+
+msgid "password"
+msgstr "パスワード"
+
+msgid "passwords"
+msgstr "パスワード"
+
+msgid "preview"
+msgstr "プレビュー"
+
+msgid "problems"
+msgstr "問題"
+
+msgid "records"
+msgstr "レコード"
+
+msgid "requests"
+msgstr "リクエスト"
+
+msgid "settings"
+msgstr "設定"
+
+msgid "solutions"
+msgstr "ソリューション"
+
+msgid "to"
+msgstr "へ"
+
+msgid "to existing problem"
+msgstr "既存の問題に対して"
+
+msgid "total"
+msgstr "合計"
+
+msgid "username"
+msgstr "ユーザー名"
+
+msgid "view"
+msgstr "表示"
+
+msgid "yes"
+msgstr "はい"
+
+msgid "No data available in table"
+msgstr "テーブルにデータがありません"
+
+msgid "No entries to show"
+msgstr "表示するエントリがありません"
+
+msgid "No records to display"
+msgstr "表示するレコードがありません"
+
+msgid "Archive"
+msgstr "アーカイブ"
+
+msgid "Timeregistrations"
+msgstr "タイムレコーディング"
+
+msgid "Dispatch"
+msgstr "ディスパッチ"
+
+msgid "Report"
+msgstr "レポート"
+
+msgid "Me as Participant"
+msgstr "参加者としての私"
+
+msgid "Me as Manager"
+msgstr "マネージャーとしての私"
+
+msgid "Me as Responsible"
+msgstr "責任者としての私"
+
+msgid "Expiration"
+msgstr "有効期限"
+
+msgid "Similarity"
+msgstr "類似性"
+
+msgid "An indicative comparison of words between the version and the previous version"
+msgstr "バージョンと前のバージョン間の単語の指示的な比較"
+
+msgid "Asset"
+msgstr "資産"
+
+msgid "asset"
+msgstr "解像度"
+
+msgid "Resolution"
+msgstr "解像度"
+
+msgid "deadline"
+msgstr "締切"
+
+msgid "subject"
+msgstr "件名"
+
+msgid "subjects"
+msgstr "件名"
+
+msgid "taskboard"
+msgstr "タスクボード"
+
+msgid "Create New"
+msgstr "新規作成"
+
+msgid "Your"
+msgstr "あなたの"
+
+msgid "Dispatch view"
+msgstr "送信ビュー"
+
+msgid "All open"
+msgstr "すべてオープン"
+
+msgid "Export"
+msgstr "エクスポート"
+
+msgid "Export view"
+msgstr "エクスポートビュー"
+
+msgid "Problems are much easier to create directly via incidents, requests, changes etc."
+msgstr "問題はインシデント、リクエスト、変更などを介して直接作成する方がはるかに簡単です。"
+
+msgid "Add to taskboard"
+msgstr "タスクボードに追加"
+
+msgid "Deadline Backout"
+msgstr "期日バックアウト"
+
+msgid "New message"
+msgstr "新しいメッセージ"
+
+msgid "Recipient"
+msgstr "受取人"
+
+msgid "Message"
+msgstr "メッセージ"
+
+msgid "Answer Templates"
+msgstr "回答テンプレート"
+
+msgid "not assigned team"
+msgstr "割り当てられていないチーム"
+
+msgid "not assigned responsible"
+msgstr "割り当てられていない責任者"
+
+msgid "created from"
+msgstr "...から作成"
+
+msgid "Personal"
+msgstr "個人"
+
+msgid "users"
+msgstr "ユーザー"
+
+msgid "Created By"
+msgstr "作成者"
+
+msgid "Todays time registration"
+msgstr "今日の時刻登録"
+
+msgid "Create new project"
+msgstr "新しいプロジェクトを作成する"
+
+msgid "Group Managers"
+msgstr "グループマネージャー"
+
+msgid "User group that can administrate this project"
+msgstr "このプロジェクトを管理できるユーザーグループ"
+
+msgid "User group that can participate in this project"
+msgstr "このプロジェクトに参加できるユーザーグループ"
+
+msgid "Related Customer"
+msgstr "関連する顧客"
+
+msgid "Customer that this project is to be related to"
+msgstr "このプロジェクトに関連する顧客"
+
+msgid "Create password"
+msgstr "パスワードを作成する"
+
+msgid "Enabled"
+msgstr "有効"
+
+msgid "Disabled"
+msgstr "無効"
+
+msgid "Workstation"
+msgstr "ワークステーション"
+
+msgid "Certificate"
+msgstr "証明書"
+
+msgid "New project"
+msgstr "新しいプロジェクト"
+
+msgid "Add to your watchlist"
+msgstr "ウォッチリストに追加する"
+
+msgid "Quick search"
+msgstr "クイック検索"
+
+msgid "Related sprint"
+msgstr "関連するスプリント"
+
+msgid "Task participants"
+msgstr "タスク参加者"
+
+msgid "Delete project"
+msgstr "プロジェクトを削除する"
+
+msgid "Project Sprint"
+msgstr "プロジェクトスプリント"
+
+msgid "Generate project tasks"
+msgstr "プロジェクトタスクを生成する"
+
+msgid "Remove project tasks"
+msgstr "プロジェクトタスクを削除する"
+
+msgid "Real hours spend"
+msgstr "実際の時間の費用"
+
+msgid "Calculated from real timeregistrations"
+msgstr "実際のタイムレジストレーションから計算されます"
+
+msgid "Open Projects"
+msgstr "オープンプロジェクト"
+
+msgid "Overall process"
+msgstr "全体のプロセス"
+
+msgid "Budget spend"
+msgstr "予算の支出"
+
+msgid "Time registered"
+msgstr "時間が登録されました"
+
+msgid "Create baseline"
+msgstr "ベースラインを作成する"
+
+msgid "Create *.ics file"
+msgstr ".icsファイルを作成する"
+
+msgid "Create ICS file"
+msgstr "ICSファイルを作成する"
+
+msgid "Archive project"
+msgstr "プロジェクトをアーカイブする"
+
+msgid "Add task"
+msgstr "タスクを追加する"
+
+msgid "today"
+msgstr "今日"
+
+msgid "month"
+msgstr "月"
+
+msgid "week"
+msgstr "週"
+
+msgid "day"
+msgstr "日"
+
+msgid "list"
+msgstr "リスト"
+
+msgid "Create duplicate"
+msgstr "複製を作成する"
+
+msgid "Withdrawn"
+msgstr "撤回"
+
+msgid "In construction"
+msgstr "建設中"
+
+msgid "In approval"
+msgstr "承認中"
+
+msgid "Published"
+msgstr "公開済み"
+
+msgid "Your open"
+msgstr "あなたのオープン"
+
+msgid "This task is private and you are not added as project task participant"
+msgstr "このタスクは非公開であり、プロジェクトタスクの参加者として追加されていません"
+
+msgid "You are not added as project participant, so you cannot see this project task"
+msgstr "プロジェクトの参加者として追加されていないため、このプロジェクトタスクを表示できません"
+
+msgid "Existing Categorys"
+msgstr "既存のカテゴリ"
+
+msgid "Category Name"
+msgstr "カテゴリ名"
+
+msgid "Project Task Categories"
+msgstr "プロジェクトタスクのカテゴリ"
+
+msgid "Project Categories"
+msgstr "プロジェクトカテゴリ"
+
+msgid "Project Task Category Administration"
+msgstr "プロジェクトタスクのカテゴリ管理"
+
+msgid "articles"
+msgstr "記事"
+
+msgid "Articles"
+msgstr "記事"
+
+msgid "Article"
+msgstr "記事"
+
+msgid "article"
+msgstr "記事"
+
+msgid "My articles"
+msgstr "私の記事"
+
+msgid "My Articles"
+msgstr "私の記事"
+
+msgid "Create Article"
+msgstr "記事を作成する"
+
+msgid "Article name"
+msgstr "記事名"
+
+msgid "Article content"
+msgstr "記事の内容"
+
+msgid "Article attachments"
+msgstr "記事の添付ファイル"
+
+msgid "This task is delayed"
+msgstr "このタスクは遅延しています"
+
+msgid "Statistics"
+msgstr "統計"
+
+msgid "Estimated hours completed"
+msgstr "見積もり完了時間"
+
+msgid "Number Of Project Tasks"
+msgstr "プロジェクトタスクの数"
+
+msgid "Number Of Sprints"
+msgstr "スプリント数"
+
+msgid "Project Tasks Completed"
+msgstr "完了したプロジェクトタスク"
+
+msgid "Create project"
+msgstr "プロジェクトの作成"
+
+msgid "Open projects"
+msgstr "オープンプロジェクト"
+
+msgid "Closed projects"
+msgstr "クローズドプロジェクト"
+
+msgid "All projects"
+msgstr "すべてのプロジェクト"
+
+msgid "Search projects"
+msgstr "プロジェクトを検索する"
+
+msgid "updated"
+msgstr "更新"
+
+msgid "Push tasks ahead"
+msgstr "タスクを前に押す"
+
+msgid "This is used for pushing future tasks, including this, a number of days forward"
+msgstr "これは、このタスクを含む将来のタスクをいくつかの日数前に押し出すために使用されます"
+
+msgid "For how many days forward should tasks from this tasks start day be moved? Note: you can use minus to subtract days instead!"
+msgstr "このタスクの開始日から何日先までタスクを移動する必要がありますか？注意：代わりに日数を減算するためにマイナスを使用できます！"
+
+msgid "Active inquiries"
+msgstr "アクティブな問い合わせ"
+
+msgid "Your active inquiries"
+msgstr "お客様のアクティブな問い合わせ"
+
+msgid "Your closed inquiries"
+msgstr "お客様のクローズド問い合わせ"
+
+msgid "Your companys active inquiries"
+msgstr "お客様の企業のアクティブな問い合わせ"
+
+msgid "Your companys closed inquiries"
+msgstr "お客様の企業のクローズド問い合わせ"
+
+msgid "Search for help in our knowledge database"
+msgstr "当社のナレッジデータベースでヘルプを検索する"
+
+msgid "Search here"
+msgstr "ここで検索する"
+
+msgid "Your Companys SLA Agreement is:"
+msgstr "お客様の企業のSLA契約は："
+
+msgid "This means you can expect the following reaction times within opening hours from us."
+msgstr "これは、営業時間内に以下の反応時間が予想できることを意味します。"
+
+msgid "Did you know... that you can also contact us and create tickets via our mail"
+msgstr "お知りですか... 私たちにメールでも連絡し、チケットを作成することができることを"
+
+msgid "Approve"
+msgstr "承認する"
+
+msgid "Change end"
+msgstr "終わりを変更する"
+
+msgid "Change Advisory Board, change approvers"
+msgstr "変更アドバイザリーボード、変更承認者"
+
+msgid "Valid reason"
+msgstr "有効な理由"
+
+msgid "Implementation Plan"
+msgstr "実施計画"
+
+msgid "Contact"
+msgstr "お問い合わせ"
+
+msgid "Comments"
+msgstr "コメント"
+
+msgid "allready added to your task board"
+msgstr "すでにタスクボードに追加されています"
+
+msgid "added to your task board"
+msgstr "タスクボードに追加されました"
+
+msgid "task"
+msgstr "タスク"
+
+msgid "You need to relate a project before you can relate project tasks"
+msgstr "プロジェクトタスクを関連付ける前にプロジェクトを関連付ける必要があります"
+
+msgid "This taskboard is a kanban based task board. You can add incidents, request, project tasks etc. to your taskboard to manage all your tasks on daily basis."
+msgstr "このタスクボードはカンバンに基づいています。日常的にすべてのタスクを管理するために、インシデント、リクエスト、プロジェクトタスクなどをタスクボードに追加できます。"
+
+msgid "Timeregistration"
+msgstr "時間の登録"
+
+msgid "News archive"
+msgstr "ニュースアーカイブ"
+
+msgid "Read"
+msgstr "読む"
+
+msgid "Assets expired"
+msgstr "資産の有効期限が切れました"
+
+msgid "Change approvals"
+msgstr "変更承認"
+
+msgid "Document approvals"
+msgstr "ドキュメントの承認"
+
+msgid "Documents expired"
+msgstr "ドキュメントの有効期限が切れました"
+
+msgid "or"
+msgstr "または"
+
+msgid "Sign in"
+msgstr "ログイン"
+
+msgid "Dont have an account?"
+msgstr "アカウントをお持ちでないですか？"
+
+msgid "Sign up"
+msgstr "サインアップ"
+
+msgid "Forgot password?"
+msgstr "パスワードをお忘れですか？"
+
+msgid "Reset now"
+msgstr "今すぐリセット"
+
+msgid "About"
+msgstr "約"
+
+msgid "Try"
+msgstr "試してみる"
+
+msgid "Business Services"
+msgstr "ビジネスサービス"
+
+msgid "Are you sure? Tasks for all involved users will be created"
+msgstr "本当ですか？関係するすべてのユーザーのタスクが作成されます"
+
+msgid "Are you sure? Tasks for all involved users will be deleted"
+msgstr "本当ですか？関係するすべてのユーザーのタスクが削除されます"
+
+msgid "Doubleclick to visit"
+msgstr "訪問するにはダブルクリック"
+
+msgid "Decommissioned"
+msgstr "廃止"
+
+msgid "Quick Menu"
+msgstr "クイックメニュー"
+
+msgid "Sidenav Mini"
+msgstr "Sidenav Mini"
+
+msgid "Light"
+msgstr "ライト"
+
+msgid "Dark"
+msgstr "ダーク"
+
+msgid "Time registration"
+msgstr "時間の登録"
+
+msgid "Manage time registration"
+msgstr "時間の登録を管理する"
+
+msgid "New Timeregistration"
+msgstr "新しい時間の登録"
+
+msgid "Reactive"
+msgstr "反応"
+
+msgid "Proactive"
+msgstr "積極的"
+
+msgid "Forgot password"
+msgstr "パスワードを忘れた"
+
+msgid "You will receive an e-mail typically within 60 seconds"
+msgstr "通常、60秒以内にメールが届きます"
+
+msgid "Reset password"
+msgstr "パスワードをリセットする"
+
+msgid "Password must contain: Minimum 8 characters, at least 1 alphabet and 1 number"
+msgstr "パスワードは最低8文字、少なくとも1つのアルファベットと1つの数字を含める必要があります"
+
+msgid "New Password"
+msgstr "新しいパスワード"
+
+msgid "Repeat"
+msgstr "繰り返す"
+
+msgid "Repeat Password"
+msgstr "パスワードを繰り返す"
+
+msgid "Already have an account?"
+msgstr "アカウントをお持ちですか？"
+
+msgid "Login"
+msgstr "ログイン"
+
+msgid "Inactive"
+msgstr "非アクティブ"
+
+msgid "Back"
+msgstr "戻る"
+
+msgid "Me participating"
+msgstr "参加している"
+
+msgid "Modules"
+msgstr "モジュール"
+
+msgid "Inquiries"
+msgstr "照会"
+
+msgid "My active"
+msgstr "私のアクティブ"
+
+msgid "My closed"
+msgstr "私の閉じた"
+
+msgid "Groups"
+msgstr "グループ"
+
+msgid "Teams"
+msgstr "チーム"
+
+msgid "Users in group"
+msgstr "グループ内のユーザー"
+
+msgid "Group name"
+msgstr "グループ名"
+
+msgid "module"
+msgstr "モジュール"
+
+msgid "Role name"
+msgstr "役割名"
+
+msgid "Related module"
+msgstr "関連モジュール"
+
+msgid "Notes"
+msgstr "ノート"
+
+msgid "Memberships"
+msgstr "メンバーシップ"
+
+msgid "Group Status"
+msgstr "グループステータス"
+
+msgid "Users in role"
+msgstr "役割内のユーザー"
+
+msgid "Groups in role"
+msgstr "役割内のグループ"
+
+msgid "Groups Available"
+msgstr "利用可能なグループ"
+
+msgid "Role Status"
+msgstr "役割ステータス"
+
+msgid "Members Available"
+msgstr "利用可能なメンバー"
+
+msgid "Members"
+msgstr "メンバー"
+
+msgid "Load Templates"
+msgstr "テンプレートを読み込む"
+
+msgid "Templates"
+msgstr "テンプレート"
+
+msgid "Module"
+msgstr "モジュール"
+
+msgid "Removed"
+msgstr "削除済み"
+
+msgid "End Date"
+msgstr "終了日"
+
+msgid "Shortname"
+msgstr "略称"
+
+msgid "Tablename"
+msgstr "テーブル名"
+
+msgid "Icon"
+msgstr "アイコン"
+
+msgid "Product Owner"
+msgstr "製品オーナー"
+
+msgid "Short Name"
+msgstr "短い名前"
+
+msgid "Developer Team"
+msgstr "開発チーム"
+
+msgid "Related User"
+msgstr "関連ユーザー"
+
+msgid "Related Company"
+msgstr "関連会社"
+
+msgid "Last Updated"
+msgstr "最終更新日"
+
+msgid "Business Service"
+msgstr "ビジネスサービス"
+
+msgid "More"
+msgstr "もっと"
+
+msgid "Internal"
+msgstr "内部"
+
+msgid "Clone"
+msgstr "クローン"
+
+msgid "Create incident from this"
+msgstr "これからインシデントを作成する"
+
+msgid "Create request from this"
+msgstr "これからリクエストを作成する"
+
+msgid "Create change from this"
+msgstr "これから変更を作成する"
+
+msgid "Create problem from this"
+msgstr "これから問題を作成する"
+
+msgid "Users in team"
+msgstr "チーム内のユーザー"
+
+msgid "Team name"
+msgstr "チーム名"
+
+msgid "Team colour"
+msgstr "チームの色"
+
+msgid "Team Leader"
+msgstr "チームリーダー"
+
+msgid "Team Manager"
+msgstr "チームマネージャー"
+
+msgid "colour"
+msgstr "色"
+
+msgid "Colour"
+msgstr "色"
+
+msgid "Approvals"
+msgstr "承認"
+
+msgid "Follow-ups"
+msgstr "フォローアップ"
+
+msgid "Role"
+msgstr "役割"
+
+msgid "Last Edited By"
+msgstr "最終編集者"
+
+msgid "Last Edited"
+msgstr "最終編集"
+
+msgid "Show in relations"
+msgstr "関連で表示"
+
+msgid "Field Name"
+msgstr "フィールド名"
+
+msgid "Fields"
+msgstr "フィールド"
+
+msgid "Status Codes"
+msgstr "ステータスコード"
+
+msgid "Lookup Table"
+msgstr "検索テーブル"
+
+msgid "Lookup Field"
+msgstr "検索フィールド"
+
+msgid "Done Status"
+msgstr "完了ステータス"
+
+msgid "SLA Supported"
+msgstr "SLAサポート"
+
+msgid "Closed Status"
+msgstr "クローズドステータス"
+
+msgid "Restore Points"
+msgstr "復元ポイント"
+
+msgid "ITSM Relations"
+msgstr "ITSM関係"
+
+msgid "CI Relations"
+msgstr "CI関係"
+
+msgid "ITSM Types"
+msgstr "ITSMタイプ"
+
+msgid "CI Types"
+msgstr "CIタイプ"
+
+msgid "Tableview"
+msgstr "テーブルビュー"
+
+msgid "Parent Task"
+msgstr "親タスク"
+
+msgid "Push in next status"
+msgstr "次のステータスにプッシュ"
+
+msgid "Notify by email"
+msgstr "メールで通知する"
+
+msgid "Notify"
+msgstr "通知"
+
+msgid "Text templates"
+msgstr "テキストテンプレート"
+
+msgid "Widgets on frontpage"
+msgstr "フロントページのウィジェット"
+
+msgid "Available"
+msgstr "利用可能"
+
+msgid "Added"
+msgstr "追加された"
+
+msgid "Code"
+msgstr "コード"
+
+msgid "Personal Meeting Room"
+msgstr "個人の会議室"
+
+msgid "These are text shortcuts you can define a text code and a text template that is inserted when you type the text code in text boxes"
+msgstr "これらはテキストのショートカットで、テキストコードとテキストテンプレートを定義しておくと、テキストボックスにテキストコードを入力すると自動的に挿入されます"
+
+msgid "½ Day"
+msgstr "½日"
+
+msgid "Day"
+msgstr "日"
+
+msgid "Week"
+msgstr "週"
+
+msgid "Month"
+msgstr "月"
+
+msgid "Today"
+msgstr "今日"
+
+msgid "End date cannot be before start date"
+msgstr "終了日は開始日より前にはできません"
+
+msgid "Updated"
+msgstr "更新"
+
+msgid "Other searches"
+msgstr "その他の検索"
+
+msgid "Scan for CVR numbers in WIKI"
+msgstr "WIKIでCVR番号をスキャンする"
+
+msgid "Group Name"
+msgstr "グループ名"
+
+msgid "Expired CI's"
+msgstr "期限切れのCI"
+
+msgid "API configuration"
+msgstr "APIの設定"
+
+msgid "Test update user"
+msgstr "テストユーザーの更新"
+
+msgid "Delete user (careful it will delete the user)"
+msgstr "ユーザーを削除する（注意：ユーザーが削除されます）"
+
+msgid "Shared"
+msgstr "共有"
+
+msgid "made by"
+msgstr "製作者"
+
+msgid "making better web for small business."
+msgstr "中小企業のためのより良いウェブを作る。"
+
+msgid "Support"
+msgstr "サポート"
+
+msgid "Changelog"
+msgstr "変更ログ"
+
+msgid "Duplicate"
+msgstr "複製"
+
+msgid "Latest activity in the project"
+msgstr "プロジェクトの最新のアクティビティ"
+
+msgid "Latest activity"
+msgstr "最新のアクティビティ"
+
+msgid "Activity Stream"
+msgstr "アクティビティストリーム"
+
+msgid "Remaining"
+msgstr "残り"
+
+msgid "Password generator"
+msgstr "パスワードジェネレーター"
+
+msgid "Forms"
+msgstr "フォーム"
+
+msgid "Mail Templates"
+msgstr "メールテンプレート"
+
+msgid "Maintenance"
+msgstr "メンテナンス"
+
+msgid "API"
+msgstr "API"
+
+msgid "Active Directory"
+msgstr "Active Directory"
+
+msgid "Helpdesk"
+msgstr "ヘルプデスク"
+
+msgid "System Configurator"
+msgstr "システムコンフィギュレータ"
+
+msgid "Administration"
+msgstr "管理"
+
+msgid "Email account for sending emails from"
+msgstr "次のための電子メールアカウント"
+
+msgid "SMTP Port"
+msgstr "SMTPポート"
+
+msgid "SMTP Host"
+msgstr "SMTPホスト"
+
+msgid "SMTP Username"
+msgstr "SMTPユーザー名"
+
+msgid "SMTP Password"
+msgstr "SMTPパスワード"
+
+msgid "Max 25 characters"
+msgstr "最大25文字"
+
+msgid "Name of the system"
+msgstr "システム名"
+
+msgid "Allow people to activate google authenticater for 2 faktor validation?"
+msgstr "2要素認証のためにGoogle Authenticatorを有効にすることを許可しますか？"
+
+msgid "IMAP Host"
+msgstr "IMAPホスト"
+
+msgid "IMAP Username"
+msgstr "IMAPユーザー名"
+
+msgid "IMAP Password"
+msgstr "IMAPパスワード"
+
+msgid "Please make a long token"
+msgstr "長いトークンを作成してください"
+
+msgid "These are the links on the login page"
+msgstr "これらはログインページ上のリンクです"
+
+msgid "Frontpage links"
+msgstr "トップページのリンク"
+
+msgid "You company Facebook page"
+msgstr "会社のFacebookページ"
+
+msgid "You company page"
+msgstr "会社のページ"
+
+msgid "Company Website"
+msgstr "会社のウェブサイト"
+
+msgid "You company LinkedIn page"
+msgstr "会社のLinkedInページ"
+
+msgid "Registration options"
+msgstr "登録オプション"
+
+msgid "Allow user registrations via email?"
+msgstr "メールでユーザー登録を許可しますか？"
+
+msgid "Default company assignment for new user registrations?"
+msgstr "新規ユーザー登録のデフォルト企業割り当て？"
+
+msgid "Default Company?"
+msgstr "デフォルトの会社？"
+
+msgid "You are done"
+msgstr "終わりました"
+
+msgid "Submit to save your settings"
+msgstr "設定を保存するために送信する"
+
+msgid "Previous"
+msgstr "前の"
+
+msgid "Next"
+msgstr "次へ"
+
+msgid "Submit"
+msgstr "送信"
+
+msgid "Settings did not get updated"
+msgstr "設定が更新されていません"
+
+msgid "Settings updated"
+msgstr "設定が更新されました"
+
+msgid "Default Design"
+msgstr "デフォルトデザイン"
+
+msgid "Google Authenticate"
+msgstr "Google認証"
+
+msgid "System"
+msgstr "システム"
+
+msgid "Wiki"
+msgstr "Wiki"
+
+msgid "Mail templates"
+msgstr "メールテンプレート"
+
+msgid "Knowledge base"
+msgstr "ナレッジベース"
+
+msgid "queue"
+msgstr "キュー"
+
+msgid "Queue"
+msgstr "キュー"
+
+msgid "Doing"
+msgstr "進行中"
+
+msgid "Done"
+msgstr "完了"
+
+msgid "done"
+msgstr "完了"
+
+msgid "doing"
+msgstr "進行中"
+
+msgid "Monday"
+msgstr "月曜日"
+
+msgid "Tuesday"
+msgstr "火曜日"
+
+msgid "Wednesday"
+msgstr "水曜日"
+
+msgid "Thursdag"
+msgstr "木曜日"
+
+msgid "Friday"
+msgstr "金曜日"
+
+msgid "Saturday"
+msgstr "土曜日"
+
+msgid "Sunday"
+msgstr "日曜日"
+
+msgid "Thursday"
+msgstr "木曜日"
+
+msgid "Management functions"
+msgstr "管理機能"
+
+msgid "This weeks time registrations for team"
+msgstr "チームの今週の時間登録"
+
+msgid "Employee"
+msgstr "従業員"
+
+msgid "Solved with solution"
+msgstr "解決策で解決済み"
+
+msgid "Solved"
+msgstr "解決済み"
+
+msgid "Parent Assets"
+msgstr "親アセット"
+
+msgid "Child Assets"
+msgstr "子アセット"
+
+msgid "This relation will make current assets child"
+msgstr "この関係は現在のアセットを子アセットにします"
+
+msgid "Create a parent relation"
+msgstr "親関係を作成する"
+
+msgid "This relation will make current asset parent"
+msgstr "この関係は現在のアセットを親にします"
+
+msgid "Create a child relation"
+msgstr "子関係を作成する"
+
+msgid "Service"
+msgstr "サービス"
+
+msgid "Overall"
+msgstr "全体的"
+
+msgid "Subordinate"
+msgstr "下位"
+
+msgid "Create relation"
+msgstr "関係を作成する"
+
+msgid "Get direct link"
+msgstr "直接リンクを取得する"
+
+msgid "Problem report"
+msgstr "問題レポート"
+
+msgid "Please explain the problem"
+msgstr "問題を説明してください"
+
+msgid "this will create a ticket at Practicle Support so please dont abuse this!"
+msgstr "これにより、Practicleサポートでチケットが作成されますので、これを悪用しないでください！"
+
+msgid "Report a problem"
+msgstr "問題を報告する"
+
+msgid "Category administration"
+msgstr "カテゴリの管理"
+
+msgid "Create News Article"
+msgstr "ニュース記事を作成する"
+
+msgid "Date to be published"
+msgstr "公開予定日"
+
+msgid "Writer"
+msgstr "ライター"
+
+msgid "Headline"
+msgstr "ヘッドライン"
+
+msgid "Add new category"
+msgstr "新しいカテゴリを追加"
+
+msgid "Usergroup"
+msgstr "ユーザーグループ"
+
+msgid "News Article"
+msgstr "ニュース記事"
+
+msgid "Get latest CVE news entries"
+msgstr "最新のCVEニュースエントリを取得する"
+
+msgid "Delete all CVE news entries"
+msgstr "すべてのCVEニュースエントリを削除する"
+
+msgid "Fetch"
+msgstr "フェッチ"
+
+msgid "Add filter"
+msgstr "フィルターを追加"
+
+msgid "Miscellaneous"
+msgstr "その他"
+
+msgid "miscellaneous"
+msgstr "その他"
+
+msgid "CVE Filters"
+msgstr "CVEフィルター"
+
+msgid "Documentation"
+msgstr "ドキュメンテーション"
+
+msgid "last 2 months"
+msgstr "最後の2ヶ月"
+
+msgid "Date worked"
+msgstr "作業日"
+
+msgid "Duration"
+msgstr "期間"
+
+msgid "Billable"
+msgstr "請求可能"
+
+msgid "Date for registration"
+msgstr "登録日"
+
+msgid "All"
+msgstr "すべて"
+
+msgid "Daily"
+msgstr "毎日"
+
+msgid "Duration minutes"
+msgstr "期間（分）"
+
+msgid "Duration hours"
+msgstr "期間（時）"
+
+msgid "Number of registrations"
+msgstr "登録数"
+
+msgid "Daily basis"
+msgstr "毎日のベース"
+
+msgid "Create Relations"
+msgstr "関係を作成する"
+
+msgid "Table Name"
+msgstr "テーブル名"
+
+msgid "Import Source"
+msgstr "インポートソース"
+
+msgid "Synchronization"
+msgstr "同期"
+
+msgid "Sync Time"
+msgstr "同期時間"
+
+msgid "Last Synced"
+msgstr "最後の同期"
+
+msgid "Label"
+msgstr "ラベル"
+
+msgid "Default value"
+msgstr "デフォルト値"
+
+msgid "Field title"
+msgstr "フィールドのタイトル"
+
+msgid "Field Width"
+msgstr "フィールド幅"
+
+msgid "Lookup Field Result (Table View)"
+msgstr "ルックアップフィールドの結果（テーブルビュー）"
+
+msgid "Lookup Field Result (Modal View)"
+msgstr "ルックアップフィールドの結果（モーダルビュー）"
+
+msgid "Primary Relation Field"
+msgstr "プライマリリレーションフィールド"
+
+msgid "Import Source Field"
+msgstr "インポートソースフィールド"
+
+msgid "Sync Source Field"
+msgstr "同期ソースフィールド"
+
+msgid "Addon"
+msgstr "アドオン"
+
+msgid "Select Field Options"
+msgstr "フィールドオプションを選択"
+
+msgid "Child relations lookup"
+msgstr "子関係の検索"
+
+msgid "Locked"
+msgstr "ロックされた"
+
+msgid "Required"
+msgstr "必要"
+
+msgid "Searchable"
+msgstr "検索可能"
+
+msgid "Hide Tables"
+msgstr "テーブルを非表示"
+
+msgid "Hide Forms"
+msgstr "モーダルビューで非表示"
+
+msgid "Syncronize"
+msgstr "同期する"
+
+msgid "Reset field sort order"
+msgstr "フィールドソート順序をリセット"
+
+msgid "Related workflow"
+msgstr "関連するワークフロー"
+
+msgid "Reset forms data"
+msgstr "フォームデータをリセット"
+
+msgid "Check Table Consistency"
+msgstr "表の整合性をチェックする"
+
+msgid "Priority 1"
+msgstr "プライオリティ1"
+
+msgid "Priority 2"
+msgstr "プライオリティ2"
+
+msgid "Priority 3"
+msgstr "プライオリティ3"
+
+msgid "Priority 4"
+msgstr "プライオリティ4"
+
+msgid "Field Label"
+msgstr "フィールドラベル"
+
+msgid "Features"
+msgstr "特徴"
+
+msgid "Create Incident"
+msgstr "インシデントを作成"
+
+msgid "Create Change"
+msgstr "変更を作成"
+
+msgid "Create Problem"
+msgstr "問題を作成"
+
+msgid "Create Request"
+msgstr "リクエストを作成"
+
+msgid "Incidents dispatch view"
+msgstr "インシデント配信ビュー"
+
+msgid "Requests dispatch view"
+msgstr "リクエスト配信ビュー"
+
+msgid "Changes dispatch view"
+msgstr "変更配信ビュー"
+
+msgid "Problems dispatch view"
+msgstr "問題配信ビュー"
+
+msgid "Shortcuts"
+msgstr "ショートカット"
+
+msgid "Watch list"
+msgstr "ウォッチリスト"
+
+msgid "Generic forms"
+msgstr "一般的なフォーム"
+
+msgid "Authorizer"
+msgstr "承認者"
+
+msgid "Reason"
+msgstr "理由"
+
+msgid "Administrators"
+msgstr "管理者"
+
+msgid "Updated by"
+msgstr "更新者"
+
+msgid "Image"
+msgstr "画像"
+
+msgid "Click to see"
+msgstr "表示するにはクリックしてください"
+
+msgid "this is essential in the subject for the mail reply by the customer to land on specific type and number"
+msgstr "これは、顧客のメール返信が特定のタイプと番号に着陸するための件名で不可欠です"
+
+msgid "this is essential in the subject for the mail reply by the customer to land on specific type"
+msgstr "これは、顧客のメール返信が特定のタイプに着陸するための件名で不可欠です"
+
+msgid "placeholder for current incident/change/request/problem number"
+msgstr "現在のインシデント/変更/リクエスト/問題番号のプレースホルダー"
+
+msgid "placeholder for customers firstname"
+msgstr "顧客の名前のプレースホルダー"
+
+msgid "placeholder for customers lastname"
+msgstr "顧客の姓のプレースホルダー"
+
+msgid "if action is a comment - this is the placeholder for the comment"
+msgstr "アクションがコメントである場合、これはコメントのプレースホルダーです"
+
+msgid "placeholder for the system name"
+msgstr "システム名のプレースホルダー"
+
+msgid "placeholder for the system url"
+msgstr "システムのURLのプレースホルダー"
+
+msgid "placeholder for the name of the type"
+msgstr "タイプ名のプレースホルダー"
+
+msgid "placeholder for direct link to the specific incident/change/request/problem (can not be accessed by customers)"
+msgstr "特定のインシデント/変更/リクエスト/問題への直接リンクのプレースホルダー（顧客によるアクセス不可）"
+
+msgid "Placeholders"
+msgstr "プレースホルダー"
+
+msgid "Password must contain: minimum 8 characters, at least 1 alphabet, 1 number and 1 special character"
+msgstr "パスワードには、最低8文字、少なくとも1つのアルファベット、1つの数字、1つの特殊文字を含める必要があります"
+
+msgid "This email allready exists"
+msgstr "このメールアドレスはすでに存在します"
+
+msgid "Please confirm password"
+msgstr "パスワードを確認してください"
+
+msgid "Passwords did not match"
+msgstr "パスワードが一致しません"
+
+msgid "Please enter a password"
+msgstr "パスワードを入力してください"
+
+msgid "Please enter a lastname"
+msgstr "姓を入力してください"
+
+msgid "Please enter a firstname"
+msgstr "名前を入力してください"
+
+msgid "Email user"
+msgstr "Eメールユーザー"
+
+msgid "Preview group members"
+msgstr "グループメンバーのプレビュー"
+
+msgid "All Users"
+msgstr "すべてのユーザー"
+
+msgid "Change Administrators"
+msgstr "変更管理者"
+
+msgid "Change Users"
+msgstr "変更ユーザー"
+
+msgid "CMDB Administrators"
+msgstr "CMDB管理者"
+
+msgid "CMDB Users"
+msgstr "CMDBユーザー"
+
+msgid "Company Administrators"
+msgstr "企業管理者"
+
+msgid "Default CAB"
+msgstr "デフォルト CAB"
+
+msgid "Default group messages"
+msgstr "デフォルトグループメッセージ"
+
+msgid "Document Administrators"
+msgstr "ドキュメント管理者"
+
+msgid "Document Users"
+msgstr "ドキュメントユーザー"
+
+msgid "Forms administrators"
+msgstr "フォーム管理者"
+
+msgid "Forms users"
+msgstr "フォームユーザー"
+
+msgid "Incident Administrators"
+msgstr "インシデント管理者"
+
+msgid "Incident Users"
+msgstr "インシデントユーザー"
+
+msgid "Module Administrators"
+msgstr "モジュール管理者"
+
+msgid "News Administrators"
+msgstr "ニュース管理者"
+
+msgid "News Writer"
+msgstr "ニュースライター"
+
+msgid "Problem Administrators"
+msgstr "問題管理者"
+
+msgid "Problem Users"
+msgstr "問題ユーザー"
+
+msgid "Project Administrators"
+msgstr "プロジェクト管理者"
+
+msgid "Project Users"
+msgstr "プロジェクトユーザー"
+
+msgid "Request Administrators"
+msgstr "リクエスト管理者"
+
+msgid "Request Users"
+msgstr "リクエストユーザー"
+
+msgid "Timeregistration Administrators"
+msgstr "時間登録管理者"
+
+msgid "User Administrator"
+msgstr "ユーザー管理者"
+
+msgid "Workflow Administrators"
+msgstr "ワークフロー管理者"
+
+msgid "Default"
+msgstr "デフォルト"
+
+msgid "Generic Forms"
+msgstr "一般的なフォーム"
+
+msgid "Group updated"
+msgstr "グループが更新されました"
+
+msgid "All employee users"
+msgstr "すべての従業員ユーザー"
+
+msgid "Group Administrators"
+msgstr "グループ管理者"
+
+msgid "Role created"
+msgstr "役割が作成されました"
+
+msgid "Preview team members"
+msgstr "チームメンバーのプレビュー"
+
+msgid "Role memberships"
+msgstr "役割メンバーシップ"
+
+msgid "Group memberships"
+msgstr "グループメンバーシップ"
+
+msgid "Roles Available"
+msgstr "利用可能な役割"
+
+msgid "Team memberships"
+msgstr "チームメンバーシップ"
+
+msgid "Teams Available"
+msgstr ""
+
+msgid "Consultant"
+msgstr "コンサルタント"
+
+msgid "Members of this group possess unrestricted privileges to the overall system. Administrators can access the administration module. Only a select few should belong to this group."
+msgstr "このグループのメンバーは全体システムに制限なしの特権を持っています。 管理者は管理モジュールにアクセスできます。 このグループには選ばれた人物のみが所属すべきです。"
+
+msgid "This group can be used as a collector group for all users of type employees - in general - if this group is chosen, all employee users will have access."
+msgstr "このグループは、一般的に従業員タイプのすべてのユーザーのためのコレクターグループとして使用できます。 このグループが選択される場合、すべての従業員ユーザーがアクセスできます。"
+
+msgid "This group gives advanced access to to the request module. Users in this group will be able to update request informations in general and is not limited in access rights in general.  This should only be granted to central administrators and not more then very few people."
+msgstr "このグループはリクエストモジュールへの高度なアクセスを提供します。 このグループのユーザーは一般的にリクエスト情報を更新でき、一般的なアクセス権限に制限されません。 これは中央管理者にのみ付与され、非常に少数の人々に過ぎません。"
+
+msgid "Standard group for request module. Users have to be part of this group in order to be able to use standard request module."
+msgstr "要求モジュールの標準グループ。 標準のリクエストモジュールを使用できるようにするには、ユーザーはこのグループの一部である必要があります。"
+
+msgid "This group is for people that needs to be able to be assigned as responsible on workflows and thereby also can edit it."
+msgstr "このグループは、ワークフローの責任者として指名される必要がある人々のためのものであり、それによって編集することもできます。"
+
+msgid "Has the rights to modify and oversee users and their permissions."
+msgstr "ユーザーとそのアクセス許可を変更および監視する権限があります。"
+
+msgid "Username already exists"
+msgstr "ユーザー名が既に存在します"
+
+msgid "Required fields are missing values"
+msgstr "必須のフィールドに値がありません"
+
+msgid "This email already exists for"
+msgstr "この電子メールはすでに存在します"
+
+msgid "Email cannot be empty"
+msgstr "電子メールは空にできません"
+
+msgid "Firstname is required"
+msgstr "名前は必須です"
+
+msgid "Username cannot be empty"
+msgstr "ユーザー名は空にできません"
+
+msgid "This username already exists for"
+msgstr "このユーザー名はすでに存在します"
+
+msgid "Write words seperated by ; if you want an empty value as select option - write NULL"
+msgstr "空の値を選択オプションとして希望する場合は、; で区切られた単語を書きます - NULL を書きます"
+
+msgid "Create project task from this"
+msgstr "これからプロジェクトタスクを作成する"
+
+msgid "Select user for add"
+msgstr "追加するユーザーを選択"
+
+msgid "Select user for removal"
+msgstr "削除するユーザーを選択"
+
+msgid "No Sprint"
+msgstr "スプリントなし"
+
+msgid "Parent"
+msgstr "親"
+
+msgid "Private"
+msgstr "プライベート"
+
+msgid "Show members"
+msgstr "メンバーを表示"
+
+msgid "Last login"
+msgstr "最終ログイン"
+
+msgid "Create Project Task"
+msgstr "プロジェクトタスクを作成"
+
+msgid "Simple"
+msgstr "シンプル"
+
+msgid "Log Book"
+msgstr "ログブック"
+
+msgid "Related number"
+msgstr "関連番号"
+
+msgid "Add empty row"
+msgstr "空の行を追加"
+
+msgid "This adds an empty value to a select box and only for that"
+msgstr "これは選択ボックスに空の値を追加し、それ専用です"
+
+msgid "Mine"
+msgstr "私の"
+
+msgid "mine"
+msgstr "私の"
+
+msgid "Search results"
+msgstr "検索結果"
+
+msgid "Select Options"
+msgstr "オプションを選択"
+
+msgid "Options"
+msgstr "オプション"
+
+msgid "Lookup"
+msgstr "検索"
+
+msgid "Syncronization"
+msgstr "同期"
+
+msgid "relations"
+msgstr "関係"
+
+msgid "Primary"
+msgstr "主要"
+
+msgid "Full view height"
+msgstr "全表示高さ"
+
+msgid "Table view"
+msgstr "テーブルビュー"
+
+msgid "Timeline view"
+msgstr "タイムラインビュー"
+
+msgid "Deactivate"
+msgstr "無効化する"
+
+msgid "Transfer"
+msgstr "移行する"
+
+msgid "Transfer elements to other user"
+msgstr "他のユーザーに要素を転送"
+
+msgid "Other"
+msgstr "その他"
+
+msgid "Select a user"
+msgstr "ユーザーを選択"
+
+msgid "Select all / Deselect all"
+msgstr "すべて選択 / すべて選択解除"
+
+msgid "CMDB, ITSM and other objects are getting moved to the selected user (responsible is getting changed). Transfer can not be transfered to user type customer. Transfer of Roles and Group means that memberships that the current user has, is getting added to the selected user."
+msgstr "CMDB、ITSM、およびその他のオブジェクトは、選択したユーザーに移動されます（担当者が変更されます）。 転送は顧客タイプのユーザーに転送できません。 ロールとグループの転送は、現在のユーザーが持っているメンバーシップが選択したユーザーに追加されることを意味します。"
+
+msgid "Workflow Tasks"
+msgstr "ワークフロータスク"
+
+msgid "KanBan Tasks"
+msgstr "カンバンタスク"
+
+msgid "ITSM elements"
+msgstr "ITSM要素"
+
+msgid "CMDB elements"
+msgstr "CMDB要素"
+
+msgid "We are missing a primary field for this type"
+msgstr "このタイプのプライマリフィールドがありません"
+
+msgid "Result field"
+msgstr "結果フィールド"
+
+msgid "Choose which field should be returned as result in the select box"
+msgstr "選択ボックスで結果として返すフィールドを選択してください"
+
+msgid "User fullname and username"
+msgstr "ユーザーのフルネームとユーザー名"
+
+msgid "User fullname"
+msgstr "ユーザーのフルネーム"
+
+msgid "Select this if you want a result with users fullname"
+msgstr "ユーザーのフルネームを含む結果が必要な場合は、これを選択してください"
+
+msgid "Select this if you want a result with users fullname and username"
+msgstr "ユーザーのフルネームとユーザー名を含む結果が必要な場合は、これを選択してください"
+
+msgid "Place on right side"
+msgstr "右側に配置"
+
+msgid "Place field on the right side of form"
+msgstr "フィールドをフォームの右側に配置する"
+
+msgid "This will make the field a normal and simple text result"
+msgstr "これにより、フィールドは通常の単純なテキスト結果になります"
+
+msgid "Simple text"
+msgstr "シンプルなテキスト"
+
+msgid "Make field disabled on create"
+msgstr "作成時にフィールドを無効にする"
+
+msgid "Make field required"
+msgstr "フィールドを必須にする"
+
+msgid "Make searchable from search bar on content of this field"
+msgstr "このフィールドの内容を検索バーから検索できるようにする"
+
+msgid "Notes fields can get full height so all content is shown on view page"
+msgstr "メモフィールドは全高にすることができるため、すべてのコンテンツが表示ページに表示されます"
+
+msgid "Deactivate this field from Table views"
+msgstr "テーブルビューからこのフィールドを無効にする"
+
+msgid "Deactivate this field from Form views"
+msgstr "フォームビューからこのフィールドを無効にする"
+
+msgid "Reset module data"
+msgstr "モジュールデータをリセット"
+
+msgid "This deletes all data records for this module including logs, files, relations, workflows and more"
+msgstr "これにより、このモジュールのすべてのデータレコードが削除されます。ログ、ファイル、関係、ワークフローなどが含まれます"
+
+msgid "Reset all modules (data only)"
+msgstr "すべてのモジュールをリセット（データのみ）"
+
+msgid "Reset all modules to standard"
+msgstr "すべてのモジュールを標準にリセット"
+
+msgid "Tasks completed"
+msgstr "タスク完了"
+
+msgid "Unread comments"
+msgstr "未読コメント"
+
+msgid "Password Module Administrators"
+msgstr "パスワードモジュール管理者"
+
+msgid "Password Module Users"
+msgstr "パスワードモジュールユーザー"
+
+msgid "Field design"
+msgstr "フィールドデザイン"
+
+msgid "General"
+msgstr "一般"
+
+msgid "Create a template based on the completed form below"
+msgstr "以下の記入済みフォームに基づいてテンプレートを作成する"
+
+msgid "Delete the current selected template"
+msgstr "現在選択されているテンプレートを削除"
+
+msgid "Create public template that all users can choose"
+msgstr "すべてのユーザーが選択できる公開テンプレートを作成する"
+
+msgid "Choose template"
+msgstr "テンプレートを選択"
+
+msgid "Are you sure?"
+msgstr "本当によろしいですか？"
+
+msgid "Make field disabled on view/edit"
+msgstr "表示/編集時にフィールドを無効にする"
+
+msgid "Locked on create"
+msgstr "作成時にロック"
+
+msgid "Locked on view"
+msgstr "表示時にロック"
+
+msgid "Group filter"
+msgstr "グループフィルター"
+
+msgid "Deactivate Forms"
+msgstr "フォームを無効にする"
+
+msgid "Deactivate Tables"
+msgstr "テーブルを無効にする"
+
+msgid "Retrieve field but hide it"
+msgstr "フィールドを取得するが非表示にする"
+
+msgid "Hidden"
+msgstr "非表示"
+
+msgid "Preview of team members"
+msgstr "チームメンバーのプレビュー"
+
+msgid "Groups added"
+msgstr "グループが追加されました"
+
+msgid "Quarantene state"
+msgstr "隔離状態"
+
+msgid "Email to send to"
+msgstr "送信先のメール"
+
+msgid "Or choose prepared email"
+msgstr "または、用意されたメールを選択する"
+
+msgid "Attach PDF"
+msgstr "PDFを添付"
+
+msgid "Create PDF"
+msgstr "PDFを作成"
+
+msgid "Found in field"
+msgstr "フィールド内で見つかりました"
+
+msgid "Standard values"
+msgstr ""
+
+msgid "If you want check fields to be default checked you must add the text checked to the default value"
+msgstr ""
+
+msgid "Remove fields"
+msgstr ""
+
+msgid "Do not delete standard fields. If you feel they are not necessary - disable them in table view and modal view"
+msgstr ""
+
+msgid "Field widths"
+msgstr ""
+
+msgid "Field widths are determined using Bootstrap's grid system. A row is 12 blocks wide, so you can set a field's width by specifying how many blocks it should occupy. For example, setting the width to 6 will make the field half the row's width"
+msgstr ""
+
+msgid "Create Project"
+msgstr ""
+
+msgid "Transfer elments to other user"
+msgstr ""
+

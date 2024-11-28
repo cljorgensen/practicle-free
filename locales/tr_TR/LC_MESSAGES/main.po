@@ -1,0 +1,3055 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Practicle\n"
+"POT-Creation-Date: 2019-05-16 11:25+0200\n"
+"PO-Revision-Date: 2019-07-11 13:00+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.2.3\n"
+"X-Poedit-Basepath: .\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: tr_TR\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+
+msgid "A customer contact person must be chosen - please create customer contact person before creating"
+msgstr "Bir müşteri iletişim kişisi seçilmelidir - lütfen oluşturmadan önce müşteri iletişim kişisini oluşturun"
+
+msgid "Account number"
+msgstr "Hesap numarası"
+
+msgid "Actions"
+msgstr "Eylemler"
+
+msgid "Active"
+msgstr "Aktif"
+
+msgid "Active projects"
+msgstr "Aktif projeler"
+
+msgid "Activity"
+msgstr "Etkinlik"
+
+msgid "Add"
+msgstr "Ekle"
+
+msgid "Add News"
+msgstr "Haber ekle"
+
+msgid "Add as favorite"
+msgstr "Favori olarak ekle"
+
+msgid "Add as task"
+msgstr "Görev olarak ekle"
+
+msgid "Add document"
+msgstr "Belge ekle"
+
+msgid "Add new task"
+msgstr "Yeni görev ekle"
+
+msgid "Add to existing problem"
+msgstr "Mevcut probleme ekle"
+
+msgid "Address"
+msgstr "Adres"
+
+msgid "Administrate News"
+msgstr "Haberleri yönet"
+
+msgid "Affected Company"
+msgstr "Etkilenen Şirket"
+
+msgid "Alerts"
+msgstr "Uyarılar"
+
+msgid "All News"
+msgstr "Tüm Haberler"
+
+msgid "All active"
+msgstr "Tüm aktif"
+
+msgid "All closed"
+msgstr "Tüm kapalı"
+
+msgid "All overdue"
+msgstr "Tüm gecikmiş"
+
+msgid "Amount spend"
+msgstr "Harcama miktarı"
+
+msgid "Anniversarys"
+msgstr "Yıl dönümleri"
+
+msgid "Answer"
+msgstr "Cevap"
+
+msgid "Approval Tasks"
+msgstr "Onay görevleri"
+
+msgid "Approver"
+msgstr "Onaylayıcı"
+
+msgid "Assess"
+msgstr "Değerlendir"
+
+msgid "Assets"
+msgstr "Varlıklar"
+
+msgid "Assigned"
+msgstr "Atanan"
+
+msgid "Assigned Team"
+msgstr "Atanan Ekip"
+
+msgid "Assigned to responsible"
+msgstr "Sorumluya Atanan"
+
+msgid "Assigned to team"
+msgstr "Takıma Atanan"
+
+msgid "Attach a workflow"
+msgstr "İş Akışı Ekle"
+
+msgid "Authorize"
+msgstr "Yetkilendir"
+
+msgid "Average solution time"
+msgstr "Ortalama çözüm süresi"
+
+msgid "Await Customer"
+msgstr "Müşteri Bekleniyor"
+
+msgid "Awaiting"
+msgstr "Beklemede"
+
+msgid "Awaiting customer"
+msgstr "Müşteri Bekleniyor"
+
+msgid "Backout Plan"
+msgstr "Gerialma Planı"
+
+msgid "Bank"
+msgstr "Banka"
+
+msgid "Birthday"
+msgstr "Doğum günü"
+
+msgid "Birthdays"
+msgstr "Doğum günleri"
+
+msgid "Board"
+msgstr "Board"
+
+msgid "Boards"
+msgstr "Panolar"
+
+msgid "Bought"
+msgstr "Satın Alındı"
+
+msgid "Branche news"
+msgstr "Branş Haberleri"
+
+msgid "Bronze"
+msgstr "Bronz"
+
+msgid "Budget Spend"
+msgstr "Bütçe Harcaması"
+
+msgid "CBR"
+msgstr "CBR"
+
+msgid "Cancel"
+msgstr "İptal"
+
+msgid "Canceled"
+msgstr "İptal Edildi"
+
+msgid "Categories"
+msgstr "Kategoriler"
+
+msgid "Category"
+msgstr "Kategori"
+
+msgid "Category Administration"
+msgstr "Kategori Yönetimi"
+
+msgid "Certificates"
+msgstr "Sertifikalar"
+
+msgid "Change"
+msgstr "Değiştirmek"
+
+msgid "Change Password"
+msgstr "Şifre Değiştir"
+
+msgid "Change password"
+msgstr "Şifre Değiştir"
+
+msgid "Changes"
+msgstr "Değişiklikler"
+
+msgid "Changes saved"
+msgstr "Değişiklikler kaydedildi"
+
+msgid "Choose file"
+msgstr "Dosya seç"
+
+msgid "City"
+msgstr "Şehir"
+
+msgid "Close"
+msgstr "Kapat"
+
+msgid "Closed"
+msgstr "Kapalı"
+
+msgid "Comment"
+msgstr "Yorum"
+
+msgid "Companies"
+msgstr "Şirketler"
+
+msgid "Company"
+msgstr "Şirket"
+
+msgid "Company Name"
+msgstr "Şirket Adı"
+
+msgid "Complete"
+msgstr "Tamamlanmış"
+
+msgid "Completed"
+msgstr "Tamamlandı"
+
+msgid "Content"
+msgstr "İçerik"
+
+msgid "Contracts"
+msgstr "Sözleşmeler"
+
+msgid "Corporate Links"
+msgstr "Kurumsal Bağlantılar"
+
+msgid "Country"
+msgstr "Ülke"
+
+msgid "Create"
+msgstr "Oluştur"
+
+msgid "Create as new problem"
+msgstr "Yeni problem olarak oluştur"
+
+msgid "Create document"
+msgstr "Belge Oluştur"
+
+msgid "Create favorite from this"
+msgstr "Bundan favori oluştur"
+
+msgid "Create new"
+msgstr "Yeni oluştur"
+
+msgid "Create random password"
+msgstr "Rastgele şifre oluştur"
+
+msgid "Create task from this"
+msgstr "Bundan görev oluştur"
+
+msgid "Created"
+msgstr "Oluşturuldu"
+
+msgid "Customer"
+msgstr "Müşteri"
+
+msgid "Customer Companies"
+msgstr "Müşteri Şirketleri"
+
+msgid "Customer Contacts"
+msgstr "Müşteri İletişimleri"
+
+msgid "Customer contacts"
+msgstr "Müşteri İletişimleri"
+
+msgid "Customers"
+msgstr "Müşteriler"
+
+msgid "Dashboards"
+msgstr "Kontrol panoları"
+
+msgid "Data not yet registered"
+msgstr "Henüz veri kaydedilmedi"
+
+msgid "Date"
+msgstr "Tarih"
+
+msgid "Date performed"
+msgstr "Yapılan tarih"
+
+msgid "Deadline"
+msgstr "Son tarih"
+
+msgid "Deadline Review"
+msgstr "Süresi Doldu İnceleme"
+
+msgid "Deadline for review"
+msgstr "İnceleme için son tarih"
+
+msgid "Delete"
+msgstr "Sil"
+
+msgid "Deleted"
+msgstr "Silindi"
+
+msgid "Description"
+msgstr "Açıklama"
+
+msgid "Descriptions"
+msgstr "Açıklamalar"
+
+msgid "Design"
+msgstr "Tasarım"
+
+msgid "Destination"
+msgstr "Hedef"
+
+msgid "Details"
+msgstr "Detaylar"
+
+msgid "Dispatch que"
+msgstr "Gönderim kuyruğu"
+
+msgid "Document Name"
+msgstr "Belge Adı"
+
+msgid "Documents"
+msgstr "Belgeler"
+
+msgid "Edit"
+msgstr "Düzenle"
+
+msgid "Edit Task"
+msgstr "Görevi Düzenle"
+
+msgid "Edit Userprofile"
+msgstr "Kullanıcı profili düzenle"
+
+msgid "Email"
+msgstr "E-posta"
+
+msgid "Employees"
+msgstr "Çalışanlar"
+
+msgid "Enable Google Authenticator"
+msgstr "Google Authenticator'ı Etkinleştir"
+
+msgid "End"
+msgstr "Son"
+
+msgid "Error updating password"
+msgstr "Şifre güncelleme hatası"
+
+msgid "Estimated Budget"
+msgstr "Tahmini Bütçe"
+
+msgid "Estimated Hours"
+msgstr "Tahmini Saatler"
+
+msgid "Estimated budget"
+msgstr "Tahmini Bütçe"
+
+msgid "Expiration Date"
+msgstr "Son Kullanma Tarihi"
+
+msgid "Expires"
+msgstr "Sona erer"
+
+msgid "Favorite"
+msgstr "Favori"
+
+msgid "Favorites"
+msgstr "Favoriler"
+
+msgid "File"
+msgstr "Dosya"
+
+msgid "Filename"
+msgstr "Dosya adı"
+
+msgid "Files"
+msgstr "Dosyalar"
+
+msgid "Finished projects"
+msgstr "Tamamlanan projeler"
+
+msgid "First Name"
+msgstr "Ad"
+
+msgid "Firstname"
+msgstr "Ad"
+
+msgid "From"
+msgstr "Kimden"
+
+msgid "Full history"
+msgstr "Tam geçmiş"
+
+msgid "Generate files"
+msgstr "Dosyalar oluştur"
+
+msgid "Generated password"
+msgstr "Oluşturulan şifre"
+
+msgid "Go"
+msgstr "Git"
+
+msgid "Go to favorites"
+msgstr "Favorilere git"
+
+msgid "Gold"
+msgstr "Altın"
+
+msgid "Group"
+msgstr "Grup"
+
+msgid "Group Access"
+msgstr "Grup Erişimi"
+
+msgid "Handheld Devices"
+msgstr "Elde Taşınabilir Cihazlar"
+
+msgid "Handheld device updated"
+msgstr "Elde taşınabilir cihaz güncellendi"
+
+msgid "Headquarters"
+msgstr "Merkez Ofis"
+
+msgid "Help"
+msgstr "Yardım"
+
+msgid "High"
+msgstr "Yüksek"
+
+msgid "History"
+msgstr "Geçmiş"
+
+msgid "Hostname"
+msgstr "Ana bilgisayar adı"
+
+msgid "Hours spend"
+msgstr "Harcanan saatler"
+
+msgid "Implementing"
+msgstr "Uygulama"
+
+msgid "In Assessment"
+msgstr "Değerlendirme içinde"
+
+msgid "In Authorization"
+msgstr "Yetkilendirme içinde"
+
+msgid "In Resolution Process"
+msgstr "Çözüm sürecinde"
+
+msgid "In Review"
+msgstr "Gözden geçirmede"
+
+msgid "In Scheduling"
+msgstr "Planlamada"
+
+msgid "In resolution process"
+msgstr "Çözüm sürecinde"
+
+msgid "In review"
+msgstr "Gözden geçirmede"
+
+msgid "Incident"
+msgstr "Olay"
+
+msgid "Incidents"
+msgstr "Olaylar"
+
+msgid "Internal Comment"
+msgstr "İç Yorum"
+
+msgid "Invoice"
+msgstr "Fatura"
+
+msgid "Item number"
+msgstr "Madde numarası"
+
+msgid "Job Titel"
+msgstr "İş Unvanı"
+
+msgid "Language"
+msgstr "Dil"
+
+msgid "Languages"
+msgstr "Diller"
+
+msgid "Last Logon"
+msgstr "Son Giriş"
+
+msgid "Last Name"
+msgstr "Soyadı"
+
+msgid "Last changed"
+msgstr "Son değişiklik"
+
+msgid "Last changed by"
+msgstr "Son değiştiren"
+
+msgid "Last logged on"
+msgstr "Son Giriş"
+
+msgid "Lastlogon"
+msgstr "Son Giriş"
+
+msgid "Lastname"
+msgstr "Soyadı"
+
+msgid "Latest Activity"
+msgstr "En Son Etkinlik"
+
+msgid "Licenses"
+msgstr "Lisanslar"
+
+msgid "Links added"
+msgstr "Eklenen bağlantılar"
+
+msgid "Links available"
+msgstr "Mevcut bağlantılar"
+
+msgid "Lock"
+msgstr "Kilit"
+
+msgid "Log out"
+msgstr "Çıkış yap"
+
+msgid "Logout"
+msgstr "Çıkış yap"
+
+msgid "Low"
+msgstr "Düşük"
+
+msgid "Main Menu"
+msgstr "Ana Menü"
+
+msgid "Manager"
+msgstr "Yönetici"
+
+msgid "Mark all as read"
+msgstr "Tümünü okundu olarak işaretle"
+
+msgid "Menu"
+msgstr "Menü"
+
+msgid "Messages"
+msgstr "Mesajlar"
+
+msgid "Mobile Phone"
+msgstr "Mobil Telefon"
+
+msgid "Mobile Phones"
+msgstr "Mobil Telefonlar"
+
+msgid "Mobile Subscription"
+msgstr "Mobil Abonelik"
+
+msgid "Mobile Subscriptions"
+msgstr "Mobil Abonelikler"
+
+msgid "Model"
+msgstr "Model"
+
+msgid "My"
+msgstr "Benim"
+
+msgid "My Tasks"
+msgstr "Benim Görevlerim"
+
+msgid "My Team"
+msgstr "Benim Takımım"
+
+msgid "My favorites"
+msgstr "Benim favorilerim"
+
+msgid "My orders"
+msgstr "Benim Siparişlerim"
+
+msgid "My projects"
+msgstr "Benim Projelerim"
+
+msgid "My teams"
+msgstr "Benim Takımlarım"
+
+msgid "Name"
+msgstr "Ad"
+
+msgid "Name for new category"
+msgstr "Yeni kategori için ad"
+
+msgid "Nearest Manager"
+msgstr "En Yakın Yönetici"
+
+msgid "New"
+msgstr "Yeni"
+
+msgid "New Project Task"
+msgstr "Yeni Proje Görevi"
+
+msgid "New Task"
+msgstr "Yeni Görev"
+
+msgid "New activity"
+msgstr "Yeni etkinlik"
+
+msgid "New password randomizer"
+msgstr "Yeni rastgele şifre üreteci"
+
+msgid "News"
+msgstr "Haberler"
+
+msgid "No"
+msgstr "Hayır"
+
+msgid "No Comments yet"
+msgstr "Henüz yorum yok"
+
+msgid "No account found with that username"
+msgstr "Bu kullanıcı adıyla hesap bulunamadı"
+
+msgid "No workflow"
+msgstr "Hiç iş akışı yok"
+
+msgid "No."
+msgstr "Hayır."
+
+msgid "None registered"
+msgstr "Kayıtlı yok"
+
+msgid "Normal"
+msgstr "Normal"
+
+msgid "Not assigned responsible"
+msgstr "Sorumlu ataması yapılmadı"
+
+msgid "Not assigned team"
+msgstr "Takım ataması yapılmamış"
+
+msgid "Notifications"
+msgstr "Bildirimler"
+
+msgid "Notify Customer"
+msgstr "Müşteriye Bildir"
+
+msgid "Now download Google Authenticator App on your smartphone and scan this QR code - Do not Log Out before you have scanned this QR code successfully in the Google Authenticator App!"
+msgstr "Şimdi Google Authenticator Uygulamasını akıllı telefonunuza indirin ve bu QR kodunu tarayın - Google Authenticator Uygulamasında bu QR kodunu başarılı bir şekilde taradıktan sonra çıkış yapmayın!"
+
+msgid "Open"
+msgstr "Açık"
+
+msgid "Order"
+msgstr "Sipariş"
+
+msgid "Orders"
+msgstr "Siparişler"
+
+msgid "Organization"
+msgstr "Organizasyon"
+
+msgid "Overdue"
+msgstr "Gecikmiş"
+
+msgid "Overdue projects"
+msgstr "Geciken projeler"
+
+msgid "Overdue status"
+msgstr "Gecikmiş durum"
+
+msgid "Overview"
+msgstr "Genel Bakış"
+
+msgid "Owner"
+msgstr "Sahibi"
+
+msgid "Participants"
+msgstr "Katılımcılar"
+
+msgid "Password"
+msgstr "Parola"
+
+msgid "Passwords"
+msgstr "Parolalar"
+
+msgid "Payment Due"
+msgstr "Ödeme Zamanı"
+
+msgid "Payment informations"
+msgstr "Ödeme bilgileri"
+
+msgid "Personal skills"
+msgstr "Kişisel beceriler"
+
+msgid "Phone"
+msgstr "Telefon"
+
+msgid "Phone number"
+msgstr "Telefon numarası"
+
+msgid "Preview"
+msgstr "Önizleme"
+
+msgid "Price each"
+msgstr "Birim fiyat"
+
+msgid "Print"
+msgstr "Yazdır"
+
+msgid "Priority"
+msgstr "Öncelik"
+
+msgid "Problem description"
+msgstr "Problem açıklaması"
+
+msgid "Problem descriptions"
+msgstr "Problem açıklamaları"
+
+msgid "Problem text"
+msgstr "Problem metni"
+
+msgid "Problems"
+msgstr "Problemler"
+
+msgid "Producer"
+msgstr "Üretici"
+
+msgid "Professional skills"
+msgstr "Profesyonel beceriler"
+
+msgid "Profile"
+msgstr "Profil"
+
+msgid "Profile picture"
+msgstr "Profil resmi"
+
+msgid "Progress"
+msgstr "İlerleme"
+
+msgid "Project"
+msgstr "Proje"
+
+msgid "Project Completed"
+msgstr "Proje Tamamlandı"
+
+msgid "Project Deadline"
+msgstr "Proje Son Tarih"
+
+msgid "Project Description"
+msgstr "Proje Açıklaması"
+
+msgid "Project Manager"
+msgstr "Proje Yöneticisi"
+
+msgid "Project Name"
+msgstr "Proje Adı"
+
+msgid "Project Responsible"
+msgstr "Proje Sorumlusu"
+
+msgid "Project Start Date"
+msgstr "Proje Başlangıç Tarihi"
+
+msgid "Project Task Completed"
+msgstr "Proje Görevi Tamamlandı"
+
+msgid "Project Tasks"
+msgstr "Proje Görevleri"
+
+msgid "Project participants"
+msgstr "Proje Katılımcıları"
+
+msgid "Projects"
+msgstr "Projeler"
+
+msgid "Public"
+msgstr "Genel"
+
+msgid "Public category"
+msgstr "Genel kategori"
+
+msgid "Qty"
+msgstr "Miktar"
+
+msgid "Quick Actions"
+msgstr "Hızlı Eylemler"
+
+msgid "Quick Launch Menu"
+msgstr "Hızlı Başlat Menüsü"
+
+msgid "Read all"
+msgstr "Tümünü oku"
+
+msgid "Received"
+msgstr "Alındı"
+
+msgid "Recieve"
+msgstr "Almak"
+
+msgid "Related"
+msgstr "İlgili"
+
+msgid "Related Module"
+msgstr "İlgili Modül"
+
+msgid "Related problems"
+msgstr "İlgili problemler"
+
+msgid "Related projects"
+msgstr "İlgili projeler"
+
+msgid "Related task"
+msgstr "İlgili görev"
+
+msgid "Related tickets"
+msgstr "İlgili biletler"
+
+msgid "Relations"
+msgstr "İlişkiler"
+
+msgid "Remove"
+msgstr "Kaldır"
+
+msgid "Request"
+msgstr "Talep"
+
+msgid "Requester"
+msgstr "Talep Eden"
+
+msgid "Requests"
+msgstr "Talepler"
+
+msgid "Reset"
+msgstr "Sıfırla"
+
+msgid "Resolve"
+msgstr "Çöz"
+
+msgid "Resolved"
+msgstr "Çözüldü"
+
+msgid "Resolved or workaround"
+msgstr "Çözüldü veya geçici çözüm"
+
+msgid "Responsible"
+msgstr "Sorumlu"
+
+msgid "Review Tasks"
+msgstr "Görevleri Gözden Geçir"
+
+msgid "Reviewer"
+msgstr "İnceleyen"
+
+msgid "Roles"
+msgstr "Roller"
+
+msgid "Save"
+msgstr "Kaydet"
+
+msgid "Scheduled"
+msgstr "Planlı"
+
+msgid "Search"
+msgstr "Ara"
+
+msgid "Search document attachement content"
+msgstr "Belge eki içeriğinde ara"
+
+msgid "Search document content"
+msgstr "Belge içeriğinde ara"
+
+msgid "Search document name"
+msgstr "Belge adını ara"
+
+msgid "Search document names"
+msgstr "Belge adlarında ara"
+
+msgid "Search for"
+msgstr "Ara"
+
+msgid "Search in"
+msgstr "İçinde ara"
+
+msgid "Search in document attachements"
+msgstr "Belge eklerinde ara"
+
+msgid "Search in document attachment content"
+msgstr "Belge eklerinde içerikte ara"
+
+msgid "Search problem descriptions"
+msgstr "Sorun açıklamalarında ara"
+
+msgid "Select News Channel"
+msgstr "Haber Kanalı Seç"
+
+msgid "Select Workflow"
+msgstr "İş Akışını Seç"
+
+msgid "Select to delete"
+msgstr "Silme için seç"
+
+msgid "Send Message"
+msgstr "Mesaj Gönder"
+
+msgid "Serial Number"
+msgstr "Seri Numarası"
+
+msgid "Servers"
+msgstr "Sunucular"
+
+msgid "Service Level Agreement"
+msgstr "Hizmet Seviyesi Anlaşması"
+
+msgid "Settings"
+msgstr "Ayarlar"
+
+msgid "Viser"
+msgstr "Göster"
+
+msgid "Sidebar Image"
+msgstr "Kenar Çubuğu Resmi"
+
+msgid "Silver"
+msgstr "Gümüş"
+
+msgid "Since"
+msgstr "O zamandan beri"
+
+msgid "Skills"
+msgstr "Beceriler"
+
+msgid "Solution"
+msgstr "Çözüm"
+
+msgid "Solution text"
+msgstr "Çözüm metni"
+
+msgid "Solutions"
+msgstr "Çözümler"
+
+msgid "Something went wrong, please try again later"
+msgstr "Bir şeyler yanlış gitti, lütfen daha sonra tekrar deneyin"
+
+msgid "Soon overdue"
+msgstr "Yakında vadesi geçecek"
+
+msgid "Standard Answers"
+msgstr "Standart Cevaplar"
+
+msgid "Start"
+msgstr "Başla"
+
+msgid "Start Date"
+msgstr "Başlangıç Tarihi"
+
+msgid "Start solution"
+msgstr "Çözümü Başlat"
+
+msgid "Status"
+msgstr "Durum"
+
+msgid "Step"
+msgstr "Adım"
+
+msgid "Subject"
+msgstr "Konu"
+
+msgid "Subjects"
+msgstr "Konular"
+
+msgid "Submit Payment"
+msgstr "Ödemeyi Gönder"
+
+msgid "Subtotal"
+msgstr "Ara Toplam"
+
+msgid "Tablet"
+msgstr "Tablet"
+
+msgid "Task"
+msgstr "Görev"
+
+msgid "Task Deadline"
+msgstr "Görev Bitiş Tarihi"
+
+msgid "Task Description"
+msgstr "Görev Açıklaması"
+
+msgid "Task Manager"
+msgstr "Görev Yöneticisi"
+
+msgid "Task Name"
+msgstr "Görev Adı"
+
+msgid "Task Participants"
+msgstr "Görev Katılımcıları"
+
+msgid "Task Responsible"
+msgstr "Görev Sorumlusu"
+
+msgid "Task Started"
+msgstr "Görev Başladı"
+
+msgid "Task Status"
+msgstr "Görev Durumu"
+
+msgid "Task activities"
+msgstr "Görev etkinlikleri"
+
+msgid "Task created"
+msgstr "Görev oluşturuldu"
+
+msgid "Task deadline"
+msgstr "Görev Bitiş Tarihi"
+
+msgid "Task history"
+msgstr "Görev geçmişi"
+
+msgid "Task progress"
+msgstr "Görev İlerlemesi"
+
+msgid "Taskboard"
+msgstr "Görev Panosu"
+
+msgid "Tasks"
+msgstr "Görevler"
+
+msgid "Team"
+msgstr "Ekip"
+
+msgid "Text"
+msgstr "Metin"
+
+msgid "Time Zone"
+msgstr "Saat Dilimi"
+
+msgid "Time registrations"
+msgstr "Zaman Kaydı"
+
+msgid "Time spend"
+msgstr "Geçirilen Zaman"
+
+msgid "Timeline"
+msgstr "Zaman Çizelgesi"
+
+msgid "To"
+msgstr "Kime"
+
+msgid "Total"
+msgstr "Toplam"
+
+msgid "Type"
+msgstr "Tip"
+
+msgid "Type Description"
+msgstr "Tip Açıklama"
+
+msgid "Type new password"
+msgstr "Yeni bir parola girin"
+
+msgid "Unread"
+msgstr "Okunmamış"
+
+msgid "Update"
+msgstr "Güncelle"
+
+msgid "Update Task"
+msgstr "Görevi Güncelle"
+
+msgid "Upload"
+msgstr "Yükle"
+
+msgid "Urgent"
+msgstr "Acil"
+
+msgid "User"
+msgstr "Kullanıcı"
+
+msgid "Username"
+msgstr "Kullanıcı Adı"
+
+msgid "Users"
+msgstr "Kullanıcılar"
+
+msgid "Users Available"
+msgstr "Kullanıcılar Mevcut"
+
+msgid "Users Online"
+msgstr "Çevrimiçi Kullanıcılar"
+
+msgid "Users in CAB"
+msgstr "CAB'deki Kullanıcılar"
+
+msgid "Usertype"
+msgstr "Kullanıcı Türü"
+
+msgid "Vat"
+msgstr "KDV"
+
+msgid "Version"
+msgstr "Sürüm"
+
+msgid "View"
+msgstr "Görünüm"
+
+msgid "Weather"
+msgstr "Hava Durumu"
+
+msgid "Webpage"
+msgstr "Web sayfası"
+
+msgid "When you have scanned the QR code with success - log off and login again. You will from now on be required to use Google Authenticator to finish your logins"
+msgstr "QR kodunu başarıyla taradığınızda - çıkış yapın ve tekrar giriş yapın. Artık oturumlarınızı tamamlamak için Google Authenticator kullanmanız istenecek"
+
+msgid "Widgets added"
+msgstr "Eklenti eklendi"
+
+msgid "Widgets available"
+msgstr "Kullanılabilir Widget'lar"
+
+msgid "Workflow"
+msgstr "İş Akışı"
+
+msgid "Workflows"
+msgstr "İş Akışları"
+
+msgid "Workstations"
+msgstr "Çalışma İstasyonları"
+
+msgid "Yes"
+msgstr "Evet"
+
+msgid "You are not allowed access to this module"
+msgstr "Bu modüle erişiminiz yok"
+
+msgid "Zip Code"
+msgstr "Posta Kodu"
+
+msgid "account"
+msgstr "hesap"
+
+msgid "assets"
+msgstr "varlıklar"
+
+msgid "assigned responsible"
+msgstr "atanmış sorumlu"
+
+msgid "assigned team"
+msgstr "atanmış ekip"
+
+msgid "change"
+msgstr "değişiklik"
+
+msgid "changes"
+msgstr "değişiklikler"
+
+msgid "close"
+msgstr "kapat"
+
+msgid "companies"
+msgstr "şirketler"
+
+msgid "complete"
+msgstr "tamamlamak"
+
+msgid "created"
+msgstr "oluşturuldu"
+
+msgid "customers"
+msgstr "müşteriler"
+
+msgid "delete"
+msgstr "sil"
+
+msgid "exceeded"
+msgstr "aşıldı"
+
+msgid "hours in total"
+msgstr "toplam saat"
+
+msgid "in"
+msgstr "içinde"
+
+msgid "incident"
+msgstr "olay"
+
+msgid "incidents"
+msgstr "olaylar"
+
+msgid "no"
+msgstr "yok"
+
+msgid "now recieved"
+msgstr "şimdi alındı"
+
+msgid "of"
+msgstr "ın"
+
+msgid "open"
+msgstr "açık"
+
+msgid "overview"
+msgstr "genel bakış"
+
+msgid "password"
+msgstr "parola"
+
+msgid "passwords"
+msgstr "parolalar"
+
+msgid "preview"
+msgstr "önizleme"
+
+msgid "problems"
+msgstr "sorunlar"
+
+msgid "records"
+msgstr "kayıtlar"
+
+msgid "requests"
+msgstr "istekler"
+
+msgid "settings"
+msgstr "ayarlar"
+
+msgid "solutions"
+msgstr "çözümler"
+
+msgid "to"
+msgstr "e"
+
+msgid "to existing problem"
+msgstr "mevcut probleme"
+
+msgid "total"
+msgstr "toplam"
+
+msgid "username"
+msgstr "kullanıcı adı"
+
+msgid "view"
+msgstr "görüntüle"
+
+msgid "yes"
+msgstr "evet"
+
+msgid "No data available in table"
+msgstr "Tabloda veri bulunmuyor"
+
+msgid "No entries to show"
+msgstr "Görüntülenecek kayıt yok"
+
+msgid "No records to display"
+msgstr "Görüntülenecek kayıt yok"
+
+msgid "Archive"
+msgstr "Arşiv"
+
+msgid "Timeregistrations"
+msgstr "Zaman kayıtları"
+
+msgid "Dispatch"
+msgstr "Gönderme"
+
+msgid "Report"
+msgstr "Rapor"
+
+msgid "Me as Participant"
+msgstr "Katılımcı olarak ben"
+
+msgid "Me as Manager"
+msgstr "Yönetici olarak ben"
+
+msgid "Me as Responsible"
+msgstr "Sorumlu olarak ben"
+
+msgid "Expiration"
+msgstr "Süresi Dolma"
+
+msgid "Similarity"
+msgstr "Benzerlik"
+
+msgid "An indicative comparison of words between the version and the previous version"
+msgstr "Versiyon ve önceki sürüm arasında kelimelerin gösterge niteliğinde bir karşılaştırması"
+
+msgid "Asset"
+msgstr "Varlık"
+
+msgid "asset"
+msgstr "çözünürlük"
+
+msgid "Resolution"
+msgstr "Çözünürlük"
+
+msgid "deadline"
+msgstr "son tarih"
+
+msgid "subject"
+msgstr "konu"
+
+msgid "subjects"
+msgstr "konular"
+
+msgid "taskboard"
+msgstr "görev panosu"
+
+msgid "Create New"
+msgstr "Yeni oluştur"
+
+msgid "Your"
+msgstr "Senin"
+
+msgid "Dispatch view"
+msgstr "Gönderme görünümü"
+
+msgid "All open"
+msgstr "Tüm açık"
+
+msgid "Export"
+msgstr "Dışa aktar"
+
+msgid "Export view"
+msgstr "Dışa aktarma görünümü"
+
+msgid "Problems are much easier to create directly via incidents, requests, changes etc."
+msgstr "Problemler, olaylar, talepler, değişiklikler vb. aracılığıyla doğrudan çok daha kolay bir şekilde oluşturulabilir."
+
+msgid "Add to taskboard"
+msgstr "Görev panosuna ekle"
+
+msgid "Deadline Backout"
+msgstr "Son tarihi geri alma"
+
+msgid "New message"
+msgstr "Yeni mesaj"
+
+msgid "Recipient"
+msgstr "Alıcı"
+
+msgid "Message"
+msgstr "Mesaj"
+
+msgid "Answer Templates"
+msgstr "Yanıt şablonları"
+
+msgid "not assigned team"
+msgstr "Takıma atanmamış"
+
+msgid "not assigned responsible"
+msgstr "Sorumlu ataması yapılmamış"
+
+msgid "created from"
+msgstr "Şuradan oluşturuldu"
+
+msgid "Personal"
+msgstr "Kişisel"
+
+msgid "users"
+msgstr "Kullanıcılar"
+
+msgid "Created By"
+msgstr "Tarafından oluşturuldu"
+
+msgid "Todays time registration"
+msgstr "Bugünün saat kaydı"
+
+msgid "Create new project"
+msgstr "Yeni proje oluştur"
+
+msgid "Group Managers"
+msgstr "Grup yöneticileri"
+
+msgid "User group that can administrate this project"
+msgstr "Bu projeyi yönetebilen kullanıcı grubu"
+
+msgid "User group that can participate in this project"
+msgstr "Bu projede yer alabilecek kullanıcı grubu"
+
+msgid "Related Customer"
+msgstr "İlgili Müşteri"
+
+msgid "Customer that this project is to be related to"
+msgstr "Bu projenin ilişkilendirildiği müşteri"
+
+msgid "Create password"
+msgstr "Parola oluştur"
+
+msgid "Enabled"
+msgstr "Etkin"
+
+msgid "Disabled"
+msgstr "Devre dışı"
+
+msgid "Workstation"
+msgstr "Çalışma istasyonu"
+
+msgid "Certificate"
+msgstr "Sertifika"
+
+msgid "New project"
+msgstr "Yeni proje"
+
+msgid "Add to your watchlist"
+msgstr "İzleme listenize ekleyin"
+
+msgid "Quick search"
+msgstr "Hızlı arama"
+
+msgid "Related sprint"
+msgstr "İlgili sprint"
+
+msgid "Task participants"
+msgstr "Görev katılımcıları"
+
+msgid "Delete project"
+msgstr "Proje sil"
+
+msgid "Project Sprint"
+msgstr "Proje Sprinti"
+
+msgid "Generate project tasks"
+msgstr "Proje görevleri oluştur"
+
+msgid "Remove project tasks"
+msgstr "Proje görevlerini kaldır"
+
+msgid "Real hours spend"
+msgstr "Harcanan gerçek saatler"
+
+msgid "Calculated from real timeregistrations"
+msgstr "Gerçek zaman kayıtlarından hesaplandı"
+
+msgid "Open Projects"
+msgstr "Açık Projeler"
+
+msgid "Overall process"
+msgstr "Genel süreç"
+
+msgid "Budget spend"
+msgstr "Bütçe harcaması"
+
+msgid "Time registered"
+msgstr "Zaman kaydedildi"
+
+msgid "Create baseline"
+msgstr "Baz çizgisi oluştur"
+
+msgid "Create *.ics file"
+msgstr ".ics dosyası oluştur"
+
+msgid "Create ICS file"
+msgstr "ICS dosyası oluştur"
+
+msgid "Archive project"
+msgstr "Proje arşivle"
+
+msgid "Add task"
+msgstr "Görev ekle"
+
+msgid "today"
+msgstr "bugün"
+
+msgid "month"
+msgstr "ay"
+
+msgid "week"
+msgstr "hafta"
+
+msgid "day"
+msgstr "gün"
+
+msgid "list"
+msgstr "liste"
+
+msgid "Create duplicate"
+msgstr "Kopya oluştur"
+
+msgid "Withdrawn"
+msgstr "Çekildi"
+
+msgid "In construction"
+msgstr "İnşa halinde"
+
+msgid "In approval"
+msgstr "Onayda"
+
+msgid "Published"
+msgstr "Yayınlandı"
+
+msgid "Your open"
+msgstr "Açık"
+
+msgid "This task is private and you are not added as project task participant"
+msgstr "Bu görev özel ve proje görevi katılımcısı olarak eklenmemişsiniz"
+
+msgid "You are not added as project participant, so you cannot see this project task"
+msgstr "Projeye katılımcı olarak eklenmediğiniz için bu projeyi göremezsiniz"
+
+msgid "Existing Categorys"
+msgstr "Mevcut Kategoriler"
+
+msgid "Category Name"
+msgstr "Kategori Adı"
+
+msgid "Project Task Categories"
+msgstr "Proje Görev Kategorileri"
+
+msgid "Project Categories"
+msgstr "Proje Kategorileri"
+
+msgid "Project Task Category Administration"
+msgstr "Proje Görev Kategori Yönetimi"
+
+msgid "articles"
+msgstr "makaleler"
+
+msgid "Articles"
+msgstr "Makaleler"
+
+msgid "Article"
+msgstr "Makale"
+
+msgid "article"
+msgstr "makale"
+
+msgid "My articles"
+msgstr "Benim makalelerim"
+
+msgid "My Articles"
+msgstr "Benim Makalelerim"
+
+msgid "Create Article"
+msgstr "Makale Oluştur"
+
+msgid "Article name"
+msgstr "Makale adı"
+
+msgid "Article content"
+msgstr "Makale içeriği"
+
+msgid "Article attachments"
+msgstr "Makale ekleri"
+
+msgid "This task is delayed"
+msgstr "Bu görev gecikti"
+
+msgid "Statistics"
+msgstr "İstatistikler"
+
+msgid "Estimated hours completed"
+msgstr "Tamamlanan Tahmini Saatler"
+
+msgid "Number Of Project Tasks"
+msgstr "Proje Görev Sayısı"
+
+msgid "Number Of Sprints"
+msgstr "Sprint Sayısı"
+
+msgid "Project Tasks Completed"
+msgstr "Tamamlanan Proje Görevleri"
+
+msgid "Create project"
+msgstr "Proje Oluştur"
+
+msgid "Open projects"
+msgstr "Açık projeler"
+
+msgid "Closed projects"
+msgstr "Kapalı projeler"
+
+msgid "All projects"
+msgstr "Tüm projeler"
+
+msgid "Search projects"
+msgstr "Projeleri Ara"
+
+msgid "updated"
+msgstr "güncellendi"
+
+msgid "Push tasks ahead"
+msgstr "Görevleri öne it"
+
+msgid "This is used for pushing future tasks, including this, a number of days forward"
+msgstr "Bu, gelecekteki görevleri, bu dahil olmak üzere belirli bir sayıda gün ileri itmek için kullanılır"
+
+msgid "For how many days forward should tasks from this tasks start day be moved? Note: you can use minus to subtract days instead!"
+msgstr "Bu görevin başlama gününden kaç gün ileriye kadar görevler taşınmalı? Not: Günleri çıkarmak için eksi işareti kullanabilirsiniz!"
+
+msgid "Active inquiries"
+msgstr "Aktif sorular"
+
+msgid "Your active inquiries"
+msgstr "Aktif sorularınız"
+
+msgid "Your closed inquiries"
+msgstr "Kapalı sorularınız"
+
+msgid "Your companys active inquiries"
+msgstr "Şirketinizin aktif soruları"
+
+msgid "Your companys closed inquiries"
+msgstr "Şirketinizin kapalı soruları"
+
+msgid "Search for help in our knowledge database"
+msgstr "Bilgi veritabanımızda yardım arayın"
+
+msgid "Search here"
+msgstr "Burada ara"
+
+msgid "Your Companys SLA Agreement is:"
+msgstr "Şirketinizin SLA Anlaşması:"
+
+msgid "This means you can expect the following reaction times within opening hours from us."
+msgstr "Bu, bizi açık saatlerimiz içindeki aşağıdaki tepki sürelerini bekleyebileceğiniz anlamına gelir."
+
+msgid "Did you know... that you can also contact us and create tickets via our mail"
+msgstr "Bilginiz olsun... bize e-posta yoluyla da ulaşabilir ve bilet oluşturabilirsiniz"
+
+msgid "Approve"
+msgstr "Onayla"
+
+msgid "Change end"
+msgstr "Sonu değiştir"
+
+msgid "Change Advisory Board, change approvers"
+msgstr "Değişiklik Danışmanlık Kurulu, değiştirme onaylayıcıları"
+
+msgid "Valid reason"
+msgstr "Geçerli sebep"
+
+msgid "Implementation Plan"
+msgstr "Uygulama Planı"
+
+msgid "Contact"
+msgstr "İletişim"
+
+msgid "Comments"
+msgstr "Yorumlar"
+
+msgid "allready added to your task board"
+msgstr "zaten görev panonuza eklendi"
+
+msgid "added to your task board"
+msgstr "görev panonuza eklendi"
+
+msgid "task"
+msgstr "görev"
+
+msgid "You need to relate a project before you can relate project tasks"
+msgstr "Proje görevlerini ilişkilendirebilmeniz için önce bir proje ile ilişkilendirmeniz gerekiyor"
+
+msgid "This taskboard is a kanban based task board. You can add incidents, request, project tasks etc. to your taskboard to manage all your tasks on daily basis."
+msgstr "Bu görev panosu, Kanban tabanlı bir görev panosudur."
+
+msgid "Timeregistration"
+msgstr "Zaman kaydı"
+
+msgid "News archive"
+msgstr "Haber arşivi"
+
+msgid "Read"
+msgstr "Oku"
+
+msgid "Assets expired"
+msgstr "Varlıklar süresi doldu"
+
+msgid "Change approvals"
+msgstr "Değişiklik onayları"
+
+msgid "Document approvals"
+msgstr "Belge onayları"
+
+msgid "Documents expired"
+msgstr "Belge süresi doldu"
+
+msgid "or"
+msgstr "veya"
+
+msgid "Sign in"
+msgstr "Oturum aç"
+
+msgid "Dont have an account?"
+msgstr "Hesabınız yok mu?"
+
+msgid "Sign up"
+msgstr "Kaydol"
+
+msgid "Forgot password?"
+msgstr "Şifrenizi mi unuttunuz?"
+
+msgid "Reset now"
+msgstr "Şimdi sıfırla"
+
+msgid "About"
+msgstr "Hakkında"
+
+msgid "Try"
+msgstr "Dene"
+
+msgid "Business Services"
+msgstr "İş Hizmetleri"
+
+msgid "Are you sure? Tasks for all involved users will be created"
+msgstr "Emin misiniz? Tüm ilgili kullanıcılar için görevler oluşturulacak"
+
+msgid "Are you sure? Tasks for all involved users will be deleted"
+msgstr "Emin misiniz? Tüm ilgili kullanıcılar için görevler silinecek"
+
+msgid "Doubleclick to visit"
+msgstr "Ziyaret etmek için çift tıklayın"
+
+msgid "Decommissioned"
+msgstr "Kullanımdan kaldırıldı"
+
+msgid "Quick Menu"
+msgstr "Hızlı Menü"
+
+msgid "Sidenav Mini"
+msgstr "Sidenav Mini"
+
+msgid "Light"
+msgstr "Işık"
+
+msgid "Dark"
+msgstr "Koyu"
+
+msgid "Time registration"
+msgstr "Zaman kayıtları"
+
+msgid "Manage time registration"
+msgstr "Zaman kaydını yönet"
+
+msgid "New Timeregistration"
+msgstr "Yeni zaman kaydı"
+
+msgid "Reactive"
+msgstr "Reaktif"
+
+msgid "Proactive"
+msgstr "Proaktif"
+
+msgid "Forgot password"
+msgstr "Parola sıfırlama"
+
+msgid "You will receive an e-mail typically within 60 seconds"
+msgstr "Genellikle 60 saniye içinde bir e-posta alırsınız"
+
+msgid "Reset password"
+msgstr "Parolayı sıfırla"
+
+msgid "Password must contain: Minimum 8 characters, at least 1 alphabet and 1 number"
+msgstr "Parola minimum 8 karakter, en az 1 harf ve 1 rakam içermelidir"
+
+msgid "New Password"
+msgstr "Yeni Parola"
+
+msgid "Repeat"
+msgstr "Tekrarla"
+
+msgid "Repeat Password"
+msgstr "Parolayı tekrarla"
+
+msgid "Already have an account?"
+msgstr "Zaten bir hesabınız var mı?"
+
+msgid "Login"
+msgstr "Giriş yap"
+
+msgid "Inactive"
+msgstr "Pasif"
+
+msgid "Back"
+msgstr "Geri"
+
+msgid "Me participating"
+msgstr "Katılıyorum"
+
+msgid "Modules"
+msgstr "Modüller"
+
+msgid "Inquiries"
+msgstr "Sorgular"
+
+msgid "My active"
+msgstr "Aktiflerim"
+
+msgid "My closed"
+msgstr "Kapatılmışlarım"
+
+msgid "Groups"
+msgstr "Gruplar"
+
+msgid "Teams"
+msgstr "Takımlar"
+
+msgid "Users in group"
+msgstr "Gruptaki kullanıcılar"
+
+msgid "Group name"
+msgstr "Grup adı"
+
+msgid "module"
+msgstr "modül"
+
+msgid "Role name"
+msgstr "Rol adı"
+
+msgid "Related module"
+msgstr "İlgili modül"
+
+msgid "Notes"
+msgstr "Notlar"
+
+msgid "Memberships"
+msgstr "Üyelikler"
+
+msgid "Group Status"
+msgstr "Grup Durumu"
+
+msgid "Users in role"
+msgstr "Roldeki kullanıcılar"
+
+msgid "Groups in role"
+msgstr "Roldeki gruplar"
+
+msgid "Groups Available"
+msgstr "Mevcut Gruplar"
+
+msgid "Role Status"
+msgstr "Rol Durumu"
+
+msgid "Members Available"
+msgstr "Mevcut Üyeler"
+
+msgid "Members"
+msgstr "Üyeler"
+
+msgid "Load Templates"
+msgstr "Şablonları Yükle"
+
+msgid "Templates"
+msgstr "Şablonlar"
+
+msgid "Module"
+msgstr "Modül"
+
+msgid "Removed"
+msgstr "Kaldırıldı"
+
+msgid "End Date"
+msgstr "Bitiş Tarihi"
+
+msgid "Shortname"
+msgstr "Kısa ad"
+
+msgid "Tablename"
+msgstr "Tablo adı"
+
+msgid "Icon"
+msgstr "Simge"
+
+msgid "Product Owner"
+msgstr "Ürün Sahibi"
+
+msgid "Short Name"
+msgstr "Kısa Ad"
+
+msgid "Developer Team"
+msgstr "Geliştirici Takımı"
+
+msgid "Related User"
+msgstr "İlgili Kullanıcı"
+
+msgid "Related Company"
+msgstr "İlgili Şirket"
+
+msgid "Last Updated"
+msgstr "Son Güncellenen"
+
+msgid "Business Service"
+msgstr "İş Hizmeti"
+
+msgid "More"
+msgstr "Daha Fazla"
+
+msgid "Internal"
+msgstr "İç"
+
+msgid "Clone"
+msgstr "Klonla"
+
+msgid "Create incident from this"
+msgstr "Bundan olay oluştur"
+
+msgid "Create request from this"
+msgstr "Bundan talep oluştur"
+
+msgid "Create change from this"
+msgstr "Bundan değişiklik oluştur"
+
+msgid "Create problem from this"
+msgstr "Bundan sorun oluştur"
+
+msgid "Users in team"
+msgstr "Ekipteki kullanıcılar"
+
+msgid "Team name"
+msgstr "Takım adı"
+
+msgid "Team colour"
+msgstr "Takım rengi"
+
+msgid "Team Leader"
+msgstr "Takım Lideri"
+
+msgid "Team Manager"
+msgstr "Takım Yöneticisi"
+
+msgid "colour"
+msgstr "renk"
+
+msgid "Colour"
+msgstr "Renk"
+
+msgid "Approvals"
+msgstr "Onaylar"
+
+msgid "Follow-ups"
+msgstr "Takipler"
+
+msgid "Role"
+msgstr "Rol"
+
+msgid "Last Edited By"
+msgstr "Son düzenleyen"
+
+msgid "Last Edited"
+msgstr "Son düzenleme"
+
+msgid "Show in relations"
+msgstr "İlişkilerde göster"
+
+msgid "Field Name"
+msgstr "Alan Adı"
+
+msgid "Fields"
+msgstr "Alanlar"
+
+msgid "Status Codes"
+msgstr "Durum Kodları"
+
+msgid "Lookup Table"
+msgstr "Arama Tablosu"
+
+msgid "Lookup Field"
+msgstr "Arama Alanı"
+
+msgid "Done Status"
+msgstr "Tamamlanmış Durum"
+
+msgid "SLA Supported"
+msgstr "SLA Desteklenir"
+
+msgid "Closed Status"
+msgstr "Kapalı Durum"
+
+msgid "Restore Points"
+msgstr "Geri Yükleme Noktaları"
+
+msgid "ITSM Relations"
+msgstr "ITSM İlişkileri"
+
+msgid "CI Relations"
+msgstr "CI İlişkileri"
+
+msgid "ITSM Types"
+msgstr "ITSM Türleri"
+
+msgid "CI Types"
+msgstr "CI Türleri"
+
+msgid "Tableview"
+msgstr "Tablo Görünümü"
+
+msgid "Parent Task"
+msgstr "Üst Görev"
+
+msgid "Push in next status"
+msgstr "Sonraki duruma taşı"
+
+msgid "Notify by email"
+msgstr "E-posta ile bildir"
+
+msgid "Notify"
+msgstr "Bildir"
+
+msgid "Text templates"
+msgstr "Metin şablonları"
+
+msgid "Widgets on frontpage"
+msgstr "Anasayfada bileşenler"
+
+msgid "Available"
+msgstr "Mevcut"
+
+msgid "Added"
+msgstr "Eklendi"
+
+msgid "Code"
+msgstr "Kod"
+
+msgid "Personal Meeting Room"
+msgstr "Kişisel Toplantı Odası"
+
+msgid "These are text shortcuts you can define a text code and a text template that is inserted when you type the text code in text boxes"
+msgstr "Bunlar, metin kutularına metin kodunu yazdığınızda eklenen bir metin kodu ve metin şablonu tanımlayabileceğiniz metin kısayollarıdır"
+
+msgid "½ Day"
+msgstr "½ Gün"
+
+msgid "Day"
+msgstr "Gün"
+
+msgid "Week"
+msgstr "Hafta"
+
+msgid "Month"
+msgstr "Ay"
+
+msgid "Today"
+msgstr "Bugün"
+
+msgid "End date cannot be before start date"
+msgstr "Bitiş tarihi başlangıç tarihinden önce olamaz"
+
+msgid "Updated"
+msgstr "Güncellendi"
+
+msgid "Other searches"
+msgstr "Diğer aramalar"
+
+msgid "Scan for CVR numbers in WIKI"
+msgstr "WIKI'de CVR numaralarını tarayın"
+
+msgid "Group Name"
+msgstr "Grup Adı"
+
+msgid "Expired CI's"
+msgstr "Süresi Dolmuş CI'ler"
+
+msgid "API configuration"
+msgstr "API yapılandırması"
+
+msgid "Test update user"
+msgstr "Test kullanıcıyı güncelle"
+
+msgid "Delete user (careful it will delete the user)"
+msgstr "Kullanıcıyı sil (dikkat, kullanıcı silinecek)"
+
+msgid "Shared"
+msgstr "Paylaşılan"
+
+msgid "made by"
+msgstr "tarafından yapılmış"
+
+msgid "making better web for small business."
+msgstr "küçük işletmeler için daha iyi bir web yapmak."
+
+msgid "Support"
+msgstr "Destek"
+
+msgid "Changelog"
+msgstr "Değişiklik Günlüğü"
+
+msgid "Duplicate"
+msgstr "Kopyalamak"
+
+msgid "Latest activity in the project"
+msgstr "Projedeki Son Etkinlik"
+
+msgid "Latest activity"
+msgstr "Son Etkinlik"
+
+msgid "Activity Stream"
+msgstr "Etkinlik akışı"
+
+msgid "Remaining"
+msgstr "Kalan"
+
+msgid "Password generator"
+msgstr "Şifre oluşturucu"
+
+msgid "Forms"
+msgstr "Formlar"
+
+msgid "Mail Templates"
+msgstr "E-Posta Şablonları"
+
+msgid "Maintenance"
+msgstr "Bakım"
+
+msgid "API"
+msgstr "API"
+
+msgid "Active Directory"
+msgstr "Active Directory"
+
+msgid "Helpdesk"
+msgstr "Yardım Masası"
+
+msgid "System Configurator"
+msgstr "Sistem Yapılandırıcısı"
+
+msgid "Administration"
+msgstr "Yönetim"
+
+msgid "Email account for sending emails from"
+msgstr "E-postaları göndermek için E-posta Hesabı"
+
+msgid "SMTP Port"
+msgstr "SMTP Portu"
+
+msgid "SMTP Host"
+msgstr "SMTP Sunucusu"
+
+msgid "SMTP Username"
+msgstr "SMTP Kullanıcı Adı"
+
+msgid "SMTP Password"
+msgstr "SMTP Şifresi"
+
+msgid "Max 25 characters"
+msgstr "Maksimum 25 karakter"
+
+msgid "Name of the system"
+msgstr "Sistem Adı"
+
+msgid "Allow people to activate google authenticater for 2 faktor validation?"
+msgstr "İnsanların 2 faktörlü doğrulama için Google Authenticator'ı etkinleştirmesine izin verilsin mi?"
+
+msgid "IMAP Host"
+msgstr "IMAP Sunucusu"
+
+msgid "IMAP Username"
+msgstr "IMAP Kullanıcı Adı"
+
+msgid "IMAP Password"
+msgstr "IMAP Şifresi"
+
+msgid "Please make a long token"
+msgstr "Lütfen uzun bir belirteç oluşturun"
+
+msgid "These are the links on the login page"
+msgstr "Bunlar giriş sayfasındaki bağlantılar"
+
+msgid "Frontpage links"
+msgstr "Anasayfa bağlantıları"
+
+msgid "You company Facebook page"
+msgstr "Şirket Facebook sayfası"
+
+msgid "You company page"
+msgstr "Şirket sayfası"
+
+msgid "Company Website"
+msgstr "Şirket Websitesi"
+
+msgid "You company LinkedIn page"
+msgstr "Şirket LinkedIn sayfası"
+
+msgid "Registration options"
+msgstr "Kayıt Seçenekleri"
+
+msgid "Allow user registrations via email?"
+msgstr "E-posta ile kullanıcı kayıtlarına izin verilsin mi?"
+
+msgid "Default company assignment for new user registrations?"
+msgstr "Yeni kullanıcı kayıtları için varsayılan şirket ataması?"
+
+msgid "Default Company?"
+msgstr "Varsayılan Şirket?"
+
+msgid "You are done"
+msgstr "Tamamlandınız"
+
+msgid "Submit to save your settings"
+msgstr "Ayarlarınızı kaydetmek için gönderin"
+
+msgid "Previous"
+msgstr "Önceki"
+
+msgid "Next"
+msgstr "Sonraki"
+
+msgid "Submit"
+msgstr "Gönder"
+
+msgid "Settings did not get updated"
+msgstr "Ayarlar güncellenmedi"
+
+msgid "Settings updated"
+msgstr "Ayarlar güncellendi"
+
+msgid "Default Design"
+msgstr "Varsayılan Tasarım"
+
+msgid "Google Authenticate"
+msgstr "Google Kimlik Doğrulama"
+
+msgid "System"
+msgstr "Sistem"
+
+msgid "Wiki"
+msgstr "Wiki"
+
+msgid "Mail templates"
+msgstr "E-posta şablonları"
+
+msgid "Knowledge base"
+msgstr "Bilgi tabanı"
+
+msgid "queue"
+msgstr "sıra"
+
+msgid "Queue"
+msgstr "Sıra"
+
+msgid "Doing"
+msgstr "Yapılıyor"
+
+msgid "Done"
+msgstr "Tamamlandı"
+
+msgid "done"
+msgstr "tamamlandı"
+
+msgid "doing"
+msgstr "yapılıyor"
+
+msgid "Monday"
+msgstr "Pazartesi"
+
+msgid "Tuesday"
+msgstr "Salı"
+
+msgid "Wednesday"
+msgstr "Çarşamba"
+
+msgid "Thursdag"
+msgstr "Perşembe"
+
+msgid "Friday"
+msgstr "Cuma"
+
+msgid "Saturday"
+msgstr "Cumartesi"
+
+msgid "Sunday"
+msgstr "Pazar"
+
+msgid "Thursday"
+msgstr "Perşembe"
+
+msgid "Management functions"
+msgstr "Yönetim Fonksiyonları"
+
+msgid "This weeks time registrations for team"
+msgstr "Bu hafta takım için zaman kayıtları"
+
+msgid "Employee"
+msgstr "Çalışan"
+
+msgid "Solved with solution"
+msgstr "Çözüm ile çözüldü"
+
+msgid "Solved"
+msgstr "Çözüldü"
+
+msgid "Parent Assets"
+msgstr "Üst düzey varlıklar"
+
+msgid "Child Assets"
+msgstr "Alt varlıklar"
+
+msgid "This relation will make current assets child"
+msgstr "Bu ilişki mevcut varlıkları alt varlıklar yapacak"
+
+msgid "Create a parent relation"
+msgstr "Bir üst ilişki oluştur"
+
+msgid "This relation will make current asset parent"
+msgstr "Bu ilişki mevcut varlığı ebeveyn yapacak"
+
+msgid "Create a child relation"
+msgstr "Bir çocuk ilişkisi oluştur"
+
+msgid "Service"
+msgstr "Hizmet"
+
+msgid "Overall"
+msgstr "Genel"
+
+msgid "Subordinate"
+msgstr "Ast"
+
+msgid "Create relation"
+msgstr "İlişki oluştur"
+
+msgid "Get direct link"
+msgstr "Doğrudan bağlantı al"
+
+msgid "Problem report"
+msgstr "Sorun raporu"
+
+msgid "Please explain the problem"
+msgstr "Lütfen sorunu açıklayın"
+
+msgid "this will create a ticket at Practicle Support so please dont abuse this!"
+msgstr "bu, Pratik Destek'te bir bilet oluşturacak, bu yüzden lütfen bundan kötüye kullanmayın!"
+
+msgid "Report a problem"
+msgstr "Bir problem bildir"
+
+msgid "Category administration"
+msgstr "Kategori yönetimi"
+
+msgid "Create News Article"
+msgstr "Haber makalesi oluştur"
+
+msgid "Date to be published"
+msgstr "Yayımlanacak tarih"
+
+msgid "Writer"
+msgstr "Yazar"
+
+msgid "Headline"
+msgstr "Başlık"
+
+msgid "Add new category"
+msgstr "Yeni kategori ekle"
+
+msgid "Usergroup"
+msgstr "Kullanıcı grubu"
+
+msgid "News Article"
+msgstr "Haber makalesi"
+
+msgid "Get latest CVE news entries"
+msgstr "En son CVE haber girişlerini alın"
+
+msgid "Delete all CVE news entries"
+msgstr "Tüm CVE haber girişlerini sil"
+
+msgid "Fetch"
+msgstr "Al"
+
+msgid "Add filter"
+msgstr "Filtre ekle"
+
+msgid "Miscellaneous"
+msgstr "Çeşitli"
+
+msgid "miscellaneous"
+msgstr "çeşitli"
+
+msgid "CVE Filters"
+msgstr "CVE Filtreleri"
+
+msgid "Documentation"
+msgstr "Belgeleme"
+
+msgid "last 2 months"
+msgstr "son 2 ay"
+
+msgid "Date worked"
+msgstr "Çalışma tarihi"
+
+msgid "Duration"
+msgstr "Süre"
+
+msgid "Billable"
+msgstr "Faturalandırılabilir"
+
+msgid "Date for registration"
+msgstr "Kayıt tarihi"
+
+msgid "All"
+msgstr "Hepsi"
+
+msgid "Daily"
+msgstr "Günlük"
+
+msgid "Duration minutes"
+msgstr "Süre dakika"
+
+msgid "Duration hours"
+msgstr "Süre saat"
+
+msgid "Number of registrations"
+msgstr "Kayıt sayısı"
+
+msgid "Daily basis"
+msgstr "Günlük baz"
+
+msgid "Create Relations"
+msgstr "İlişkiler oluştur"
+
+msgid "Table Name"
+msgstr "Tablo Adı"
+
+msgid "Import Source"
+msgstr "İçe Aktar Kaynağı"
+
+msgid "Synchronization"
+msgstr "Senkronizasyon"
+
+msgid "Sync Time"
+msgstr "Senkron Zamanı"
+
+msgid "Last Synced"
+msgstr "Son Senkronize"
+
+msgid "Label"
+msgstr "Etiket"
+
+msgid "Default value"
+msgstr "Varsayılan değer"
+
+msgid "Field title"
+msgstr "Alan başlığı"
+
+msgid "Field Width"
+msgstr "Alan Genişliği"
+
+msgid "Lookup Field Result (Table View)"
+msgstr "Arama Alanı Sonucu (Tablo Görünümü)"
+
+msgid "Lookup Field Result (Modal View)"
+msgstr "Arama Alanı Sonucu (Modal Görünümü)"
+
+msgid "Primary Relation Field"
+msgstr "Birincil İlişki Alanı"
+
+msgid "Import Source Field"
+msgstr "İthalat Kaynak Alanı"
+
+msgid "Sync Source Field"
+msgstr "Senkronize Kaynak Alanı"
+
+msgid "Addon"
+msgstr "Eklenti"
+
+msgid "Select Field Options"
+msgstr "Seçim Alanı Seçenekleri"
+
+msgid "Child relations lookup"
+msgstr "Alt İlişkiler Arama"
+
+msgid "Locked"
+msgstr "Kilitli"
+
+msgid "Required"
+msgstr "Gerekli"
+
+msgid "Searchable"
+msgstr "Aranabilir"
+
+msgid "Hide Tables"
+msgstr "Tabloları Gizle"
+
+msgid "Hide Forms"
+msgstr "Formları Gizle"
+
+msgid "Syncronize"
+msgstr "Senkronize Et"
+
+msgid "Reset field sort order"
+msgstr "Alan sıralama düzenini sıfırla"
+
+msgid "Related workflow"
+msgstr "İlgili İş Akışı"
+
+msgid "Reset forms data"
+msgstr "Form Verilerini Sıfırla"
+
+msgid "Check Table Consistency"
+msgstr "Tablo Tutarlılığını Kontrol Et"
+
+msgid "Priority 1"
+msgstr "Öncelik 1"
+
+msgid "Priority 2"
+msgstr "Öncelik 2"
+
+msgid "Priority 3"
+msgstr "Öncelik 3"
+
+msgid "Priority 4"
+msgstr "Öncelik 4"
+
+msgid "Field Label"
+msgstr "Alan Etiketi"
+
+msgid "Features"
+msgstr "Özellikler"
+
+msgid "Create Incident"
+msgstr "Olay Oluştur"
+
+msgid "Create Change"
+msgstr "Değişiklik Oluştur"
+
+msgid "Create Problem"
+msgstr "Sorun Oluştur"
+
+msgid "Create Request"
+msgstr "İstek Oluştur"
+
+msgid "Incidents dispatch view"
+msgstr "Olaylar dağıtım görünümü"
+
+msgid "Requests dispatch view"
+msgstr "İstekler dağıtım görünümü"
+
+msgid "Changes dispatch view"
+msgstr "Değişiklikler dağıtım görünümü"
+
+msgid "Problems dispatch view"
+msgstr "Sorunlar dağıtım görünümü"
+
+msgid "Shortcuts"
+msgstr "Kısayollar"
+
+msgid "Watch list"
+msgstr "İzleme listesi"
+
+msgid "Generic forms"
+msgstr "Genel formlar"
+
+msgid "Authorizer"
+msgstr "Yetkilendirme"
+
+msgid "Reason"
+msgstr "Sebep"
+
+msgid "Administrators"
+msgstr "Yöneticiler"
+
+msgid "Updated by"
+msgstr "Tarafından güncellendi"
+
+msgid "Image"
+msgstr "Görüntü"
+
+msgid "Click to see"
+msgstr "Görmek için tıklayın"
+
+msgid "this is essential in the subject for the mail reply by the customer to land on specific type and number"
+msgstr "bu, müşterinin e-posta yanıtının belirli bir tür ve numaraya inmesi için konuda önemlidir"
+
+msgid "this is essential in the subject for the mail reply by the customer to land on specific type"
+msgstr "bu, müşterinin e-posta yanıtının belirli bir türde inmesi için konuda önemlidir"
+
+msgid "placeholder for current incident/change/request/problem number"
+msgstr "mevcut olay/değişiklik/istek/sorun numarası için yer tutucu"
+
+msgid "placeholder for customers firstname"
+msgstr "müşterilerin adı için yer tutucu"
+
+msgid "placeholder for customers lastname"
+msgstr "müşterilerin soyadı için yer tutucu"
+
+msgid "if action is a comment - this is the placeholder for the comment"
+msgstr "eylem bir yorum ise - bu yorum için yer tutucudur"
+
+msgid "placeholder for the system name"
+msgstr "sistem adı için yer tutucu"
+
+msgid "placeholder for the system url"
+msgstr "sistem URL'sı için yer tutucu"
+
+msgid "placeholder for the name of the type"
+msgstr "tip adı için yer tutucu"
+
+msgid "placeholder for direct link to the specific incident/change/request/problem (can not be accessed by customers)"
+msgstr "müşteriler tarafından erişilemeyen belirli olay/değişiklik/istek/problem için doğrudan bağlantı için yer tutucu"
+
+msgid "Placeholders"
+msgstr "yer tutucuları"
+
+msgid "Password must contain: minimum 8 characters, at least 1 alphabet, 1 number and 1 special character"
+msgstr "Şifre şunları içermelidir: minimum 8 karakter, en az 1 alfabe, 1 rakam ve 1 özel karakter"
+
+msgid "This email allready exists"
+msgstr "Bu e-posta zaten mevcut"
+
+msgid "Please confirm password"
+msgstr "Lütfen şifreyi doğrulayın"
+
+msgid "Passwords did not match"
+msgstr "Şifreler eşleşmedi"
+
+msgid "Please enter a password"
+msgstr "Lütfen bir şifre girin"
+
+msgid "Please enter a lastname"
+msgstr "Lütfen bir soyadı girin"
+
+msgid "Please enter a firstname"
+msgstr "Lütfen bir ad girin"
+
+msgid "Email user"
+msgstr "E-posta kullanıcısı"
+
+msgid "Preview group members"
+msgstr "Grup üyelerini önizle"
+
+msgid "All Users"
+msgstr "Tüm Kullanıcılar"
+
+msgid "Change Administrators"
+msgstr "Değişiklik Yöneticileri"
+
+msgid "Change Users"
+msgstr "Değişiklik Kullanıcıları"
+
+msgid "CMDB Administrators"
+msgstr "CMDB Yöneticileri"
+
+msgid "CMDB Users"
+msgstr "CMDB Kullanıcıları"
+
+msgid "Company Administrators"
+msgstr "Şirket Yöneticileri"
+
+msgid "Default CAB"
+msgstr "Varsayılan CAB"
+
+msgid "Default group messages"
+msgstr "Varsayılan grup iletileri"
+
+msgid "Document Administrators"
+msgstr ""
+
+msgid "Document Users"
+msgstr ""
+
+msgid "Forms administrators"
+msgstr ""
+
+msgid "Forms users"
+msgstr ""
+
+msgid "Incident Administrators"
+msgstr ""
+
+msgid "Incident Users"
+msgstr ""
+
+msgid "Module Administrators"
+msgstr ""
+
+msgid "News Administrators"
+msgstr ""
+
+msgid "News Writer"
+msgstr ""
+
+msgid "Problem Administrators"
+msgstr ""
+
+msgid "Problem Users"
+msgstr ""
+
+msgid "Project Administrators"
+msgstr ""
+
+msgid "Project Users"
+msgstr ""
+
+msgid "Request Administrators"
+msgstr ""
+
+msgid "Request Users"
+msgstr ""
+
+msgid "Timeregistration Administrators"
+msgstr ""
+
+msgid "User Administrator"
+msgstr ""
+
+msgid "Workflow Administrators"
+msgstr ""
+
+msgid "Default"
+msgstr ""
+
+msgid "Generic Forms"
+msgstr ""
+
+msgid "Group updated"
+msgstr ""
+
+msgid "All employee users"
+msgstr ""
+
+msgid "Group Administrators"
+msgstr ""
+
+msgid "Role created"
+msgstr ""
+
+msgid "Preview team members"
+msgstr ""
+
+msgid "Role memberships"
+msgstr ""
+
+msgid "Group memberships"
+msgstr ""
+
+msgid "Roles Available"
+msgstr ""
+
+msgid "Team memberships"
+msgstr ""
+
+msgid "Teams Available"
+msgstr ""
+
+msgid "Consultant"
+msgstr ""
+
+msgid "Members of this group possess unrestricted privileges to the overall system. Administrators can access the administration module. Only a select few should belong to this group."
+msgstr ""
+
+msgid "This group can be used as a collector group for all users of type employees - in general - if this group is chosen, all employee users will have access."
+msgstr ""
+
+msgid "This group gives advanced access to to the request module. Users in this group will be able to update request informations in general and is not limited in access rights in general.  This should only be granted to central administrators and not more then very few people."
+msgstr ""
+
+msgid "Standard group for request module. Users have to be part of this group in order to be able to use standard request module."
+msgstr ""
+
+msgid "This group is for people that needs to be able to be assigned as responsible on workflows and thereby also can edit it."
+msgstr ""
+
+msgid "Has the rights to modify and oversee users and their permissions."
+msgstr ""
+
+msgid "Username already exists"
+msgstr ""
+
+msgid "Required fields are missing values"
+msgstr ""
+
+msgid "This email already exists for"
+msgstr ""
+
+msgid "Email cannot be empty"
+msgstr ""
+
+msgid "Firstname is required"
+msgstr ""
+
+msgid "Username cannot be empty"
+msgstr ""
+
+msgid "This username already exists for"
+msgstr ""
+
+msgid "Write words seperated by ; if you want an empty value as select option - write NULL"
+msgstr ""
+
+msgid "Create project task from this"
+msgstr ""
+
+msgid "Select user for add"
+msgstr ""
+
+msgid "Select user for removal"
+msgstr ""
+
+msgid "No Sprint"
+msgstr ""
+
+msgid "Parent"
+msgstr ""
+
+msgid "Private"
+msgstr "Özel"
+
+msgid "Show members"
+msgstr "Üyeleri göster"
+
+msgid "Last login"
+msgstr "Son giriş"
+
+msgid "Create Project Task"
+msgstr "Proje görevi oluştur"
+
+msgid "Simple"
+msgstr "Basit"
+
+msgid "Log Book"
+msgstr "Günlük"
+
+msgid "Related number"
+msgstr "İlgili numara"
+
+msgid "Add empty row"
+msgstr "Boş satır ekle"
+
+msgid "This adds an empty value to a select box and only for that"
+msgstr "Bu, bir seçim kutusuna boş bir değer ekler ve sadece bunun için"
+
+msgid "Mine"
+msgstr "Benim"
+
+msgid "mine"
+msgstr "benim"
+
+msgid "Search results"
+msgstr "Arama sonuçları"
+
+msgid "Select Options"
+msgstr "Seçenekleri Seç"
+
+msgid "Options"
+msgstr "Seçenekler"
+
+msgid "Lookup"
+msgstr "Arama"
+
+msgid "Syncronization"
+msgstr "Senkronizasyon"
+
+msgid "relations"
+msgstr "İlişkiler"
+
+msgid "Primary"
+msgstr "Birincil"
+
+msgid "Full view height"
+msgstr "Tam görünüm yüksekliği"
+
+msgid "Table view"
+msgstr "Tablo görünümü"
+
+msgid "Timeline view"
+msgstr "Zaman Çizelgesi Görünümü"
+
+msgid "Deactivate"
+msgstr "Devre dışı bırakmak"
+
+msgid "Transfer"
+msgstr "Aktar"
+
+msgid "Transfer elements to other user"
+msgstr "Öğeleri başka bir kullanıcıya aktarın"
+
+msgid "Other"
+msgstr "Diğer"
+
+msgid "Select a user"
+msgstr "Bir kullanıcı seç"
+
+msgid "Select all / Deselect all"
+msgstr "Tümünü Seç / Tümünü Bırak"
+
+msgid "CMDB, ITSM and other objects are getting moved to the selected user (responsible is getting changed). Transfer can not be transfered to user type customer. Transfer of Roles and Group means that memberships that the current user has, is getting added to the selected user."
+msgstr "CMDB, ITSM ve diğer nesneler seçilen kullanıcıya taşınıyor (sorumlu değiştiriliyor). Transfer, müşteri tipi kullanıcıya transfer edilemez. Roller ve Grupların transferi, mevcut kullanıcının sahip olduğu üyeliklerin seçilen kullanıcıya eklenmesi anlamına gelir."
+
+msgid "Workflow Tasks"
+msgstr "İş Akışı Görevleri"
+
+msgid "KanBan Tasks"
+msgstr "KanBan Görevleri"
+
+msgid "ITSM elements"
+msgstr "ITSM öğeleri"
+
+msgid "CMDB elements"
+msgstr "CMDB öğeleri"
+
+msgid "We are missing a primary field for this type"
+msgstr "Bu tür için birincil alan eksik"
+
+msgid "Result field"
+msgstr "Sonuç alanı"
+
+msgid "Choose which field should be returned as result in the select box"
+msgstr "Seçim kutusunda sonuç olarak hangi alanın döndürülmesi gerektiğini seçin"
+
+msgid "User fullname and username"
+msgstr "Kullanıcı tam adı ve kullanıcı adı"
+
+msgid "User fullname"
+msgstr "Kullanıcı tam adı"
+
+msgid "Select this if you want a result with users fullname"
+msgstr "Kullanıcıların tam adı ile bir sonuç istiyorsanız bunu seçin"
+
+msgid "Select this if you want a result with users fullname and username"
+msgstr "Kullanıcıların tam adı ve kullanıcı adı ile bir sonuç istiyorsanız bunu seçin"
+
+msgid "Place on right side"
+msgstr "Sağ tarafa yerleştir"
+
+msgid "Place field on the right side of form"
+msgstr "Formun sağ tarafına alanı yerleştir"
+
+msgid "This will make the field a normal and simple text result"
+msgstr "Bu, alanı normal ve basit bir metin sonucu yapacak"
+
+msgid "Simple text"
+msgstr "Basit metin"
+
+msgid "Make field disabled on create"
+msgstr "Oluşturma sırasında alanı devre dışı bırak"
+
+msgid "Make field required"
+msgstr "Alanı zorunlu yap"
+
+msgid "Make searchable from search bar on content of this field"
+msgstr "Bu alanın içeriğinde arama çubuğundan arama yapılabilir hale getirin"
+
+msgid "Notes fields can get full height so all content is shown on view page"
+msgstr "Not alanları tam yükseklik kazanabilir, böylece tüm içerik görüntüleme sayfasında gösterilir"
+
+msgid "Deactivate this field from Table views"
+msgstr "Bu alanı Tablo görünümlerinden devre dışı bırak"
+
+msgid "Deactivate this field from Form views"
+msgstr "Bu alanı Form görünümlerinden devre dışı bırak"
+
+msgid "Reset module data"
+msgstr "Modül verilerini sıfırla"
+
+msgid "This deletes all data records for this module including logs, files, relations, workflows and more"
+msgstr "Bu, günlükler, dosyalar, ilişkiler, iş akışları ve daha fazlası dahil olmak üzere bu modül için tüm veri kayıtlarını siler"
+
+msgid "Reset all modules (data only)"
+msgstr "Tüm modülleri sıfırla (yalnızca veri)"
+
+msgid "Reset all modules to standard"
+msgstr "Tüm modülleri standaRDa sıfırla"
+
+msgid "Tasks completed"
+msgstr "Tamamlanan görevler"
+
+msgid "Unread comments"
+msgstr "Okunmamış yorumlar"
+
+msgid "Password Module Administrators"
+msgstr "Şifre Modülü Yöneticileri"
+
+msgid "Password Module Users"
+msgstr "Şifre Modülü Kullanıcıları"
+
+msgid "Field design"
+msgstr "Alan tasarımı"
+
+msgid "General"
+msgstr "Genel"
+
+msgid "Create a template based on the completed form below"
+msgstr "Aşağıda doldurulan forma göre bir şablon oluşturun"
+
+msgid "Delete the current selected template"
+msgstr "Şu anda seçilen şablonu silin"
+
+msgid "Create public template that all users can choose"
+msgstr "Tüm kullanıcıların seçebileceği genel bir şablon oluşturun"
+
+msgid "Choose template"
+msgstr "Şablon seçin"
+
+msgid "Are you sure?"
+msgstr "Emin misin?"
+
+msgid "Make field disabled on view/edit"
+msgstr "Görüntüleme/düzenleme sırasında alanı devre dışı bırak"
+
+msgid "Locked on create"
+msgstr "Oluşturmada kilitli"
+
+msgid "Locked on view"
+msgstr "Görünümde kilitli"
+
+msgid "Group filter"
+msgstr "Grup filtresi"
+
+msgid "Deactivate Forms"
+msgstr "Formları devre dışı bırak"
+
+msgid "Deactivate Tables"
+msgstr "Tabloları devre dışı bırak"
+
+msgid "Retrieve field but hide it"
+msgstr "Alanı al ancak gizle"
+
+msgid "Hidden"
+msgstr "Gizli"
+
+msgid "Preview of team members"
+msgstr "Ekip üyelerinin önizlemesi"
+
+msgid "Groups added"
+msgstr "Gruplar eklendi"
+
+msgid "Quarantene state"
+msgstr "Karantina durumu"
+
+msgid "Email to send to"
+msgstr "Gönderilecek e-posta"
+
+msgid "Or choose prepared email"
+msgstr "Veya hazırlanan e-posta seçin"
+
+msgid "Attach PDF"
+msgstr "PDF ekle"
+
+msgid "Create PDF"
+msgstr "PDF oluştur"
+
+msgid "Found in field"
+msgstr "Alanda bulundu"
+
+msgid "Standard values"
+msgstr ""
+
+msgid "If you want check fields to be default checked you must add the text checked to the default value"
+msgstr ""
+
+msgid "Remove fields"
+msgstr ""
+
+msgid "Do not delete standard fields. If you feel they are not necessary - disable them in table view and modal view"
+msgstr ""
+
+msgid "Field widths"
+msgstr ""
+
+msgid "Field widths are determined using Bootstrap's grid system. A row is 12 blocks wide, so you can set a field's width by specifying how many blocks it should occupy. For example, setting the width to 6 will make the field half the row's width"
+msgstr ""
+
+msgid "Create Project"
+msgstr ""
+
+msgid "Transfer elments to other user"
+msgstr ""
+

@@ -1,0 +1,3055 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Practicle\n"
+"POT-Creation-Date: 2019-05-16 11:25+0200\n"
+"PO-Revision-Date: 2019-07-11 13:00+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.2.3\n"
+"X-Poedit-Basepath: .\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: fi_FI\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+
+msgid "A customer contact person must be chosen - please create customer contact person before creating"
+msgstr "Asiakkaan yhteyshenkilö on valittava - luo asiakaskontaktihenkilö ennen kuin luot sen"
+
+msgid "Account number"
+msgstr "Tilinumero"
+
+msgid "Actions"
+msgstr "Toiminnot"
+
+msgid "Active"
+msgstr "Aktiivinen"
+
+msgid "Active projects"
+msgstr "Aktiiviset projektit"
+
+msgid "Activity"
+msgstr "Aktiviteetti"
+
+msgid "Add"
+msgstr "Lisätä"
+
+msgid "Add News"
+msgstr "Lisää uutisia"
+
+msgid "Add as favorite"
+msgstr "Lisää suosikiksi"
+
+msgid "Add as task"
+msgstr "Lisää tehtävänä"
+
+msgid "Add document"
+msgstr "Lisää asiakirja"
+
+msgid "Add new task"
+msgstr "Lisää uusi tehtävä"
+
+msgid "Add to existing problem"
+msgstr "Lisää olemassa olevaan ongelmaan"
+
+msgid "Address"
+msgstr "Osoite"
+
+msgid "Administrate News"
+msgstr "Hallitse uutisia"
+
+msgid "Affected Company"
+msgstr "Vaikuttettu yritys"
+
+msgid "Alerts"
+msgstr "Hälytykset"
+
+msgid "All News"
+msgstr "Kaikki uutiset"
+
+msgid "All active"
+msgstr "Kaikki aktiivinen"
+
+msgid "All closed"
+msgstr "Kaikki suljettu"
+
+msgid "All overdue"
+msgstr "Kaikki myöhässä"
+
+msgid "Amount spend"
+msgstr "Käytetty määrä"
+
+msgid "Anniversarys"
+msgstr "Merkkipäivät"
+
+msgid "Answer"
+msgstr "Vastaus"
+
+msgid "Approval Tasks"
+msgstr "Hyväksyntätehtävät"
+
+msgid "Approver"
+msgstr "Hyväksyjä"
+
+msgid "Assess"
+msgstr "Arvioida"
+
+msgid "Assets"
+msgstr "Varat"
+
+msgid "Assigned"
+msgstr "Määritelty"
+
+msgid "Assigned Team"
+msgstr "Määritelty tiimi"
+
+msgid "Assigned to responsible"
+msgstr "Määritelty vastuuhenkilölle"
+
+msgid "Assigned to team"
+msgstr "Määritelty tiimille"
+
+msgid "Attach a workflow"
+msgstr "Liitä työnkulku"
+
+msgid "Authorize"
+msgstr "Valtuuttaa"
+
+msgid "Average solution time"
+msgstr "Keskimääräinen ratkaisuaika"
+
+msgid "Await Customer"
+msgstr "Odota asiakasta"
+
+msgid "Awaiting"
+msgstr "Odottaa"
+
+msgid "Awaiting customer"
+msgstr "Odottaa asiakasta"
+
+msgid "Backout Plan"
+msgstr "Peruutussuunnitelma"
+
+msgid "Bank"
+msgstr "Pankki"
+
+msgid "Birthday"
+msgstr "Syntymäpäivä"
+
+msgid "Birthdays"
+msgstr "Syntymäpäivät"
+
+msgid "Board"
+msgstr "Taulu"
+
+msgid "Boards"
+msgstr "Taulut"
+
+msgid "Bought"
+msgstr "Ostettu"
+
+msgid "Branche news"
+msgstr "Sivukonttoriuutiset"
+
+msgid "Bronze"
+msgstr "Pronssi"
+
+msgid "Budget Spend"
+msgstr "Budjetoitu kulutus"
+
+msgid "CBR"
+msgstr "CBR"
+
+msgid "Cancel"
+msgstr "Peruuta"
+
+msgid "Canceled"
+msgstr "Peruutettu"
+
+msgid "Categories"
+msgstr "Luokat"
+
+msgid "Category"
+msgstr "Luokka"
+
+msgid "Category Administration"
+msgstr "Luokan hallinta"
+
+msgid "Certificates"
+msgstr "Sertifikaatit"
+
+msgid "Change"
+msgstr "Muuttaa"
+
+msgid "Change Password"
+msgstr "Vaihda salasana"
+
+msgid "Change password"
+msgstr "Vaihda salasana"
+
+msgid "Changes"
+msgstr "Muutokset"
+
+msgid "Changes saved"
+msgstr "Muutokset tallennettu"
+
+msgid "Choose file"
+msgstr "Valitse tiedosto"
+
+msgid "City"
+msgstr "Kaupunki"
+
+msgid "Close"
+msgstr "Sulje"
+
+msgid "Closed"
+msgstr "Suljettu"
+
+msgid "Comment"
+msgstr "Kommentti"
+
+msgid "Companies"
+msgstr "Yritykset"
+
+msgid "Company"
+msgstr "Yritys"
+
+msgid "Company Name"
+msgstr "Yrityksen nimi"
+
+msgid "Complete"
+msgstr "Valmis"
+
+msgid "Completed"
+msgstr "Valmis"
+
+msgid "Content"
+msgstr "Sisältö"
+
+msgid "Contracts"
+msgstr "Sopimukset"
+
+msgid "Corporate Links"
+msgstr "Yrityslinkit"
+
+msgid "Country"
+msgstr "Maa"
+
+msgid "Create"
+msgstr "Luo"
+
+msgid "Create as new problem"
+msgstr "Luo uusi ongelma"
+
+msgid "Create document"
+msgstr "Luo asiakirja"
+
+msgid "Create favorite from this"
+msgstr "Luo suosikki tästä"
+
+msgid "Create new"
+msgstr "Luo uusi"
+
+msgid "Create random password"
+msgstr "Luo satunnainen salasana"
+
+msgid "Create task from this"
+msgstr "Luo tehtävä tästä"
+
+msgid "Created"
+msgstr "Luotu"
+
+msgid "Customer"
+msgstr "Asiakas"
+
+msgid "Customer Companies"
+msgstr "Asiakasyritykset"
+
+msgid "Customer Contacts"
+msgstr "Asiakas Yhteyshenkilöt"
+
+msgid "Customer contacts"
+msgstr "Asiakas Yhteyshenkilöt"
+
+msgid "Customers"
+msgstr "Asiakkaat"
+
+msgid "Dashboards"
+msgstr "Kojelaudat"
+
+msgid "Data not yet registered"
+msgstr "Tiedot eivät ole vielä rekisteröity"
+
+msgid "Date"
+msgstr "Päivämäärä"
+
+msgid "Date performed"
+msgstr "Suorituspäivä"
+
+msgid "Deadline"
+msgstr "Määräaika"
+
+msgid "Deadline Review"
+msgstr "Määräajan arviointi"
+
+msgid "Deadline for review"
+msgstr "Määräaika tarkastelua varten"
+
+msgid "Delete"
+msgstr "Poista"
+
+msgid "Deleted"
+msgstr "Poistettu"
+
+msgid "Description"
+msgstr "Kuvaus"
+
+msgid "Descriptions"
+msgstr "Kuvaukset"
+
+msgid "Design"
+msgstr "Muotoilu"
+
+msgid "Destination"
+msgstr "Kohde"
+
+msgid "Details"
+msgstr "Yksityiskohdat"
+
+msgid "Dispatch que"
+msgstr "Lähetysjono"
+
+msgid "Document Name"
+msgstr "Asiakirjan nimi"
+
+msgid "Documents"
+msgstr "Asiakirjat"
+
+msgid "Edit"
+msgstr "Muokkaa"
+
+msgid "Edit Task"
+msgstr "Muokkaa tehtävää"
+
+msgid "Edit Userprofile"
+msgstr "Muokkaa käyttäjäprofiilia"
+
+msgid "Email"
+msgstr "Sähköposti"
+
+msgid "Employees"
+msgstr "Työntekijät"
+
+msgid "Enable Google Authenticator"
+msgstr "Ota Google Authenticator käyttöön"
+
+msgid "End"
+msgstr "Loppu"
+
+msgid "Error updating password"
+msgstr "Virhe päivitettäessä salasanaa"
+
+msgid "Estimated Budget"
+msgstr "Arvioitu budjetti"
+
+msgid "Estimated Hours"
+msgstr "Arvioidut tunnit"
+
+msgid "Estimated budget"
+msgstr "Arvioitu budjetti"
+
+msgid "Expiration Date"
+msgstr "Vanhentumispäivä"
+
+msgid "Expires"
+msgstr "Umpeutuu"
+
+msgid "Favorite"
+msgstr "Suosikki"
+
+msgid "Favorites"
+msgstr "Suosikit"
+
+msgid "File"
+msgstr "Tiedosto"
+
+msgid "Filename"
+msgstr "Tiedostonimi"
+
+msgid "Files"
+msgstr "Tiedostot"
+
+msgid "Finished projects"
+msgstr "Valmiit projektit"
+
+msgid "First Name"
+msgstr "Etunimi"
+
+msgid "Firstname"
+msgstr "Etunimi"
+
+msgid "From"
+msgstr "Mistä"
+
+msgid "Full history"
+msgstr "Koko historia"
+
+msgid "Generate files"
+msgstr "Generoi tiedostoja"
+
+msgid "Generated password"
+msgstr "Luotu salasana"
+
+msgid "Go"
+msgstr "Siirry"
+
+msgid "Go to favorites"
+msgstr "Siirry suosikkeihin"
+
+msgid "Gold"
+msgstr "Kulta"
+
+msgid "Group"
+msgstr "Ryhmä"
+
+msgid "Group Access"
+msgstr "Ryhmäoikeudet"
+
+msgid "Handheld Devices"
+msgstr "Kädessä pidettävät laitteet"
+
+msgid "Handheld device updated"
+msgstr "Päivitetty kädessä pidettävä laite"
+
+msgid "Headquarters"
+msgstr "Pääkonttori"
+
+msgid "Help"
+msgstr "Apua"
+
+msgid "High"
+msgstr "Korkea"
+
+msgid "History"
+msgstr "Historia"
+
+msgid "Hostname"
+msgstr "Isäntänimi"
+
+msgid "Hours spend"
+msgstr "Käytetyt tunnit"
+
+msgid "Implementing"
+msgstr "Toteutus"
+
+msgid "In Assessment"
+msgstr "Arvioinnissa"
+
+msgid "In Authorization"
+msgstr "Valtuutuksessa"
+
+msgid "In Resolution Process"
+msgstr "Ratkaisuprosessissa"
+
+msgid "In Review"
+msgstr "Tarkastuksessa"
+
+msgid "In Scheduling"
+msgstr "Aikataulutuksessa"
+
+msgid "In resolution process"
+msgstr "Ratkaisuprosessissa"
+
+msgid "In review"
+msgstr "Tarkastuksessa"
+
+msgid "Incident"
+msgstr "Tapahtuma"
+
+msgid "Incidents"
+msgstr "Tapahtumat"
+
+msgid "Internal Comment"
+msgstr "Sisäinen kommentti"
+
+msgid "Invoice"
+msgstr "Lasku"
+
+msgid "Item number"
+msgstr "Tuotenro"
+
+msgid "Job Titel"
+msgstr "Työnimike"
+
+msgid "Language"
+msgstr "Kieli"
+
+msgid "Languages"
+msgstr "Kielet"
+
+msgid "Last Logon"
+msgstr "Viimeisin kirjautuminen"
+
+msgid "Last Name"
+msgstr "Sukunimi"
+
+msgid "Last changed"
+msgstr "Viimeksi muutettu"
+
+msgid "Last changed by"
+msgstr "Muutoksen tekijä"
+
+msgid "Last logged on"
+msgstr "Viimeisin kirjautuminen"
+
+msgid "Lastlogon"
+msgstr "Viimeisin kirjautuminen"
+
+msgid "Lastname"
+msgstr "Sukunimi"
+
+msgid "Latest Activity"
+msgstr "Viimeisin aktiviteetti"
+
+msgid "Licenses"
+msgstr "Lisenssit"
+
+msgid "Links added"
+msgstr "Linkit lisätty"
+
+msgid "Links available"
+msgstr "Linkit saatavilla"
+
+msgid "Lock"
+msgstr "Lukko"
+
+msgid "Log out"
+msgstr "Kirjaudu ulos"
+
+msgid "Logout"
+msgstr "Kirjaudu ulos"
+
+msgid "Low"
+msgstr "Matala"
+
+msgid "Main Menu"
+msgstr "Päävalikko"
+
+msgid "Manager"
+msgstr "Päällikkö"
+
+msgid "Mark all as read"
+msgstr "Merkitse kaikki luetuksi"
+
+msgid "Menu"
+msgstr "Valikko"
+
+msgid "Messages"
+msgstr "Viestit"
+
+msgid "Mobile Phone"
+msgstr "Matkapuhelin"
+
+msgid "Mobile Phones"
+msgstr "Matkapuhelimet"
+
+msgid "Mobile Subscription"
+msgstr "Matkapuhelinliittymä"
+
+msgid "Mobile Subscriptions"
+msgstr "Matkapuhelinliittymät"
+
+msgid "Model"
+msgstr "Malli"
+
+msgid "My"
+msgstr "Oma"
+
+msgid "My Tasks"
+msgstr "Omat tehtävät"
+
+msgid "My Team"
+msgstr "Tiimini"
+
+msgid "My favorites"
+msgstr "Suosikkini"
+
+msgid "My orders"
+msgstr "Tilaukseni"
+
+msgid "My projects"
+msgstr "Projektini"
+
+msgid "My teams"
+msgstr "Tiimini"
+
+msgid "Name"
+msgstr "Nimi"
+
+msgid "Name for new category"
+msgstr "Nimi uudelle luokalle"
+
+msgid "Nearest Manager"
+msgstr "Lähin esimies"
+
+msgid "New"
+msgstr "Uusi"
+
+msgid "New Project Task"
+msgstr "Uusi projektitehtävä"
+
+msgid "New Task"
+msgstr "Uusi tehtävä"
+
+msgid "New activity"
+msgstr "Uusi toiminta"
+
+msgid "New password randomizer"
+msgstr "Uusi salasanan satunnaisgeneraattori"
+
+msgid "News"
+msgstr "Uutiset"
+
+msgid "No"
+msgstr "Ei"
+
+msgid "No Comments yet"
+msgstr "Ei vielä kommentteja"
+
+msgid "No account found with that username"
+msgstr "Käyttäjätunnusta ei löytynyt"
+
+msgid "No workflow"
+msgstr "Ei työnkulkua"
+
+msgid "No."
+msgstr "Ei."
+
+msgid "None registered"
+msgstr "Ei rekisteröity"
+
+msgid "Normal"
+msgstr "Normaali"
+
+msgid "Not assigned responsible"
+msgstr "Ei vastuussa"
+
+msgid "Not assigned team"
+msgstr "Ei tiimiä"
+
+msgid "Notifications"
+msgstr "Ilmoitukset"
+
+msgid "Notify Customer"
+msgstr "Ilmoita asiakkaalle"
+
+msgid "Now download Google Authenticator App on your smartphone and scan this QR code - Do not Log Out before you have scanned this QR code successfully in the Google Authenticator App!"
+msgstr "Nyt lataa Google Authenticator-sovellus älypuhelimeesi ja skannaa tämä QR-koodi - Älä kirjaudu ulos ennen kuin olet skannannut tämän QR-koodin onnistuneesti Google Authenticator-sovelluksessa!"
+
+msgid "Open"
+msgstr "Avaa"
+
+msgid "Order"
+msgstr "Tilaus"
+
+msgid "Orders"
+msgstr "Tilaukset"
+
+msgid "Organization"
+msgstr "Organisaatio"
+
+msgid "Overdue"
+msgstr "Erikoistunut"
+
+msgid "Overdue projects"
+msgstr "Erääntyneet projektit"
+
+msgid "Overdue status"
+msgstr "Erääntynyt tila"
+
+msgid "Overview"
+msgstr "Yleiskatsaus"
+
+msgid "Owner"
+msgstr "Omistaja"
+
+msgid "Participants"
+msgstr "Osallistujat"
+
+msgid "Password"
+msgstr "Salasana"
+
+msgid "Passwords"
+msgstr "Salasanat"
+
+msgid "Payment Due"
+msgstr "Maksu erääntyy"
+
+msgid "Payment informations"
+msgstr "Maksutiedot"
+
+msgid "Personal skills"
+msgstr "Henkilökohtaiset taidot"
+
+msgid "Phone"
+msgstr "Puhelin"
+
+msgid "Phone number"
+msgstr "Puhelinnumero"
+
+msgid "Preview"
+msgstr "Esikatselu"
+
+msgid "Price each"
+msgstr "Hinta kappaleelta"
+
+msgid "Print"
+msgstr "Tulosta"
+
+msgid "Priority"
+msgstr "Tärkeys"
+
+msgid "Problem description"
+msgstr "Ongelman kuvaus"
+
+msgid "Problem descriptions"
+msgstr "Ongelmien kuvaukset"
+
+msgid "Problem text"
+msgstr "Ongelman teksti"
+
+msgid "Problems"
+msgstr "Ongelmat"
+
+msgid "Producer"
+msgstr "Tuottaja"
+
+msgid "Professional skills"
+msgstr "Ammattitaidot"
+
+msgid "Profile"
+msgstr "Profiili"
+
+msgid "Profile picture"
+msgstr "Profiilikuva"
+
+msgid "Progress"
+msgstr "Edistyminen"
+
+msgid "Project"
+msgstr "Projekti"
+
+msgid "Project Completed"
+msgstr "Projekti valmis"
+
+msgid "Project Deadline"
+msgstr "Projektin määräaika"
+
+msgid "Project Description"
+msgstr "Projektin kuvaus"
+
+msgid "Project Manager"
+msgstr "Projektipäällikkö"
+
+msgid "Project Name"
+msgstr "Projektin nimi"
+
+msgid "Project Responsible"
+msgstr "Projektin vastuuhenkilö"
+
+msgid "Project Start Date"
+msgstr "Projektin aloituspäivä"
+
+msgid "Project Task Completed"
+msgstr "Projektin tehtävä valmis"
+
+msgid "Project Tasks"
+msgstr "Projektitehtävät"
+
+msgid "Project participants"
+msgstr "Projektin osallistujat"
+
+msgid "Projects"
+msgstr "Projektit"
+
+msgid "Public"
+msgstr "Julkinen"
+
+msgid "Public category"
+msgstr "Julkinen luokka"
+
+msgid "Qty"
+msgstr "Määrä"
+
+msgid "Quick Actions"
+msgstr "Pikavalinnat"
+
+msgid "Quick Launch Menu"
+msgstr "Pikakäynnistysvalikko"
+
+msgid "Read all"
+msgstr "Lue kaikki"
+
+msgid "Received"
+msgstr "Vastaanotettu"
+
+msgid "Recieve"
+msgstr "Vastaanottaa"
+
+msgid "Related"
+msgstr "Liittyvä"
+
+msgid "Related Module"
+msgstr "Liittyvä moduuli"
+
+msgid "Related problems"
+msgstr "Liittyvät ongelmat"
+
+msgid "Related projects"
+msgstr "Liittyvät projektit"
+
+msgid "Related task"
+msgstr "Liittyvä tehtävä"
+
+msgid "Related tickets"
+msgstr "Liittyvät liput"
+
+msgid "Relations"
+msgstr "Suhteet"
+
+msgid "Remove"
+msgstr "Poista"
+
+msgid "Request"
+msgstr "Pyyntö"
+
+msgid "Requester"
+msgstr "Pyytäjä"
+
+msgid "Requests"
+msgstr "Pyyntöjä"
+
+msgid "Reset"
+msgstr "Nollaa"
+
+msgid "Resolve"
+msgstr "Ratkaise"
+
+msgid "Resolved"
+msgstr "Ratkaistu"
+
+msgid "Resolved or workaround"
+msgstr "Ratkaisu tai ohje"
+
+msgid "Responsible"
+msgstr "Vastuullinen"
+
+msgid "Review Tasks"
+msgstr "Tarkista tehtävät"
+
+msgid "Reviewer"
+msgstr "Tarkastaja"
+
+msgid "Roles"
+msgstr "Roolit"
+
+msgid "Save"
+msgstr "Tallenna"
+
+msgid "Scheduled"
+msgstr "Ajoitettu"
+
+msgid "Search"
+msgstr "Haku"
+
+msgid "Search document attachement content"
+msgstr "Hae liitteen sisältöä"
+
+msgid "Search document content"
+msgstr "Hae asiakirjan sisältöä"
+
+msgid "Search document name"
+msgstr "Hae asiakirjan nimeä"
+
+msgid "Search document names"
+msgstr "Hae asiakirjojen nimiä"
+
+msgid "Search for"
+msgstr "Hae"
+
+msgid "Search in"
+msgstr "Hae"
+
+msgid "Search in document attachements"
+msgstr "Hae asiakirjan liitteistä"
+
+msgid "Search in document attachment content"
+msgstr "Hae asiakirjan liitteen sisällöstä"
+
+msgid "Search problem descriptions"
+msgstr "Hae ongelman kuvauksista"
+
+msgid "Select News Channel"
+msgstr "Valitse uutiskanava"
+
+msgid "Select Workflow"
+msgstr "Valitse työnkulku"
+
+msgid "Select to delete"
+msgstr "Valitse poistaaksesi"
+
+msgid "Send Message"
+msgstr "Lähetä viesti"
+
+msgid "Serial Number"
+msgstr "Sarjanumero"
+
+msgid "Servers"
+msgstr "Palvelimet"
+
+msgid "Service Level Agreement"
+msgstr "Palvelutasosopimus"
+
+msgid "Settings"
+msgstr "Asetukset"
+
+msgid "Viser"
+msgstr "Näyttää"
+
+msgid "Sidebar Image"
+msgstr "Sivupalkin kuva"
+
+msgid "Silver"
+msgstr "Hopea"
+
+msgid "Since"
+msgstr "Lähtien"
+
+msgid "Skills"
+msgstr "Taidot"
+
+msgid "Solution"
+msgstr "Ratkaisu"
+
+msgid "Solution text"
+msgstr "Ratkaisun teksti"
+
+msgid "Solutions"
+msgstr "Ratkaisut"
+
+msgid "Something went wrong, please try again later"
+msgstr "Jotain meni pieleen, yritä myöhemmin uudelleen"
+
+msgid "Soon overdue"
+msgstr "Pian myöhässä"
+
+msgid "Standard Answers"
+msgstr "Vakiokysymykset"
+
+msgid "Start"
+msgstr "Aloita"
+
+msgid "Start Date"
+msgstr "Aloituspäivämäärä"
+
+msgid "Start solution"
+msgstr "Aloita ratkaisu"
+
+msgid "Status"
+msgstr "Tila"
+
+msgid "Step"
+msgstr "Vaihe"
+
+msgid "Subject"
+msgstr "Aihe"
+
+msgid "Subjects"
+msgstr "Aiheet"
+
+msgid "Submit Payment"
+msgstr "Lähetä maksu"
+
+msgid "Subtotal"
+msgstr "Välisumma"
+
+msgid "Tablet"
+msgstr "Tabletti"
+
+msgid "Task"
+msgstr "Tehtävä"
+
+msgid "Task Deadline"
+msgstr "Tehtävän määräaika"
+
+msgid "Task Description"
+msgstr "Tehtävän kuvaus"
+
+msgid "Task Manager"
+msgstr "Tehtävämanageri"
+
+msgid "Task Name"
+msgstr "Tehtävän nimi"
+
+msgid "Task Participants"
+msgstr "Tehtävän osallistujat"
+
+msgid "Task Responsible"
+msgstr "Tehtävän vastuuhenkilö"
+
+msgid "Task Started"
+msgstr "Tehtävä aloitettu"
+
+msgid "Task Status"
+msgstr "Tehtävän tila"
+
+msgid "Task activities"
+msgstr "Tehtävän toiminnot"
+
+msgid "Task created"
+msgstr "Tehtävä luotu"
+
+msgid "Task deadline"
+msgstr "Tehtävän määräaika"
+
+msgid "Task history"
+msgstr "Tehtävän historia"
+
+msgid "Task progress"
+msgstr "Tehtävän eteneminen"
+
+msgid "Taskboard"
+msgstr "Tehtävätaulu"
+
+msgid "Tasks"
+msgstr "Tehtävät"
+
+msgid "Team"
+msgstr "Tiimi"
+
+msgid "Text"
+msgstr "Teksti"
+
+msgid "Time Zone"
+msgstr "Aikavyöhyke"
+
+msgid "Time registrations"
+msgstr "Ajan kirjaus"
+
+msgid "Time spend"
+msgstr "Aika käytetty"
+
+msgid "Timeline"
+msgstr "Aikajana"
+
+msgid "To"
+msgstr "Kohteeseen"
+
+msgid "Total"
+msgstr "Yhteensä"
+
+msgid "Type"
+msgstr "Tyyppi"
+
+msgid "Type Description"
+msgstr "Tyypin kuvaus"
+
+msgid "Type new password"
+msgstr "Syötä uusi salasana"
+
+msgid "Unread"
+msgstr "Lukematon"
+
+msgid "Update"
+msgstr "Päivitä"
+
+msgid "Update Task"
+msgstr "Päivitä tehtävä"
+
+msgid "Upload"
+msgstr "Lataa"
+
+msgid "Urgent"
+msgstr "Kiireellinen"
+
+msgid "User"
+msgstr "Käyttäjä"
+
+msgid "Username"
+msgstr "Käyttäjänimi"
+
+msgid "Users"
+msgstr "Käyttäjät"
+
+msgid "Users Available"
+msgstr "Käyttäjät saatavilla"
+
+msgid "Users Online"
+msgstr "Käyttäjät paikalla"
+
+msgid "Users in CAB"
+msgstr "Käyttäjät CABissa"
+
+msgid "Usertype"
+msgstr "Käyttäjätyyppi"
+
+msgid "Vat"
+msgstr "ALV"
+
+msgid "Version"
+msgstr "Versio"
+
+msgid "View"
+msgstr "Näytä"
+
+msgid "Weather"
+msgstr "Sää"
+
+msgid "Webpage"
+msgstr "Verkkosivu"
+
+msgid "When you have scanned the QR code with success - log off and login again. You will from now on be required to use Google Authenticator to finish your logins"
+msgstr "Kun olet skannannut QR-koodin onnistuneesti - kirjaudu ulos ja kirjaudu sisään uudelleen. Tästä lähtien sinun on käytettävä Google Authenticatoria kirjautumisten loppuun saattamiseksi"
+
+msgid "Widgets added"
+msgstr "Vimpaimet lisätty"
+
+msgid "Widgets available"
+msgstr "Vimpaimet saatavilla"
+
+msgid "Workflow"
+msgstr "Työnkulku"
+
+msgid "Workflows"
+msgstr "Työnkulut"
+
+msgid "Workstations"
+msgstr "Työasemat"
+
+msgid "Yes"
+msgstr "Kyllä"
+
+msgid "You are not allowed access to this module"
+msgstr "Sinulla ei ole pääsyä tähän moduuliin"
+
+msgid "Zip Code"
+msgstr "Postinumero"
+
+msgid "account"
+msgstr "tili"
+
+msgid "assets"
+msgstr "varat"
+
+msgid "assigned responsible"
+msgstr "vastuullinen henkilö"
+
+msgid "assigned team"
+msgstr "määritelty tiimi"
+
+msgid "change"
+msgstr "muutos"
+
+msgid "changes"
+msgstr "muutokset"
+
+msgid "close"
+msgstr "sulje"
+
+msgid "companies"
+msgstr "yritykset"
+
+msgid "complete"
+msgstr "valmis"
+
+msgid "created"
+msgstr "luotu"
+
+msgid "customers"
+msgstr "asiakkaat"
+
+msgid "delete"
+msgstr "poista"
+
+msgid "exceeded"
+msgstr "ylittynyt"
+
+msgid "hours in total"
+msgstr "tunteja yhteensä"
+
+msgid "in"
+msgstr "sisällä"
+
+msgid "incident"
+msgstr "tapaus"
+
+msgid "incidents"
+msgstr "tapahtumat"
+
+msgid "no"
+msgstr "ei"
+
+msgid "now recieved"
+msgstr "nyt vastaanotettu"
+
+msgid "of"
+msgstr "josta"
+
+msgid "open"
+msgstr "avoinna"
+
+msgid "overview"
+msgstr "yleiskatsaus"
+
+msgid "password"
+msgstr "salasana"
+
+msgid "passwords"
+msgstr "salasanat"
+
+msgid "preview"
+msgstr "esikatselu"
+
+msgid "problems"
+msgstr "ongelmia"
+
+msgid "records"
+msgstr "tietueet"
+
+msgid "requests"
+msgstr "pyynnöt"
+
+msgid "settings"
+msgstr "asetukset"
+
+msgid "solutions"
+msgstr "ratkaisut"
+
+msgid "to"
+msgstr "kohteelle"
+
+msgid "to existing problem"
+msgstr "olemassa olevalle ongelmalle"
+
+msgid "total"
+msgstr "yhteensä"
+
+msgid "username"
+msgstr "käyttäjätunnus"
+
+msgid "view"
+msgstr "näytä"
+
+msgid "yes"
+msgstr "kyllä"
+
+msgid "No data available in table"
+msgstr "Taulukossa ei ole tietoja"
+
+msgid "No entries to show"
+msgstr "Ei näytettäviä tietueita"
+
+msgid "No records to display"
+msgstr "Ei näytettäviä tietueita"
+
+msgid "Archive"
+msgstr "Arkisto"
+
+msgid "Timeregistrations"
+msgstr "Tuntikirjaukset"
+
+msgid "Dispatch"
+msgstr "Lähetys"
+
+msgid "Report"
+msgstr "Raportti"
+
+msgid "Me as Participant"
+msgstr "Minä osallistujana"
+
+msgid "Me as Manager"
+msgstr "Minä esimiehenä"
+
+msgid "Me as Responsible"
+msgstr "Minä vastuuhenkilönä"
+
+msgid "Expiration"
+msgstr "Vanhentuminen"
+
+msgid "Similarity"
+msgstr "Samankaltaisuus"
+
+msgid "An indicative comparison of words between the version and the previous version"
+msgstr "Suuntaa-antava sanavertailu version ja edellisen version välillä"
+
+msgid "Asset"
+msgstr "Hyödyke"
+
+msgid "asset"
+msgstr "ratkaisu"
+
+msgid "Resolution"
+msgstr "Tarkkuus"
+
+msgid "deadline"
+msgstr "määräaika"
+
+msgid "subject"
+msgstr "aihe"
+
+msgid "subjects"
+msgstr "aiheet"
+
+msgid "taskboard"
+msgstr "tehtävätaulu"
+
+msgid "Create New"
+msgstr "Luo uusi"
+
+msgid "Your"
+msgstr "Sinun"
+
+msgid "Dispatch view"
+msgstr "Näkymä lähettämisestä"
+
+msgid "All open"
+msgstr "Kaikki avoimet"
+
+msgid "Export"
+msgstr "Vienti"
+
+msgid "Export view"
+msgstr "Vientinäkymä"
+
+msgid "Problems are much easier to create directly via incidents, requests, changes etc."
+msgstr "Ongelmat voidaan luoda paljon helpommin suoraan tapahtumien, pyyntöjen, muutosten jne. kautta."
+
+msgid "Add to taskboard"
+msgstr "Lisää tehtäväkortille"
+
+msgid "Deadline Backout"
+msgstr "Määräajan peruuttaminen"
+
+msgid "New message"
+msgstr "Uusi viesti"
+
+msgid "Recipient"
+msgstr "Vastaanottaja"
+
+msgid "Message"
+msgstr "Viesti"
+
+msgid "Answer Templates"
+msgstr "Vastauspohjat"
+
+msgid "not assigned team"
+msgstr "Tiimiä ei ole määritetty"
+
+msgid "not assigned responsible"
+msgstr "Vastuullista ei ole määritetty"
+
+msgid "created from"
+msgstr "Luotu seuraavasta"
+
+msgid "Personal"
+msgstr "Henkilökohtainen"
+
+msgid "users"
+msgstr "Käyttäjät"
+
+msgid "Created By"
+msgstr "Luonut"
+
+msgid "Todays time registration"
+msgstr "Tämän päivän ilmoittautuminen"
+
+msgid "Create new project"
+msgstr "Luo uusi projekti"
+
+msgid "Group Managers"
+msgstr "Ryhmän johtajat"
+
+msgid "User group that can administrate this project"
+msgstr "Tämän projektin hallinnan käyttäjäryhmä"
+
+msgid "User group that can participate in this project"
+msgstr "Tässä projektissa voivat osallistua olevat käyttäjäryhmät"
+
+msgid "Related Customer"
+msgstr "Liittyvä asiakas"
+
+msgid "Customer that this project is to be related to"
+msgstr "Asiakas, johon tämä projekti liittyy"
+
+msgid "Create password"
+msgstr "Luo salasana"
+
+msgid "Enabled"
+msgstr "Käytössä"
+
+msgid "Disabled"
+msgstr "Poistettu käytöstä"
+
+msgid "Workstation"
+msgstr "Työasema"
+
+msgid "Certificate"
+msgstr "Sertifikaatti"
+
+msgid "New project"
+msgstr "Uusi projekti"
+
+msgid "Add to your watchlist"
+msgstr "Lisää seurantalistaasi"
+
+msgid "Quick search"
+msgstr "Nopea haku"
+
+msgid "Related sprint"
+msgstr "Liittyvä sprintti"
+
+msgid "Task participants"
+msgstr "Tehtävään osallistujat"
+
+msgid "Delete project"
+msgstr "Poista projekti"
+
+msgid "Project Sprint"
+msgstr "Projektin sprintti"
+
+msgid "Generate project tasks"
+msgstr "Luo projektitehtäviä"
+
+msgid "Remove project tasks"
+msgstr "Poista projektitehtäviä"
+
+msgid "Real hours spend"
+msgstr "Käytetyt todelliset tunnit"
+
+msgid "Calculated from real timeregistrations"
+msgstr "Lasketaan todellisista ajanseurannoista"
+
+msgid "Open Projects"
+msgstr "Avatut projektit"
+
+msgid "Overall process"
+msgstr "Kokonaisprosessi"
+
+msgid "Budget spend"
+msgstr "Budjettilaskenta"
+
+msgid "Time registered"
+msgstr "Aika rekisteröity"
+
+msgid "Create baseline"
+msgstr "Luo perusviiva"
+
+msgid "Create *.ics file"
+msgstr "Luo .ics-tiedosto"
+
+msgid "Create ICS file"
+msgstr "Luo ICS-tiedosto"
+
+msgid "Archive project"
+msgstr "Arkistoi projekti"
+
+msgid "Add task"
+msgstr "Lisää tehtävä"
+
+msgid "today"
+msgstr "tänään"
+
+msgid "month"
+msgstr "kuukausi"
+
+msgid "week"
+msgstr "viikko"
+
+msgid "day"
+msgstr "päivä"
+
+msgid "list"
+msgstr "lista"
+
+msgid "Create duplicate"
+msgstr "Luo kopio"
+
+msgid "Withdrawn"
+msgstr "Peruutettu"
+
+msgid "In construction"
+msgstr "Rakenteilla"
+
+msgid "In approval"
+msgstr "Hyväksynnässä"
+
+msgid "Published"
+msgstr "Julkaistu"
+
+msgid "Your open"
+msgstr "Auki"
+
+msgid "This task is private and you are not added as project task participant"
+msgstr "Tämä tehtävä on yksityinen, eikä sinua ole lisätty osallistuvaksi projektin tehtäväksi"
+
+msgid "You are not added as project participant, so you cannot see this project task"
+msgstr "Sinua ei ole lisätty projektin osallistujaksi, joten et voi nähdä tätä projektitehtävää"
+
+msgid "Existing Categorys"
+msgstr "Olemassa olevat luokat"
+
+msgid "Category Name"
+msgstr "Luokan nimi"
+
+msgid "Project Task Categories"
+msgstr "Projektin tehtäväkategoriat"
+
+msgid "Project Categories"
+msgstr "Projektikategoriat"
+
+msgid "Project Task Category Administration"
+msgstr "Projektitehtäväkategorian hallinta"
+
+msgid "articles"
+msgstr "artikkelit"
+
+msgid "Articles"
+msgstr "Artikkelit"
+
+msgid "Article"
+msgstr "Artikkeli"
+
+msgid "article"
+msgstr "artikkeli"
+
+msgid "My articles"
+msgstr "Omat artikkelit"
+
+msgid "My Articles"
+msgstr "Omat Artikkelit"
+
+msgid "Create Article"
+msgstr "Luo artikkeli"
+
+msgid "Article name"
+msgstr "Artikkelin nimi"
+
+msgid "Article content"
+msgstr "Artikkelisisältö"
+
+msgid "Article attachments"
+msgstr "Artikkelin liitteet"
+
+msgid "This task is delayed"
+msgstr "Tämä tehtävä on viivästynyt"
+
+msgid "Statistics"
+msgstr "Tilastot"
+
+msgid "Estimated hours completed"
+msgstr "Arvioidut tunnit suoritettu"
+
+msgid "Number Of Project Tasks"
+msgstr "Projektitehtävien lukumäärä"
+
+msgid "Number Of Sprints"
+msgstr "Sprinttien lukumäärä"
+
+msgid "Project Tasks Completed"
+msgstr "Suoritetut projektitehtävät"
+
+msgid "Create project"
+msgstr "Luo projekti"
+
+msgid "Open projects"
+msgstr "Avatut projektit"
+
+msgid "Closed projects"
+msgstr "Suljetut projektit"
+
+msgid "All projects"
+msgstr "Kaikki projektit"
+
+msgid "Search projects"
+msgstr "Etsi projekteja"
+
+msgid "updated"
+msgstr "päivitetty"
+
+msgid "Push tasks ahead"
+msgstr "Työnnä tehtäviä eteenpäin"
+
+msgid "This is used for pushing future tasks, including this, a number of days forward"
+msgstr "Tätä käytetään tulevien tehtävien, mukaan lukien tämä, päivien eteenpäin työntämiseen"
+
+msgid "For how many days forward should tasks from this tasks start day be moved? Note: you can use minus to subtract days instead!"
+msgstr "Kuinka monta päivää eteenpäin tehtävät tulisi siirtää tämän tehtävän aloituspäivästä? Huomaa: Voit käyttää miinusmerkkiä vähentääksesi päiviä!"
+
+msgid "Active inquiries"
+msgstr "Aktiiviset tiedustelut"
+
+msgid "Your active inquiries"
+msgstr "Omat aktiiviset tiedustelut"
+
+msgid "Your closed inquiries"
+msgstr "Omat suljetut tiedustelut"
+
+msgid "Your companys active inquiries"
+msgstr "Yrityksesi aktiiviset tiedustelut"
+
+msgid "Your companys closed inquiries"
+msgstr "Yrityksesi suljetut tiedustelut"
+
+msgid "Search for help in our knowledge database"
+msgstr "Etsi apua tietokannastamme"
+
+msgid "Search here"
+msgstr "Etsi tästä"
+
+msgid "Your Companys SLA Agreement is:"
+msgstr "Yrityksesi SLA-sopimus on:"
+
+msgid "This means you can expect the following reaction times within opening hours from us."
+msgstr "Tämä tarkoittaa, että voit odottaa seuraavia reaktioaikoja avaamisaikoinamme."
+
+msgid "Did you know... that you can also contact us and create tickets via our mail"
+msgstr "Tiesitkö... että voit myös ottaa meihin yhteyttä ja luoda lippuja sähköpostitse"
+
+msgid "Approve"
+msgstr "Hyväksyä"
+
+msgid "Change end"
+msgstr "Muuta loppua"
+
+msgid "Change Advisory Board, change approvers"
+msgstr "Muutosneuvosto, muuta hyväksyjät"
+
+msgid "Valid reason"
+msgstr "Kelvollinen syy"
+
+msgid "Implementation Plan"
+msgstr "Toteutussuunnitelma"
+
+msgid "Contact"
+msgstr "Ota yhteyttä"
+
+msgid "Comments"
+msgstr "Kommentit"
+
+msgid "allready added to your task board"
+msgstr "jo lisätty tehtävätauluusi"
+
+msgid "added to your task board"
+msgstr "lisätty tehtävätauluusi"
+
+msgid "task"
+msgstr "tehtävä"
+
+msgid "You need to relate a project before you can relate project tasks"
+msgstr "Sinun on liitettävä projekti ennen kuin voit liittää projektitehtäviä"
+
+msgid "This taskboard is a kanban based task board. You can add incidents, request, project tasks etc. to your taskboard to manage all your tasks on daily basis."
+msgstr "Tämä tehtävätaulu perustuu Kanban-menetelmään."
+
+msgid "Timeregistration"
+msgstr "Työaikakirjaus"
+
+msgid "News archive"
+msgstr "Uutisarkisto"
+
+msgid "Read"
+msgstr "Lue"
+
+msgid "Assets expired"
+msgstr "Varat vanhentunut"
+
+msgid "Change approvals"
+msgstr "Muutoshyväksynnät"
+
+msgid "Document approvals"
+msgstr "Asiakirjat hyväksynnät"
+
+msgid "Documents expired"
+msgstr "Asiakirja vanhentunut"
+
+msgid "or"
+msgstr "tai"
+
+msgid "Sign in"
+msgstr "Kirjaudu sisään"
+
+msgid "Dont have an account?"
+msgstr "Eikö sinulla ole tiliä?"
+
+msgid "Sign up"
+msgstr "Rekisteröidy"
+
+msgid "Forgot password?"
+msgstr "Unohditko salasanasi?"
+
+msgid "Reset now"
+msgstr "Nollaa nyt"
+
+msgid "About"
+msgstr "Tietoa"
+
+msgid "Try"
+msgstr "Kokeilla"
+
+msgid "Business Services"
+msgstr "Liiketoimintapalvelut"
+
+msgid "Are you sure? Tasks for all involved users will be created"
+msgstr "Oletko varma? Kaikille osallistuneille käyttäjille luodaan tehtäviä"
+
+msgid "Are you sure? Tasks for all involved users will be deleted"
+msgstr "Oletko varma? Kaikkien osallistuneiden käyttäjien tehtävät poistetaan"
+
+msgid "Doubleclick to visit"
+msgstr "Kaksoisnapsauta vieraillaksesi"
+
+msgid "Decommissioned"
+msgstr "Poistettu käytöstä"
+
+msgid "Quick Menu"
+msgstr "Pikavalikko"
+
+msgid "Sidenav Mini"
+msgstr "Sivupalkki Mini"
+
+msgid "Light"
+msgstr "Valoisa"
+
+msgid "Dark"
+msgstr "Tumma"
+
+msgid "Time registration"
+msgstr "Työaikakirjaukset"
+
+msgid "Manage time registration"
+msgstr "Hallinnoi työaikakirjausta"
+
+msgid "New Timeregistration"
+msgstr "Uusi työaikakirjaus"
+
+msgid "Reactive"
+msgstr "Reaktiivinen"
+
+msgid "Proactive"
+msgstr "Proaktiivinen"
+
+msgid "Forgot password"
+msgstr "Unohtunut salasana"
+
+msgid "You will receive an e-mail typically within 60 seconds"
+msgstr "Saat sähköpostin tyypillisesti 60 sekunnin kuluessa"
+
+msgid "Reset password"
+msgstr "Palauta salasana"
+
+msgid "Password must contain: Minimum 8 characters, at least 1 alphabet and 1 number"
+msgstr "Salasanan tulee sisältää: Vähintään 8 merkkiä, vähintään 1 kirjain ja 1 numero"
+
+msgid "New Password"
+msgstr "Uusi salasana"
+
+msgid "Repeat"
+msgstr "Toista"
+
+msgid "Repeat Password"
+msgstr "Toista salasana"
+
+msgid "Already have an account?"
+msgstr "Onko sinulla jo tili?"
+
+msgid "Login"
+msgstr "Kirjaudu sisään"
+
+msgid "Inactive"
+msgstr "Epäaktiivinen"
+
+msgid "Back"
+msgstr "Takaisin"
+
+msgid "Me participating"
+msgstr "Olen osallistuja"
+
+msgid "Modules"
+msgstr "Moduulit"
+
+msgid "Inquiries"
+msgstr "Kyselyt"
+
+msgid "My active"
+msgstr "Omat aktiiviset"
+
+msgid "My closed"
+msgstr "Omat suljetut"
+
+msgid "Groups"
+msgstr "Ryhmät"
+
+msgid "Teams"
+msgstr "Tiimit"
+
+msgid "Users in group"
+msgstr "Käyttäjät ryhmässä"
+
+msgid "Group name"
+msgstr "Ryhmän nimi"
+
+msgid "module"
+msgstr "moduuli"
+
+msgid "Role name"
+msgstr "Roolin nimi"
+
+msgid "Related module"
+msgstr "Liittyvä moduuli"
+
+msgid "Notes"
+msgstr "Muistiinpanot"
+
+msgid "Memberships"
+msgstr "Jäsenyydet"
+
+msgid "Group Status"
+msgstr "Ryhmätila"
+
+msgid "Users in role"
+msgstr "Roolin käyttäjät"
+
+msgid "Groups in role"
+msgstr "Roolin ryhmät"
+
+msgid "Groups Available"
+msgstr "Saatavilla olevat ryhmät"
+
+msgid "Role Status"
+msgstr "Roolin tila"
+
+msgid "Members Available"
+msgstr "Saatavilla olevat jäsenet"
+
+msgid "Members"
+msgstr "Jäsenet"
+
+msgid "Load Templates"
+msgstr "Lataa mallipohjat"
+
+msgid "Templates"
+msgstr "Mallipohjat"
+
+msgid "Module"
+msgstr "Moduuli"
+
+msgid "Removed"
+msgstr "Poistettu"
+
+msgid "End Date"
+msgstr "Päättymispäivä"
+
+msgid "Shortname"
+msgstr "Lyhenne"
+
+msgid "Tablename"
+msgstr "Taulukon nimi"
+
+msgid "Icon"
+msgstr "Kuvake"
+
+msgid "Product Owner"
+msgstr "Tuotteen omistaja"
+
+msgid "Short Name"
+msgstr "Lyhyt nimi"
+
+msgid "Developer Team"
+msgstr "Kehittäjätiimi"
+
+msgid "Related User"
+msgstr "Liittyvä käyttäjä"
+
+msgid "Related Company"
+msgstr "Liittyvä yritys"
+
+msgid "Last Updated"
+msgstr "Viimeksi päivitetty"
+
+msgid "Business Service"
+msgstr "Liiketoimintapalvelu"
+
+msgid "More"
+msgstr "Lisää"
+
+msgid "Internal"
+msgstr "Sisäinen"
+
+msgid "Clone"
+msgstr "Kloonaa"
+
+msgid "Create incident from this"
+msgstr "Luo häiriö tästä"
+
+msgid "Create request from this"
+msgstr "Luo pyyntö tästä"
+
+msgid "Create change from this"
+msgstr "Luo muutos tästä"
+
+msgid "Create problem from this"
+msgstr "Luo ongelma tästä"
+
+msgid "Users in team"
+msgstr "Käyttäjät tiimissä"
+
+msgid "Team name"
+msgstr "Tiimin nimi"
+
+msgid "Team colour"
+msgstr "Tiimin väri"
+
+msgid "Team Leader"
+msgstr "Tiimin vetäjä"
+
+msgid "Team Manager"
+msgstr "Tiimin johtaja"
+
+msgid "colour"
+msgstr "väri"
+
+msgid "Colour"
+msgstr "Väri"
+
+msgid "Approvals"
+msgstr "Hyväksynnät"
+
+msgid "Follow-ups"
+msgstr "Jatkotoimenpiteet"
+
+msgid "Role"
+msgstr "Rooli"
+
+msgid "Last Edited By"
+msgstr "Muokannut"
+
+msgid "Last Edited"
+msgstr "Viimeksi muokattu"
+
+msgid "Show in relations"
+msgstr "Näytä suhteissa"
+
+msgid "Field Name"
+msgstr "Kentän nimi"
+
+msgid "Fields"
+msgstr "Kentät"
+
+msgid "Status Codes"
+msgstr "Tilakoodit"
+
+msgid "Lookup Table"
+msgstr "Hakutaulukko"
+
+msgid "Lookup Field"
+msgstr "Hakukenttä"
+
+msgid "Done Status"
+msgstr "Valmis tila"
+
+msgid "SLA Supported"
+msgstr "SLA-tuettu"
+
+msgid "Closed Status"
+msgstr "Suljettu tila"
+
+msgid "Restore Points"
+msgstr "Palautuspisteet"
+
+msgid "ITSM Relations"
+msgstr "ITSM-suhteet"
+
+msgid "CI Relations"
+msgstr "CI-suhteet"
+
+msgid "ITSM Types"
+msgstr "ITSM-tyypit"
+
+msgid "CI Types"
+msgstr "CI-tyypit"
+
+msgid "Tableview"
+msgstr "Taulunäkymä"
+
+msgid "Parent Task"
+msgstr "Ylätason tehtävä"
+
+msgid "Push in next status"
+msgstr "Siirry seuraavaan tilaan"
+
+msgid "Notify by email"
+msgstr "Ilmoita sähköpostitse"
+
+msgid "Notify"
+msgstr "Ilmoita"
+
+msgid "Text templates"
+msgstr "Tekstipohjat"
+
+msgid "Widgets on frontpage"
+msgstr "Widgetit etusivulla"
+
+msgid "Available"
+msgstr "Saatavilla"
+
+msgid "Added"
+msgstr "Lisätty"
+
+msgid "Code"
+msgstr "Koodi"
+
+msgid "Personal Meeting Room"
+msgstr "Henkilökohtainen kokoushuone"
+
+msgid "These are text shortcuts you can define a text code and a text template that is inserted when you type the text code in text boxes"
+msgstr "Nämä ovat tekstiä pikakuvakkeita, joissa voit määrittää tekstikoodin ja tekstipohjan, joka lisätään, kun kirjoitat tekstikoodin tekstikenttiin"
+
+msgid "½ Day"
+msgstr "½ päivä"
+
+msgid "Day"
+msgstr "Päivä"
+
+msgid "Week"
+msgstr "Viikko"
+
+msgid "Month"
+msgstr "Kuukausi"
+
+msgid "Today"
+msgstr "Tänään"
+
+msgid "End date cannot be before start date"
+msgstr "Loppupäivämäärä ei voi olla ennen aloituspäivämäärää"
+
+msgid "Updated"
+msgstr "Päivitetty"
+
+msgid "Other searches"
+msgstr "Muut haut"
+
+msgid "Scan for CVR numbers in WIKI"
+msgstr "Skannaa CVR-numerot WIKI-sivustosta"
+
+msgid "Group Name"
+msgstr "Ryhmän nimi"
+
+msgid "Expired CI's"
+msgstr "Vanhentuneet CI:t"
+
+msgid "API configuration"
+msgstr "API-konfiguraatio"
+
+msgid "Test update user"
+msgstr "Päivitä testikäyttäjä"
+
+msgid "Delete user (careful it will delete the user)"
+msgstr "Poista käyttäjä (varoitus: käyttäjä poistetaan)"
+
+msgid "Shared"
+msgstr "Jaettu"
+
+msgid "made by"
+msgstr "tekijä"
+
+msgid "making better web for small business."
+msgstr "luo parempi web pienyrityksille."
+
+msgid "Support"
+msgstr "Tuki"
+
+msgid "Changelog"
+msgstr "Muutosloki"
+
+msgid "Duplicate"
+msgstr "Kopioida"
+
+msgid "Latest activity in the project"
+msgstr "Viimeisin toiminta projektissa"
+
+msgid "Latest activity"
+msgstr "Viimeisin toiminta"
+
+msgid "Activity Stream"
+msgstr "Toimintavirta"
+
+msgid "Remaining"
+msgstr "Jäljellä"
+
+msgid "Password generator"
+msgstr "Salasanan luontityökalu"
+
+msgid "Forms"
+msgstr "Lomakkeet"
+
+msgid "Mail Templates"
+msgstr "Sähköpostipohjat"
+
+msgid "Maintenance"
+msgstr "Ylläpito"
+
+msgid "API"
+msgstr "API"
+
+msgid "Active Directory"
+msgstr "Active Directory"
+
+msgid "Helpdesk"
+msgstr "Helpdesk"
+
+msgid "System Configurator"
+msgstr "Järjestelmän konfiguroija"
+
+msgid "Administration"
+msgstr "Hallinto"
+
+msgid "Email account for sending emails from"
+msgstr "Sähköpostitili sähköpostien lähettämiseen"
+
+msgid "SMTP Port"
+msgstr "SMTP-portti"
+
+msgid "SMTP Host"
+msgstr "SMTP-isäntä"
+
+msgid "SMTP Username"
+msgstr "SMTP-käyttäjänimi"
+
+msgid "SMTP Password"
+msgstr "SMTP-salasana"
+
+msgid "Max 25 characters"
+msgstr "Enintään 25 merkkiä"
+
+msgid "Name of the system"
+msgstr "Järjestelmän nimi"
+
+msgid "Allow people to activate google authenticater for 2 faktor validation?"
+msgstr "Sallitaanko ihmisille Google Authenticatorin aktivointi 2-vaiheisen varmennuksen yhteydessä?"
+
+msgid "IMAP Host"
+msgstr "IMAP-isäntä"
+
+msgid "IMAP Username"
+msgstr "IMAP-käyttäjänimi"
+
+msgid "IMAP Password"
+msgstr "IMAP-salasana"
+
+msgid "Please make a long token"
+msgstr "Luo pitkä tunnus"
+
+msgid "These are the links on the login page"
+msgstr "Nämä ovat linkit kirjautumissivulla"
+
+msgid "Frontpage links"
+msgstr "Etusivun linkit"
+
+msgid "You company Facebook page"
+msgstr "Yrityksesi Facebook-sivu"
+
+msgid "You company page"
+msgstr "Yrityksesi sivu"
+
+msgid "Company Website"
+msgstr "Yrityksen verkkosivusto"
+
+msgid "You company LinkedIn page"
+msgstr "Yrityksesi LinkedIn-sivu"
+
+msgid "Registration options"
+msgstr "Rekisteröintivaihtoehdot"
+
+msgid "Allow user registrations via email?"
+msgstr "Salli käyttäjärekisteröinnit sähköpostitse?"
+
+msgid "Default company assignment for new user registrations?"
+msgstr "Oletusarvo yrityksen määrittämiseksi uusille käyttäjärekisteröinneille?"
+
+msgid "Default Company?"
+msgstr "Oletusyritys?"
+
+msgid "You are done"
+msgstr "Olet valmis"
+
+msgid "Submit to save your settings"
+msgstr "Lähetä tallentaaksesi asetuksesi"
+
+msgid "Previous"
+msgstr "Edellinen"
+
+msgid "Next"
+msgstr "Seuraava"
+
+msgid "Submit"
+msgstr "Lähetä"
+
+msgid "Settings did not get updated"
+msgstr "Asetukset eivät päivittyneet"
+
+msgid "Settings updated"
+msgstr "Asetukset päivitetty"
+
+msgid "Default Design"
+msgstr "Oletusmuotoilu"
+
+msgid "Google Authenticate"
+msgstr "Google-tunnistautuminen"
+
+msgid "System"
+msgstr "Järjestelmä"
+
+msgid "Wiki"
+msgstr "Wiki"
+
+msgid "Mail templates"
+msgstr "Sähköpostipohjat"
+
+msgid "Knowledge base"
+msgstr "Tietokanta"
+
+msgid "queue"
+msgstr "jono"
+
+msgid "Queue"
+msgstr "Jono"
+
+msgid "Doing"
+msgstr "Tekeillä"
+
+msgid "Done"
+msgstr "Valmis"
+
+msgid "done"
+msgstr "valmis"
+
+msgid "doing"
+msgstr "tekeillä"
+
+msgid "Monday"
+msgstr "Maanantai"
+
+msgid "Tuesday"
+msgstr "Tiistai"
+
+msgid "Wednesday"
+msgstr "Keskiviikko"
+
+msgid "Thursdag"
+msgstr "Torstai"
+
+msgid "Friday"
+msgstr "Perjantai"
+
+msgid "Saturday"
+msgstr "Lauantai"
+
+msgid "Sunday"
+msgstr "Sunnuntai"
+
+msgid "Thursday"
+msgstr "Torstai"
+
+msgid "Management functions"
+msgstr "Hallinnan toiminnot"
+
+msgid "This weeks time registrations for team"
+msgstr "Tämän viikon aikarekisteröinnit tiimille"
+
+msgid "Employee"
+msgstr "Työntekijä"
+
+msgid "Solved with solution"
+msgstr "Ratkaistu ratkaisulla"
+
+msgid "Solved"
+msgstr "Ratkaistu"
+
+msgid "Parent Assets"
+msgstr "Ylätason omaisuus"
+
+msgid "Child Assets"
+msgstr "Alatason omaisuus"
+
+msgid "This relation will make current assets child"
+msgstr "Tämä suhde tekee nykyisistä omaisuuksista alaikäisiä"
+
+msgid "Create a parent relation"
+msgstr "Luo vanhempien suhde"
+
+msgid "This relation will make current asset parent"
+msgstr "Tämä suhde tekee nykyisestä omaisuudesta vanhemman"
+
+msgid "Create a child relation"
+msgstr "Luo lapsen suhde"
+
+msgid "Service"
+msgstr "Palvelu"
+
+msgid "Overall"
+msgstr "Yleinen"
+
+msgid "Subordinate"
+msgstr "Alainen"
+
+msgid "Create relation"
+msgstr "Luo suhde"
+
+msgid "Get direct link"
+msgstr "Hae suora linkki"
+
+msgid "Problem report"
+msgstr "Ongelmaraportti"
+
+msgid "Please explain the problem"
+msgstr "Selitä ongelma"
+
+msgid "this will create a ticket at Practicle Support so please dont abuse this!"
+msgstr "tämä luo lipun Käytännön tukeen, joten älä käytä tätä väärin!"
+
+msgid "Report a problem"
+msgstr "Ilmoita ongelmasta"
+
+msgid "Category administration"
+msgstr "Luokka hallinto"
+
+msgid "Create News Article"
+msgstr "Luo uutisartikkeli"
+
+msgid "Date to be published"
+msgstr "Julkaisupäivämäärä"
+
+msgid "Writer"
+msgstr "Kirjoittaja"
+
+msgid "Headline"
+msgstr "Otsikko"
+
+msgid "Add new category"
+msgstr "Lisää uusi luokka"
+
+msgid "Usergroup"
+msgstr "Käyttäjäryhmä"
+
+msgid "News Article"
+msgstr "Uutisartikkeli"
+
+msgid "Get latest CVE news entries"
+msgstr "Hae viimeisimmät CVE-uutiset"
+
+msgid "Delete all CVE news entries"
+msgstr "Poista kaikki CVE-uutisten merkinnät"
+
+msgid "Fetch"
+msgstr "Noutaa"
+
+msgid "Add filter"
+msgstr "Lisää suodatin"
+
+msgid "Miscellaneous"
+msgstr "Sekalaiset"
+
+msgid "miscellaneous"
+msgstr "sekalaiset"
+
+msgid "CVE Filters"
+msgstr "CVE-suodattimet"
+
+msgid "Documentation"
+msgstr "Dokumentointi"
+
+msgid "last 2 months"
+msgstr "viimeiset 2 kuukautta"
+
+msgid "Date worked"
+msgstr "Työpäivämäärä"
+
+msgid "Duration"
+msgstr "Kesto"
+
+msgid "Billable"
+msgstr "Laskutettava"
+
+msgid "Date for registration"
+msgstr "Rekisteröintipäivämäärä"
+
+msgid "All"
+msgstr "Kaikki"
+
+msgid "Daily"
+msgstr "Päivittäin"
+
+msgid "Duration minutes"
+msgstr "Kesto minuuteissa"
+
+msgid "Duration hours"
+msgstr "Kesto tuntia"
+
+msgid "Number of registrations"
+msgstr "Rekisteröintien lukumäärä"
+
+msgid "Daily basis"
+msgstr "Päivittäinen perusta"
+
+msgid "Create Relations"
+msgstr "Luo suhteet"
+
+msgid "Table Name"
+msgstr "Taulukon nimi"
+
+msgid "Import Source"
+msgstr "Tuo lähde"
+
+msgid "Synchronization"
+msgstr "Synkronointi"
+
+msgid "Sync Time"
+msgstr "Synkronointiaika"
+
+msgid "Last Synced"
+msgstr "Viimeksi synkronoitu"
+
+msgid "Label"
+msgstr "Tunniste"
+
+msgid "Default value"
+msgstr "Oletusarvo"
+
+msgid "Field title"
+msgstr "Kenttä otsikko"
+
+msgid "Field Width"
+msgstr "Kentän leveys"
+
+msgid "Lookup Field Result (Table View)"
+msgstr "Etsi kentän tulos (taulukkoesitys)"
+
+msgid "Lookup Field Result (Modal View)"
+msgstr "Etsi kentän tulos (modaalinen esitys)"
+
+msgid "Primary Relation Field"
+msgstr "Ensimmäinen yhteyskenttä"
+
+msgid "Import Source Field"
+msgstr "Tuontilähdekenttä"
+
+msgid "Sync Source Field"
+msgstr "Synkronointilähde kenttä"
+
+msgid "Addon"
+msgstr "Laajennus"
+
+msgid "Select Field Options"
+msgstr "Valitse kenttävaihtoehdot"
+
+msgid "Child relations lookup"
+msgstr "Lapsi suhteet haku"
+
+msgid "Locked"
+msgstr "Lukittu"
+
+msgid "Required"
+msgstr "Vaadittu"
+
+msgid "Searchable"
+msgstr "Etsittävä"
+
+msgid "Hide Tables"
+msgstr "Piilota taulut"
+
+msgid "Hide Forms"
+msgstr "Piilota lomakkeet"
+
+msgid "Syncronize"
+msgstr "Synkronoi"
+
+msgid "Reset field sort order"
+msgstr "Nollaa kentän järjestys"
+
+msgid "Related workflow"
+msgstr "Liittyvä työnkulku"
+
+msgid "Reset forms data"
+msgstr "Nollaa lomakedata"
+
+msgid "Check Table Consistency"
+msgstr "Tarkista taulun yhdenmukaisuus"
+
+msgid "Priority 1"
+msgstr "Prioriteetti 1"
+
+msgid "Priority 2"
+msgstr "Prioriteetti 2"
+
+msgid "Priority 3"
+msgstr "Prioriteetti 3"
+
+msgid "Priority 4"
+msgstr "Prioriteetti 4"
+
+msgid "Field Label"
+msgstr "Kenttätunniste"
+
+msgid "Features"
+msgstr "Ominaisuudet"
+
+msgid "Create Incident"
+msgstr "Luo tapahtuma"
+
+msgid "Create Change"
+msgstr "Luo muutos"
+
+msgid "Create Problem"
+msgstr "Luo ongelma"
+
+msgid "Create Request"
+msgstr "Luo pyyntö"
+
+msgid "Incidents dispatch view"
+msgstr "Tapaukset jakelunäkymä"
+
+msgid "Requests dispatch view"
+msgstr "Pyyntöjen jakelunäkymä"
+
+msgid "Changes dispatch view"
+msgstr "Muutosten jakelunäkymä"
+
+msgid "Problems dispatch view"
+msgstr "Ongelmien jakelunäkymä"
+
+msgid "Shortcuts"
+msgstr "Pikakuvakkeet"
+
+msgid "Watch list"
+msgstr "Tarkkailulista"
+
+msgid "Generic forms"
+msgstr "Yleiset lomakkeet"
+
+msgid "Authorizer"
+msgstr "Valtuuttaja"
+
+msgid "Reason"
+msgstr "Syy"
+
+msgid "Administrators"
+msgstr "Ylläpitäjät"
+
+msgid "Updated by"
+msgstr "Päivittäjä"
+
+msgid "Image"
+msgstr "Kuva"
+
+msgid "Click to see"
+msgstr "Napsauta nähdäksesi"
+
+msgid "this is essential in the subject for the mail reply by the customer to land on specific type and number"
+msgstr "tämä on olennaista aiheessa, jotta asiakkaan sähköpostivastaus laskeutuu tiettyyn tyyppiin ja numeroon"
+
+msgid "this is essential in the subject for the mail reply by the customer to land on specific type"
+msgstr "tämä on olennaista aiheessa, jotta asiakkaan sähköpostivastaus laskeutuu tiettyyn tyyppiin"
+
+msgid "placeholder for current incident/change/request/problem number"
+msgstr "paikan merkki nykyiselle tapahtuma/muutos/pyyntö/ongelman numerolle"
+
+msgid "placeholder for customers firstname"
+msgstr "paikan merkki asiakkaiden etunimestä"
+
+msgid "placeholder for customers lastname"
+msgstr "paikan merkki asiakkaiden sukunimestä"
+
+msgid "if action is a comment - this is the placeholder for the comment"
+msgstr "jos toiminto on kommentti - tämä on kommentin paikan merkki"
+
+msgid "placeholder for the system name"
+msgstr "paikan merkki järjestelmän nimestä"
+
+msgid "placeholder for the system url"
+msgstr "paikan merkki järjestelmän URL-osoitteesta"
+
+msgid "placeholder for the name of the type"
+msgstr "paikan merkki tyypin nimestä"
+
+msgid "placeholder for direct link to the specific incident/change/request/problem (can not be accessed by customers)"
+msgstr "paikan merkki suoraan linkkiä kyseiseen tapahtumaan/muutokseen/pyyntöön/ongelmaan (ei voida käyttää asiakkaiden toimesta)"
+
+msgid "Placeholders"
+msgstr "paikanmerkit"
+
+msgid "Password must contain: minimum 8 characters, at least 1 alphabet, 1 number and 1 special character"
+msgstr "Salasanan on sisällettävä: vähintään 8 merkkiä, vähintään 1 kirjain, 1 numero ja 1 erikoismerkki"
+
+msgid "This email allready exists"
+msgstr "Tämä sähköposti on jo olemassa"
+
+msgid "Please confirm password"
+msgstr "Vahvista salasana"
+
+msgid "Passwords did not match"
+msgstr "Salasanat eivät täsmänneet"
+
+msgid "Please enter a password"
+msgstr "Syötä salasana"
+
+msgid "Please enter a lastname"
+msgstr "Syötä sukunimi"
+
+msgid "Please enter a firstname"
+msgstr "Syötä etunimi"
+
+msgid "Email user"
+msgstr "Sähköpostikäyttäjä"
+
+msgid "Preview group members"
+msgstr "Esikatselu ryhmän jäsenille"
+
+msgid "All Users"
+msgstr "Kaikki käyttäjät"
+
+msgid "Change Administrators"
+msgstr "Muutosadministraattorit"
+
+msgid "Change Users"
+msgstr "Muutoskäyttäjät"
+
+msgid "CMDB Administrators"
+msgstr "CMDB-administraattorit"
+
+msgid "CMDB Users"
+msgstr "CMDB-käyttäjät"
+
+msgid "Company Administrators"
+msgstr "Yrityksen hallinnoijat"
+
+msgid "Default CAB"
+msgstr "Oletus-CAB"
+
+msgid "Default group messages"
+msgstr "Oletusryhmäviestit"
+
+msgid "Document Administrators"
+msgstr "Asiakirjojen hallinnoijat"
+
+msgid "Document Users"
+msgstr "Asiakirjojen käyttäjät"
+
+msgid "Forms administrators"
+msgstr "Lomakkeiden ylläpitäjät"
+
+msgid "Forms users"
+msgstr "Lomakkeiden käyttäjät"
+
+msgid "Incident Administrators"
+msgstr "Tapahtumien hallinnoijat"
+
+msgid "Incident Users"
+msgstr "Tapahtumien käyttäjät"
+
+msgid "Module Administrators"
+msgstr "Moduulien hallinnoijat"
+
+msgid "News Administrators"
+msgstr "Uutisten hallinnoijat"
+
+msgid "News Writer"
+msgstr "Uutisten kirjoittaja"
+
+msgid "Problem Administrators"
+msgstr "Ongelmien hallinnoijat"
+
+msgid "Problem Users"
+msgstr "Ongelmien käyttäjät"
+
+msgid "Project Administrators"
+msgstr "Projektien hallinnoijat"
+
+msgid "Project Users"
+msgstr "Projektien käyttäjät"
+
+msgid "Request Administrators"
+msgstr "Pyyntöjen hallinnoijat"
+
+msgid "Request Users"
+msgstr "Pyyntöjen käyttäjät"
+
+msgid "Timeregistration Administrators"
+msgstr "Työajan kirjaajien hallinnoijat"
+
+msgid "User Administrator"
+msgstr "Käyttäjien hallinnoija"
+
+msgid "Workflow Administrators"
+msgstr "Työnkulun hallinnoijat"
+
+msgid "Default"
+msgstr "Oletus"
+
+msgid "Generic Forms"
+msgstr "Yleiset lomakkeet"
+
+msgid "Group updated"
+msgstr "Ryhmä päivitetty"
+
+msgid "All employee users"
+msgstr "Kaikki työntekijäkäyttäjät"
+
+msgid "Group Administrators"
+msgstr "Ryhmän hallinnoijat"
+
+msgid "Role created"
+msgstr "Rooli luotu"
+
+msgid "Preview team members"
+msgstr "Esikatsele tiimin jäsenet"
+
+msgid "Role memberships"
+msgstr "Roolin jäsenyydet"
+
+msgid "Group memberships"
+msgstr "Ryhmän jäsenyydet"
+
+msgid "Roles Available"
+msgstr "Saatavilla olevat roolit"
+
+msgid "Team memberships"
+msgstr "Tiimin jäsenyydet"
+
+msgid "Teams Available"
+msgstr "Tiimit saatavilla"
+
+msgid "Consultant"
+msgstr "Konsultti"
+
+msgid "Members of this group possess unrestricted privileges to the overall system. Administrators can access the administration module. Only a select few should belong to this group."
+msgstr "Tämän ryhmän jäsenillä on rajoittamattomat oikeudet koko järjestelmään. Ylläpitäjät voivat käyttää hallintamoduulia. Vain harvat valitut tulisi kuulua tähän ryhmään."
+
+msgid "This group can be used as a collector group for all users of type employees - in general - if this group is chosen, all employee users will have access."
+msgstr "Tämä ryhmä voidaan käyttää keräysryhmänä kaikille työntekijöiden tyypin käyttäjille - yleensä - jos tämä ryhmä valitaan, kaikki työntekijäkäyttäjät saavat pääsyn."
+
+msgid "This group gives advanced access to to the request module. Users in this group will be able to update request informations in general and is not limited in access rights in general.  This should only be granted to central administrators and not more then very few people."
+msgstr "Tämä ryhmä antaa kehittyneen pääsyn pyyntömoduuliin. Tässä ryhmässä olevat käyttäjät voivat päivittää pyyntötietoja yleisesti eivätkä ole yleisesti rajoitettuja pääsyoikeuksissa. Tämä tulisi myöntää vain keskeisille järjestelmänvalvojille eikä enempää kuin hyvin harvoille ihmisille."
+
+msgid "Standard group for request module. Users have to be part of this group in order to be able to use standard request module."
+msgstr "Standardiryhmä pyyntömoduulille. Käyttäjien on oltava osa tätä ryhmää voidakseen käyttää standardia pyyntömoduulia."
+
+msgid "This group is for people that needs to be able to be assigned as responsible on workflows and thereby also can edit it."
+msgstr "Tämä ryhmä on tarkoitettu ihmisille, jotka tarvitsevat pystyäkseen vastaamaan työnkulkuista ja siten myös muokkaamaan niitä."
+
+msgid "Has the rights to modify and oversee users and their permissions."
+msgstr "On oikeudet muokata ja valvoa käyttäjiä ja heidän käyttöoikeuksiaan."
+
+msgid "Username already exists"
+msgstr "Käyttäjätunnus on jo olemassa"
+
+msgid "Required fields are missing values"
+msgstr "Pakolliset kentät puuttuvat arvoista"
+
+msgid "This email already exists for"
+msgstr "Tämä sähköpostiosoite on jo olemassa kohteelle"
+
+msgid "Email cannot be empty"
+msgstr "Sähköpostiosoite ei voi olla tyhjä"
+
+msgid "Firstname is required"
+msgstr "Etunimi on pakollinen"
+
+msgid "Username cannot be empty"
+msgstr "Käyttäjätunnus ei voi olla tyhjä"
+
+msgid "This username already exists for"
+msgstr "Tämä käyttäjätunnus on jo olemassa kohteelle"
+
+msgid "Write words seperated by ; if you want an empty value as select option - write NULL"
+msgstr "Kirjoita sanat erotettuna ; jos haluat tyhjän arvon valintavaihtoehdoksi - kirjoita NULL"
+
+msgid "Create project task from this"
+msgstr "Luo projektilaite tästä"
+
+msgid "Select user for add"
+msgstr "Valitse käyttäjä lisättäväksi"
+
+msgid "Select user for removal"
+msgstr "Valitse käyttäjä poistettavaksi"
+
+msgid "No Sprint"
+msgstr "Ei Sprinttiä"
+
+msgid "Parent"
+msgstr "Vanhempi"
+
+msgid "Private"
+msgstr "Yksityinen"
+
+msgid "Show members"
+msgstr "Näytä jäsenet"
+
+msgid "Last login"
+msgstr "Viimeisin kirjautuminen"
+
+msgid "Create Project Task"
+msgstr "Luo projektitehtävä"
+
+msgid "Simple"
+msgstr "Yksinkertainen"
+
+msgid "Log Book"
+msgstr "Lokikirja"
+
+msgid "Related number"
+msgstr "Liittyvä numero"
+
+msgid "Add empty row"
+msgstr "Lisää tyhjä rivi"
+
+msgid "This adds an empty value to a select box and only for that"
+msgstr "Tämä lisää tyhjän arvon valintaruutuun ja vain siihen"
+
+msgid "Mine"
+msgstr "Oma"
+
+msgid "mine"
+msgstr "oma"
+
+msgid "Search results"
+msgstr "Hakutulokset"
+
+msgid "Select Options"
+msgstr "Valitse vaihtoehdot"
+
+msgid "Options"
+msgstr "Vaihtoehdot"
+
+msgid "Lookup"
+msgstr "Haku"
+
+msgid "Syncronization"
+msgstr "Synkronointi"
+
+msgid "relations"
+msgstr "Suhteet"
+
+msgid "Primary"
+msgstr "Ensisijainen"
+
+msgid "Full view height"
+msgstr "Koko näkymän korkeus"
+
+msgid "Table view"
+msgstr "Taulukkonäkymä"
+
+msgid "Timeline view"
+msgstr "Aikajananäkymä"
+
+msgid "Deactivate"
+msgstr "Deaktivoi"
+
+msgid "Transfer"
+msgstr "Siirtää"
+
+msgid "Transfer elements to other user"
+msgstr "Siirrä elementit toiselle käyttäjälle"
+
+msgid "Other"
+msgstr "Muu"
+
+msgid "Select a user"
+msgstr "Valitse käyttäjä"
+
+msgid "Select all / Deselect all"
+msgstr "Valitse kaikki / Poista valinta kaikista"
+
+msgid "CMDB, ITSM and other objects are getting moved to the selected user (responsible is getting changed). Transfer can not be transfered to user type customer. Transfer of Roles and Group means that memberships that the current user has, is getting added to the selected user."
+msgstr "CMDB-, ITSM- ja muut objektit siirretään valitulle käyttäjälle (vastuuhenkilöä vaihdetaan). Siirtoa ei voida siirtää asiakastyypin käyttäjälle. Roolien ja ryhmien siirto tarkoittaa, että nykyisen käyttäjän jäsenyydet lisätään valitulle käyttäjälle."
+
+msgid "Workflow Tasks"
+msgstr "Työnkulun tehtävät"
+
+msgid "KanBan Tasks"
+msgstr "KanBan-tehtävät"
+
+msgid "ITSM elements"
+msgstr "ITSM-elementit"
+
+msgid "CMDB elements"
+msgstr "CMDB-elementit"
+
+msgid "We are missing a primary field for this type"
+msgstr "Puuttuu ensisijainen kenttä tälle tyypille"
+
+msgid "Result field"
+msgstr "Tuloskenttä"
+
+msgid "Choose which field should be returned as result in the select box"
+msgstr "Valitse, mikä kenttä palautetaan tuloksena valintaruudussa"
+
+msgid "User fullname and username"
+msgstr "Käyttäjän koko nimi ja käyttäjänimi"
+
+msgid "User fullname"
+msgstr "Käyttäjän koko nimi"
+
+msgid "Select this if you want a result with users fullname"
+msgstr "Valitse tämä, jos haluat tuloksen käyttäjän koko nimellä"
+
+msgid "Select this if you want a result with users fullname and username"
+msgstr "Valitse tämä, jos haluat tuloksen käyttäjän koko nimellä ja käyttäjänimellä"
+
+msgid "Place on right side"
+msgstr "Sijoita oikealle puolelle"
+
+msgid "Place field on the right side of form"
+msgstr "Sijoita kenttä lomakkeen oikealle puolelle"
+
+msgid "This will make the field a normal and simple text result"
+msgstr "Tämä tekee kentästä normaalin ja yksinkertaisen tekstituloksen"
+
+msgid "Simple text"
+msgstr "Yksinkertainen teksti"
+
+msgid "Make field disabled on create"
+msgstr "Tee kenttä pois käytöstä luotaessa"
+
+msgid "Make field required"
+msgstr "Tee kentästä pakollinen"
+
+msgid "Make searchable from search bar on content of this field"
+msgstr "Tee haettavaksi hakupalkista tämän kentän sisällön perusteella"
+
+msgid "Notes fields can get full height so all content is shown on view page"
+msgstr "Muistiinpanokentät voivat saada täyden korkeuden, joten kaikki sisältö näytetään näkymäsivulla"
+
+msgid "Deactivate this field from Table views"
+msgstr "Poista tämä kenttä käytöstä taulukkonäkymissä"
+
+msgid "Deactivate this field from Form views"
+msgstr "Poista tämä kenttä käytöstä lomakenäkymissä"
+
+msgid "Reset module data"
+msgstr "Nollaa moduulin tiedot"
+
+msgid "This deletes all data records for this module including logs, files, relations, workflows and more"
+msgstr "Tämä poistaa kaikki tietueet tästä moduulista, mukaan lukien lokit, tiedostot, suhteet, työnkulut ja enemmän"
+
+msgid "Reset all modules (data only)"
+msgstr "Nollaa kaikki moduulit (vain tiedot)"
+
+msgid "Reset all modules to standard"
+msgstr "Nollaa kaikki moduulit oletusarvoihin"
+
+msgid "Tasks completed"
+msgstr "Tehtävät suoritetut"
+
+msgid "Unread comments"
+msgstr "Lukemattomat kommentit"
+
+msgid "Password Module Administrators"
+msgstr "Salasanamoduulin järjestelmänvalvojat"
+
+msgid "Password Module Users"
+msgstr "Salasanamoduulin käyttäjät"
+
+msgid "Field design"
+msgstr "Kenttäsuunnittelu"
+
+msgid "General"
+msgstr "Yleinen"
+
+msgid "Create a template based on the completed form below"
+msgstr "Luo mallipohja alla olevan täytetyn lomakkeen perusteella"
+
+msgid "Delete the current selected template"
+msgstr "Poista nykyinen valittu malli"
+
+msgid "Create public template that all users can choose"
+msgstr "Luo julkinen mallipohja, jonka kaikki käyttäjät voivat valita"
+
+msgid "Choose template"
+msgstr "Valitse malli"
+
+msgid "Are you sure?"
+msgstr "Oletko varma?"
+
+msgid "Make field disabled on view/edit"
+msgstr "Tee kenttä poissa käytöstä katselussa/muokkauksessa"
+
+msgid "Locked on create"
+msgstr "Lukittu luotaessa"
+
+msgid "Locked on view"
+msgstr "Lukittu näkymässä"
+
+msgid "Group filter"
+msgstr "Ryhmä suodatin"
+
+msgid "Deactivate Forms"
+msgstr "Poista lomakkeet käytöstä"
+
+msgid "Deactivate Tables"
+msgstr "Poista taulukot käytöstä"
+
+msgid "Retrieve field but hide it"
+msgstr "Hae kenttä mutta piilota se"
+
+msgid "Hidden"
+msgstr "Piilotettu"
+
+msgid "Preview of team members"
+msgstr "Tiimin jäsenten esikatselu"
+
+msgid "Groups added"
+msgstr "Lisätyt ryhmät"
+
+msgid "Quarantene state"
+msgstr "Karanteenitila"
+
+msgid "Email to send to"
+msgstr "Sähköposti lähetettäväksi"
+
+msgid "Or choose prepared email"
+msgstr "Tai valitse valmisteltu sähköposti"
+
+msgid "Attach PDF"
+msgstr "Liitä PDF"
+
+msgid "Create PDF"
+msgstr "Luo PDF"
+
+msgid "Found in field"
+msgstr "Löydetty kentästä"
+
+msgid "Standard values"
+msgstr ""
+
+msgid "If you want check fields to be default checked you must add the text checked to the default value"
+msgstr ""
+
+msgid "Remove fields"
+msgstr ""
+
+msgid "Do not delete standard fields. If you feel they are not necessary - disable them in table view and modal view"
+msgstr ""
+
+msgid "Field widths"
+msgstr ""
+
+msgid "Field widths are determined using Bootstrap's grid system. A row is 12 blocks wide, so you can set a field's width by specifying how many blocks it should occupy. For example, setting the width to 6 will make the field half the row's width"
+msgstr ""
+
+msgid "Create Project"
+msgstr ""
+
+msgid "Transfer elments to other user"
+msgstr ""
+

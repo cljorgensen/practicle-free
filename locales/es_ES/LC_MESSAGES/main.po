@@ -1,0 +1,3055 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Practicle\n"
+"POT-Creation-Date: 2019-05-16 11:25+0200\n"
+"PO-Revision-Date: 2019-07-11 13:00+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.2.3\n"
+"X-Poedit-Basepath: .\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: es_ES\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+
+msgid "A customer contact person must be chosen - please create customer contact person before creating"
+msgstr "Debe elegirse una persona de contacto del cliente - por favor, cree la persona de contacto del cliente antes de crear"
+
+msgid "Account number"
+msgstr "Número de cuenta"
+
+msgid "Actions"
+msgstr "Acciones"
+
+msgid "Active"
+msgstr "Activa"
+
+msgid "Active projects"
+msgstr "Proyectos activos"
+
+msgid "Activity"
+msgstr "Actividad"
+
+msgid "Add"
+msgstr "Añadir"
+
+msgid "Add News"
+msgstr "Añadir noticias"
+
+msgid "Add as favorite"
+msgstr "Añadir como favorito"
+
+msgid "Add as task"
+msgstr "Añadir como tarea"
+
+msgid "Add document"
+msgstr "Agregar documento"
+
+msgid "Add new task"
+msgstr "Agregar nueva tarea"
+
+msgid "Add to existing problem"
+msgstr "Agregar al problema existente"
+
+msgid "Address"
+msgstr "Dirección"
+
+msgid "Administrate News"
+msgstr "Administrar Noticias"
+
+msgid "Affected Company"
+msgstr "Empresa afectada"
+
+msgid "Alerts"
+msgstr "Alertas"
+
+msgid "All News"
+msgstr "Todas las noticias"
+
+msgid "All active"
+msgstr "Todo activo"
+
+msgid "All closed"
+msgstr "Todo cerrado"
+
+msgid "All overdue"
+msgstr "Todo atrasado"
+
+msgid "Amount spend"
+msgstr "Cantidad gastada"
+
+msgid "Anniversarys"
+msgstr "Aniversarios"
+
+msgid "Answer"
+msgstr "Respuesta"
+
+msgid "Approval Tasks"
+msgstr "Tareas de aprobación"
+
+msgid "Approver"
+msgstr "Aprobador"
+
+msgid "Assess"
+msgstr "Evaluar"
+
+msgid "Assets"
+msgstr "Activos"
+
+msgid "Assigned"
+msgstr "Asignado"
+
+msgid "Assigned Team"
+msgstr "Equipo asignado"
+
+msgid "Assigned to responsible"
+msgstr "Asignado al responsable"
+
+msgid "Assigned to team"
+msgstr "Asignado al equipo"
+
+msgid "Attach a workflow"
+msgstr "Adjuntar un flujo de trabajo"
+
+msgid "Authorize"
+msgstr "Autorizar"
+
+msgid "Average solution time"
+msgstr "Tiempo promedio de solución"
+
+msgid "Await Customer"
+msgstr "Esperando al cliente"
+
+msgid "Awaiting"
+msgstr "Pendiente"
+
+msgid "Awaiting customer"
+msgstr "Esperando al cliente"
+
+msgid "Backout Plan"
+msgstr "Plan de reversión"
+
+msgid "Bank"
+msgstr "Banco"
+
+msgid "Birthday"
+msgstr "Cumpleaños"
+
+msgid "Birthdays"
+msgstr "Cumpleaños"
+
+msgid "Board"
+msgstr "Tablero"
+
+msgid "Boards"
+msgstr "Tableros"
+
+msgid "Bought"
+msgstr "Comprado"
+
+msgid "Branche news"
+msgstr "Noticias de sucursales"
+
+msgid "Bronze"
+msgstr "Bronce"
+
+msgid "Budget Spend"
+msgstr "Gasto presupuestado"
+
+msgid "CBR"
+msgstr "CBR"
+
+msgid "Cancel"
+msgstr "Cancelar"
+
+msgid "Canceled"
+msgstr "Cancelado"
+
+msgid "Categories"
+msgstr "Categorías"
+
+msgid "Category"
+msgstr "Categoría"
+
+msgid "Category Administration"
+msgstr "Administración de categorías"
+
+msgid "Certificates"
+msgstr "Certificados"
+
+msgid "Change"
+msgstr "Cambiar"
+
+msgid "Change Password"
+msgstr "Cambiar contraseña"
+
+msgid "Change password"
+msgstr "Cambiar contraseña"
+
+msgid "Changes"
+msgstr "Cambios"
+
+msgid "Changes saved"
+msgstr "Cambios guardados"
+
+msgid "Choose file"
+msgstr "Seleccionar archivo"
+
+msgid "City"
+msgstr "Ciudad"
+
+msgid "Close"
+msgstr "Cerrar"
+
+msgid "Closed"
+msgstr "Cerrado"
+
+msgid "Comment"
+msgstr "Comentario"
+
+msgid "Companies"
+msgstr "Empresas"
+
+msgid "Company"
+msgstr "Empresa"
+
+msgid "Company Name"
+msgstr "Nombre de la empresa"
+
+msgid "Complete"
+msgstr "Completo"
+
+msgid "Completed"
+msgstr "Completado"
+
+msgid "Content"
+msgstr "Contenido"
+
+msgid "Contracts"
+msgstr "Contratos"
+
+msgid "Corporate Links"
+msgstr "Enlaces corporativos"
+
+msgid "Country"
+msgstr "País"
+
+msgid "Create"
+msgstr "Crear"
+
+msgid "Create as new problem"
+msgstr "Crear como nuevo problema"
+
+msgid "Create document"
+msgstr "Crear documento"
+
+msgid "Create favorite from this"
+msgstr "Crear favorito a partir de esto"
+
+msgid "Create new"
+msgstr "Crear nuevo"
+
+msgid "Create random password"
+msgstr "Crear contraseña aleatoria"
+
+msgid "Create task from this"
+msgstr "Crear tarea a partir de esto"
+
+msgid "Created"
+msgstr "Creado"
+
+msgid "Customer"
+msgstr "Cliente"
+
+msgid "Customer Companies"
+msgstr "Empresas de clientes"
+
+msgid "Customer Contacts"
+msgstr "Contactos de clientes"
+
+msgid "Customer contacts"
+msgstr "Contactos de clientes"
+
+msgid "Customers"
+msgstr "Clientes"
+
+msgid "Dashboards"
+msgstr "Paneles de control"
+
+msgid "Data not yet registered"
+msgstr "Datos aún no registrados"
+
+msgid "Date"
+msgstr "Fecha"
+
+msgid "Date performed"
+msgstr "Fecha de realización"
+
+msgid "Deadline"
+msgstr "Fecha límite"
+
+msgid "Deadline Review"
+msgstr "Deadline Review"
+
+msgid "Deadline for review"
+msgstr "Fecha límite de revisión"
+
+msgid "Delete"
+msgstr "Eliminar"
+
+msgid "Deleted"
+msgstr "Eliminado"
+
+msgid "Description"
+msgstr "Descripción"
+
+msgid "Descriptions"
+msgstr "Descripciones"
+
+msgid "Design"
+msgstr "Diseño"
+
+msgid "Destination"
+msgstr "Destino"
+
+msgid "Details"
+msgstr "Detalles"
+
+msgid "Dispatch que"
+msgstr "Cola de envío"
+
+msgid "Document Name"
+msgstr "Nombre del documento"
+
+msgid "Documents"
+msgstr "Documentos"
+
+msgid "Edit"
+msgstr "Editar"
+
+msgid "Edit Task"
+msgstr "Editar tarea"
+
+msgid "Edit Userprofile"
+msgstr "Editar perfil de usuario"
+
+msgid "Email"
+msgstr "Correo electrónico"
+
+msgid "Employees"
+msgstr "Empleados"
+
+msgid "Enable Google Authenticator"
+msgstr "Habilitar Google Authenticator"
+
+msgid "End"
+msgstr "Finalizar"
+
+msgid "Error updating password"
+msgstr "Error al actualizar la contraseña"
+
+msgid "Estimated Budget"
+msgstr "Presupuesto estimado"
+
+msgid "Estimated Hours"
+msgstr "Horas estimadas"
+
+msgid "Estimated budget"
+msgstr "Presupuesto estimado"
+
+msgid "Expiration Date"
+msgstr "Fecha de vencimiento"
+
+msgid "Expires"
+msgstr "Caduca"
+
+msgid "Favorite"
+msgstr "Favorito"
+
+msgid "Favorites"
+msgstr "Favoritos"
+
+msgid "File"
+msgstr "Archivo"
+
+msgid "Filename"
+msgstr "Nombre de archivo"
+
+msgid "Files"
+msgstr "Archivos"
+
+msgid "Finished projects"
+msgstr "Proyectos terminados"
+
+msgid "First Name"
+msgstr "Nombre de pila"
+
+msgid "Firstname"
+msgstr "Nombre de pila"
+
+msgid "From"
+msgstr "De"
+
+msgid "Full history"
+msgstr "Historial completo"
+
+msgid "Generate files"
+msgstr "Generar archivos"
+
+msgid "Generated password"
+msgstr "Contraseña generada"
+
+msgid "Go"
+msgstr "Ir"
+
+msgid "Go to favorites"
+msgstr "Ir a favoritos"
+
+msgid "Gold"
+msgstr "Oro"
+
+msgid "Group"
+msgstr "Grupo"
+
+msgid "Group Access"
+msgstr "Acceso de grupo"
+
+msgid "Handheld Devices"
+msgstr "Dispositivos portátiles"
+
+msgid "Handheld device updated"
+msgstr "Dispositivo portátil actualizado"
+
+msgid "Headquarters"
+msgstr "Sede central"
+
+msgid "Help"
+msgstr "Ayuda"
+
+msgid "High"
+msgstr "Alto"
+
+msgid "History"
+msgstr "Historia"
+
+msgid "Hostname"
+msgstr "Nombre de host"
+
+msgid "Hours spend"
+msgstr "Horas gastadas"
+
+msgid "Implementing"
+msgstr "Implementación"
+
+msgid "In Assessment"
+msgstr "En evaluación"
+
+msgid "In Authorization"
+msgstr "En autorización"
+
+msgid "In Resolution Process"
+msgstr "En proceso de resolución"
+
+msgid "In Review"
+msgstr "En revisión"
+
+msgid "In Scheduling"
+msgstr "En programación"
+
+msgid "In resolution process"
+msgstr "En proceso de resolución"
+
+msgid "In review"
+msgstr "En revisión"
+
+msgid "Incident"
+msgstr "Incidente"
+
+msgid "Incidents"
+msgstr "Incidentes"
+
+msgid "Internal Comment"
+msgstr "Comentario interno"
+
+msgid "Invoice"
+msgstr "Factura"
+
+msgid "Item number"
+msgstr "Número de artículo"
+
+msgid "Job Titel"
+msgstr "Título del trabajo"
+
+msgid "Language"
+msgstr "Idioma"
+
+msgid "Languages"
+msgstr "Idiomas"
+
+msgid "Last Logon"
+msgstr "Último inicio de sesión"
+
+msgid "Last Name"
+msgstr "Apellido"
+
+msgid "Last changed"
+msgstr "Último cambio"
+
+msgid "Last changed by"
+msgstr "Último cambio por"
+
+msgid "Last logged on"
+msgstr "Último inicio de sesión"
+
+msgid "Lastlogon"
+msgstr "Último inicio de sesión"
+
+msgid "Lastname"
+msgstr "Apellido"
+
+msgid "Latest Activity"
+msgstr "Actividad más reciente"
+
+msgid "Licenses"
+msgstr "Licencias"
+
+msgid "Links added"
+msgstr "Enlaces agregados"
+
+msgid "Links available"
+msgstr "Enlaces disponibles"
+
+msgid "Lock"
+msgstr "Bloquear"
+
+msgid "Log out"
+msgstr "Cerrar sesión"
+
+msgid "Logout"
+msgstr "Cerrar sesión"
+
+msgid "Low"
+msgstr "Bajo"
+
+msgid "Main Menu"
+msgstr "Menú principal"
+
+msgid "Manager"
+msgstr "Gerente"
+
+msgid "Mark all as read"
+msgstr "Marcar todo como leído"
+
+msgid "Menu"
+msgstr "Menú"
+
+msgid "Messages"
+msgstr "Mensajes"
+
+msgid "Mobile Phone"
+msgstr "Teléfono móvil"
+
+msgid "Mobile Phones"
+msgstr "Teléfonos móviles"
+
+msgid "Mobile Subscription"
+msgstr "Suscripción móvil"
+
+msgid "Mobile Subscriptions"
+msgstr "Suscripciones móviles"
+
+msgid "Model"
+msgstr "Modelo"
+
+msgid "My"
+msgstr "Mi"
+
+msgid "My Tasks"
+msgstr "Mis tareas"
+
+msgid "My Team"
+msgstr "Mi equipo"
+
+msgid "My favorites"
+msgstr "Mis favoritos"
+
+msgid "My orders"
+msgstr "Mis pedidos"
+
+msgid "My projects"
+msgstr "Mis proyectos"
+
+msgid "My teams"
+msgstr "Mis equipos"
+
+msgid "Name"
+msgstr "Nombre"
+
+msgid "Name for new category"
+msgstr "Nombre para nueva categoría"
+
+msgid "Nearest Manager"
+msgstr "Gerente más cercano"
+
+msgid "New"
+msgstr "Nuevo"
+
+msgid "New Project Task"
+msgstr "Nueva tarea de proyecto"
+
+msgid "New Task"
+msgstr "Nueva tarea"
+
+msgid "New activity"
+msgstr "Nueva actividad"
+
+msgid "New password randomizer"
+msgstr "Generador de contraseñas aleatorias"
+
+msgid "News"
+msgstr "Noticias"
+
+msgid "No"
+msgstr "No"
+
+msgid "No Comments yet"
+msgstr "Aún no hay comentarios"
+
+msgid "No account found with that username"
+msgstr "No se encontró ninguna cuenta con ese nombre de usuario"
+
+msgid "No workflow"
+msgstr "Sin flujo de trabajo"
+
+msgid "No."
+msgstr "No."
+
+msgid "None registered"
+msgstr "Ninguno registrado"
+
+msgid "Normal"
+msgstr "Normal"
+
+msgid "Not assigned responsible"
+msgstr "No se asignó responsable"
+
+msgid "Not assigned team"
+msgstr "Equipo no asignado"
+
+msgid "Notifications"
+msgstr "Notificaciones"
+
+msgid "Notify Customer"
+msgstr "Notificar al cliente"
+
+msgid "Now download Google Authenticator App on your smartphone and scan this QR code - Do not Log Out before you have scanned this QR code successfully in the Google Authenticator App!"
+msgstr "Ahora descarga la aplicación Google Authenticator en tu smartphone y escanea este código QR. No cierres la sesión antes de haber escaneado correctamente este código QR en la aplicación Google Authenticator!"
+
+msgid "Open"
+msgstr "Abrir"
+
+msgid "Order"
+msgstr "Orden"
+
+msgid "Orders"
+msgstr "Órdenes"
+
+msgid "Organization"
+msgstr "Organización"
+
+msgid "Overdue"
+msgstr "Vencido"
+
+msgid "Overdue projects"
+msgstr "Proyectos vencidos"
+
+msgid "Overdue status"
+msgstr "Estado vencido"
+
+msgid "Overview"
+msgstr "Resumen"
+
+msgid "Owner"
+msgstr "Propietario"
+
+msgid "Participants"
+msgstr "Participantes"
+
+msgid "Password"
+msgstr "Contraseña"
+
+msgid "Passwords"
+msgstr "Contraseñas"
+
+msgid "Payment Due"
+msgstr "Pago pendiente"
+
+msgid "Payment informations"
+msgstr "Información de pago"
+
+msgid "Personal skills"
+msgstr "Habilidades personales"
+
+msgid "Phone"
+msgstr "Teléfono"
+
+msgid "Phone number"
+msgstr "Número de teléfono"
+
+msgid "Preview"
+msgstr "Vista previa"
+
+msgid "Price each"
+msgstr "Precio cada uno"
+
+msgid "Print"
+msgstr "Imprimir"
+
+msgid "Priority"
+msgstr "Prioridad"
+
+msgid "Problem description"
+msgstr "Descripción del problema"
+
+msgid "Problem descriptions"
+msgstr "Descripciones de problemas"
+
+msgid "Problem text"
+msgstr "Texto del problema"
+
+msgid "Problems"
+msgstr "Problemas"
+
+msgid "Producer"
+msgstr "Productor"
+
+msgid "Professional skills"
+msgstr "Habilidades profesionales"
+
+msgid "Profile"
+msgstr "Perfil"
+
+msgid "Profile picture"
+msgstr "Foto de perfil"
+
+msgid "Progress"
+msgstr "Progreso"
+
+msgid "Project"
+msgstr "Proyecto"
+
+msgid "Project Completed"
+msgstr "Proyecto completado"
+
+msgid "Project Deadline"
+msgstr "Fecha límite del proyecto"
+
+msgid "Project Description"
+msgstr "Descripción del proyecto"
+
+msgid "Project Manager"
+msgstr "Gerente de proyecto"
+
+msgid "Project Name"
+msgstr "Nombre del proyecto"
+
+msgid "Project Responsible"
+msgstr "Responsable del proyecto"
+
+msgid "Project Start Date"
+msgstr "Fecha de inicio del proyecto"
+
+msgid "Project Task Completed"
+msgstr "Tarea de proyecto completada"
+
+msgid "Project Tasks"
+msgstr "Tareas del proyecto"
+
+msgid "Project participants"
+msgstr "Participantes del proyecto"
+
+msgid "Projects"
+msgstr "Proyectos"
+
+msgid "Public"
+msgstr "Público"
+
+msgid "Public category"
+msgstr "Categoría pública"
+
+msgid "Qty"
+msgstr "Cantidad"
+
+msgid "Quick Actions"
+msgstr "Acciones rápidas"
+
+msgid "Quick Launch Menu"
+msgstr "Menú de inicio rápido"
+
+msgid "Read all"
+msgstr "Leer todo"
+
+msgid "Received"
+msgstr "Recibido"
+
+msgid "Recieve"
+msgstr "Recibir"
+
+msgid "Related"
+msgstr "Relacionado"
+
+msgid "Related Module"
+msgstr "Módulo relacionado"
+
+msgid "Related problems"
+msgstr "Problemas relacionados"
+
+msgid "Related projects"
+msgstr "Proyectos relacionados"
+
+msgid "Related task"
+msgstr "Tarea relacionada"
+
+msgid "Related tickets"
+msgstr "Tickets relacionados"
+
+msgid "Relations"
+msgstr "Relaciones"
+
+msgid "Remove"
+msgstr "Eliminar"
+
+msgid "Request"
+msgstr "Solicitud"
+
+msgid "Requester"
+msgstr "Solicitante"
+
+msgid "Requests"
+msgstr "Solicitudes"
+
+msgid "Reset"
+msgstr "Restablecer"
+
+msgid "Resolve"
+msgstr "Resolver"
+
+msgid "Resolved"
+msgstr "Resuelto"
+
+msgid "Resolved or workaround"
+msgstr "Resuelto o solución alternativa"
+
+msgid "Responsible"
+msgstr "Responsable"
+
+msgid "Review Tasks"
+msgstr "Revisar tareas"
+
+msgid "Reviewer"
+msgstr "Revisor"
+
+msgid "Roles"
+msgstr "Roles"
+
+msgid "Save"
+msgstr "Guardar"
+
+msgid "Scheduled"
+msgstr "Programado"
+
+msgid "Search"
+msgstr "Buscar"
+
+msgid "Search document attachement content"
+msgstr "Buscar contenido del archivo adjunto del documento"
+
+msgid "Search document content"
+msgstr "Buscar contenido del documento"
+
+msgid "Search document name"
+msgstr "Buscar nombre del documento"
+
+msgid "Search document names"
+msgstr "Buscar nombres de documentos"
+
+msgid "Search for"
+msgstr "Buscar"
+
+msgid "Search in"
+msgstr "Buscar en"
+
+msgid "Search in document attachements"
+msgstr "Buscar en archivos adjuntos del documento"
+
+msgid "Search in document attachment content"
+msgstr "Buscar en contenido de archivos adjuntos del documento"
+
+msgid "Search problem descriptions"
+msgstr "Buscar descripciones de problemas"
+
+msgid "Select News Channel"
+msgstr "Seleccionar canal de noticias"
+
+msgid "Select Workflow"
+msgstr "Seleccionar flujo de trabajo"
+
+msgid "Select to delete"
+msgstr "Seleccionar para eliminar"
+
+msgid "Send Message"
+msgstr "Enviar mensaje"
+
+msgid "Serial Number"
+msgstr "Número de serie"
+
+msgid "Servers"
+msgstr "Servidores"
+
+msgid "Service Level Agreement"
+msgstr "Acuerdo de nivel de servicio"
+
+msgid "Settings"
+msgstr "Configuración"
+
+msgid "Viser"
+msgstr "Muestra"
+
+msgid "Sidebar Image"
+msgstr "Imagen de la barra lateral"
+
+msgid "Silver"
+msgstr "Plata"
+
+msgid "Since"
+msgstr "Desde"
+
+msgid "Skills"
+msgstr "Habilidades"
+
+msgid "Solution"
+msgstr "Solución"
+
+msgid "Solution text"
+msgstr "Texto de la solución"
+
+msgid "Solutions"
+msgstr "Soluciones"
+
+msgid "Something went wrong, please try again later"
+msgstr "Algo salió mal, por favor inténtelo de nuevo más tarde"
+
+msgid "Soon overdue"
+msgstr "Pronto vencido"
+
+msgid "Standard Answers"
+msgstr "Respuestas estándar"
+
+msgid "Start"
+msgstr "Inicio"
+
+msgid "Start Date"
+msgstr "Fecha de inicio"
+
+msgid "Start solution"
+msgstr "Iniciar solución"
+
+msgid "Status"
+msgstr "Estado"
+
+msgid "Step"
+msgstr "Paso"
+
+msgid "Subject"
+msgstr "Asunto"
+
+msgid "Subjects"
+msgstr "Temas"
+
+msgid "Submit Payment"
+msgstr "Enviar pago"
+
+msgid "Subtotal"
+msgstr "Subtotal"
+
+msgid "Tablet"
+msgstr "Tableta"
+
+msgid "Task"
+msgstr "Tarea"
+
+msgid "Task Deadline"
+msgstr "Fecha límite de la tarea"
+
+msgid "Task Description"
+msgstr "Descripción de la tarea"
+
+msgid "Task Manager"
+msgstr "Administrador de tareas"
+
+msgid "Task Name"
+msgstr "Nombre de la tarea"
+
+msgid "Task Participants"
+msgstr "Participantes de la tarea"
+
+msgid "Task Responsible"
+msgstr "Responsable de la tarea"
+
+msgid "Task Started"
+msgstr "Tarea iniciada"
+
+msgid "Task Status"
+msgstr "Estado de la tarea"
+
+msgid "Task activities"
+msgstr "Actividades de la tarea"
+
+msgid "Task created"
+msgstr "Tarea creada"
+
+msgid "Task deadline"
+msgstr "Fecha límite de la tarea"
+
+msgid "Task history"
+msgstr "Historial de la tarea"
+
+msgid "Task progress"
+msgstr "Progreso de la tarea"
+
+msgid "Taskboard"
+msgstr "Tablero de tareas"
+
+msgid "Tasks"
+msgstr "Tareas"
+
+msgid "Team"
+msgstr "Equipo"
+
+msgid "Text"
+msgstr "Texto"
+
+msgid "Time Zone"
+msgstr "Zona horaria"
+
+msgid "Time registrations"
+msgstr "Registro de tiempo"
+
+msgid "Time spend"
+msgstr "Tiempo gastado"
+
+msgid "Timeline"
+msgstr "Línea de tiempo"
+
+msgid "To"
+msgstr "Para"
+
+msgid "Total"
+msgstr "Total"
+
+msgid "Type"
+msgstr "Tipo"
+
+msgid "Type Description"
+msgstr "Descripción del tipo"
+
+msgid "Type new password"
+msgstr "Ingrese una nueva contraseña"
+
+msgid "Unread"
+msgstr "No leído"
+
+msgid "Update"
+msgstr "Actualizar"
+
+msgid "Update Task"
+msgstr "Actualizar tarea"
+
+msgid "Upload"
+msgstr "Subir"
+
+msgid "Urgent"
+msgstr "Urgente"
+
+msgid "User"
+msgstr "Usuario"
+
+msgid "Username"
+msgstr "Nombre de usuario"
+
+msgid "Users"
+msgstr "Usuarios"
+
+msgid "Users Available"
+msgstr "Usuarios disponibles"
+
+msgid "Users Online"
+msgstr "Usuarios en línea"
+
+msgid "Users in CAB"
+msgstr "Usuarios en CAB"
+
+msgid "Usertype"
+msgstr "Tipo de usuario"
+
+msgid "Vat"
+msgstr "IVA"
+
+msgid "Version"
+msgstr "Versión"
+
+msgid "View"
+msgstr "Ver"
+
+msgid "Weather"
+msgstr "Clima"
+
+msgid "Webpage"
+msgstr "Página web"
+
+msgid "When you have scanned the QR code with success - log off and login again. You will from now on be required to use Google Authenticator to finish your logins"
+msgstr "Cuando haya escaneado el código QR con éxito - cierre sesión e inicie sesión nuevamente. A partir de ahora, se le pedirá que use Google Authenticator para finalizar sus sesiones"
+
+msgid "Widgets added"
+msgstr "Widgets agregados"
+
+msgid "Widgets available"
+msgstr "Widgets disponibles"
+
+msgid "Workflow"
+msgstr "Flujo de trabajo"
+
+msgid "Workflows"
+msgstr "Flujos de trabajo"
+
+msgid "Workstations"
+msgstr "Estaciones de trabajo"
+
+msgid "Yes"
+msgstr "Sí"
+
+msgid "You are not allowed access to this module"
+msgstr "No tienes acceso a este módulo"
+
+msgid "Zip Code"
+msgstr "Código postal"
+
+msgid "account"
+msgstr "cuenta"
+
+msgid "assets"
+msgstr "activos"
+
+msgid "assigned responsible"
+msgstr "responsable asignado"
+
+msgid "assigned team"
+msgstr "equipo asignado"
+
+msgid "change"
+msgstr "cambio"
+
+msgid "changes"
+msgstr "cambios"
+
+msgid "close"
+msgstr "cerrar"
+
+msgid "companies"
+msgstr "empresas"
+
+msgid "complete"
+msgstr "completar"
+
+msgid "created"
+msgstr "creado"
+
+msgid "customers"
+msgstr "clientes"
+
+msgid "delete"
+msgstr "eliminar"
+
+msgid "exceeded"
+msgstr "superado"
+
+msgid "hours in total"
+msgstr "horas en total"
+
+msgid "in"
+msgstr "en"
+
+msgid "incident"
+msgstr "incidente"
+
+msgid "incidents"
+msgstr "incidentes"
+
+msgid "no"
+msgstr "no"
+
+msgid "now recieved"
+msgstr "ahora recibido"
+
+msgid "of"
+msgstr "de"
+
+msgid "open"
+msgstr "abrir"
+
+msgid "overview"
+msgstr "visión general"
+
+msgid "password"
+msgstr "contraseña"
+
+msgid "passwords"
+msgstr "contraseñas"
+
+msgid "preview"
+msgstr "vista previa"
+
+msgid "problems"
+msgstr "problemas"
+
+msgid "records"
+msgstr "registros"
+
+msgid "requests"
+msgstr "solicitudes"
+
+msgid "settings"
+msgstr "configuraciones"
+
+msgid "solutions"
+msgstr "soluciones"
+
+msgid "to"
+msgstr "a"
+
+msgid "to existing problem"
+msgstr "para problema existente"
+
+msgid "total"
+msgstr "total"
+
+msgid "username"
+msgstr "nombre de usuario"
+
+msgid "view"
+msgstr "ver"
+
+msgid "yes"
+msgstr "sí"
+
+msgid "No data available in table"
+msgstr "No hay datos disponibles en la tabla"
+
+msgid "No entries to show"
+msgstr "No hay entradas para mostrar"
+
+msgid "No records to display"
+msgstr "No hay registros para mostrar"
+
+msgid "Archive"
+msgstr "Archivo"
+
+msgid "Timeregistrations"
+msgstr "Registro de tiempo"
+
+msgid "Dispatch"
+msgstr "Envío"
+
+msgid "Report"
+msgstr "Informe"
+
+msgid "Me as Participant"
+msgstr "Yo como participante"
+
+msgid "Me as Manager"
+msgstr "Yo como administrador"
+
+msgid "Me as Responsible"
+msgstr "Yo como responsable"
+
+msgid "Expiration"
+msgstr "Vencimiento"
+
+msgid "Similarity"
+msgstr "Similitud"
+
+msgid "An indicative comparison of words between the version and the previous version"
+msgstr "Una comparación indicativa de palabras entre la versión y la versión anterior"
+
+msgid "Asset"
+msgstr "Activo"
+
+msgid "asset"
+msgstr "resolución"
+
+msgid "Resolution"
+msgstr "Resolución"
+
+msgid "deadline"
+msgstr "fecha límite"
+
+msgid "subject"
+msgstr "asunto"
+
+msgid "subjects"
+msgstr "asuntos"
+
+msgid "taskboard"
+msgstr "tablero de tareas"
+
+msgid "Create New"
+msgstr "Crear nuevo"
+
+msgid "Your"
+msgstr "Tu"
+
+msgid "Dispatch view"
+msgstr "Vista de envío"
+
+msgid "All open"
+msgstr "Todos abiertos"
+
+msgid "Export"
+msgstr "Exportar"
+
+msgid "Export view"
+msgstr "Vista de exportación"
+
+msgid "Problems are much easier to create directly via incidents, requests, changes etc."
+msgstr "Los problemas son mucho más fáciles de crear directamente a través de incidentes, solicitudes, cambios, etc."
+
+msgid "Add to taskboard"
+msgstr "Agregar al tablero de tareas"
+
+msgid "Deadline Backout"
+msgstr "Cancelar fecha límite"
+
+msgid "New message"
+msgstr "Nuevo mensaje"
+
+msgid "Recipient"
+msgstr "Destinatario"
+
+msgid "Message"
+msgstr "Mensaje"
+
+msgid "Answer Templates"
+msgstr "Plantillas de respuesta"
+
+msgid "not assigned team"
+msgstr "Equipo no asignado"
+
+msgid "not assigned responsible"
+msgstr "Responsable no asignado"
+
+msgid "created from"
+msgstr "Creado a partir de"
+
+msgid "Personal"
+msgstr "Personal"
+
+msgid "users"
+msgstr "usuarios"
+
+msgid "Created By"
+msgstr "Creado por"
+
+msgid "Todays time registration"
+msgstr "Registro de la hora de hoy"
+
+msgid "Create new project"
+msgstr "Crear nuevo proyecto"
+
+msgid "Group Managers"
+msgstr "Gerentes de grupo"
+
+msgid "User group that can administrate this project"
+msgstr "Grupo de usuarios que puede administrar este proyecto"
+
+msgid "User group that can participate in this project"
+msgstr "Grupo de usuarios que puede participar en este proyecto"
+
+msgid "Related Customer"
+msgstr "Cliente relacionado"
+
+msgid "Customer that this project is to be related to"
+msgstr "Cliente al que se relaciona este proyecto"
+
+msgid "Create password"
+msgstr "Crear contraseña"
+
+msgid "Enabled"
+msgstr "Habilitado"
+
+msgid "Disabled"
+msgstr "Deshabilitado"
+
+msgid "Workstation"
+msgstr "Estación de trabajo"
+
+msgid "Certificate"
+msgstr "Certificado"
+
+msgid "New project"
+msgstr "Nuevo proyecto"
+
+msgid "Add to your watchlist"
+msgstr "Agregar a tu lista de seguimiento"
+
+msgid "Quick search"
+msgstr "Búsqueda rápida"
+
+msgid "Related sprint"
+msgstr "Sprint relacionado"
+
+msgid "Task participants"
+msgstr "Participantes de la tarea"
+
+msgid "Delete project"
+msgstr "Eliminar proyecto"
+
+msgid "Project Sprint"
+msgstr "Sprint de proyecto"
+
+msgid "Generate project tasks"
+msgstr "Generar tareas de proyecto"
+
+msgid "Remove project tasks"
+msgstr "Eliminar tareas de proyecto"
+
+msgid "Real hours spend"
+msgstr "Horas reales gastadas"
+
+msgid "Calculated from real timeregistrations"
+msgstr "Calculado a partir de registros de tiempo reales"
+
+msgid "Open Projects"
+msgstr "Proyectos abiertos"
+
+msgid "Overall process"
+msgstr "Proceso general"
+
+msgid "Budget spend"
+msgstr "Gasto presupuestado"
+
+msgid "Time registered"
+msgstr "Tiempo registrado"
+
+msgid "Create baseline"
+msgstr "Crear línea base"
+
+msgid "Create *.ics file"
+msgstr "Crear archivo *.ics"
+
+msgid "Create ICS file"
+msgstr "Crear archivo ICS"
+
+msgid "Archive project"
+msgstr "Archivar proyecto"
+
+msgid "Add task"
+msgstr "Agregar tarea"
+
+msgid "today"
+msgstr "hoy"
+
+msgid "month"
+msgstr "mes"
+
+msgid "week"
+msgstr "semana"
+
+msgid "day"
+msgstr "día"
+
+msgid "list"
+msgstr "lista"
+
+msgid "Create duplicate"
+msgstr "Crear duplicado"
+
+msgid "Withdrawn"
+msgstr "Retirado"
+
+msgid "In construction"
+msgstr "En construcción"
+
+msgid "In approval"
+msgstr "En aprobación"
+
+msgid "Published"
+msgstr "Publicado"
+
+msgid "Your open"
+msgstr "Abierto"
+
+msgid "This task is private and you are not added as project task participant"
+msgstr "Esta tarea es privada y no estás agregado como participante de la tarea del proyecto"
+
+msgid "You are not added as project participant, so you cannot see this project task"
+msgstr "No estás agregado como participante del proyecto, por lo que no puedes ver esta tarea del proyecto"
+
+msgid "Existing Categorys"
+msgstr "Categorías existentes"
+
+msgid "Category Name"
+msgstr "Nombre de categoría"
+
+msgid "Project Task Categories"
+msgstr "Categorías de tareas del proyecto"
+
+msgid "Project Categories"
+msgstr "Categorías de proyectos"
+
+msgid "Project Task Category Administration"
+msgstr "Administración de categorías de tareas del proyecto"
+
+msgid "articles"
+msgstr "artículos"
+
+msgid "Articles"
+msgstr "Artículos"
+
+msgid "Article"
+msgstr "Artículo"
+
+msgid "article"
+msgstr "artículo"
+
+msgid "My articles"
+msgstr "Mis artículos"
+
+msgid "My Articles"
+msgstr "Mis Artículos"
+
+msgid "Create Article"
+msgstr "Crear artículo"
+
+msgid "Article name"
+msgstr "Nombre del artículo"
+
+msgid "Article content"
+msgstr "Contenido del artículo"
+
+msgid "Article attachments"
+msgstr "Archivos adjuntos del artículo"
+
+msgid "This task is delayed"
+msgstr "Esta tarea está retrasada"
+
+msgid "Statistics"
+msgstr "Estadísticas"
+
+msgid "Estimated hours completed"
+msgstr "Horas estimadas completadas"
+
+msgid "Number Of Project Tasks"
+msgstr "Número de tareas del proyecto"
+
+msgid "Number Of Sprints"
+msgstr "Número de sprints"
+
+msgid "Project Tasks Completed"
+msgstr "Tareas del proyecto completadas"
+
+msgid "Create project"
+msgstr "Crear proyecto"
+
+msgid "Open projects"
+msgstr "Proyectos abiertos"
+
+msgid "Closed projects"
+msgstr "Proyectos cerrados"
+
+msgid "All projects"
+msgstr "Todos los proyectos"
+
+msgid "Search projects"
+msgstr "Buscar proyectos"
+
+msgid "updated"
+msgstr "actualizado"
+
+msgid "Push tasks ahead"
+msgstr "Empujar tareas hacia adelante"
+
+msgid "This is used for pushing future tasks, including this, a number of days forward"
+msgstr "Esto se usa para empujar tareas futuras, incluyendo esta, un número de días hacia adelante"
+
+msgid "For how many days forward should tasks from this tasks start day be moved? Note: you can use minus to subtract days instead!"
+msgstr "¿Durante cuántos días se deben mover las tareas desde el día de inicio de esta tarea hacia adelante? ¡Nota: puedes usar el signo menos para restar días en su lugar!"
+
+msgid "Active inquiries"
+msgstr "Consultas activas"
+
+msgid "Your active inquiries"
+msgstr "Tus consultas activas"
+
+msgid "Your closed inquiries"
+msgstr "Tus consultas cerradas"
+
+msgid "Your companys active inquiries"
+msgstr "Consultas activas de tu empresa"
+
+msgid "Your companys closed inquiries"
+msgstr "Consultas cerradas de tu empresa"
+
+msgid "Search for help in our knowledge database"
+msgstr "Buscar ayuda en nuestra base de conocimientos"
+
+msgid "Search here"
+msgstr "Buscar aquí"
+
+msgid "Your Companys SLA Agreement is:"
+msgstr "El Acuerdo SLA de tu empresa es:"
+
+msgid "This means you can expect the following reaction times within opening hours from us."
+msgstr "Esto significa que puedes esperar los siguientes tiempos de respuesta dentro de nuestro horario de atención."
+
+msgid "Did you know... that you can also contact us and create tickets via our mail"
+msgstr "¿Sabías que... también puedes contactarnos y crear tickets a través de nuestro correo?"
+
+msgid "Approve"
+msgstr "Aprobar"
+
+msgid "Change end"
+msgstr "Cambiar fin"
+
+msgid "Change Advisory Board, change approvers"
+msgstr "Junta Asesora de Cambios, cambiar aprobadores"
+
+msgid "Valid reason"
+msgstr "Motivo válido"
+
+msgid "Implementation Plan"
+msgstr "Plan de implementación"
+
+msgid "Contact"
+msgstr "Contacto"
+
+msgid "Comments"
+msgstr "Comentarios"
+
+msgid "allready added to your task board"
+msgstr "ya agregado a tu tablero de tareas"
+
+msgid "added to your task board"
+msgstr "agregado a tu tablero de tareas"
+
+msgid "task"
+msgstr "tarea"
+
+msgid "You need to relate a project before you can relate project tasks"
+msgstr "Debes relacionar un proyecto antes de poder relacionar las tareas del proyecto"
+
+msgid "This taskboard is a kanban based task board. You can add incidents, request, project tasks etc. to your taskboard to manage all your tasks on daily basis."
+msgstr "Este tablero de tareas se basa en Kanban. Puedes agregar incidentes, solicitudes, tareas de proyectos, etc. a tu tablero de tareas para gestionar todas tus tareas diariamente."
+
+msgid "Timeregistration"
+msgstr "Registro de tiempo"
+
+msgid "News archive"
+msgstr "Archivo de noticias"
+
+msgid "Read"
+msgstr "Leer"
+
+msgid "Assets expired"
+msgstr "Activos caducados"
+
+msgid "Change approvals"
+msgstr "Aprobaciones de cambios"
+
+msgid "Document approvals"
+msgstr "Aprobaciones de documentos"
+
+msgid "Documents expired"
+msgstr "Documento caducado"
+
+msgid "or"
+msgstr "o"
+
+msgid "Sign in"
+msgstr "Iniciar sesión"
+
+msgid "Dont have an account?"
+msgstr "¿No tienes una cuenta?"
+
+msgid "Sign up"
+msgstr "Registrarse"
+
+msgid "Forgot password?"
+msgstr "¿Olvidaste tu contraseña?"
+
+msgid "Reset now"
+msgstr "Restablecer ahora"
+
+msgid "About"
+msgstr "Acerca de"
+
+msgid "Try"
+msgstr "Intentar"
+
+msgid "Business Services"
+msgstr "Servicios empresariales"
+
+msgid "Are you sure? Tasks for all involved users will be created"
+msgstr "¿Estás seguro? Se crearán tareas para todos los usuarios involucrados"
+
+msgid "Are you sure? Tasks for all involved users will be deleted"
+msgstr "¿Estás seguro? Se eliminarán las tareas de todos los usuarios involucrados"
+
+msgid "Doubleclick to visit"
+msgstr "Haz doble clic para visitar"
+
+msgid "Decommissioned"
+msgstr "Desactivado"
+
+msgid "Quick Menu"
+msgstr "Menú rápido"
+
+msgid "Sidenav Mini"
+msgstr "Sidenav Mini"
+
+msgid "Light"
+msgstr "Ligero"
+
+msgid "Dark"
+msgstr "Oscuro"
+
+msgid "Time registration"
+msgstr "Registro de tiempo"
+
+msgid "Manage time registration"
+msgstr "Administrar registro de tiempo"
+
+msgid "New Timeregistration"
+msgstr "Nuevo registro de tiempo"
+
+msgid "Reactive"
+msgstr "Reactivo"
+
+msgid "Proactive"
+msgstr "Proactivo"
+
+msgid "Forgot password"
+msgstr "Contraseña olvidada"
+
+msgid "You will receive an e-mail typically within 60 seconds"
+msgstr "Recibirás un correo electrónico típicamente en 60 segundos"
+
+msgid "Reset password"
+msgstr "Restablecer contraseña"
+
+msgid "Password must contain: Minimum 8 characters, at least 1 alphabet and 1 number"
+msgstr "La contraseña debe contener: mínimo 8 caracteres, al menos 1 letra y 1 número"
+
+msgid "New Password"
+msgstr "Nueva contraseña"
+
+msgid "Repeat"
+msgstr "Repetir"
+
+msgid "Repeat Password"
+msgstr "Repetir contraseña"
+
+msgid "Already have an account?"
+msgstr "¿Ya tienes una cuenta?"
+
+msgid "Login"
+msgstr "Iniciar sesión"
+
+msgid "Inactive"
+msgstr "Inactivo"
+
+msgid "Back"
+msgstr "Atrás"
+
+msgid "Me participating"
+msgstr "Participo"
+
+msgid "Modules"
+msgstr "Módulos"
+
+msgid "Inquiries"
+msgstr "Consultas"
+
+msgid "My active"
+msgstr "Mis activos"
+
+msgid "My closed"
+msgstr "Mis cerrados"
+
+msgid "Groups"
+msgstr "Grupos"
+
+msgid "Teams"
+msgstr "Equipos"
+
+msgid "Users in group"
+msgstr "Usuarios en el grupo"
+
+msgid "Group name"
+msgstr "Nombre del grupo"
+
+msgid "module"
+msgstr "módulo"
+
+msgid "Role name"
+msgstr "Nombre del rol"
+
+msgid "Related module"
+msgstr "Módulo relacionado"
+
+msgid "Notes"
+msgstr "Notas"
+
+msgid "Memberships"
+msgstr "Membresías"
+
+msgid "Group Status"
+msgstr "Estado del grupo"
+
+msgid "Users in role"
+msgstr "Usuarios en rol"
+
+msgid "Groups in role"
+msgstr "Grupos en rol"
+
+msgid "Groups Available"
+msgstr "Grupos disponibles"
+
+msgid "Role Status"
+msgstr "Estado del rol"
+
+msgid "Members Available"
+msgstr "Miembros disponibles"
+
+msgid "Members"
+msgstr "Miembros"
+
+msgid "Load Templates"
+msgstr "Cargar plantillas"
+
+msgid "Templates"
+msgstr "Plantillas"
+
+msgid "Module"
+msgstr "Módulo"
+
+msgid "Removed"
+msgstr "Eliminado"
+
+msgid "End Date"
+msgstr "Fecha de finalización"
+
+msgid "Shortname"
+msgstr "Nombre corto"
+
+msgid "Tablename"
+msgstr "Nombre de tabla"
+
+msgid "Icon"
+msgstr "Icono"
+
+msgid "Product Owner"
+msgstr "Propietario del producto"
+
+msgid "Short Name"
+msgstr "Nombre corto"
+
+msgid "Developer Team"
+msgstr "Equipo de desarrollo"
+
+msgid "Related User"
+msgstr "Usuario relacionado"
+
+msgid "Related Company"
+msgstr "Empresa relacionada"
+
+msgid "Last Updated"
+msgstr "Última actualización"
+
+msgid "Business Service"
+msgstr "Servicio empresarial"
+
+msgid "More"
+msgstr "Más"
+
+msgid "Internal"
+msgstr "Interno"
+
+msgid "Clone"
+msgstr "Clonar"
+
+msgid "Create incident from this"
+msgstr "Crear incidente a partir de esto"
+
+msgid "Create request from this"
+msgstr "Crear solicitud a partir de esto"
+
+msgid "Create change from this"
+msgstr "Crear cambio a partir de esto"
+
+msgid "Create problem from this"
+msgstr "Crear problema a partir de esto"
+
+msgid "Users in team"
+msgstr "Usuarios en el equipo"
+
+msgid "Team name"
+msgstr "Nombre del equipo"
+
+msgid "Team colour"
+msgstr "Color del equipo"
+
+msgid "Team Leader"
+msgstr "Líder del equipo"
+
+msgid "Team Manager"
+msgstr "Gerente del equipo"
+
+msgid "colour"
+msgstr "color"
+
+msgid "Colour"
+msgstr "Color"
+
+msgid "Approvals"
+msgstr "Aprobaciones"
+
+msgid "Follow-ups"
+msgstr "Seguimientos"
+
+msgid "Role"
+msgstr "Rol"
+
+msgid "Last Edited By"
+msgstr "Última edición por"
+
+msgid "Last Edited"
+msgstr "Última edición"
+
+msgid "Show in relations"
+msgstr "Mostrar en relaciones"
+
+msgid "Field Name"
+msgstr "Nombre del campo"
+
+msgid "Fields"
+msgstr "Campos"
+
+msgid "Status Codes"
+msgstr "Códigos de estado"
+
+msgid "Lookup Table"
+msgstr "Tabla de búsqueda"
+
+msgid "Lookup Field"
+msgstr "Campo de búsqueda"
+
+msgid "Done Status"
+msgstr "Estado completado"
+
+msgid "SLA Supported"
+msgstr "Soporte de nivel de servicio"
+
+msgid "Closed Status"
+msgstr "Estado cerrado"
+
+msgid "Restore Points"
+msgstr "Puntos de restauración"
+
+msgid "ITSM Relations"
+msgstr "Relaciones de ITSM"
+
+msgid "CI Relations"
+msgstr "Relaciones de CI"
+
+msgid "ITSM Types"
+msgstr "Tipos de ITSM"
+
+msgid "CI Types"
+msgstr "Tipos de CI"
+
+msgid "Tableview"
+msgstr "Vista de tabla"
+
+msgid "Parent Task"
+msgstr "Tarea principal"
+
+msgid "Push in next status"
+msgstr "Mover al siguiente estado"
+
+msgid "Notify by email"
+msgstr "Notificar por correo electrónico"
+
+msgid "Notify"
+msgstr "Notificar"
+
+msgid "Text templates"
+msgstr "Plantillas de texto"
+
+msgid "Widgets on frontpage"
+msgstr "Widgets en la página principal"
+
+msgid "Available"
+msgstr "Disponible"
+
+msgid "Added"
+msgstr "Añadido"
+
+msgid "Code"
+msgstr "Código"
+
+msgid "Personal Meeting Room"
+msgstr "Sala de reuniones personal"
+
+msgid "These are text shortcuts you can define a text code and a text template that is inserted when you type the text code in text boxes"
+msgstr "Estos son accesos directos de texto en los que puedes definir un código de texto y una plantilla de texto que se inserta cuando escribes el código de texto en los campos de texto"
+
+msgid "½ Day"
+msgstr "½ Día"
+
+msgid "Day"
+msgstr "Día"
+
+msgid "Week"
+msgstr "Semana"
+
+msgid "Month"
+msgstr "Mes"
+
+msgid "Today"
+msgstr "Hoy"
+
+msgid "End date cannot be before start date"
+msgstr "La fecha de finalización no puede ser anterior a la fecha de inicio"
+
+msgid "Updated"
+msgstr "Actualizado"
+
+msgid "Other searches"
+msgstr "Otras búsquedas"
+
+msgid "Scan for CVR numbers in WIKI"
+msgstr "Buscar números de CVR en WIKI"
+
+msgid "Group Name"
+msgstr "Nombre de grupo"
+
+msgid "Expired CI's"
+msgstr "CI vencidos"
+
+msgid "API configuration"
+msgstr "Configuración de la API"
+
+msgid "Test update user"
+msgstr "Actualizar usuario de prueba"
+
+msgid "Delete user (careful it will delete the user)"
+msgstr "Eliminar usuario (cuidado, se eliminará al usuario)"
+
+msgid "Shared"
+msgstr "Compartido"
+
+msgid "made by"
+msgstr "hecho por"
+
+msgid "making better web for small business."
+msgstr "haciendo la web mejor para pequeñas empresas."
+
+msgid "Support"
+msgstr "Soporte"
+
+msgid "Changelog"
+msgstr "Registro de cambios"
+
+msgid "Duplicate"
+msgstr "Duplicar"
+
+msgid "Latest activity in the project"
+msgstr "Actividad más reciente en el proyecto"
+
+msgid "Latest activity"
+msgstr "Actividad más reciente"
+
+msgid "Activity Stream"
+msgstr "Flujo de actividad"
+
+msgid "Remaining"
+msgstr "Restante"
+
+msgid "Password generator"
+msgstr "Generador de contraseñas"
+
+msgid "Forms"
+msgstr "Formularios"
+
+msgid "Mail Templates"
+msgstr "Plantillas de correo"
+
+msgid "Maintenance"
+msgstr "Mantenimiento"
+
+msgid "API"
+msgstr "API"
+
+msgid "Active Directory"
+msgstr "Active Directory"
+
+msgid "Helpdesk"
+msgstr "Servicio de asistencia"
+
+msgid "System Configurator"
+msgstr "Configurador del sistema"
+
+msgid "Administration"
+msgstr "Administración"
+
+msgid "Email account for sending emails from"
+msgstr "Cuenta de correo electrónico para enviar correos desde"
+
+msgid "SMTP Port"
+msgstr "Puerto SMTP"
+
+msgid "SMTP Host"
+msgstr "Host SMTP"
+
+msgid "SMTP Username"
+msgstr "Nombre de usuario SMTP"
+
+msgid "SMTP Password"
+msgstr "Contraseña SMTP"
+
+msgid "Max 25 characters"
+msgstr "Máximo 25 caracteres"
+
+msgid "Name of the system"
+msgstr "Nombre del sistema"
+
+msgid "Allow people to activate google authenticater for 2 faktor validation?"
+msgstr "¿Permitir que las personas activen el autenticador de Google para la validación de 2 factores?"
+
+msgid "IMAP Host"
+msgstr "Host IMAP"
+
+msgid "IMAP Username"
+msgstr "Nombre de usuario IMAP"
+
+msgid "IMAP Password"
+msgstr "Contraseña IMAP"
+
+msgid "Please make a long token"
+msgstr "Por favor, crea un token largo"
+
+msgid "These are the links on the login page"
+msgstr "Estos son los enlaces en la página de inicio de sesión"
+
+msgid "Frontpage links"
+msgstr "Enlaces de la página principal"
+
+msgid "You company Facebook page"
+msgstr "Página de Facebook de tu empresa"
+
+msgid "You company page"
+msgstr "Página de tu empresa"
+
+msgid "Company Website"
+msgstr "Sitio web de la empresa"
+
+msgid "You company LinkedIn page"
+msgstr "Página de LinkedIn de tu empresa"
+
+msgid "Registration options"
+msgstr "Opciones de registro"
+
+msgid "Allow user registrations via email?"
+msgstr "¿Permitir registros de usuarios por correo electrónico?"
+
+msgid "Default company assignment for new user registrations?"
+msgstr "¿Asignación predeterminada de la empresa para nuevos registros de usuarios?"
+
+msgid "Default Company?"
+msgstr "¿Empresa predeterminada?"
+
+msgid "You are done"
+msgstr "Has terminado"
+
+msgid "Submit to save your settings"
+msgstr "Enviar para guardar tus ajustes"
+
+msgid "Previous"
+msgstr "Anterior"
+
+msgid "Next"
+msgstr "Siguiente"
+
+msgid "Submit"
+msgstr "Enviar"
+
+msgid "Settings did not get updated"
+msgstr "La configuración no se actualizó"
+
+msgid "Settings updated"
+msgstr "Configuración actualizada"
+
+msgid "Default Design"
+msgstr "Diseño predeterminado"
+
+msgid "Google Authenticate"
+msgstr "Autenticación de Google"
+
+msgid "System"
+msgstr "Sistema"
+
+msgid "Wiki"
+msgstr "Wiki"
+
+msgid "Mail templates"
+msgstr "Plantillas de correo"
+
+msgid "Knowledge base"
+msgstr "Base de conocimientos"
+
+msgid "queue"
+msgstr "cola"
+
+msgid "Queue"
+msgstr "Cola"
+
+msgid "Doing"
+msgstr "En curso"
+
+msgid "Done"
+msgstr "Hecho"
+
+msgid "done"
+msgstr "hecho"
+
+msgid "doing"
+msgstr "en curso"
+
+msgid "Monday"
+msgstr "Lunes"
+
+msgid "Tuesday"
+msgstr "Martes"
+
+msgid "Wednesday"
+msgstr "Miércoles"
+
+msgid "Thursdag"
+msgstr "Jueves"
+
+msgid "Friday"
+msgstr "Viernes"
+
+msgid "Saturday"
+msgstr "Sábado"
+
+msgid "Sunday"
+msgstr "Domingo"
+
+msgid "Thursday"
+msgstr "Jueves"
+
+msgid "Management functions"
+msgstr "Funciones de gestión"
+
+msgid "This weeks time registrations for team"
+msgstr "Registros de tiempo de esta semana para el equipo"
+
+msgid "Employee"
+msgstr "Empleado"
+
+msgid "Solved with solution"
+msgstr "Resuelto con solución"
+
+msgid "Solved"
+msgstr "Resuelto"
+
+msgid "Parent Assets"
+msgstr "Activos padres"
+
+msgid "Child Assets"
+msgstr "Activos secundarios"
+
+msgid "This relation will make current assets child"
+msgstr "Esta relación hará que los activos actuales sean secundarios"
+
+msgid "Create a parent relation"
+msgstr "Crear una relación principal"
+
+msgid "This relation will make current asset parent"
+msgstr "Esta relación hará que el activo actual sea padre"
+
+msgid "Create a child relation"
+msgstr "Crear una relación secundaria"
+
+msgid "Service"
+msgstr "Servicio"
+
+msgid "Overall"
+msgstr "Global"
+
+msgid "Subordinate"
+msgstr "Subordinado"
+
+msgid "Create relation"
+msgstr "Crear relación"
+
+msgid "Get direct link"
+msgstr "Obtener enlace directo"
+
+msgid "Problem report"
+msgstr "Informe de problema"
+
+msgid "Please explain the problem"
+msgstr "Por favor explique el problema"
+
+msgid "this will create a ticket at Practicle Support so please dont abuse this!"
+msgstr "esto creará un ticket en el Soporte Práctico, ¡así que no abuse de esto!"
+
+msgid "Report a problem"
+msgstr "Reportar un problema"
+
+msgid "Category administration"
+msgstr "Administración de categorías"
+
+msgid "Create News Article"
+msgstr "Crear artículo de noticias"
+
+msgid "Date to be published"
+msgstr "Fecha de publicación"
+
+msgid "Writer"
+msgstr "Escritor"
+
+msgid "Headline"
+msgstr "Titular"
+
+msgid "Add new category"
+msgstr "Añadir nueva categoría"
+
+msgid "Usergroup"
+msgstr "Grupo de usuarios"
+
+msgid "News Article"
+msgstr "Artículo de noticias"
+
+msgid "Get latest CVE news entries"
+msgstr "Obtener las últimas entradas de noticias de CVE"
+
+msgid "Delete all CVE news entries"
+msgstr "Eliminar todas las entradas de noticias de CVE"
+
+msgid "Fetch"
+msgstr "Recuperar"
+
+msgid "Add filter"
+msgstr "Agregar filtro"
+
+msgid "Miscellaneous"
+msgstr "Misceláneo"
+
+msgid "miscellaneous"
+msgstr "misceláneo"
+
+msgid "CVE Filters"
+msgstr "Filtros de CVE"
+
+msgid "Documentation"
+msgstr "Documentación"
+
+msgid "last 2 months"
+msgstr "últimos 2 meses"
+
+msgid "Date worked"
+msgstr "Fecha trabajada"
+
+msgid "Duration"
+msgstr "Duración"
+
+msgid "Billable"
+msgstr "Facturable"
+
+msgid "Date for registration"
+msgstr "Fecha de registro"
+
+msgid "All"
+msgstr "Todos"
+
+msgid "Daily"
+msgstr "Diario"
+
+msgid "Duration minutes"
+msgstr "Duración minutos"
+
+msgid "Duration hours"
+msgstr "Duración horas"
+
+msgid "Number of registrations"
+msgstr "Número de registros"
+
+msgid "Daily basis"
+msgstr "Base diario"
+
+msgid "Create Relations"
+msgstr "Crear relaciones"
+
+msgid "Table Name"
+msgstr "Nombre de la tabla"
+
+msgid "Import Source"
+msgstr "Fuente de importación"
+
+msgid "Synchronization"
+msgstr "Sincronización"
+
+msgid "Sync Time"
+msgstr "Tiempo de sincronización"
+
+msgid "Last Synced"
+msgstr "Última sincronización"
+
+msgid "Label"
+msgstr "Etiqueta"
+
+msgid "Default value"
+msgstr "Valor predeterminado"
+
+msgid "Field title"
+msgstr "Título del campo"
+
+msgid "Field Width"
+msgstr "Ancho de campo"
+
+msgid "Lookup Field Result (Table View)"
+msgstr "Resultado del campo de búsqueda (vista de tabla)"
+
+msgid "Lookup Field Result (Modal View)"
+msgstr "Resultado del campo de búsqueda (vista modal)"
+
+msgid "Primary Relation Field"
+msgstr "Campo de relación primaria"
+
+msgid "Import Source Field"
+msgstr "Campo de origen de importación"
+
+msgid "Sync Source Field"
+msgstr "Campo de origen de sincronización"
+
+msgid "Addon"
+msgstr "Complemento"
+
+msgid "Select Field Options"
+msgstr "Seleccionar opciones de campo"
+
+msgid "Child relations lookup"
+msgstr "Búsqueda de relaciones secundarias"
+
+msgid "Locked"
+msgstr "Bloqueado"
+
+msgid "Required"
+msgstr "Requerido"
+
+msgid "Searchable"
+msgstr "Búsqueda"
+
+msgid "Hide Tables"
+msgstr "Ocultar tablas"
+
+msgid "Hide Forms"
+msgstr "Ocultar formularios"
+
+msgid "Syncronize"
+msgstr "Sincronizar"
+
+msgid "Reset field sort order"
+msgstr "Restablecer orden de clasificación de campo"
+
+msgid "Related workflow"
+msgstr "Flujo de trabajo relacionado"
+
+msgid "Reset forms data"
+msgstr "Restablecer datos del formulario"
+
+msgid "Check Table Consistency"
+msgstr "Verificar consistencia de la tabla"
+
+msgid "Priority 1"
+msgstr "Prioridad 1"
+
+msgid "Priority 2"
+msgstr "Prioridad 2"
+
+msgid "Priority 3"
+msgstr "Prioridad 3"
+
+msgid "Priority 4"
+msgstr "Prioridad 4"
+
+msgid "Field Label"
+msgstr "Etiqueta de campo"
+
+msgid "Features"
+msgstr "Características"
+
+msgid "Create Incident"
+msgstr "Crear incidente"
+
+msgid "Create Change"
+msgstr "Crear cambio"
+
+msgid "Create Problem"
+msgstr "Crear problema"
+
+msgid "Create Request"
+msgstr "Crear solicitud"
+
+msgid "Incidents dispatch view"
+msgstr "Vista de envío de incidentes"
+
+msgid "Requests dispatch view"
+msgstr "Vista de envío de solicitudes"
+
+msgid "Changes dispatch view"
+msgstr "Vista de envío de cambios"
+
+msgid "Problems dispatch view"
+msgstr "Vista de envío de problemas"
+
+msgid "Shortcuts"
+msgstr "Atajos"
+
+msgid "Watch list"
+msgstr "Lista de seguimiento"
+
+msgid "Generic forms"
+msgstr "Formularios genéricos"
+
+msgid "Authorizer"
+msgstr "Autorizador"
+
+msgid "Reason"
+msgstr "Motivo"
+
+msgid "Administrators"
+msgstr "Administradores"
+
+msgid "Updated by"
+msgstr "Actualizado por"
+
+msgid "Image"
+msgstr "Imagen"
+
+msgid "Click to see"
+msgstr "Haga clic para ver"
+
+msgid "this is essential in the subject for the mail reply by the customer to land on specific type and number"
+msgstr "esto es esencial en el asunto para que la respuesta del correo electrónico del cliente aterrice en un tipo y número específicos"
+
+msgid "this is essential in the subject for the mail reply by the customer to land on specific type"
+msgstr "esto es esencial en el asunto para que la respuesta del correo electrónico del cliente aterrice en un tipo específico"
+
+msgid "placeholder for current incident/change/request/problem number"
+msgstr "Marcador de posición para el número actual de incidente/cambio/solicitud/problema"
+
+msgid "placeholder for customers firstname"
+msgstr "Marcador de posición para el nombre de pila de los clientes"
+
+msgid "placeholder for customers lastname"
+msgstr "Marcador de posición para el apellido de los clientes"
+
+msgid "if action is a comment - this is the placeholder for the comment"
+msgstr "si la acción es un comentario, este es el marcador de posición para el comentario"
+
+msgid "placeholder for the system name"
+msgstr "Marcador de posición para el nombre del sistema"
+
+msgid "placeholder for the system url"
+msgstr "Marcador de posición para la URL del sistema"
+
+msgid "placeholder for the name of the type"
+msgstr "Marcador de posición para el nombre del tipo"
+
+msgid "placeholder for direct link to the specific incident/change/request/problem (can not be accessed by customers)"
+msgstr "Marcador de posición para el enlace directo al incidente/cambio/solicitud/problema específico (no se puede acceder por los clientes)"
+
+msgid "Placeholders"
+msgstr "Marcadores de posición"
+
+msgid "Password must contain: minimum 8 characters, at least 1 alphabet, 1 number and 1 special character"
+msgstr "La contraseña debe contener: mínimo 8 caracteres, al menos 1 letra, 1 número y 1 carácter especial"
+
+msgid "This email allready exists"
+msgstr "Este correo electrónico ya existe"
+
+msgid "Please confirm password"
+msgstr "Por favor, confirme la contraseña"
+
+msgid "Passwords did not match"
+msgstr "Las contraseñas no coinciden"
+
+msgid "Please enter a password"
+msgstr "Por favor, introduzca una contraseña"
+
+msgid "Please enter a lastname"
+msgstr "Por favor, introduzca un apellido"
+
+msgid "Please enter a firstname"
+msgstr "Por favor, introduzca un nombre"
+
+msgid "Email user"
+msgstr "Usuario de correo electrónico"
+
+msgid "Preview group members"
+msgstr "Vista previa de los miembros del grupo"
+
+msgid "All Users"
+msgstr "Todos los usuarios"
+
+msgid "Change Administrators"
+msgstr "Administradores de cambios"
+
+msgid "Change Users"
+msgstr "Usuarios de cambios"
+
+msgid "CMDB Administrators"
+msgstr "Administradores de CMDB"
+
+msgid "CMDB Users"
+msgstr "Usuarios de CMDB"
+
+msgid "Company Administrators"
+msgstr "Administradores de la empresa"
+
+msgid "Default CAB"
+msgstr "CAB predeterminado"
+
+msgid "Default group messages"
+msgstr "Mensajes de grupo predeterminados"
+
+msgid "Document Administrators"
+msgstr "Administradores de documentos"
+
+msgid "Document Users"
+msgstr "Usuarios de documentos"
+
+msgid "Forms administrators"
+msgstr "Administradores de formularios"
+
+msgid "Forms users"
+msgstr "Usuarios de formularios"
+
+msgid "Incident Administrators"
+msgstr "Administradores de incidentes"
+
+msgid "Incident Users"
+msgstr "Usuarios de incidentes"
+
+msgid "Module Administrators"
+msgstr "Administradores de módulos"
+
+msgid "News Administrators"
+msgstr "Administradores de noticias"
+
+msgid "News Writer"
+msgstr "Escritor de noticias"
+
+msgid "Problem Administrators"
+msgstr "Administradores de problemas"
+
+msgid "Problem Users"
+msgstr "Usuarios de problemas"
+
+msgid "Project Administrators"
+msgstr "Administradores de proyectos"
+
+msgid "Project Users"
+msgstr "Usuarios de proyectos"
+
+msgid "Request Administrators"
+msgstr "Administradores de solicitudes"
+
+msgid "Request Users"
+msgstr "Usuarios de solicitudes"
+
+msgid "Timeregistration Administrators"
+msgstr "Administradores de registro de tiempo"
+
+msgid "User Administrator"
+msgstr "Administrador de usuario"
+
+msgid "Workflow Administrators"
+msgstr "Administradores de flujo de trabajo"
+
+msgid "Default"
+msgstr "Defecto"
+
+msgid "Generic Forms"
+msgstr "Formularios genéricos"
+
+msgid "Group updated"
+msgstr "Grupo actualizado"
+
+msgid "All employee users"
+msgstr "Todos los usuarios de empleados"
+
+msgid "Group Administrators"
+msgstr "Administradores de grupo"
+
+msgid "Role created"
+msgstr "Rol creado"
+
+msgid "Preview team members"
+msgstr "Vista previa de los miembros del equipo"
+
+msgid "Role memberships"
+msgstr "Pertenencias a roles"
+
+msgid "Group memberships"
+msgstr "Pertenencias a grupos"
+
+msgid "Roles Available"
+msgstr "Roles Disponibles"
+
+msgid "Team memberships"
+msgstr "Pertenencias a equipos"
+
+msgid "Teams Available"
+msgstr "Equipos Disponibles"
+
+msgid "Consultant"
+msgstr "Consultor"
+
+msgid "Members of this group possess unrestricted privileges to the overall system. Administrators can access the administration module. Only a select few should belong to this group."
+msgstr "Los miembros de este grupo tienen privilegios ilimitados para el sistema en general. Los administradores pueden acceder al módulo de administración. Solo un selecto grupo debería pertenecer a este grupo."
+
+msgid "This group can be used as a collector group for all users of type employees - in general - if this group is chosen, all employee users will have access."
+msgstr "Este grupo se puede usar como grupo colector para todos los usuarios de tipo empleados - en general - si se elige este grupo, todos los usuarios de empleados tendrán acceso."
+
+msgid "This group gives advanced access to to the request module. Users in this group will be able to update request informations in general and is not limited in access rights in general.  This should only be granted to central administrators and not more then very few people."
+msgstr "Este grupo brinda acceso avanzado al módulo de solicitud. Los usuarios en este grupo podrán actualizar información de solicitud en general y no están limitados en los derechos de acceso en general. Esto solo debería otorgarse a administradores centrales y no a más de muy pocas personas."
+
+msgid "Standard group for request module. Users have to be part of this group in order to be able to use standard request module."
+msgstr "Grupo estándar para el módulo de solicitud. Los usuarios deben ser parte de este grupo para poder usar el módulo de solicitud estándar."
+
+msgid "This group is for people that needs to be able to be assigned as responsible on workflows and thereby also can edit it."
+msgstr "Este grupo es para personas que necesitan poder ser asignadas como responsables en flujos de trabajo y, por lo tanto, también pueden editarlo."
+
+msgid "Has the rights to modify and oversee users and their permissions."
+msgstr "Tiene los derechos para modificar y supervisar usuarios y sus permisos."
+
+msgid "Username already exists"
+msgstr "Nombre de usuario ya existe"
+
+msgid "Required fields are missing values"
+msgstr "Faltan valores en los campos requeridos"
+
+msgid "This email already exists for"
+msgstr "Este correo electrónico ya existe para"
+
+msgid "Email cannot be empty"
+msgstr "El correo electrónico no puede estar vacío"
+
+msgid "Firstname is required"
+msgstr "El nombre es requerido"
+
+msgid "Username cannot be empty"
+msgstr "El nombre de usuario no puede estar vacío"
+
+msgid "This username already exists for"
+msgstr "Este nombre de usuario ya existe para"
+
+msgid "Write words seperated by ; if you want an empty value as select option - write NULL"
+msgstr "Escriba palabras separadas por ; si desea un valor vacío como opción de selección; escriba NULL"
+
+msgid "Create project task from this"
+msgstr "Crear tarea de proyecto a partir de esto"
+
+msgid "Select user for add"
+msgstr "Seleccione usuario para agregar"
+
+msgid "Select user for removal"
+msgstr "Seleccione usuario para eliminar"
+
+msgid "No Sprint"
+msgstr "Sin Sprint"
+
+msgid "Parent"
+msgstr "Padre"
+
+msgid "Private"
+msgstr "Privado"
+
+msgid "Show members"
+msgstr "Mostrar miembros"
+
+msgid "Last login"
+msgstr "Último inicio de sesión"
+
+msgid "Create Project Task"
+msgstr "Crear tarea de proyecto"
+
+msgid "Simple"
+msgstr "Simple"
+
+msgid "Log Book"
+msgstr "Libro de registro"
+
+msgid "Related number"
+msgstr "Número relacionado"
+
+msgid "Add empty row"
+msgstr "Agregar fila vacía"
+
+msgid "This adds an empty value to a select box and only for that"
+msgstr "Esto agrega un valor vacío a un cuadro de selección y solo para eso"
+
+msgid "Mine"
+msgstr "Mío"
+
+msgid "mine"
+msgstr "mío"
+
+msgid "Search results"
+msgstr "Resultados de búsqueda"
+
+msgid "Select Options"
+msgstr "Seleccionar opciones"
+
+msgid "Options"
+msgstr "Opciones"
+
+msgid "Lookup"
+msgstr "Búsqueda"
+
+msgid "Syncronization"
+msgstr "Sincronización"
+
+msgid "relations"
+msgstr "Relaciones"
+
+msgid "Primary"
+msgstr "Primario"
+
+msgid "Full view height"
+msgstr "Altura completa de la vista"
+
+msgid "Table view"
+msgstr "Vista de tabla"
+
+msgid "Timeline view"
+msgstr "Vista de línea de tiempo"
+
+msgid "Deactivate"
+msgstr "Desactivar"
+
+msgid "Transfer"
+msgstr "Transferir"
+
+msgid "Transfer elements to other user"
+msgstr "Transferir elementos a otro usuario"
+
+msgid "Other"
+msgstr "Otro"
+
+msgid "Select a user"
+msgstr "Seleccionar un usuario"
+
+msgid "Select all / Deselect all"
+msgstr "Seleccionar todo / Deseleccionar todo"
+
+msgid "CMDB, ITSM and other objects are getting moved to the selected user (responsible is getting changed). Transfer can not be transfered to user type customer. Transfer of Roles and Group means that memberships that the current user has, is getting added to the selected user."
+msgstr "CMDB, ITSM y otros objetos se están moviendo al usuario seleccionado (se está cambiando el responsable). La transferencia no se puede transferir al tipo de usuario cliente. La transferencia de roles y grupos significa que las membresías que tiene el usuario actual se están agregando al usuario seleccionado."
+
+msgid "Workflow Tasks"
+msgstr "Tareas de flujo de trabajo"
+
+msgid "KanBan Tasks"
+msgstr "Tareas KanBan"
+
+msgid "ITSM elements"
+msgstr "Elementos ITSM"
+
+msgid "CMDB elements"
+msgstr "Elementos CMDB"
+
+msgid "We are missing a primary field for this type"
+msgstr "Nos falta un campo principal para este tipo"
+
+msgid "Result field"
+msgstr "Campo de resultado"
+
+msgid "Choose which field should be returned as result in the select box"
+msgstr "Elija qué campo debe devolverse como resultado en el cuadro de selección"
+
+msgid "User fullname and username"
+msgstr "Nombre completo del usuario y nombre de usuario"
+
+msgid "User fullname"
+msgstr "Nombre completo del usuario"
+
+msgid "Select this if you want a result with users fullname"
+msgstr "Seleccione esto si desea un resultado con el nombre completo del usuario"
+
+msgid "Select this if you want a result with users fullname and username"
+msgstr "Seleccione esto si desea un resultado con el nombre completo y el nombre de usuario del usuario"
+
+msgid "Place on right side"
+msgstr "Colocar en el lado derecho"
+
+msgid "Place field on the right side of form"
+msgstr "Coloque el campo en el lado derecho del formulario"
+
+msgid "This will make the field a normal and simple text result"
+msgstr "Esto hará que el campo sea un resultado de texto normal y simple"
+
+msgid "Simple text"
+msgstr "Texto simple"
+
+msgid "Make field disabled on create"
+msgstr "Desactivar campo al crear"
+
+msgid "Make field required"
+msgstr "Hacer campo obligatorio"
+
+msgid "Make searchable from search bar on content of this field"
+msgstr "Hacer que se pueda buscar desde la barra de búsqueda en el contenido de este campo"
+
+msgid "Notes fields can get full height so all content is shown on view page"
+msgstr "Los campos de notas pueden tener toda la altura para que todo el contenido se muestre en la página de vista"
+
+msgid "Deactivate this field from Table views"
+msgstr "Desactivar este campo de las vistas de tabla"
+
+msgid "Deactivate this field from Form views"
+msgstr "Desactivar este campo de las vistas de formulario"
+
+msgid "Reset module data"
+msgstr "Restablecer datos del módulo"
+
+msgid "This deletes all data records for this module including logs, files, relations, workflows and more"
+msgstr "Esto elimina todos los registros de datos de este módulo, incluidos registros, archivos, relaciones, flujos de trabajo y más"
+
+msgid "Reset all modules (data only)"
+msgstr "Restablecer todos los módulos (solo datos)"
+
+msgid "Reset all modules to standard"
+msgstr "Restablecer todos los módulos a estándar"
+
+msgid "Tasks completed"
+msgstr "Tareas completadas"
+
+msgid "Unread comments"
+msgstr "Comentarios no leídos"
+
+msgid "Password Module Administrators"
+msgstr "Administradores del módulo de contraseña"
+
+msgid "Password Module Users"
+msgstr "Usuarios del módulo de contraseña"
+
+msgid "Field design"
+msgstr "Diseño de campo"
+
+msgid "General"
+msgstr "General"
+
+msgid "Create a template based on the completed form below"
+msgstr "Cree una plantilla basada en el formulario completado a continuación"
+
+msgid "Delete the current selected template"
+msgstr "Eliminar la plantilla seleccionada actualmente"
+
+msgid "Create public template that all users can choose"
+msgstr "Crear plantilla pública que todos los usuarios puedan elegir"
+
+msgid "Choose template"
+msgstr "Elegir plantilla"
+
+msgid "Are you sure?"
+msgstr "¿Estás seguro?"
+
+msgid "Make field disabled on view/edit"
+msgstr "Deshabilitar campo en ver/editar"
+
+msgid "Locked on create"
+msgstr "Bloqueado al crear"
+
+msgid "Locked on view"
+msgstr "Bloqueado en vista"
+
+msgid "Group filter"
+msgstr "Filtro de grupo"
+
+msgid "Deactivate Forms"
+msgstr "Desactivar formularios"
+
+msgid "Deactivate Tables"
+msgstr "Desactivar tablas"
+
+msgid "Retrieve field but hide it"
+msgstr "Recuperar campo pero ocultarlo"
+
+msgid "Hidden"
+msgstr "Oculto"
+
+msgid "Preview of team members"
+msgstr "Vista previa de los miembros del equipo"
+
+msgid "Groups added"
+msgstr "Grupos añadidos"
+
+msgid "Quarantene state"
+msgstr "Estado de cuarentena"
+
+msgid "Email to send to"
+msgstr "Correo electrónico para enviar a"
+
+msgid "Or choose prepared email"
+msgstr "O elige un correo electrónico preparado"
+
+msgid "Attach PDF"
+msgstr "Adjuntar PDF"
+
+msgid "Create PDF"
+msgstr "Crear PDF"
+
+msgid "Found in field"
+msgstr "Encontrado en el campo"
+
+msgid "Standard values"
+msgstr ""
+
+msgid "If you want check fields to be default checked you must add the text checked to the default value"
+msgstr ""
+
+msgid "Remove fields"
+msgstr ""
+
+msgid "Do not delete standard fields. If you feel they are not necessary - disable them in table view and modal view"
+msgstr ""
+
+msgid "Field widths"
+msgstr ""
+
+msgid "Field widths are determined using Bootstrap's grid system. A row is 12 blocks wide, so you can set a field's width by specifying how many blocks it should occupy. For example, setting the width to 6 will make the field half the row's width"
+msgstr ""
+
+msgid "Create Project"
+msgstr ""
+
+msgid "Transfer elments to other user"
+msgstr ""
+

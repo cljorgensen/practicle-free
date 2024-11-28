@@ -1,0 +1,1 @@
+{"version":1,"defects":{"CreateUnitTest::testCreateUserUnit":8,"CreateUnitTest::testCreateUnitWithExistingEmail":8,"CreateUnitTest::testInvalidUnitType":8},"times":{"CreateUnitTest::testCreateUserUnit":1.519,"CreateUnitTest::testCreateUnitWithExistingEmail":0.002,"CreateUnitTest::testInvalidUnitType":0.001}}

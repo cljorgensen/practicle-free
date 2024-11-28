@@ -1,0 +1,31 @@
+{
+    "name": "sqonk/phext-context",
+    "description": "Contexts create a block level scope on a resource and automatically manage the creation and cleanup of that resource irrespective of any exceptions that arise while in use.",
+    "type": "library",
+    "require": {
+		"php": "^8",
+        "sqonk/phext-core": "^1.1"
+    },
+	"keywords": ["resources","file","teardown","context manager"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Theo Howell",
+            "email": "sqonk@sqonk.com.au"
+        }
+    ],
+	"autoload": {
+		"files": [
+			"src/ContextManager.php",
+			"src/Fascade.php"
+		]
+    },
+	"suggest": {
+		"ext-mysqli": "If you wish to use the MySQL transaction context manager.",
+		"ext-pdo": "If you wish to use the PDO transaction context manager.",
+		"ext-zip": "If you wish to use the ZIP context manager."
+	},
+    "require-dev": {
+        "phpunit/phpunit": "^9"
+    }
+}

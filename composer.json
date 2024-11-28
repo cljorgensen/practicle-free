@@ -1,0 +1,38 @@
+{
+    "require": {
+        "nesbot/carbon": "^2.41",
+        "phpmailer/phpmailer": "^6.1",
+        "koolreport/core": "^4.5",
+        "phpoffice/phpword": "^1.2.0",
+        "psr/container": "^1.0",
+        "laminas/laminas-escaper": "^2.7",
+        "laminas/laminas-eventmanager": "^3.3",
+        "laminas/laminas-http": "^2.13",
+        "laminas/laminas-loader": "^2.6",
+        "laminas/laminas-servicemanager": "^3.5",
+        "laminas/laminas-stdlib": "^3.3",
+        "laminas/laminas-uri": "^2.8",
+        "laminas/laminas-validator": "^2.13",
+        "ezyang/htmlpurifier": "^4.18",
+        "benhall14/php-imap-reader": "^1.5",
+        "gumlet/php-image-resize": "^2.0",
+        "sqonk/mysql-sync": "^0.7.0",
+        "symfony/translation": "^5.4",
+        "symfony/console": "^5.4",
+        "php-http/discovery": "^1.18",
+        "symfony/http-client": "^5.4",
+        "nyholm/psr7": "^1.8",
+        "guzzlehttp/guzzle": "^7.6",
+        "simplesamlphp/saml2": "^4.6",
+        "firebase/php-jwt": "^6.5",
+        "knplabs/github-api": "^3.11",
+        "psr/http-factory": "^1.0",
+        "tecnickcom/tcpdf": "^6.6",
+        "mpdf/mpdf": "^8.2"
+    },
+    "config": {
+        "allow-plugins": {
+            "php-http/discovery": true
+        }
+    }
+}
