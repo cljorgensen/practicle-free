@@ -75,18 +75,37 @@ if ($ProjectStatusID == '8' && !in_array("10", $group_array)) {
   }
 </style>
 <script>
+  let calendarInstance = null; // Global reference to the calendar instance
+
   function reloadCalendarObject() {
-    var calendar = new FullCalendar.Calendar(document.getElementById("calendar"), {
+    const calendarEl = document.getElementById("calendar");
+
+    // Initialize defaults
+    let currentView = "dayGridMonth"; // Default view
+    let currentDate = '<?php echo $today ?>'; // Default date
+
+    if (calendarInstance) {
+      // Safely retrieve current view and date
+      currentView = calendarInstance.view ? calendarInstance.view.type : currentView;
+      currentDate = calendarInstance.getDate ? calendarInstance.getDate() : currentDate;
+
+      // Destroy the existing calendar instance to reinitialize
+      calendarInstance.destroy();
+    }
+
+    // Initialize the calendar
+    calendarInstance = new FullCalendar.Calendar(calendarEl, {
       locale: 'da',
       firstDay: 1,
       contentHeight: 'auto',
-      initialView: "dayGridMonth",
+      initialView: currentView, // Use saved or default view
+      initialDate: currentDate, // Use saved or default date
       weekNumbers: true,
       weekText: '',
       headerToolbar: {
         start: '',
         center: 'title',
-        end: 'today prev,next,timeGridMonthly,timeGridWeekly' // will normally be on the right. if RTL, will be on the left
+        end: 'today prev,next,timeGridMonthly,timeGridWeekly'
       },
       buttonText: {
         today: '<?php echo _("today") ?>',
@@ -107,19 +126,19 @@ if ($ProjectStatusID == '8' && !in_array("10", $group_array)) {
         runModalEditProjectTask(info.event.id, <?php echo $ProjectID ?>);
       },
       eventDrop: function(info) {
-        var tasktitle = info.event.title;
-        var taskid = info.event.id;
-        var startdate = moment(info.event.start).format('YYYY-MM-DD HH:mm');
-        var enddate = moment(info.event.end).format('YYYY-MM-DD HH:mm');
+        const tasktitle = info.event.title;
+        const taskid = info.event.id;
+        const startdate = moment(info.event.start).format('YYYY-MM-DD HH:mm');
+        const enddate = moment(info.event.end).format('YYYY-MM-DD HH:mm');
 
         if (enddate === "Invalid date") {
-          message = "<?php echo _("Your tasks cannot have the exact same start and end date") ?>";
+          const message = "<?php echo _("Your tasks cannot have the exact same start and end date") ?>";
           pnotify(message, 'info');
-          calendar.render();
+          calendarInstance.render();
           return;
         }
 
-        vData = {
+        const vData = {
           taskid: taskid,
           startdate: startdate,
           enddate: enddate
@@ -129,11 +148,11 @@ if ($ProjectStatusID == '8' && !in_array("10", $group_array)) {
           type: 'GET',
           url: './getdata.php?updateProjectTaskDate',
           data: vData,
-          success: function(data) {
+          success: function() {
             pnotify('Task moved', 'success');
           }
         });
-        calendar.render();
+        calendarInstance.render();
       },
       views: {
         timeGridWeekly: {
@@ -147,10 +166,10 @@ if ($ProjectStatusID == '8' && !in_array("10", $group_array)) {
       },
       selectable: true,
       editable: true,
-      initialDate: '<?php echo $today ?>',
       events: []
     });
 
+    // Fetch and add events to the calendar
     $.ajax({
       type: 'GET',
       url: './getdata.php?getProjectTasks',
@@ -158,19 +177,18 @@ if ($ProjectStatusID == '8' && !in_array("10", $group_array)) {
         projectid: projectid
       },
       success: function(data) {
-        var obj;
+        let obj;
         try {
           obj = JSON.parse(data);
         } catch (e) {
           return;
         }
-        obj = JSON.parse(data);
-        for (var i = 0; i < obj.length; i++) {
-          CalTaskID = obj[i].TaskID;
-          CalTitle = obj[i].TaskName;
-          CalStart = obj[i].CalStart;
-          CalEnd = obj[i].CalEnd;
-          calendar.addEvent({
+        for (let i = 0; i < obj.length; i++) {
+          const CalTaskID = obj[i].TaskID;
+          const CalTitle = obj[i].TaskName;
+          const CalStart = obj[i].CalStart;
+          const CalEnd = obj[i].CalEnd;
+          calendarInstance.addEvent({
             id: CalTaskID,
             title: CalTitle,
             start: CalStart,
@@ -179,8 +197,10 @@ if ($ProjectStatusID == '8' && !in_array("10", $group_array)) {
         }
       }
     });
-    calendar.render();
+
+    calendarInstance.render();
   }
+
 
   function clearstate() {
     var table = $('#TableProjectTasks').DataTable();

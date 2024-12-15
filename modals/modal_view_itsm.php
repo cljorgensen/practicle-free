@@ -120,60 +120,69 @@
 											<div class="accordion width" id="accordionITSMMore">
 												<div class="card">
 													<div id="collapseITSMArchive" class="collapse width" data-bs-parent="#accordionITSMMore">
-														<div class="card-body">
-															<table id="TableITSMArchive" class="col-md-12 col-sm-12 col-xs-12" class="table table-responsive table-borderless table-hover" cellspacing="0">
+														<div class="card-body col-md-6 col-sm-6 col-xs-12">
+															<table id="TableITSMArchive" class="table table-responsive table-borderless table-hover" cellspacing="0">
 															</table>
 														</div>
 													</div>
 												</div>
 												<div class="card">
 													<div id="collapseITSMParticipants" class="collapse width" data-bs-parent="#accordionITSMMore">
-														<div class="card-body">
+														<div class="card-body col-md-6 col-sm-6 col-xs-12">
 															<div class="row">
-																<div class="col-md-4 col-sm-4 col-xs-12">
-																	<h6><?php echo _("Add") ?></h6>
-																	<label for="participants" class="form-label"></label>
-																	<div class="input-group input-group-static mb-4">
-																		<select id="participants" name="participants" class="form-control select2" style="width: 100% !important;">
-																		</select>
-																	</div>
-																	<div id="BtnAddParticipant">
-																	</div>
+																<h6><?php echo _("Add") ?></h6>
+																<label for="participants" class="form-label"></label>
+																<div class="input-group input-group-static mb-4">
+																	<select id="participants" name="participants" class="form-control select2" style="width: 100% !important;">
+																	</select>
 																</div>
-
-																<div class="col-md-8 col-sm-8 col-xs-12">
-																	<div id="ITSMParticipants"></div>
+																<div id="BtnAddParticipant">
 																</div>
 															</div>
+															<div class="col-md-8 col-sm-8 col-xs-12">
+																<div id="ITSMParticipants"></div>
+															</div>
+
 														</div>
 													</div>
 												</div>
 												<div class="card">
 													<div id="collapseITSMComments" class="collapse width" data-bs-parent="#accordionITSMMore">
-														<div class="card-body">
+														<div class="card-body col-md-6 col-sm-6 col-xs-12">
 															<div class="row">
-																<div class="col-md-7 col-sm-7 col-xs-12">
-																	<table id="TableITSMComments" class="table table-borderless table-responsive" cellspacing="0"></table>
+																<div class="input-group input-group-static mb-4">
+																	<label for="ITSMComment" title="<?php echo _("Create comment to user"); ?>">
+																		<?php echo _("Comment"); ?>&ensp;
+																		<a href="javascript:toggleCKEditor('ITSMComment','250px'); toggleCommentButton();">
+																			<i class="fa-solid fa-pen fa-sm" title="Toggle editor"></i>
+																		</a>
+																	</label>
 																</div>
-																<div class="col-md-1 col-sm-1col-xs-12">
+																<div
+																	style="max-height: 150px; word-wrap: break-word; overflow-y: auto; overflow-x: auto;"
+																	class="resizable_textarea form-control"
+																	id="ITSMComment"
+																	name="ITSMComment"
+																	title="Double click to edit"
+																	autocomplete="off"
+																	ondblclick="toggleCKEditor('ITSMComment','250px'); toggleCommentButton();">
 																</div>
-																<div class="col-lg-4 col-sm-4 col-xs-12">
-
-																	<div class="input-group input-group-static mb-4"><label for="ITSMComment" title="<?php echo _("Create comment to user"); ?>">
-																			<?php echo _("Comment"); ?>&ensp;<a href="javascript:toggleCKEditor('ITSMComment','250px');"><i class="fa-solid fa-pen fa-sm" title="Double click on field to edit"></i></a>
-																		</label></div>
-																	<div style="max-height: 150px; word-wrap: break-word; overflow-y: auto; overflow-x: auto;" class="resizable_textarea form-control" id="ITSMComment" name="ITSMComment" title="Double click to edit" autocomplete="off" ondblclick="toggleCKEditor('ITSMComment','250px');">
-																	</div>
-
-																	<br>
-																	<div class="row">
-																		<div id="BtnAddComment"></div>
-																		<div class="form-check form-switch float-end" title="<?php echo _("If internal, reporter (customer) does not get email notified and cannot see the comment") ?>">
-																			<label class="form-check-label float-end" for="InternalComment"><?php echo _("Internal"); ?></label>
-																			<input class="form-check-input float-end" type="checkbox" id="InternalComment">
+																<div class="row mt-2" id="commentBtn" style="display: none;">
+																	<div class="col-12 d-flex justify-content-between">
+																		<!-- Internal Comment Checkbox -->
+																		<div class="form-check form-switch d-flex align-items-center">
+																			<input class="form-check-input" type="checkbox" id="InternalComment">
+																			<label class="form-check-label ms-2" for="InternalComment">
+																				<?php echo _("Internal"); ?>
+																			</label>
+																		</div>
+																		<!-- Add Comment Button -->
+																		<div id="BtnAddComment">
+																			<button class="btn btn-sm btn-success"><?php echo _("Add Comment"); ?></button>
 																		</div>
 																	</div>
 																</div>
+																<table id="TableITSMComments" class="table table-borderless table-responsive mt-3" cellspacing="0"></table>
 															</div>
 														</div>
 													</div>

@@ -56,7 +56,6 @@ if (isset($_POST['taskid'])) {
   }
 }
 
-
 if (isset($_GET['getCISInCITable'])) {
   if (in_array("100014", $UserGroups) || in_array("100015", $UserGroups) || in_array("100001", $UserGroups)) {
   } else {
@@ -1719,108 +1718,108 @@ if (isset($_GET['getITSMParticipants'])) {
 }
 
 if (isset($_GET['getITSMComments'])) {
-  $UserID = $_SESSION['id'];
-  $UserLanguageID = $functions->getUserLanguage($UserID);
-  $UserLanguageCode = $functions->getLanguageCode($UserLanguageID);
+    $UserID = $_SESSION['id'];
+    $UserLanguageID = $functions->getUserLanguage($UserID);
+    $UserLanguageCode = $functions->getLanguageCode($UserLanguageID);
+    $userType = $_SESSION['usertype'];
+    $ITSMTypeID = $_POST['ITSMTypeID'];
+    $ITSMID = $_POST['ITSMID'];
+    
+    $counter = 0;
+    $Type = "modal";
+    $AddText = $functions->translate("Add");
+    $btnAddComment = "<button class=\"btn btn-sm btn-success float-end\" type=\"button\" onclick=\"addITSMComment('$ITSMTypeID','$ITSMID','$Type');\">$AddText</button>";
+    $sql = "";
+    $parameters = [];
+    $resultArray = [];
 
-  $userType = $_SESSION['usertype'];
-  $ITSMTypeID = $_POST['ITSMTypeID'];
-  $ITSMID = $_POST['ITSMID'];
-  $currentUserID = $_SESSION['userID']; // Assuming you have the user ID stored in the session
-  $counter = 0;
-  $Type = "modal";
-  $AddText = $functions->translate("Add");
-  $btnAddComment = "<button class=\"btn btn-sm btn-success float-end\" type=\"button\" onclick=\"addITSMComment('$ITSMTypeID','$ITSMID','$Type');\">$AddText</button>";
-
-  if ($userType == "2") {
-    $sql = "SELECT itsm_comments.ID, itsm_comments.RelatedElementID, itsm_comments.ITSMType, itsm_comments.UserID, itsm_comments.Text, itsm_comments.Date, itsm_comments.Internal
+    // Prepare SQL and parameters based on user type
+    if ($userType == "2") {
+        $sql = "SELECT itsm_comments.ID, itsm_comments.RelatedElementID, itsm_comments.ITSMType, itsm_comments.UserID, itsm_comments.Text, itsm_comments.Date, itsm_comments.Internal
                 FROM itsm_comments
                 WHERE itsm_comments.RelatedElementID = ? AND ITSMType = ? AND Internal != '1'
                 ORDER BY itsm_comments.Date DESC";
-  } else {
-    $sql = "SELECT itsm_comments.ID, itsm_comments.RelatedElementID, itsm_comments.ITSMType, itsm_comments.UserID, itsm_comments.Text, itsm_comments.Date, itsm_comments.Internal
+    } else {
+        $sql = "SELECT itsm_comments.ID, itsm_comments.RelatedElementID, itsm_comments.ITSMType, itsm_comments.UserID, itsm_comments.Text, itsm_comments.Date, itsm_comments.Internal
                 FROM itsm_comments
                 WHERE itsm_comments.RelatedElementID = ? AND ITSMType = ?
                 ORDER BY itsm_comments.Date DESC";
-  }
+    }
 
-  $stmt = mysqli_prepare($conn, $sql);
-  if ($stmt) {
-    mysqli_stmt_bind_param($stmt, "ss", $ITSMID, $ITSMTypeID);
-    mysqli_stmt_execute($stmt);
-    $result = mysqli_stmt_get_result($stmt);
+    $parameters = [$ITSMID, $ITSMTypeID];
 
-    if ($result) {
-      while ($row = mysqli_fetch_array($result)) {
-        $counter++;
-        $expanded = ($counter <= 1) ? "true" : "false";
-        $show = ($counter <= 0) ? "show" : "";
-        $commentID = $row['ID'];
-        $userID = $row['UserID'];
-        $userFullName = $functions->getUserFullName($userID);
-        $username = getUserName($userID);
-        $userFullName = "$userFullName ($username)";
-        $commentText = $row['Text'];
-        $commentDate = convertToDanishTimeFormat($row['Date']);
-        $commentType = $row['Internal'];
-        $commentTypeName = ($commentType == "0") ? "<span class='badge bg-gradient-info'>" . _("External") . "</span>" : "<span class='badge bg-gradient-danger'>" . _("Internal") . "</span>";
-        $deleteLink = "<a href=\"javascript:deleteITSMComment($commentID,$ITSMTypeID,$ITSMID,'modal','$UserLanguageCode');\"><i class=\"fas fa-trash\"></i></a>";
+    try {
+      // Fetch the data using the `selectQuery` function
+      $resultArray = $functions->selectQuery($sql, $parameters);
+      if (empty($resultArray)) {
+          // Handle empty results: Return appropriate response
+          $finalResult = [
+              ["Unread" => 0],
+              ["BtnAddComment" => $btnAddComment]
+          ];
+          echo json_encode($finalResult);
+          return; // Exit early since no further processing is needed
+      }
 
-        // Check read status for the current user
-        $readStatus = checkReadStatus($commentID, $currentUserID);
-        $numberOfUnreadComments = getNumberOfUnreadITSMComments($ITSMTypeID, $ITSMID, $userID);
+      $finalResult = [];
+      foreach ($resultArray as $row) {
+          $counter++;
+          $expanded = ($counter <= 1) ? "true" : "false";
+          $show = ($counter <= 0) ? "show" : "";
+          $commentID = $row['ID'];
+          $userID = $row['UserID'];
+          $userFullName = $functions->getUserFullName($userID);
+          $username = getUserName($userID);
+          $userFullName = "$userFullName ($username)";
+          $commentText = $row['Text'];
+          $commentDate = convertToDanishTimeFormat($row['Date']);
+          $commentType = $row['Internal'];
+          $commentTypeName = ($commentType == "0") ? "<span class='badge bg-gradient-info'>" . _("External") . "</span>" : "<span class='badge bg-gradient-danger'>" . _("Internal") . "</span>";
+          $deleteLink = "<a href=\"javascript:deleteITSMComment($commentID,$ITSMTypeID,$ITSMID,'modal','$UserLanguageCode');\"><i class=\"fas fa-trash\"></i></a>";
 
-        if($readStatus === 1){
-          $readStatus = "<span class=\"badge badge-pill bg-gradient-warning\" title=\"". $functions->translate("New")."\"><i class=\"fa-regular fa-envelope\"></i></span>";
-        } else {
-          $readStatus = "";
-        }
+          // Check read status for the current user
+          $readStatus = checkReadStatus($commentID, $UserID);
+          $numberOfUnreadComments = getNumberOfUnreadITSMComments($ITSMTypeID, $ITSMID, $userID);
 
-        $entry = "<div class=\"accordion-item\">
-                    <small class=\"accordion-header float-left\" id=\"heading$commentID\">
-                      <a href=\"javascript:void(0);\" data-bs-toggle=\"collapse\" data-bs-target=\"#collapse$commentID\" aria-expanded=\"$expanded\" aria-controls=\"collapse$commentID\">
-                        $userFullName ($commentDate) $commentTypeName $readStatus
-                      </a>
-                    </small>
-                    <div id=\"collapse$commentID\" class=\"accordion-collapse collapse $show\" aria-labelledby=\"heading$commentID\">
-                        <div class=\"accordion-body text-wrap\">
-                        <div class=\"col-lg-12 col-sm-12 col-xs-12\">
-                          <div style=\"word-wrap: break-word; overflow-y: auto; overflow-x: auto;\" class=\"resizable_textarea form-control\" id=\"commentField$commentID\" name=\"commentField$commentID\" title=\"Double click to edit\" autocomplete=\"off\" ondblclick=\"toggleCKEditor('commentField$commentID','50');toggleShowSaveBtn('saveLink$commentID');\">$commentText
-                          </div>
-                          <div style=\"display: flex; align-items: center; gap: 10px;\">
-                            <a href=\"javascript:toggleCKEditor('commentField$commentID','50');toggleShowSaveBtn('saveLink$commentID');\"><i class=\"fa-solid fa-pen fa-sm\" title=\"Double click on field to edit\"></i></a>
-                            $deleteLink
-                            <a href=\"javascript:saveITSMComment($commentID,'commentField$commentID',$ITSMTypeID,$ITSMID,'modal','$UserLanguageCode');\" id=\"saveLink$commentID\" class=\"save-link float-end\" style=\"display: none;\">Save</a>
+          if ($readStatus === 1) {
+              $readStatus = "<span class=\"badge badge-pill bg-gradient-warning\" title=\"" . $functions->translate("New") . "\"><i class=\"fa-regular fa-envelope\"></i></span>";
+          } else {
+              $readStatus = "";
+          }
+
+          $entry = "<div class=\"accordion-item\">
+                      <small class=\"accordion-header float-left\" id=\"heading$commentID\">
+                        <a href=\"javascript:void(0);\" data-bs-toggle=\"collapse\" data-bs-target=\"#collapse$commentID\" aria-expanded=\"$expanded\" aria-controls=\"collapse$commentID\">
+                          $userFullName ($commentDate) $commentTypeName $readStatus
+                        </a>
+                      </small>
+                      <div id=\"collapse$commentID\" class=\"accordion-collapse collapse $show\" aria-labelledby=\"heading$commentID\">
+                          <div class=\"accordion-body text-wrap\">
+                          <div class=\"col-lg-12 col-sm-12 col-xs-12\">
+                            <div style=\"word-wrap: break-word; overflow-y: auto; overflow-x: auto;\" class=\"resizable_textarea form-control\" id=\"commentField$commentID\" name=\"commentField$commentID\" title=\"Double click to edit\" autocomplete=\"off\" ondblclick=\"toggleCKEditor('commentField$commentID','50');toggleShowSaveBtn('saveLink$commentID');\">$commentText
+                            </div>
+                            <div style=\"display: flex; align-items: center; gap: 10px;\">
+                              <a href=\"javascript:toggleCKEditor('commentField$commentID','50');toggleShowSaveBtn('saveLink$commentID');\"><i class=\"fa-solid fa-pen fa-sm\" title=\"Double click on field to edit\"></i></a>
+                              $deleteLink
+                              <a href=\"javascript:saveITSMComment($commentID,'commentField$commentID',$ITSMTypeID,$ITSMID,'modal','$UserLanguageCode');\" id=\"saveLink$commentID\" class=\"save-link float-end\" style=\"display: none;\">Save</a>
+                            </div>
                           </div>
                         </div>
-                      </div>
-                  </div>";
+                    </div>";
 
-        $resultArray[] = array("Comments" => $entry);
+          $finalResult[] = ["Comments" => $entry];
       }
 
-      mysqli_free_result($result);
+      // Add the unread count and add comment button
+      $finalResult[] = ["Unread" => $numberOfUnreadComments];
+      $finalResult[] = ["BtnAddComment" => $btnAddComment];
 
-      // Add the unread count to the result array
-      $resultArray[] = array("Unread" => $numberOfUnreadComments);
-      $resultArray[] = array("BtnAddComment" => $btnAddComment);
-
-      if (!empty($resultArray)) {
-        echo json_encode($resultArray);
-      } else {
-        $resultArray[] = array("Comments" => "", "Unread" =>0, "BtnAddComment" => $btnAddComment);
-        echo json_encode($resultArray);
-      }
-    } else {
-      $error = "Query failed: " . mysqli_error($conn);
-      $functions->errorlog($error, "getITSMComments");
+      echo json_encode($finalResult);
+  } catch (\Exception $e) {
+      $functions->errorlog($e->getMessage(), "getITSMComments");
       echo json_encode(["error" => "An error occurred. Please try again later."]);
-    }
-  } else {
-    $error = "Statement preparation failed: " . mysqli_error($conn);
-    $functions->errorlog($error, "getITSMComments");
-    echo json_encode(["error" => "An error occurred. Please try again later."]);
   }
+
 }
 
 if (isset($_GET['getITSMArchive'])) {
@@ -1862,7 +1861,7 @@ if (isset($_GET['restoreITSMArchive'])) {
     $affectedRows = mysqli_stmt_affected_rows($stmt);
     if ($executed && $affectedRows > 0) {
       $LogActionText = "User restored the document from version $Version";
-      createITSMLogEntry($ITSMID, $ModuleID, $SessionUserID, $LogActionText);
+      $functions->createITSMLogEntry($ITSMID, $ModuleID, $SessionUserID, $LogActionText);
       echo json_encode(['Result' => true]);
     } else {
       echo json_encode(['Result' => false]);
@@ -2013,44 +2012,62 @@ if (isset($_GET['addITSMParticipant'])) {
 }
 
 if (isset($_GET['addITSMComment'])) {
-  $SessionUserID = $_SESSION["id"];
-  $ITSMTypeID = $_POST['ITSMTypeID'];
-  $ITSMID = $_POST['ITSMID'];
-  $Comment = $_POST['Comment'];
-  $Customer = $_POST['Customer'];
-  $Internal = $_POST['Internal'];
+    $SessionUserID = $_SESSION["id"];
+    $ITSMTypeID = $_POST['ITSMTypeID'];
+    $ITSMID = $_POST['ITSMID'];
+    $Comment = $_POST['Comment'];
+    $Customer = $_POST['Customer'];
+    $Internal = $_POST['Internal'];
 
-  if ($Internal == "2") {
-    $Internal = "0";
-  }
-
-  if ($Comment !== "") {
-    
-    $sql = "INSERT INTO itsm_comments (RelatedElementID, ITSMType, UserID, Text, Internal) VALUES (?,?,?,?,?);";
-
-    $stmt = mysqli_prepare($conn, $sql);
-    $stmt->bind_param("sssss", $ITSMID, $ITSMTypeID, $SessionUserID, $Comment, $Internal);
-    $stmt->execute();
-
-    $resultarray[] = array("Result" => "success");
-    if($Customer !== "0"){
-      if ($Internal == "0") {
-        $TemplateID = "1";
-        sendITSMMailTemplate($ITSMTypeID, $ITSMID, $Customer, $Comment, $TemplateID);
-      }
+    // Normalize `Internal` value
+    if ($Internal == "2") {
+        $Internal = "0";
     }
-    
-    // Lets log the activity
-    $ITSMTypeName = $functions->getITSMTypeName($ITSMTypeID);
-    $Headline = $functions->translate("Commented") . " " . strtolower($ITSMTypeName) . " " . $ITSMID;
-    $ActivityText = "<b>" . $functions->translate("Commented") . "<br><br>" . $CommentRaw;
-    logActivity($ITSMID, $ITSMTypeID, $Headline, $ActivityText, "javascript:javascript:viewITSM('$ITSMID','$ITSMTypeID','1','modal');");
 
-  } else {
-    $resultarray[] = array("Result" => "fail");
-  }
+    $resultarray = [];
 
-  echo json_encode($resultarray);
+    if ($Comment !== "") {
+        $sql = "INSERT INTO itsm_comments (RelatedElementID, ITSMType, UserID, Text, Internal) VALUES (?,?,?,?,?)";
+
+        // Parameters for the query
+        $parameters = [$ITSMID, $ITSMTypeID, $SessionUserID, $Comment, $Internal];
+
+        // Tables to lock for the operation
+        $tables = ["itsm_comments"];
+
+        try {
+            // Execute the query using the `dmlQuery` function
+            $queryResult = $functions->dmlQuery($sql, $parameters, $tables);
+
+            // Check result and set the response
+            if ($queryResult["LastID"] > 0) {
+                $resultarray[] = ["Result" => "success"];
+
+                // Send ITSM mail if applicable
+                if ($Customer !== "0" && $Internal == "0") {
+                    $TemplateID = "1";
+                    sendITSMMailTemplate($ITSMTypeID, $ITSMID, $Customer, $Comment, $TemplateID);
+                }
+
+                // Log the activity
+                $ITSMTypeName = $functions->getITSMTypeName($ITSMTypeID);
+                $Headline = $functions->translate("Commented") . " " . strtolower($ITSMTypeName) . " " . $ITSMID;
+                $ActivityText = "<b>" . $functions->translate("Commented") . "</b><br><br>" . $Comment;
+                logActivity($ITSMID, $ITSMTypeID, $Headline, $ActivityText, "javascript:javascript:viewITSM('$ITSMID','$ITSMTypeID','1','modal');");
+            } else {
+                $resultarray[] = ["Result" => "fail"];
+            }
+        } catch (\Exception $e) {
+            // Log any errors
+            $functions->errorlog($e->getMessage(), "addITSMComment");
+            $resultarray[] = ["Result" => "fail"];
+        }
+    } else {
+        $resultarray[] = ["Result" => "fail"];
+    }
+
+    // Output the result as JSON
+    echo json_encode($resultarray);
 }
 
 if (isset($_GET['removeITSMParticipant'])) {
@@ -2094,7 +2111,7 @@ if (isset($_GET['createITSMWorkFlow'])) {
   }
 
   $LogActionText = "Added Workflow: $WorkFlowID";
-  createITSMLogEntry($ITSMID, $ITSMTypeID, $UserID, $LogActionText);
+  $functions->createITSMLogEntry($ITSMID, $ITSMTypeID, $UserID, $LogActionText);
 
   $resultarray[] = array("Result" => "success");
   echo json_encode($resultarray);
@@ -2149,7 +2166,7 @@ if (isset($_GET['removeITSMWorkFlow'])) {
 
   // Create ITSM log entry
   $LogActionText = "Removed Workflow: $WorkFlowID";
-  if (!createITSMLogEntry($ITSMID, $ITSMTypeID, $UserID, $LogActionText)) {
+  if (!$functions->createITSMLogEntry($ITSMID, $ITSMTypeID, $UserID, $LogActionText)) {
     $resultarray[] = array("Result" => "error", "Message" => "Failed to create ITSM log entry.");
   }
 
@@ -6535,7 +6552,7 @@ if (isset($_GET['deleteDocument'])) {
       $ITSMTypeID = getITSMTypeFromDocName($DocName);
       $FileNameOriginal = getITSMOriginalDocName($DocName);
       $LogActionText = "Deleted file $FileNameOriginal";
-      createITSMLogEntry($ITSMID, $ITSMTypeID, $UserID, $LogActionText);
+      $functions->createITSMLogEntry($ITSMID, $ITSMTypeID, $UserID, $LogActionText);
       $resultarray[] = array("ITSMTypeID" => $ITSMTypeID, "ITSMID" => $ITSMID, "UserLanguageCode" => $UserLanguageCode);
       break;
   }
@@ -9434,27 +9451,23 @@ if (isset($_GET['getITSMFieldsValues'])) {
     }
   }
 
-  $GroupID = $functions->getITSMTypeUserRole($ITSMTypeID);
+  $ITSMGroupID = $functions->getITSMModuleGroup($ITSMTypeID);
   $ModuleType = $functions->getModuleType($ITSMTypeID);
-  $exit = false;
-
-  $ITSMRoleID = $functions->getITSMTypeUserRole($ITSMTypeID);
-  $RoleGroups = $functions->getRoleGroups($ITSMRoleID);
   $errorArray = array();
   $exit = false;
-
-  // Check if any user group is in the role groups
-  $commonGroups = array_intersect($UsersGroups, $RoleGroups);
-  $RoleName = $functions->getRoleName($ITSMRoleID);
   
-  // Check if $commonGroups is empty
-  if (empty($commonGroups)) {
-    // Check if "100001" is in $UsersGroups
-    if (!in_array("100001", $UsersGroups)) {
-      $RoleName = $functions->getRoleName($ITSMRoleID);
-      $Message = _("You need to be a member of the role: ") . $RoleName;
-      $errorArray[] = array("error" => $Message);
-      $exit = true;
+  if (!empty($ITSMGroupID)) { // Check if $ITSMGroupID is not empty
+    $functions->debuglog("ITSMGroupID is not empty: $ITSMGroupID");
+    // If "100001" is in $UsersGroups, continue
+    if (in_array("100001", $UsersGroups)) {
+    } else {
+      // Otherwise, check if $ITSMGroupID is in $UsersGroups
+      if (!in_array($ITSMGroupID, $UsersGroups)) {
+        $GroupName = $functions->getGroupName($ITSMGroupID);
+        $Message = _("You need to be a member of group: ") . $GroupName;
+        $errorArray[] = array("error" => $Message);
+        $exit = true;
+      }
     }
   }
 
@@ -9524,9 +9537,8 @@ if (isset($_GET['getITSMFieldDefinitions'])) {
   $FormType = $_POST['FormType'];
   $UsersGroups = $_SESSION['memberofgroups'];
 
-  $ModuleType = $functions->getITSMModuleType($ITSMTypeID);
+  $ModuleType = $functions->getITSMModuleGroup($ITSMTypeID);
   $CompanyID = $functions->getUserCompany($SessionUserID);
-
 
   if ($UserType == "2") {
     $ITSMCompanyID = $functions->getITSMCompanyID($ITSMTypeID, $ITSMID);
@@ -9535,22 +9547,21 @@ if (isset($_GET['getITSMFieldDefinitions'])) {
     }
   }
 
-  $ITSMRoleID = $functions->getITSMTypeUserRole($ITSMTypeID);
-  $RoleGroups = $functions->getRoleGroups($ITSMRoleID);
+  $ITSMGroupID = $functions->getITSMModuleGroup($ITSMTypeID);
   $errorArray = array();
   $exit = false;
 
-  // Check if any user group is in the role groups
-  $commonGroups = array_intersect($UsersGroups, $RoleGroups);
-
-  // Check if $commonGroups is empty
-  if (empty($commonGroups)) {
-    // Check if "100001" is in $UsersGroups
-    if (!in_array("100001", $UsersGroups)) {
-      $RoleName = $functions->getRoleName($ITSMRoleID);
-      $Message = _("You need to be a member of the role: ") . $RoleName;
-      $errorArray[] = array("error" => $Message);
-      $exit = true;
+  if (!empty($ITSMGroupID)) { // Check if $ITSMGroupID is not empty
+    // If "100001" is in $UsersGroups, continue
+    if (in_array("100001", $UsersGroups)) {
+    } else {
+      // Otherwise, check if $ITSMGroupID is in $UsersGroups
+      if (!in_array($ITSMGroupID, $UsersGroups)) {
+        $GroupName = $functions->getGroupName($ITSMGroupID);
+        $Message = _("You need to be a member of group: ") . $GroupName;
+        $errorArray[] = array("error" => $Message);
+        $exit = true;
+      }
     }
   }
 
@@ -9612,81 +9623,67 @@ if (isset($_GET['cloneITSM'])) {
 
   $Fields = array();
 
-  $sql = "SELECT COLUMN_NAME
-          FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME = ?
-          AND TABLE_SCHEMA = ?;";
+ $sql = "
+      SELECT COLUMN_NAME
+      FROM INFORMATION_SCHEMA.COLUMNS
+      WHERE TABLE_NAME = ? AND TABLE_SCHEMA = ?
+  ";
 
-  $stmt = mysqli_prepare($conn, $sql);
-  $stmt->bind_param("ss", $ITSMTableName, $dbname);
-  $stmt->execute();
-  $result = $stmt->get_result();
+  $params = [$ITSMTableName, $dbname];
+  $result = $functions->selectQuery($sql, $params);
 
-  while ($row = mysqli_fetch_array($result)) {
-    array_push($Fields, $row[0]);
-  }
-  $sql = "INSERT INTO $ITSMTableName (";
-
-  $lastElement = end($Fields);
-  foreach ($Fields as $Field) {
-    if ($Field == $lastElement) {
-      $sql .= $Field;
-    } else {
-      $sql .= $Field . ",";
-    }
-  }
-
-  $sql .= ") VALUES (";
-
-  $lastElement = end($Fields);
-  foreach ($Fields as $Field) {
-    $PreValue = getITSMFieldPreValue($ITSMID, $ITSMTableName, $Field);
-    if ($Field == $lastElement) {
-      if ($Field == "ID" || $PreValue == "") {
-        $sql .= "NULL";
-      } elseif ($Field == "CreatedBy") {
-        $sql .= "'$UserID'";
-      } elseif ($Field == "LastUpdated" || $Field == "Created") {
-        $sql .= "NOW()";
-      } elseif ($Field == "RelatedCompanyID") {
-        $CompanyID = $PreValue;
-        $sql .= "'$PreValue',";
-      } elseif ($Field == "BusinessService") {
-        $BusinessServiceID = $PreValue;
-        $sql .= "'$PreValue',";
-      } elseif ($Field == "Priority") {
-        $Priority = $PreValue;
-        $sql .= "'$PreValue',";
-      } else {
-        $sql .= "'$PreValue'";
+  $Fields = [];
+  if (!empty($result)) {
+      foreach ($result as $row) {
+          $Fields[] = $row["COLUMN_NAME"];
       }
-    } else {
-      if ($Field == "ID" || $PreValue == "") {
-        $sql .= "NULL,";
-      } elseif ($Field == "CreatedBy") {
-        $sql .= "'$UserID',";
-      } elseif ($Field == "LastUpdated" || $Field == "Created") {
-        $sql .= "NOW(),";
-      } elseif ($Field == "RelatedCompanyID") {
-        $CompanyID = $PreValue;
-        $sql .= "'$PreValue',";
-      } elseif ($Field == "BusinessService") {
-        $BusinessServiceID = $PreValue;
-        $sql .= "'$PreValue',";
-      } elseif ($Field == "Priority") {
-        $Priority = $PreValue;
-        $sql .= "'$PreValue',";
-      } else {
-        $sql .= "'$PreValue',";
-      }
-    }
   }
-  $sql .= ")";
+ 
+  $values = [];
+  $placeholders = [];
+  $Subject = "";
 
-  $result = mysqli_query($conn, $sql);
+  foreach ($Fields as $Field) {
+      $PreValue = getITSMFieldPreValue($ITSMID, $ITSMTableName, $Field);
 
-  $NewITMSID = $conn->insert_id;
+      if ($Field === "ID" || $PreValue === "") {
+          $values[] = null;
+          $placeholders[] = "?";
+      } elseif ($Field === "CreatedBy") {
+          $values[] = $UserID;
+          $placeholders[] = "?";
+      } elseif ($Field === "Subject") {
+        $Subject = $PreValue;
+        $values[] = $functions->translate("Cloned") . " " . $PreValue;
+        $placeholders[] = "?";
+      } elseif (in_array($Field, ["LastUpdated", "Created"])) {
+          $placeholders[] = "NOW()"; // Directly add NOW() for datetime columns
+      } elseif ($Field === "Responsible" && $PreValue === "") {
+          $values[] = $UserID; // Set the current user as the default responsible user
+          $placeholders[] = "?";
+      } else {
+          $values[] = $PreValue;
+          $placeholders[] = "?";
+      }
+  }
+
+  // Build the INSERT query dynamically
+  $sql = "
+      INSERT INTO $ITSMTableName (" . implode(", ", $Fields) . ")
+      VALUES (" . implode(", ", $placeholders) . ")
+  ";
+
+  // Execute the query
+  $result = $functions->dmlQuery($sql, $values, [$ITSMTableName]);
+
+  if ($result["LastID"] < 0) {
+      throw new Exception("Error inserting ITSM record");
+  }
+
+  $NewITMSID = $result["LastID"];
+
   $Text = "Cloned from $ITSMID";
-  createITSMLogEntry($NewITMSID, $ITSMTypeID, $UserID, $Text);
+  $functions->createITSMLogEntry($NewITMSID, $ITSMTypeID, $UserID, $Text);
 
   //Lets clone the request form
   if ($ITSMTypeID == "2") {
@@ -9699,10 +9696,10 @@ if (isset($_GET['cloneITSM'])) {
   if ($ITSMModuleSLA == "1" && $ITSMModuleType == "1"){
     if (empty($BusinessServiceID)) {
       $SLA = getRelatedSLAID($CompanyID);
-      updateITSMFieldValue($NewITMSID, $SLA, "SLA", $ITSMTypeID);
+      $functions->updateITSMFieldValue($NewITMSID, $SLA, "SLA", $ITSMTypeID);
     } else {
       $SLA = getSLAFromBS($BusinessServiceID);
-      updateITSMFieldValue($NewITMSID, $SLA, "SLA", $ITSMTypeID);
+      $functions->updateITSMFieldValue($NewITMSID, $SLA, "SLA", $ITSMTypeID);
     }
 
     //Create ITSM SLA Reaction times
@@ -9722,6 +9719,10 @@ if (isset($_GET['cloneITSM'])) {
   }  
 
   if ($NewITMSID !== "") {
+    $Headline = $functions->translate("Cloned") . " " . $Subject;
+    $Text = $functions->translate("Cloned") . ": " . $Subject;
+    $Url = "javascript:viewITSM('$NewITMSID','$ITSMTypeID','1','modal');";
+    logActivity($NewITMSID, $ITSMTypeID, $Headline, $Text, $Url);
     //success
     $Array[] = array("Result" => "success", "ITSMID" => $NewITMSID, "ITSMTypeID" => $ITSMTypeID);
     echo json_encode($Array);
@@ -11223,7 +11224,7 @@ if (isset($_GET['createCIRelationITSM'])) {
     $LogActionText1 = "Relation created to $ITSMTypeName: $ITSMID";
     createCILogEntry($CIID, $CITypeID, $UserID, $LogActionText1);
     $LogActionText2 = "Relation created to $CITypeName $CIValue";
-    createITSMLogEntry($ITSMID, $ITSMTypeID, $UserID, $LogActionText2);
+    $functions->createITSMLogEntry($ITSMID, $ITSMTypeID, $UserID, $LogActionText2);
   }
 
   $Array[] = array("Result" => "success", "ITSMTypeID" => $ITSMTypeID, "CITypeID" => $CITypeID, "UserLanguageCode" => $UserLanguageCode);
@@ -11261,7 +11262,7 @@ if (isset($_GET['createITSMRelationCI'])) {
     $LogActionText1 = "Relation created to $ITSMTypeName: $ITSMID";
     createCILogEntry($CIID, $CITypeID, $UserID, $LogActionText1);
     $LogActionText2 = "Relation created to $CITypeName $CIValue";
-    createITSMLogEntry($ITSMID, $ITSMTypeID, $UserID, $LogActionText2);
+    $functions->createITSMLogEntry($ITSMID, $ITSMTypeID, $UserID, $LogActionText2);
   }
 
   $Array[] = array("Result" => "success", "ITSMTypeID" => $ITSMTypeID, "UserLanguageCode" => $UserLanguageCode, "Message" => $functions->translate("Relation created"));
@@ -11298,9 +11299,9 @@ if (isset($_GET['createITSMRelationITSM'])) {
     $result = $stmt->get_result();
 
     $LogActionText1 = "Relation created to $ITSMTypeName2 $ITSMID2: $ITSMValue2";
-    createITSMLogEntry($ITSMID1, $ITSMTypeID1, $UserID, $LogActionText1);
+    $functions->createITSMLogEntry($ITSMID1, $ITSMTypeID1, $UserID, $LogActionText1);
     $LogActionText2 = "Relation created to $ITSMTypeName1 $ITSMID1: $ITSMValue1";
-    createITSMLogEntry($ITSMID2, $ITSMTypeID2, $UserID, $LogActionText2);;
+    $functions->createITSMLogEntry($ITSMID2, $ITSMTypeID2, $UserID, $LogActionText2);;
   }
 
   $Array[] = array("Result" => "success","ITSMTypeID" => $ITSMTypeID1, "UserLanguageCode" => $UserLanguageCode);
@@ -11311,11 +11312,11 @@ if (isset($_GET['createITSMRelationITSM'])) {
 if (isset($_GET['deleteRelCIRel'])) {
   $RelationID = $_GET["RelationID"];
   $UserID = $_SESSION["id"];
-  $ParentTableName = getCIRelationTableName($RelationID,"CITable1");
-  $ChildTableName = getCIRelationTableName($RelationID, "CITable2");
+  $ParentTableName = $functions->getCIRelationTableName($RelationID,"CITable1");
+  $ChildTableName = $functions->getCIRelationTableName($RelationID, "CITable2");
 
-  $ParentCIID = getCIRelationCIID($RelationID, "CI1ID");
-  $ChildCIID = getCIRelationCIID($RelationID, "CI2ID");
+  $ParentCIID = $functions->getCIRelationCIID($RelationID, "CI1ID");
+  $ChildCIID = $functions->getCIRelationCIID($RelationID, "CI2ID");
 
   $ParentCITypeID = getCITypeIDFromTableName($ParentTableName);
   $ChildCITypeID = getCITypeIDFromTableName($ChildTableName);
@@ -11374,8 +11375,8 @@ if (isset($_GET['deleteRelITSMRel'])) {
     $LogActionText1 = "Relation deleted to $ITSMTypeName1 $ID1: $FieldValue1";
     $LogActionText2 = "Relation deleted to $ITSMTypeName2 $ID2: $FieldValue2";
 
-    createITSMLogEntry($ID1, $ITSMTypeID1, $UserID, $LogActionText2);
-    createITSMLogEntry($ID2, $ITSMTypeID2, $UserID, $LogActionText1);
+    $functions->createITSMLogEntry($ID1, $ITSMTypeID1, $UserID, $LogActionText2);
+    $functions->createITSMLogEntry($ID2, $ITSMTypeID2, $UserID, $LogActionText1);
   }
 
   deleteITSMRelation($RelationID);
@@ -11410,7 +11411,7 @@ if (isset($_GET['deleteCIToElementRelation'])) {
   $LogActionText = "Relation deleted for $ITSMName: $ITSMID";
   createCILogEntry($CIID, $CITypeID, $UserID, $LogActionText);
   $LogActionText1 = "Relation deleted for $CIName: $CIID";
-  createITSMLogEntry($ITSMID, $ITSMTypeID, $UserID, $LogActionText1);
+  $functions->createITSMLogEntry($ITSMID, $ITSMTypeID, $UserID, $LogActionText1);
   
   //success
   $Array[] = array("Result" => "success", "ITSMTypeID" => $ITSMTypeID, "ITSMID" =>$ITSMID, "CIID" => $CIID, "UserLanguageCode" => $UserLanguageCode);
@@ -11588,7 +11589,7 @@ if (isset($_GET['createCINew'])) {
   foreach ($FieldsArray as $key => $value) {
     $Name = $value['name'];
 
-    $FieldType = getCIFieldType($CITypeID, $Name);
+    $FieldType = $functions->getCIFieldType($CITypeID, $Name);
 
     switch ($Name) {
       case "Created":
@@ -12042,7 +12043,9 @@ if (isset($_GET['updateITSMValues'])) {
   $FieldName = $_GET['FieldName'];
   $FieldValue = $_GET['FieldValue'];
   $ITSMTypeID = $_GET['ITSMTypeID'];
-
+  if($FieldValue == ""){
+    $FieldValue = NULL;
+  }
   $sql = "UPDATE itsm_modules SET $FieldName = ? WHERE ID = ?";
 
   $stmt = mysqli_prepare($conn, $sql);
@@ -12086,7 +12089,7 @@ if (isset($_GET['updateCI'])) {
 
     $PreValue = getCIFieldPreValue($CIID, $CITableName, $Field);
     $FieldLabel = getCIFieldLabelFromFieldName($CITypeID, $Field);
-    $FieldType = getCIFieldType($CITypeID, $Field);
+    $FieldType = $functions->getCIFieldType($CITypeID, $Field);
 
     if ($Value == $PreValue) {
       continue;
@@ -12172,7 +12175,7 @@ if (isset($_GET['updateITSM'])) {
       $Value = $Value === NULL ? "" : $Value;
       $PreValue = $PreValue === NULL ? "" : $PreValue;
 
-      $FieldType = getFormFieldType($formID, $Field);
+      $FieldType = $functions->getFormFieldType($formID, $Field);
 
       if ($FieldType == "5" && !empty($Value)) {
         $Value = convertFromDanishTimeFormat($Value);
@@ -12281,10 +12284,10 @@ if (isset($_GET['updateITSM'])) {
               $Description = "";
               // Set CompanyID on newly created ITSM element
               $CompanyID = getUserRelatedCompanyID($Value);
-              updateITSMFieldValue($ITSMID, $CompanyID, "RelatedCompanyID", $ITSMTypeID);
+              $functions->updateITSMFieldValue($ITSMID, $CompanyID, "RelatedCompanyID", $ITSMTypeID);
               // Set Company SLA
               $SLA = getRelatedSLAID($CompanyID);
-              updateITSMFieldValue(
+              $functions->updateITSMFieldValue(
                 $ITSMID,
                 $SLA,
                 "SLA",
@@ -12311,7 +12314,7 @@ if (isset($_GET['updateITSM'])) {
             if ($Value != "") {
               $SLA = getSLAFromBS($Value);
               $BSID = $Value;
-              updateITSMFieldValue(
+              $functions->updateITSMFieldValue(
                 $ITSMID,
                 $SLA,
                 "SLA",
@@ -12320,7 +12323,7 @@ if (isset($_GET['updateITSM'])) {
             } else {
               $CompanyID = $functions->getITSMFieldValue($ITSMID, "RelatedCompanyID", $ITSMTableName);
               $SLA = getRelatedSLAID($CompanyID);
-              updateITSMFieldValue(
+              $functions->updateITSMFieldValue(
                 $ITSMID,
                 $SLA,
                 "SLA",
@@ -12393,7 +12396,7 @@ if (isset($_GET['updateITSM'])) {
       $Array[] = array("Result" => "formupdated");
       $UpdateValues = implode(" ", $LogArray);
       if ($UpdateValues != "") {
-        createITSMLogEntry($ITSMID, $ITSMTypeID, $UserID, $UpdateValues);
+        $functions->createITSMLogEntry($ITSMID, $ITSMTypeID, $UserID, $UpdateValues);
       }
     } else {
       $Array[] = array("Result" => "nothing");
@@ -12458,7 +12461,7 @@ if (isset($_GET['updateITSM'])) {
   if ($UpdateValues != "") {
      //Update updated date time stamp
     updateITSMUpdatedDate($ITSMTypeID,$ITSMID);
-    createITSMLogEntry($ITSMID, $ITSMTypeID, $UserID, $UpdateValues);
+    $functions->createITSMLogEntry($ITSMID, $ITSMTypeID, $UserID, $UpdateValues);
     // Lets log the activity
     $ITSMTypeName = $functions->getITSMTypeName($ITSMTypeID);
     $Headline = $functions->translate("Updated") . " " . strtolower($ITSMTypeName) . " " . $ITSMID;
@@ -15996,42 +15999,62 @@ if (isset($_GET['addNewsCVEFilter'])) {
 }
 
 if (isset($_GET['updateNewsArticle'])) {
-  // Check if user is authorized
-  if (!in_array("100014", $UserGroups) && !in_array("100001", $UserGroups)) {
-    $GroupName = getUserGroupName("100014");
-    $array[] = array("error" => "You need to be member of $GroupName");
-    echo json_encode($array);
-    return;
-  }
+    // Check if user is authorized
+    if (!in_array("100014", $UserGroups) && !in_array("100001", $UserGroups)) {
+        $GroupName = getUserGroupName("100014");
+        $array[] = array("error" => "You need to be a member of $GroupName");
+        echo json_encode($array);
+        return;
+    }
 
-  // Get data from POST request
-  $NewsID = $_POST['NewsID']; // Assuming NewsID is being passed
-  $ModalNewsCategory = $_POST['ModalNewsCategory'];
-  $ModalNewsWriter = $_POST['ModalNewsWriter'];
-  $ModalDateCreated = date('Y-m-d H:i:s', strtotime($_POST['ModalDateCreated'])); // Convert to SQL datetime format
-  $ModalNewsHeadline = $_POST['ModalNewsHeadline'];
-  $ModalNewsContent = $_POST['ModalNewsContent'];
-  $ModalActive = $_POST['ModalActive'];
-  $CreatedByUserID = $_SESSION['id'];
+    // Get data from POST request
+    $NewsID = $_POST['NewsID']; // Assuming NewsID is being passed
+    $ModalNewsCategory = $_POST['ModalNewsCategory'];
+    $ModalNewsWriter = $_POST['ModalNewsWriter'];
+    $ModalDateCreated = date('Y-m-d H:i:s', strtotime($_POST['ModalDateCreated'])); // Convert to SQL datetime format
+    $ModalNewsHeadline = $_POST['ModalNewsHeadline'];
+    $ModalNewsContent = $_POST['ModalNewsContent'];
+    $ModalActive = $_POST['ModalActive'];
+    $CreatedByUserID = $_SESSION['id'];
 
-  // SQL UPDATE statement to modify the existing record
-  $sql = "UPDATE news SET Headline = ?, Content = ?, CreatedByUserID = ?, NewsWriter = ?, DateCreated = ?, RelatedCategory = ?, Active = ? WHERE ID = ?";
+    // SQL query with placeholders
+    $sql = "UPDATE news 
+            SET Headline = ?, 
+                Content = ?, 
+                CreatedByUserID = ?, 
+                NewsWriter = ?, 
+                DateCreated = ?, 
+                RelatedCategory = ?, 
+                Active = ? 
+            WHERE ID = ?";
 
-  // Prepare the update statement
-  $stmt = $conn->prepare($sql);
+    // Parameters for the query
+    $params = [
+        $ModalNewsHeadline, 
+        $ModalNewsContent, 
+        $CreatedByUserID, 
+        $ModalNewsWriter, 
+        $ModalDateCreated, 
+        $ModalNewsCategory, 
+        $ModalActive, 
+        $NewsID
+    ];
 
-  // Bind parameters
-  $stmt->bind_param("ssiissii", $ModalNewsHeadline, $ModalNewsContent, $CreatedByUserID, $ModalNewsWriter, $ModalDateCreated, $ModalNewsCategory, $ModalActive, $NewsID);
+    // Tables to lock
+    $tables = ["news"];
 
-  // Execute the statement
-  if ($stmt->execute()) {
-    $resultArray[] = array("Result" => "success");
-    echo json_encode($resultArray);
-  } else {
-    // Handle errors
-    $array[] = array("error" => "An error occurred while updating the news article.");
-    echo json_encode($array);
-  }
+    // Execute the query using dmlQuery
+    $result = $functions->dmlQuery($sql, $params, $tables);
+
+    // Handle result
+    if ($result) {
+        $resultArray[] = array("Result" => "success");
+        echo json_encode($resultArray);
+    } else {
+        // Handle errors
+        $array[] = array("error" => "An error occurred while updating the news article.");
+        echo json_encode($array);
+    }
 }
 
 if (isset($_GET['updateNewsCategory'])) {
@@ -17350,7 +17373,8 @@ if (isset($_GET['transferObjectsToUser'])) {
 if (isset($_GET['readITSMComments'])) {
   $UserSessionID = $_SESSION['id'];
 
-  $commentID = $_POST['commentID'];
+  $ITSMTypeID = $_POST['ITSMTypeID'];
+  $ITSMID = $_POST['ITSMID'];
 
   readITSMComments($ITSMTypeID, $ITSMID, $UserSessionID);
 }

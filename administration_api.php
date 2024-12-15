@@ -7,7 +7,7 @@ if (in_array("100001", $group_array)) {
 }
 
 $SystemURL = @$functions->getSettingValue(17);
-$token = getFirstActiveAPIKey();
+$token = $functions->getFirstActiveAPIKey();
 ?>
 <script>
 	$(document).ready(function() {

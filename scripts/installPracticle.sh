@@ -326,7 +326,7 @@ run_command "systemctl enable mysql"
 
 # Step 6: Download and extract Practicle release
 run_command "mkdir -p $WEB_PROJECT_PATH"
-run_command "wget -O $WEB_PROJECT_PATH/${VERSION}.tar.gz https://downloads.practicle.dk/practicle_release_${VERSION}.tar.gz"
+run_command "wget -O $WEB_PROJECT_PATH/${VERSION}.tar.gz https://github.com/cljorgensen/practicle-free/archive/refs/tags/${VERSION}.tar.gz"
 run_command "tar -xvf $WEB_PROJECT_PATH/${VERSION}.tar.gz -C $WEB_PROJECT_PATH --strip-components=1"
 run_command "rm $WEB_PROJECT_PATH/${VERSION}.tar.gz"
 

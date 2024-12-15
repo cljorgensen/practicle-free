@@ -12,7 +12,7 @@ if (in_array("100001", $group_array) || in_array("100029", $group_array)) {
 $ITSMTypeID = $_GET['id'];
 
 $sql = "SELECT itsm_modules.ID, itsm_modules.Name, itsm_modules.ShortElementName, itsm_modules.TableName, itsm_modules.Type, itsm_modules.DoneStatus, itsm_modules.Description, itsm_modules.CreatedBy, itsm_modules.Created, itsm_modules.TypeIcon,
-		itsm_modules.SLA,itsm_modules.LastEditedBy, itsm_modules.LastEdited, itsm_modules.Active, itsm_modules.RoleID, itsm_modules.ImportSource, itsm_modules.Synchronization, itsm_modules.SyncTime, itsm_modules.LastSyncronized
+		itsm_modules.SLA,itsm_modules.LastEditedBy, itsm_modules.LastEdited, itsm_modules.Active, itsm_modules.GroupID, itsm_modules.ImportSource, itsm_modules.Synchronization, itsm_modules.SyncTime, itsm_modules.LastSyncronized
 		FROM itsm_modules
 		WHERE itsm_modules.ID = $ITSMTypeID";
 
@@ -30,7 +30,7 @@ while ($row = mysqli_fetch_array($result)) {
     $Active = $row['Active'];
     $SLA = $row['SLA'];
     $Type = $row['Type'];
-    $ModuleRoleID = $row['RoleID'];
+    $ModuleGroupID = $row['GroupID'];
     $Created = convertToDanishTimeFormat($row['Created']);
     $CreatedBy = $row['CreatedBy'];
     $TypeIcon = $row['TypeIcon'];
@@ -202,26 +202,48 @@ while ($row = mysqli_fetch_array($result)) {
 
                                                     <div class="col-md-6 col-sm-6 col-xs-12">
                                                         <div class="input-group input-group-static mb-4" title="User in this role has the module available on main their menu">
-                                                            <label for="RoleID"><?php echo _("Role"); ?></label>
-                                                            <select class="form-control" id="RoleID" name="RoleID" onchange="updateITSMValues(this.getAttribute('id'),<?php echo $ITSMTypeID; ?>);">
+                                                            <label for="GroupID"><?php echo _("Group"); ?></label>
+                                                            <select class="form-control" id="GroupID" name="GroupID" onchange="updateITSMValues(this.getAttribute('id'),<?php echo $ITSMTypeID; ?>);">
+                                                                <option value=''></option>
                                                                 <?php
-                                                                $sql = "SELECT ID, RoleName
-                                                                        FROM roles
-                                                                        WHERE Active = 1 AND ID != 0;";
-
+                                                                $sql = "SELECT usergroups.ID AS GroupID, usergroups.GroupName AS GroupName, usergroups.Active AS Active
+                                                                        FROM usergroups
+                                                                        UNION
+                                                                        SELECT system_groups.ID AS ID, system_groups.GroupName AS GroupName, system_groups.Active AS Active
+                                                                        FROM system_groups
+                                                                        WHERE Active = 1;";
                                                                 $result = mysqli_query($conn, $sql) or die('Query fail: ' . mysqli_error($conn));
 
+                                                                // Temporary array to hold rows
+                                                                $groups = [];
+
+                                                                // Fetch rows into the array
                                                                 while ($row = mysqli_fetch_array($result)) {
-                                                                    $RoleID = $row["ID"];
-                                                                    $RoleName = $row["RoleName"];
-                                                                    if ($ModuleRoleID == $RoleID) {
-                                                                        echo "<option data-id=\"$RoleID\" value=\"$RoleID\" selected>$RoleName</option>";
+                                                                    $groups[] = [
+                                                                        'GroupID' => $row['GroupID'],
+                                                                        'GroupName' => $functions->translate($row['GroupName']),
+                                                                        'Active' => $row['Active']
+                                                                    ];
+                                                                }
+
+                                                                // Sort the array by GroupName ASC
+                                                                usort($groups, function ($a, $b) {
+                                                                    return strcmp($a['GroupName'], $b['GroupName']);
+                                                                });
+
+                                                                // Output the sorted options
+                                                                foreach ($groups as $group) {
+                                                                    $GroupID = $group['GroupID'];
+                                                                    $GroupName = $group['GroupName'];
+                                                                    if ($ModuleGroupID == $GroupID) {
+                                                                        echo "<option value='$GroupID' selected='selected'>$GroupName</option>";
                                                                     } else {
-                                                                        echo "<option data-id=\"$RoleID\" value=\"$RoleID\">$RoleName</option>";
+                                                                        echo "<option value='$GroupID'>$GroupName</option>";
                                                                     }
                                                                 }
                                                                 ?>
                                                             </select>
+
                                                         </div>
                                                     </div>
 

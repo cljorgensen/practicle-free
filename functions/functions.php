@@ -69,17 +69,18 @@ function sendMailToSinglePerson($To, $ToName, $Subject, $Content, $attachmentPat
     }
 
     $mail = new PHPMailer(true);
+    
     $mail->IsSMTP(true);
-    $mail->CharSet        = "UTF-8";
-    $mail->Encoding = 'quoted-printable';
-    $mail->SMTPDebug     = 0;
+    $mail->CharSet      = "UTF-8";
+    $mail->Encoding     = 'quoted-printable';
+    $mail->SMTPDebug    = 0;
     $mail->Port         = $Port;
-    $mail->SMTPSecure     = "$SMTPSecure";
+    $mail->SMTPSecure   = "$SMTPSecure";
     $mail->SMTPAuth     = true;
-    $mail->Mailer         = "smtp";
-    $mail->Host          = "$Host";
-    $mail->Username      = "$Username";
-    $mail->Password       = "$Password";
+    $mail->Mailer       = "smtp";
+    $mail->Host         = "$Host";
+    $mail->Username     = "$Username";
+    $mail->Password     = "$Password";
     $mail->IsHTML(true);
 
     $mail->AddAddress($To, $ToName);
@@ -362,28 +363,6 @@ function deleteCILogBookEntry($LogBookID)
         return true;
     }
 }
-
-function createITSMLogEntry($ITSMID, $ITSMTypeID, $UserID, $LogActionText)
-{
-    global $conn;
-    global $functions;
-
-    $LogActionText = mysqli_real_escape_string($conn, $LogActionText);
-
-    $sql = "INSERT INTO itsm_log (LogActionText, LogActionDate, RelatedElementID, RelatedType, RelatedUserID) VALUES (?, NOW(), ?, ?, ?)";
-
-    $stmt = mysqli_prepare($conn, $sql);
-    if ($stmt) {
-        mysqli_stmt_bind_param($stmt, "ssss", $LogActionText, $ITSMID, $ITSMTypeID, $UserID);
-        mysqli_stmt_execute($stmt);
-        return true;
-    } else {
-        // Handle the prepare statement error
-        $functions->errorlog('Prepare statement error: ' . mysqli_error($conn),'createITSMLogEntry');
-        return false;
-    }
-}
-
 
 function updateAndLogAssetChange($CIID, $ClassID, $ElementID, $ElementChange, $sql, $Previous, $UserID, $LogActionText)
 {
@@ -3163,17 +3142,35 @@ function updateTaskList($Subject, $Note, $Deadline, $Taskid)
 
 function createNewProjectActivity($Content, $ProjectTaskID, $UserSessionID)
 {
-    global $conn;
     global $functions;
 
-    $UserSessionID = $_SESSION["id"];
-    $Content = $_POST["Content"];
+    try {
+        // Prepare the query and parameters
+        $sql = "INSERT INTO projects_tasks_conversations (RelatedProjectTaskID, Message, RelatedUserID) VALUES (?, ?, ?)";
+        $parameters = [$ProjectTaskID, $Content, $UserSessionID];
+        $tables = ['projects_tasks_conversations']; // Specify the table(s) involved for locking
 
-    $sql = "INSERT INTO projects_tasks_conversations (RelatedProjectTaskID, Message, RelatedUserID) VALUES (?, ?, ?);";
-    $stmt = mysqli_prepare($conn, $sql);
-    mysqli_stmt_bind_param($stmt, "isi", $ProjectTaskID, $Content, $UserSessionID);
-    mysqli_stmt_execute($stmt);
-    mysqli_stmt_close($stmt);
+        // Use dmlQuery to execute the INSERT
+        $result = $functions->dmlQuery($sql, $parameters, $tables);
+
+        // Verify if the operation affected any rows
+        if (isset($result['LastID']) && $result['LastID'] > 0) {
+            // Use logActivity instead of debuglog
+            $logTypeID = 1; // Define a log type ID, e.g., "1" for activity creation
+            $logActionText = "Project activity created successfully for Task ID $ProjectTaskID by User ID $UserSessionID.";
+            $functions->logActivity($logTypeID, $logActionText, $UserSessionID);
+        } else {
+            throw new Exception("Failed to create project activity for Task ID $ProjectTaskID.");
+        }
+    } catch (Exception $e) {
+        // Log the error in the system log
+        $functions->errorlog($e->getMessage(), "createNewProjectActivity");
+
+        // Optionally, log the error activity as well
+        $logTypeID = 2; // Define a log type ID, e.g., "2" for errors
+        $logActionText = "Error creating project activity for Task ID $ProjectTaskID: " . $e->getMessage();
+        $functions->logActivity($logTypeID, $logActionText, $UserSessionID);
+    }
 }
 
 function getUserProfilePicture($UserID)
@@ -3249,42 +3246,81 @@ function getTicketsSoonOverdue()
 
 function createNewUser($UserFirstname, $UserLastname, $Email, $Username, $hashed_password, $RelatedCompanyID, $JobTitel, $RelatedUserTypeID, $RelatedManagerID, $StartDate, $NewPin)
 {
-    global $conn;
     global $functions;
     $NewUserCreatedID = "";
 
-    $dbfull = isDBFull();
-    if ($dbfull == "Yes") {
-        $FreeSpace = getFreeDBSize();
-        echo ("<script LANGUAGE='JavaScript'>
-                    window.alert('DB is full: $FreeSpace MB left');
-                 </script>");
-    } else {
-        $UserFirstname = mysqli_real_escape_string($conn, $UserFirstname);
-        $UserLastname = mysqli_real_escape_string($conn, $UserLastname);
+    try {
+        // Sanitize and prepare values
         $StartDate = $functions->convertFromDanishDateFormat($StartDate);
 
-        if ($RelatedManagerID == "") {
-            $RelatedManagerID = "NULL";
+        // Prepare query and parameters
+        $sql = "INSERT INTO users 
+                (Firstname, Lastname, Username, Password, Email, CompanyID, RelatedUserTypeID, JobTitel, RelatedManager, StartDate, pin) 
+                VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
+        $parameters = [
+            $UserFirstname,
+            $UserLastname,
+            $Username,
+            $hashed_password,
+            $Email,
+            $RelatedCompanyID,
+            $RelatedUserTypeID,
+            $JobTitel,
+            $RelatedManagerID === "" ? null : $RelatedManagerID,
+            $StartDate,
+            $NewPin
+        ];
+
+        // Use dmlQuery to execute the INSERT
+        $tables = ['users']; // Specify the table(s) involved for locking
+        $result = $functions->dmlQuery($sql, $parameters, $tables);
+
+        if (isset($result['LastID']) && $result['LastID'] > 0) {
+            $NewUserCreatedID = $result['LastID'];
+
+            // Log the activity using logActivity
+            $logTypeID = 1; // Assuming 1 indicates a "user creation" log type
+            $logActionText = "New user created: Username=$Username, ID=$NewUserCreatedID";
+            $userID = $_SESSION['id'] ?? 0; // Assuming the user performing the action is stored in the session
+
+            $functions->logActivity($logTypeID, $logActionText, $userID);
+        } else {
+            throw new Exception("Failed to create new user. No LastID returned.");
         }
-
-        $sql = "INSERT INTO users (Firstname, Lastname, Username, Password, Email, CompanyID, RelatedUserTypeID, JobTitel, RelatedManager, StartDate, pin) VALUES 
-                    ('$UserFirstname','$UserLastname','$Username','$hashed_password','$Email',$RelatedCompanyID,$RelatedUserTypeID,'$JobTitel',$RelatedManagerID,'$StartDate','$NewPin');";
-
-        mysqli_query($conn, $sql) or die('Query fail: ' . mysqli_error($conn));
-        $last_id = $conn->insert_id;
-        return $last_id;
+    } catch (Exception $e) {
+        $functions->errorlog($e->getMessage(), "createNewUser");
     }
+
+    return $NewUserCreatedID;
 }
 
 function deactivateUser($ID)
 {
-    global $conn;
     global $functions;
-    $UserID = $_SESSION["id"];
 
-    $sql = "UPDATE users SET InactiveDate=NOW(), Active='0' WHERE users.id='" . $ID . "';";
-    mysqli_query($conn, $sql) or die('Query fail: ' . mysqli_error($conn));
+    try {
+        // Prepare the query and parameters
+        $sql = "UPDATE users SET InactiveDate = NOW(), Active = '0' WHERE id = ?";
+        $parameters = [$ID];
+        $tables = ['users']; // Specify the table(s) involved for locking
+
+        // Use dmlQuery to execute the UPDATE
+        $result = $functions->dmlQuery($sql, $parameters, $tables);
+
+        // Verify if the operation affected any rows
+        if (isset($result['LastID']) && $result['LastID'] > 0) {
+            // Log the activity using logActivity
+            $logTypeID = 1; // Assuming 1 indicates a "user creation" log type
+            $logActionText = "User with ID: $ID deactivated.";
+            $userID = $_SESSION['id'] ?? 0; // Assuming the user performing the action is stored in the session
+
+            $functions->logActivity($logTypeID, $logActionText, $userID);
+        } else {
+            throw new Exception("Failed to deactivate user with ID $ID.");
+        }
+    } catch (Exception $e) {
+        $functions->errorlog($e->getMessage(), "deactivateUser");
+    }
 }
 
 function deleteProjectTaskFromTaskslist($ProjectTaskID)
@@ -9395,19 +9431,18 @@ function QuickSearch($SearchTerm)
 
     //Search modules
     //Get all Modules
-    $ModuleRolesArray = getAllModuleRoles();
+    $ModuleGroupsArray = getAllModuleGroups();
 
     $ModulesArray = array();
 
-    foreach ($ModuleRolesArray as $moduleRole) {
+    foreach ($ModuleGroupsArray as $moduleRole) {
         $ID = $moduleRole["ModuleID"];
-        $RoleID = $moduleRole["RoleID"];
-        $RoleGroups = getGroupsInRole($RoleID);
+        $GroupID = $moduleRole["GroupID"];
         $TableName = $moduleRole['TableName'];
         $Name = $moduleRole['ShortElementName'];
 
         // Check if the user belongs to any of the groups associated with the role
-        if (in_array("100001", $group_array) || !empty(array_intersect($group_array, $RoleGroups))) {
+        if (in_array("$GroupID", $group_array) || empty($GroupID)) {
             $ModulesArray[] = array('ID' => $ID, 'Name' => $Name, 'TableName' => $TableName);
         }
     }
@@ -11615,34 +11650,6 @@ function getITSMFieldNameFromFieldID($FieldID)
     }
 
     return $FieldName;
-}
-
-function updateITSMFieldValue($FieldID, $FieldValue, $FieldName, $ITSMTypeID)
-{
-    global $functions;
-
-    // Get the ITSM table name based on the ITSM type
-    $ITSMTableName = $functions->getITSMTableName($ITSMTypeID);
-
-    // SQL query to update the field value dynamically
-    $sql = "UPDATE $ITSMTableName SET $FieldName = ? WHERE ID = ?;";
-
-    // Parameters for the query
-    $params = [$FieldValue, $FieldID];
-
-    // Tables to lock
-    $tables = [$ITSMTableName];
-
-    // Execute the query using dmlQuery
-    $result = $functions->dmlQuery($sql, $params, $tables);
-
-    // Check if the update was successful
-    if ($result['LastID'] >= 0) { // Affected rows will also reflect as LastID
-        return true;
-    } else {
-        $functions->errorlog("Failed to update field $FieldName in table $ITSMTableName with ID $FieldID", "updateITSMFieldValue");
-        return false;
-    }
 }
 
 function getFormsFieldDefaultValue($FieldName, $FormID)
@@ -15516,108 +15523,120 @@ function syncADUsers()
 {
     global $conn;
     global $functions;
-    $PracticleUsersArray = array();
-    $PracticleUsersArray = getAllActiveUsersUsernames();
-    $ADUsersArray = array();
 
-    $ldap_password = $functions->getSettingValue(51);
-    $ldap_username = $functions->getSettingValue(52);
-    $ldap_hostname = $functions->getSettingValue(53);
-    $ldap_domain = $functions->getSettingValue(57);
-    $ldap_hostname = "ldap://" . $ldap_hostname . "." . $ldap_domain . ":389";
-    $ldap_base_dn = $functions->getSettingValue(54);
-    $ldap_version = $functions->getSettingValue(55);
+    $PracticleUsersArray = [];
+    $ADUsersArray = [];
+    $Array = []; // Ensure this array is defined to prevent undefined variable errors
+    $Antal = 0; // Default count in case of errors
 
-    $LDAPUsername = $ldap_username . "@" . $ldap_domain;
+    try {
+        // Fetch settings
+        $ldap_password = $functions->getSettingValue(51);
+        $ldap_username = $functions->getSettingValue(52);
+        $ldap_hostname = $functions->getSettingValue(53);
+        $ldap_domain = $functions->getSettingValue(57);
+        $ldap_hostname = "ldap://" . $ldap_hostname . "." . $ldap_domain . ":389";
+        $ldap_base_dn = $functions->getSettingValue(54);
+        $ldap_version = $functions->getSettingValue(55);
 
-    $ldap_connection = ldap_connect($ldap_hostname);
+        $LDAPUsername = $ldap_username . "@" . $ldap_domain;
 
-    // We have to set this option for the version of Active Directory we are using.
-    ldap_set_option($ldap_connection, LDAP_OPT_PROTOCOL_VERSION, $ldap_version) or die('Unable to set LDAP protocol version');
-    ldap_set_option($ldap_connection, LDAP_OPT_REFERRALS, 0); // We need this for doing an LDAP search.
+        // Connect to LDAP
+        $ldap_connection = ldap_connect($ldap_hostname);
+        if (!$ldap_connection) {
+            throw new Exception("Failed to connect to LDAP server: $ldap_hostname");
+        }
 
-    if (TRUE === ldap_bind($ldap_connection, "$LDAPUsername", $ldap_password)) {
+        ldap_set_option($ldap_connection, LDAP_OPT_PROTOCOL_VERSION, $ldap_version);
+        ldap_set_option($ldap_connection, LDAP_OPT_REFERRALS, 0);
 
+        // Bind to LDAP
+        if (!ldap_bind($ldap_connection, "$LDAPUsername", $ldap_password)) {
+            throw new Exception("Failed to bind to LDAP server with username: $LDAPUsername");
+        }
+
+        // Perform LDAP search
         $search_filter = "(&(objectCategory=person)(samaccountname=*))";
-
-        $attributes = array();
-        $attributes[] = 'givenname';
-        $attributes[] = 'mail';
-        $attributes[] = 'samaccountname';
-        $attributes[] = 'sn';
-        $attributes[] = 'displayname';
-        $attributes[] = 'useraccountcontrol';
-
+        $attributes = ['givenname', 'mail', 'samaccountname', 'sn', 'displayname', 'useraccountcontrol'];
         $result = ldap_search($ldap_connection, $ldap_base_dn, $search_filter, $attributes);
 
-        if (FALSE !== $result) {
-            $entries = ldap_get_entries($ldap_connection, $result);
-
-            for ($x = 0; $x < $entries['count']; $x++) {
-                if (
-                    !empty($entries[$x]['givenname'][0]) &&
-                    !empty($entries[$x]['mail'][0]) &&
-                    !empty($entries[$x]['samaccountname'][0]) &&
-                    !empty($entries[$x]['sn'][0]) &&
-                    !empty($entries[$x]['displayname'][0]) &&
-                    !empty($entries[$x]['useraccountcontrol'][0])
-                ) {
-                    $Status = 1;
-                    $resultfromcheck = false;
-
-                    $Username = strtolower(trim($entries[$x]['samaccountname'][0]));
-                    array_push($ADUsersArray, $Username);
-                    $Email = strtolower(trim($entries[$x]['mail'][0]));
-                    $Fullname = trim($entries[$x]['displayname'][0]);
-                    $Firstname = trim($entries[$x]['givenname'][0]);
-                    $Lastname = trim($entries[$x]['sn'][0]);
-                    $userAccountControl = trim($entries[$x]['useraccountcontrol'][0]);
-
-                    if ($userAccountControl == "512") {
-                        // Account is enabled
-                        $Status = 1;
-                    }
-                    if ($userAccountControl == "514") {
-                        // Account is disabled
-                        // Lets disable account
-                        $Status = 0;
-                        disableUser($Username);
-                    }
-
-                    $resultfromcheck = doesUsernameExist($Username, $Email);
-
-                    if ($resultfromcheck == true) {
-                        // Account exists lets update
-                        $Action = "Update";
-                    }
-
-                    if ($resultfromcheck == false && $Status == 1) {
-                        // Account exists lets import
-                        $password = $functions->generateRandomString(20);
-                        $hashed_password = $functions->SaltAndHashPasswordForCompare($password);
-                        $RelatedCompanyID = $functions->getSettingValue(48);
-                        $JobTitel = "";
-                        $RelatedUserTypeID = "1";
-                        $RelatedManagerID = "";
-                        $StartDate = date('Y-m-d H:i:s');
-                        $NewPin = rand(0, 9) . rand(0, 9) . rand(0, 9) . rand(0, 9);
-                        createNewUser($Firstname, $Lastname, $Email, $Username, $hashed_password, $RelatedCompanyID, $JobTitel, $RelatedUserTypeID, $RelatedManagerID, $StartDate, $NewPin);
-                        $Action = "Imported";
-                    }
-                    $Array[] = array('Username' => $Username, 'Email' => $Email, 'Firstname' => $Firstname, 'Lastname' => $Lastname, 'Fullname' => $Fullname, 'Action' => $Action, 'Status' => $Status);
-                }
-            }
-            ldap_unbind($ldap_connection); // Clean up after ourselves.
+        if ($result === false) {
+            throw new Exception("LDAP search failed with base DN: $ldap_base_dn and filter: $search_filter");
         }
-        $Antal = count($Array);
-    }
 
-    if(!empty($ADUsersArray)){
+        $entries = ldap_get_entries($ldap_connection, $result);
+        if ($entries['count'] === 0) {
+            throw new Exception("No entries returned from LDAP search.");
+        }
+
+        // Process LDAP entries
+        for ($x = 0; $x < $entries['count']; $x++) {
+            if (
+                !empty($entries[$x]['givenname'][0]) &&
+                !empty($entries[$x]['mail'][0]) &&
+                !empty($entries[$x]['samaccountname'][0]) &&
+                !empty($entries[$x]['sn'][0]) &&
+                !empty($entries[$x]['displayname'][0]) &&
+                !empty($entries[$x]['useraccountcontrol'][0])
+            ) {
+                $Status = 1;
+                $Action = '';
+                $resultfromcheck = false;
+
+                $Username = strtolower(trim($entries[$x]['samaccountname'][0]));
+                array_push($ADUsersArray, $Username);
+                $Email = strtolower(trim($entries[$x]['mail'][0]));
+                $Fullname = trim($entries[$x]['displayname'][0]);
+                $Firstname = trim($entries[$x]['givenname'][0]);
+                $Lastname = trim($entries[$x]['sn'][0]);
+                $userAccountControl = trim($entries[$x]['useraccountcontrol'][0]);
+
+                $Status = ($userAccountControl == "512") ? 1 : 0;
+
+                if ($Status == 0) {
+                    disableUser($Username);
+                }
+
+                $resultfromcheck = doesUsernameExist($Username, $Email);
+
+                if ($resultfromcheck) {
+                    $Action = "Update";
+                } elseif (!$resultfromcheck && $Status == 1) {
+                    $password = $functions->generateRandomString(20);
+                    $hashed_password = $functions->SaltAndHashPasswordForCompare($password);
+                    $RelatedCompanyID = $functions->getSettingValue(48);
+                    $JobTitel = "";
+                    $RelatedUserTypeID = "1";
+                    $RelatedManagerID = "";
+                    $StartDate = date('Y-m-d H:i:s');
+                    $NewPin = rand(0, 9) . rand(0, 9) . rand(0, 9) . rand(0, 9);
+                    createNewUser($Firstname, $Lastname, $Email, $Username, $hashed_password, $RelatedCompanyID, $JobTitel, $RelatedUserTypeID, $RelatedManagerID, $StartDate, $NewPin);
+                    $Action = "Imported";
+                }
+
+                $Array[] = [
+                    'Username' => $Username,
+                    'Email' => $Email,
+                    'Firstname' => $Firstname,
+                    'Lastname' => $Lastname,
+                    'Fullname' => $Fullname,
+                    'Action' => $Action,
+                    'Status' => $Status
+                ];
+            }
+        }
+
+        ldap_unbind($ldap_connection); // Clean up after ourselves
+        $Antal = count($Array);
+
+        // Disable users not in AD
         foreach ($PracticleUsersArray as $TempUsernameToCheck) {
             if (!in_array($TempUsernameToCheck, $ADUsersArray)) {
                 disableUser($TempUsernameToCheck);
             }
         }
+    } catch (Exception $e) {
+        $functions->errorlog($e->getMessage(), "syncADUsers");
     }
 
     return $Antal;
@@ -17291,6 +17310,8 @@ function getCertificateExpireDate($URL)
 
 function getCertificateExpireDateAuto($URL)
 {
+    global $functions;
+
     // Normalize URL to include https://
     $url = "https://$URL";
 
@@ -17306,14 +17327,16 @@ function getCertificateExpireDateAuto($URL)
     curl_close($ch);
 
     if ($httpcode == 0) {
-        return "Site did not respond";
+        $functions->logActivity("1", "getCertificateExpireDateAuto: Site did not respond $url", "getCertificateExpireDateAuto",0);
+        return "error";
     }
 
     // Extract host from URL
     $host = parse_url($url, PHP_URL_HOST);
 
     if (!$host) {
-        return "Invalid URL";
+        $functions->logActivity("1", "getCertificateExpireDateAuto: Invalid URL $url", "getCertificateExpireDateAuto", 0);
+        return "error";
     }
 
     // Establish SSL connection to retrieve certificate
@@ -17330,20 +17353,23 @@ function getCertificateExpireDateAuto($URL)
     );
 
     if ($socket === false) {
-        return "Failed to connect: $errstr ($errno)";
+        $functions->logActivity("1", "getCertificateExpireDateAuto: Failed to connect: $errstr ($errno)", "getCertificateExpireDateAuto", 0);
+        return "error";
     }
 
     $params = stream_context_get_params($socket);
     fclose($socket);
 
     if (empty($params['options']['ssl']['peer_certificate'])) {
-        return "Certificate not found";
+        $functions->logActivity("1", "getCertificateExpireDateAuto: Certificate not found", "getCertificateExpireDateAuto", 0);
+        return "error";
     }
 
     // Parse the certificate and retrieve expiration date
     $certInfo = openssl_x509_parse($params['options']['ssl']['peer_certificate']);
     if (!$certInfo || !isset($certInfo['validTo_time_t'])) {
-        return "Invalid certificate data";
+        $functions->logActivity("1", "getCertificateExpireDateAuto: Invalid certificate data", "getCertificateExpireDateAuto", 0);
+        return "error";
     }
 
     // Format and return the expiration date
@@ -17359,17 +17385,33 @@ function updateCertificateEndDate($ciTypeId, $ciId, $endDate)
         // Get the table name for the CI type
         $CITableName = getCITableName($ciTypeId);
 
-        // SQL query with placeholders
-        $sql = "UPDATE $CITableName SET EndDate = ? WHERE ID = ?";
+        // Check if the column "EndDate" exists in the table
+        $checkColumnSql = "SELECT COUNT(*) AS column_exists 
+                           FROM INFORMATION_SCHEMA.COLUMNS 
+                           WHERE TABLE_NAME = ? 
+                             AND COLUMN_NAME = ? 
+                             AND TABLE_SCHEMA = DATABASE()";
 
-        // Parameters for the query
-        $params = [$endDate, $ciId];
+        $checkColumnParams = [$CITableName, 'EndDate'];
+        $result = $functions->selectQuery($checkColumnSql, $checkColumnParams);
 
-        // Tables to lock for manipulation
-        $tables = [$CITableName];
+        // If column exists, run the update query
+        if ($result[0]['column_exists'] > 0) {
+            // SQL query with placeholders
+            $sql = "UPDATE $CITableName SET EndDate = ? WHERE ID = ?";
 
-        // Execute the query using dmlQuery
-        $functions->dmlQuery($sql, $params, $tables);
+            // Parameters for the query
+            $params = [$endDate, $ciId];
+
+            // Tables to lock for manipulation
+            $tables = [$CITableName];
+
+            // Execute the query using dmlQuery
+            $functions->dmlQuery($sql, $params, $tables);
+        } else {
+            // Log if the column doesn't exist
+            $functions->errorlog("Column 'EndDate' does not exist in table '$CITableName'", "updateCertificateEndDate");
+        }
     } catch (Exception $e) {
         $functions->errorlog("Error updating certificate end date: " . $e->getMessage(), "updateCertificateEndDate");
     }
@@ -19219,8 +19261,8 @@ function duplicateITSM($ITSMTableName, $ITSMTypeID)
 
     try {
         // Create ITSM module
-        $sql = "INSERT INTO itsm_modules (Name, ShortElementName, TableName, Description, Type, CreatedBy, Created, LastEditedBy, LastEdited, Active, RoleID, TypeIcon, MenuPage, DoneStatus)
-                SELECT Name, ShortElementName, '$DBTableNew' AS TableName, Description, Type, CreatedBy, Created, LastEditedBy, LastEdited, Active, RoleID, TypeIcon, MenuPage, DoneStatus
+        $sql = "INSERT INTO itsm_modules (Name, ShortElementName, TableName, Description, Type, CreatedBy, Created, LastEditedBy, LastEdited, Active, GroupID, TypeIcon, MenuPage, DoneStatus)
+                SELECT Name, ShortElementName, '$DBTableNew' AS TableName, Description, Type, CreatedBy, Created, LastEditedBy, LastEdited, Active, GroupID, TypeIcon, MenuPage, DoneStatus
                 FROM itsm_modules
                 WHERE ID = ?;";
 
@@ -19567,54 +19609,12 @@ function insertRandomRows($table, $x)
     $conn->close();
 }
 
-function getCIFieldType($CITypeID, $Field)
-{
-    global $conn;
-    global $functions;
-
-    // Check if the task status is already 4 (skipping the update)
-    $sql = "SELECT FieldType
-            FROM cmdb_ci_fieldslist
-            WHERE RelatedCITypeID = $CITypeID AND FieldName = '$Field';";
-
-    $result = mysqli_query($conn, $sql) or die('Query fail: ' . mysqli_error($conn));
-
-    while ($row = mysqli_fetch_array($result)) {
-        $Value = $row["FieldType"];
-    }
-
-    mysqli_free_result($result);
-
-    return $Value;
-}
-
 function normalizeValue($value)
 {
     return ($value === NULL || $value === '') ? NULL : $value;
 }
 
-function getFormFieldType($formID, $Field)
-{
-    global $conn;
-    global $functions;
-
-    // Check if the task status is already 4 (skipping the update)
-    $sql = "SELECT FieldType
-            FROM forms_fieldslist
-            WHERE RelatedFormID = $formID AND FieldName = '$Field';";
-
-    $result = mysqli_query($conn, $sql) or die('Query fail: ' . mysqli_error($conn));
-
-    while ($row = mysqli_fetch_array($result)) {
-        $Value = $row["FieldType"];
-    }
-
-    mysqli_free_result($result);
-
-    return $Value;
-}
-
-function getAllModuleRoles()
+function getAllModuleGroups()
 {
     global $conn;
     global $functions;
@@ -19622,7 +19622,7 @@ function getAllModuleRoles()
     // Initialize an empty array to store the GroupID values
     $ModuleArray = array();
 
-    $sql = "SELECT ID AS ModuleID, RoleID, TableName, ShortElementName
+    $sql = "SELECT ID AS ModuleID, GroupID, TableName, ShortElementName
             FROM itsm_modules
             WHERE itsm_modules.Active = 1;";
 
@@ -19631,7 +19631,7 @@ function getAllModuleRoles()
     // Loop through each row in the result set
     while ($row = mysqli_fetch_array($result)) {
         // Append the GroupID to the array
-        $ModuleArray[] = array("ModuleID" => $row["ModuleID"], "RoleID" => $row["RoleID"], "TableName" => $row["TableName"], "ShortElementName" => $row["ShortElementName"]);
+        $ModuleArray[] = array("ModuleID" => $row["ModuleID"], "GroupID" => $row["GroupID"], "TableName" => $row["TableName"], "ShortElementName" => $row["ShortElementName"]);
     }
 
     // Free the result set
@@ -19819,78 +19819,6 @@ function deleteBackup($backupToDelete)
     return true;
 }
 
-function getCIRelationTableName($RelationID, $Table)
-{
-    global $conn;
-    global $functions;
-
-    // First, fetch the file path
-    $sql = "SELECT $Table FROM cmdb_ci_relations WHERE ID = ?";
-
-    $stmt = $conn->prepare($sql);
-
-    if ($stmt === false) {
-        // Handle error - statement preparation failed
-        $functions->errorlog("Statement preparation failed: " . $conn->error, "getCIRelationParentTable");
-        return false;
-    }
-
-    $stmt->bind_param('i', $RelationID);
-    if ($stmt->execute()) {
-        $result = $stmt->get_result();
-        if ($result === false) {
-            // Handle error - execution failed
-            $functions->errorlog("Execution failed: " . $stmt->error, "getCIRelationParentTable");
-            $stmt->close();
-            return false;
-        }
-        if ($row = $result->fetch_assoc()) {
-            $Table = $row[$Table];
-        }
-        $stmt->close();
-    } else {
-        // Handle error - statement execution failed
-        $functions->errorlog("Statement failed: " . $stmt->error, "getCIRelationParentTable");
-    }
-
-    // Free the result set, if any
-    if (isset($result) && $result !== false) {
-        mysqli_free_result($result);
-    }
-
-    return $Table;
-}
-
-function getCIRelationCIID($RelationID, $ID)
-{
-    global $conn;
-    global $functions;
-
-    // First, fetch the file path
-    $sql = "SELECT $ID FROM cmdb_ci_relations WHERE ID = ?";
-
-    $stmt = $conn->prepare($sql);
-    $stmt->bind_param('i', $RelationID);
-
-    if ($stmt->execute()) {
-        $result = $stmt->get_result();
-        while ($row = $result->fetch_assoc()) {
-            $CIID = $row["$ID"];
-        }
-        $stmt->close();
-    } else {
-        // Handle error - statement execution failed
-        $functions->errorlog("Statement failed: " . $stmt->error, "getCIRelationParentTable");
-    }
-
-    // Free the result set, if any
-    if (isset($result) && $result !== false) {
-        mysqli_free_result($result);
-    }
-
-    return $CIID;
-}
-
 function createITSMEntry($UserSessionID, $ITSMForm, $FormID, $RequestForm, $ITSMTableName, $ElementCreatedDateVal, $ITSMTypeID, $ModuleType, $SLASupported, $ITSMTypeName1, $ITSMID2, $ITSMTypeID2)
 {
     global $conn;
@@ -19990,7 +19918,7 @@ function createITSMEntry($UserSessionID, $ITSMForm, $FormID, $RequestForm, $ITSM
     }
 
     $LogActionText = "Created";
-    createITSMLogEntry($ITSMID, $ITSMTypeID, $UserSessionID, $LogActionText);
+    $functions->createITSMLogEntry($ITSMID, $ITSMTypeID, $UserSessionID, $LogActionText);
 
     // Determine whether to email the customer
     $DontEmailCustomer = ($ModuleType == "4" || $UserSessionID == "0");
@@ -19998,7 +19926,7 @@ function createITSMEntry($UserSessionID, $ITSMForm, $FormID, $RequestForm, $ITSM
     // Handle cases where CustomerID is empty
     if (empty($CustomerID) && !empty($ResponsibleID)) {
         $CustomerID = $ResponsibleID;
-        updateITSMFieldValue($ITSMID, $CustomerID, "Customer", $ITSMTypeID);
+        $functions->updateITSMFieldValue($ITSMID, $CustomerID, "Customer", $ITSMTypeID);
         $DontEmailCustomer = true;
     }
 
@@ -20021,38 +19949,29 @@ function createITSMEntry($UserSessionID, $ITSMForm, $FormID, $RequestForm, $ITSM
         if ($result['LastID'] > 0) {
             // Log entries for the created relations
             $LogActionText1 = "Relation created to $ITSMTypeName2 $ITSMID2";
-            createITSMLogEntry($ITSMID, $ITSMTypeID, $UserSessionID, $LogActionText1);
+            $functions->createITSMLogEntry($ITSMID, $ITSMTypeID, $UserSessionID, $LogActionText1);
 
             $LogActionText2 = "Relation created to $ITSMTypeName1 $ITSMID";
-            createITSMLogEntry($ITSMID2, $ITSMTypeID2, $UserSessionID, $LogActionText2);
+            $functions->createITSMLogEntry($ITSMID2, $ITSMTypeID2, $UserSessionID, $LogActionText2);
         } else {
             $functions->errorlog("Failed to create ITSM relation between $ITSMTableName ($ITSMID) and $ITSMTableName2 ($ITSMID2)", "createRelations");
         }
     }
 
     // Set CreatedBy
-    updateITSMFieldValue($ITSMID, $UserSessionID, "CreatedBy", $ITSMTypeID);
+    $functions->updateITSMFieldValue($ITSMID, $UserSessionID, "CreatedBy", $ITSMTypeID);
     // Set CompanyID on newly created ITSM element
     $CompanyID = getUserRelatedCompanyID($CustomerID);
-    updateITSMFieldValue($ITSMID, $CompanyID, "RelatedCompanyID", $ITSMTypeID);
-
-    $LogActionText = "Company ID set to $CompanyID";
-    createITSMLogEntry($ITSMID, $ITSMTypeID, $UserSessionID, $LogActionText);
-    $SLA = "";
-    
-    if ($SLASupported == 1) {
-        // Set SLA - if no BusinessService then set to Company SLA
-        if (empty($BusinessServiceID)) {
-            $SLA = getRelatedSLAID($CompanyID);
-            updateITSMFieldValue($ITSMID, $SLA, "SLA", $ITSMTypeID);
-        } else {
-            $SLA = getSLAFromBS($BusinessServiceID);
-            updateITSMFieldValue($ITSMID, $SLA, "SLA", $ITSMTypeID);
-        }
-        $LogActionText = "SLA set to $SLA";
-        createITSMLogEntry($ITSMID, $ITSMTypeID, $UserSessionID, $LogActionText);
+    if(empty($CompanyID)){
+        $CompanyID = getUserRelatedCompanyID($UserSessionID);
     }
 
+    $functions->updateITSMFieldValue($ITSMID, $CompanyID, "RelatedCompanyID", $ITSMTypeID);
+
+    $LogActionText = "Company ID set to $CompanyID";
+    $functions->createITSMLogEntry($ITSMID, $ITSMTypeID, $UserSessionID, $LogActionText);
+    $SLA = "";
+    
     if ($ITSMTypeID == "2") {
         global $functions;
 
@@ -20066,7 +19985,7 @@ function createITSMEntry($UserSessionID, $ITSMForm, $FormID, $RequestForm, $ITSM
             $WorkFlowID = createWorkFlow($ITSMID, $WorkFlowID, $UserSessionID, $RedirectPage, $ITSMTypeID);
 
             $LogActionText = "Added Workflow: $WorkFlowID";
-            createITSMLogEntry($ITSMID, $ITSMTypeID, $UserSessionID, $LogActionText);
+            $functions->createITSMLogEntry($ITSMID, $ITSMTypeID, $UserSessionID, $LogActionText);
         }
 
         // Insert or update records in the forms table
@@ -20107,6 +20026,17 @@ function createITSMEntry($UserSessionID, $ITSMForm, $FormID, $RequestForm, $ITSM
     }
 
     if ($SLASupported == 1) {
+        // Set SLA - if no BusinessService then set to Company SLA
+        if (empty($BusinessServiceID)) {
+            $SLA = getRelatedSLAID($CompanyID);
+            $functions->updateITSMFieldValue($ITSMID, $SLA, "SLA", $ITSMTypeID);
+        } else {
+            $SLA = getSLAFromBS($BusinessServiceID);
+            $functions->updateITSMFieldValue($ITSMID, $SLA, "SLA", $ITSMTypeID);
+        }
+        $LogActionText = "SLA set to $SLA";
+        $functions->createITSMLogEntry($ITSMID, $ITSMTypeID, $UserSessionID, $LogActionText);
+
         if ($Priority !== "" && $SLA !== "") {
             //Create ITSM SLA Reaction times
             //Get SLA reactiontimes for the SLA ID according to the priority selected
@@ -20131,7 +20061,7 @@ function createITSMEntry($UserSessionID, $ITSMForm, $FormID, $RequestForm, $ITSM
         if (strpos($Subject, '[Practicle Problem report]') !== false) {
             sendITSMMailTemplate($ITSMTypeID, $ITSMID, $CustomerID, "", $TemplateID);
             $LogActionText = "Customer: $CustomerFullName emailed on: $CustomerEmail";
-            createITSMLogEntry($ITSMID, $ITSMTypeID, $UserSessionID, $LogActionText);
+            $functions->createITSMLogEntry($ITSMID, $ITSMTypeID, $UserSessionID, $LogActionText);
         }
     }
     if ($ModuleType == "4" || $ModuleType == "3") {
@@ -20149,7 +20079,7 @@ function createITSMEntry($UserSessionID, $ITSMForm, $FormID, $RequestForm, $ITSM
             //sendITSMMailTemplate($ITSMTypeID, $ITSMID, $ResponsibleID, "", $TemplateID);
 
             $LogActionText = "Responsible: $ResponsibleFullName emailed on: $ResponsibleEmail";
-            //createITSMLogEntry($ITSMID, $ITSMTypeID, $UserSessionID, $LogActionText);
+            //$functions->createITSMLogEntry($ITSMID, $ITSMTypeID, $UserSessionID, $LogActionText);
         }
     }
     $ActivityText = "<b>" . $functions->translate("Subject") . "</b>" . "<br><br>" . $Subject;
@@ -20162,267 +20092,6 @@ function createITSMEntry($UserSessionID, $ITSMForm, $FormID, $RequestForm, $ITSM
     return array($ITSMID, $ITSMTableName, $ITSMTypeID, $ShortName, $ModuleType);
 }
 
-/* Before refactoring */
-/*
-function createITSMEntry($UserSessionID, $ITSMForm, $FormID, $RequestForm, $ITSMTableName, $ElementCreatedDateVal, $ITSMTypeID, $ModuleType, $SLASupported, $ITSMTypeName1, $ITSMID2, $ITSMTypeID2)
-{
-    global $conn;
-    global $functions;
-
-    $sql = "";
-    $createdByFound = false; // Initialize flag to detect 'CreatedBy' field
-
-    if ($ITSMID2 !== "") {
-        $ITSMTableName2 = $functions->getITSMTableName($ITSMTypeID2);
-        $ITSMTypeName2 = $functions->getITSMTypeName($ITSMTypeID2);
-    }
-    
-    // Check if 'CreatedBy' is present in the form data
-    foreach ($ITSMForm as $item) {
-        if ($item['name'] == 'CreateFormCreatedBy') {
-            $createdByFound = true;
-            break;
-        }
-    }
-
-    // If 'CreatedBy' is not found, add it with a default value
-    if (!$createdByFound) {
-        $ITSMForm[] = ['name' => 'CreateFormCreatedBy', 'value' => $UserSessionID];
-    }
-
-    // If 'CreatedBy' is not found, add it with a default value
-    if (!$createdByFound) {
-        $ITSMForm[] = ['name' => 'CreateFormCreated', 'value' => "Now()"];
-    }
-
-    $sql = "INSERT INTO $ITSMTableName (";
-    foreach ($ITSMForm as $key => $value) {
-        $Field = $value['name'];
-        $Field = str_replace("CreateForm", "", $Field);
-        $sql .= "$Field,";
-    }
-    
-    $sql .= ") VALUES (";
-    foreach ($ITSMForm as $key => $value) {
-
-        $Name = $value['name'];
-        $Name = trim(str_replace("CreateForm", "", $Name));
-        $Value = mysqli_real_escape_string($conn, $value['value']);
-        $FieldType = $functions->getITSMFieldTypeID($ITSMTypeID, $Name);
-        
-        switch ($Name) {
-            case "Created":
-                $Value = date("Y-m-d H:i:s");
-                break;
-            case "CreatedBy":
-                $Value = $UserSessionID;
-                break;
-            case "Customer":
-                $CustomerID = $Value;
-                break;
-            case "Subject":
-                $Subject = $Value;
-                if (strpos($Subject, 'We recieved your email but...') !== false) {
-                    return;
-                }
-                break;
-            case "Description":
-                $Description = $Value;
-                break;
-            case "Responsible":
-                $ResponsibleID = $Value;
-                break;
-            case "Active":
-                $Value = 1;
-                break;
-            case "Priority":
-                $Priority = $Value;
-                break;
-            case "SLA":
-                $SLAID = $Value;
-                break;
-            case "LastUpdatedBy":
-                $Value = $UserSessionID;
-                break;
-            case "LastUpdated":
-                $Value = date("Y-m-d H:i:s");
-                break;
-            case "BusinessService":
-                $BusinessServiceID = $Value;
-                break;
-            default:
-                if ($FieldType == "5" && $Value !== "") {
-                    $Value = date("Y-m-d H:i:s", strtotime($Value));
-                } else {
-                    $Value = mysqli_real_escape_string($conn, $value['value']);
-                }
-        }
-
-        if ($Value == "") {
-            $sql .= "NULL,";
-        } else {
-            $sql .= "'$Value',";
-        }
-    }
-    $sql .= ");";
-    $sql = str_replace(",)", ")", $sql);
-
-    $result = mysqli_query($conn, $sql) or die('Query fail: ' . mysqli_error($conn));
-    $ITSMID = mysqli_insert_id($conn);
-    if ($ModuleType == "4") {
-        $LogActionText = "Created";
-        createITSMLogEntry($ITSMID, $ITSMTypeID, $UserSessionID, $LogActionText);
-        $DontEmailCustomer = true;
-    } else {
-        $LogActionText = "Created";
-        createITSMLogEntry($ITSMID, $ITSMTypeID, $UserSessionID, $LogActionText);
-        $DontEmailCustomer = false;
-    }
-
-    if($UserSessionID == "0"){
-        $DontEmailCustomer = true;
-    }
-    // If Customer is empty, that is for ITSM modules that do not require customer, we can still make it - we can set Customer to Repsonsible
-    if (empty($CustomerID) && !empty($ResponsibleID)) {
-        $CustomerID = $ResponsibleID;
-        updateITSMFieldValue($ITSMID, $CustomerID, "Customer", $ITSMTypeID);
-        $DontEmailCustomer = true;
-    }
-
-    // We got ourselfs a create from - lets create relations
-    if ($ITSMID2 !== "") {
-        $LogActionText = "Created";
-        $sql = "INSERT INTO itsm_relations(Table1, Table2, ID1, ID2) VALUES (?,?,?,?);";
-
-        $stmt = mysqli_prepare($conn, $sql);
-        $stmt->bind_param("ssss", $ITSMTableName, $ITSMTableName2, $ITSMID, $ITSMID2);
-        $stmt->execute();
-        $result = $stmt->get_result();
-
-        $LogActionText1 = "Relation created to $ITSMTypeName2 $ITSMID2";
-        createITSMLogEntry($ITSMID, $ITSMTypeID, $UserSessionID, $LogActionText1);
-        $LogActionText2 = "Relation created to $ITSMTypeName1 $ITSMID";
-        createITSMLogEntry($ITSMID2, $ITSMTypeID2, $UserSessionID, $LogActionText2);
-    }
-
-    // Set CreatedBy
-    updateITSMFieldValue($ITSMID, $UserSessionID, "CreatedBy", $ITSMTypeID);
-    // Set CompanyID on newly created ITSM element
-    $CompanyID = getUserRelatedCompanyID($CustomerID);
-    updateITSMFieldValue($ITSMID, $CompanyID, "RelatedCompanyID", $ITSMTypeID);
-
-    $LogActionText = "Company ID set to $CompanyID";
-    createITSMLogEntry($ITSMID, $ITSMTypeID, $UserSessionID, $LogActionText);
-    $SLA = "";
-    if ($SLASupported == 1) {
-        // Set SLA - if no BusinessService then set to Company SLA
-        if (empty($BusinessServiceID)) {
-            $SLA = getRelatedSLAID($CompanyID);
-            updateITSMFieldValue($ITSMID, $SLA, "SLA", $ITSMTypeID);
-        } else {
-            $SLA = getSLAFromBS($BusinessServiceID);
-            updateITSMFieldValue($ITSMID, $SLA, "SLA", $ITSMTypeID);
-        }
-        $LogActionText = "SLA set to $SLA";
-        createITSMLogEntry($ITSMID, $ITSMTypeID, $UserSessionID, $LogActionText);
-    }
-
-    if ($ITSMTypeID == "2") {
-        $FormsTableName = getTableNameFromFormID($FormID);
-        $WorkFlowID = getRelatedWorkFlowID($FormID);
-
-        if (!empty($WorkFlowID)) {
-            $RedirectPage = "javascript:viewITSM('$ITSMID','$ITSMTypeID','1','modal');";
-            $WorkFlowID = createWorkFlow($ITSMID, $WorkFlowID, $UserSessionID, $RedirectPage, $ITSMTypeID);
-
-            $LogActionText = "Added Workflow: $WorkFlowID";
-            createITSMLogEntry($ITSMID, $ITSMTypeID, $UserSessionID, $LogActionText);
-        }
-
-        $counter = 0;
-
-        $RecordID = "";
-        foreach ($RequestForm as $key => $value) {            
-            $fieldname = $value['name'];
-            $fieldvalue = $value['value'];
-
-            if (empty($fieldvalue)) {
-                $fieldvalue = "";
-            }
-
-            if ($counter == 0) {
-                $sql = "INSERT INTO $FormsTableName ($fieldname) VALUES ('$fieldvalue');";
-                mysqli_query($conn, $sql);
-                $RecordID = mysqli_insert_id($conn);
-                $counter = $counter + 1;
-            } else {
-                $sql = "UPDATE $FormsTableName SET $fieldname = '$fieldvalue' WHERE ID = $RecordID;";
-                mysqli_query($conn, $sql);
-            }
-        }
-        //Set RelatedRequestID on forms table
-        $sql = "UPDATE $FormsTableName SET RelatedRequestID = '$ITSMID' WHERE ID = $RecordID;";
-        mysqli_query($conn, $sql);
-        //Set FormID on request
-        $sql = "UPDATE $ITSMTableName SET RelatedFormID = '$FormID' WHERE ID = $ITSMID;";
-        mysqli_query($conn, $sql);
-    }
-
-    if ($SLASupported == 1) {
-        if ($Priority !== "" && $SLA !== "") {
-            //Create ITSM SLA Reaction times
-            //Get SLA reactiontimes for the SLA ID according to the priority selected
-            $ReactionTimes[] = array();
-            $ReactionTimes = getSLAStatusCores($ITSMTypeID, $SLA, $Priority);
-            foreach ($ReactionTimes as $value) {
-                $Status = $value["Status"];
-                $Minutes = $value["Minutes"];
-                $DateViolated = getDateTimeViolated($ElementCreatedDateVal, $Minutes);
-                createTimelineSLAViolationDates($ITSMID, $ITSMTypeID, $Status, $DateViolated);
-            }
-        }
-    }
-
-    if (!empty($CustomerID) && $DontEmailCustomer == false && $ModuleType == "1") {
-
-        $TemplateID = "3";
-        $CustomerEmail = getUserEmailFromID($CustomerID);
-        $CustomerFullName = $functions->getUserFullName($CustomerID);
-
-        if (strpos($Subject, '[Practicle Problem report]') !== false) {
-            sendITSMMailTemplate($ITSMTypeID, $ITSMID, $CustomerID, "", $TemplateID);
-            $LogActionText = "Customer: $CustomerFullName emailed on: $CustomerEmail";
-            createITSMLogEntry($ITSMID, $ITSMTypeID, $UserSessionID, $LogActionText);
-        }
-    }
-    if ($ModuleType == "4" || $ModuleType == "3") {
-    } else {
-        if (!empty($ResponsibleID)) {
-
-            // Add to users tasklist
-            $RedirectPage = "javascript:viewITSM('$ITSMID','$ITSMTypeID','1','modal');";
-            //addtotaskslist($ITSMID, $ResponsibleID, $ITSMTypeID, $RedirectPage);
-            $TemplateID = "4";
-
-            $ResponsibleEmail = getUserEmailFromID($ResponsibleID);
-            $ResponsibleFullName = $functions->getUserFullName($ResponsibleID);
-            
-            //sendITSMMailTemplate($ITSMTypeID, $ITSMID, $ResponsibleID, "", $TemplateID);
-
-            $LogActionText = "Responsible: $ResponsibleFullName emailed on: $ResponsibleEmail";
-            //createITSMLogEntry($ITSMID, $ITSMTypeID, $UserSessionID, $LogActionText);
-        }
-    }
-    $ActivityText = "<b>" . $functions->translate("Subject") . "</b>" . "<br><br>" . $Subject;
-    $Headline = $functions->translate("Created") . " " . strtolower($ITSMTypeName1) . " " . $ITSMID;
-    logActivity($ITSMID, $ITSMTypeID, $Headline, $ActivityText, "javascript:javascript:viewITSM('$ITSMID','$ITSMTypeID','1','modal');");
-
-    createITSMFilesFromTemp($ITSMID, $ITSMTypeID, $UserSessionID);
-
-    $ShortName = getElementShortName($ITSMTypeID);
-    return array($ITSMID, $ITSMTableName, $ITSMTypeID, $ShortName, $ModuleType);
-}
-*/
 function updateManifestFile($settingvalue)
 {
     global $conn;
@@ -20580,7 +20249,6 @@ function fixDescriptionInChangelog()
 
     mysqli_query($conn, $sql) or die(mysqli_error($conn));
 }
-
 
 function updateAllTableComments()
 {
@@ -20794,8 +20462,6 @@ function checkSubmissionRate($limit, $timeFrame, $waitTime)
         return true;
     }
 }
-
-
 
 function checkConnection($url) {
     global $conn;
@@ -21905,44 +21571,31 @@ function getRequestFormFieldValues($ITSMTypeID, $ITSMID, $getPDF)
     }
 }
 
-function getFirstActiveAPIKey()
-{
-    global $conn;
-    global $functions;
-    
-    $api_key = "";
-
-    $sql = "SELECT `api_key`
-            FROM `api_keys`
-            WHERE Status = 1
-            LIMIT 1;";
-
-    $result = mysqli_query($conn, $sql) or die('Query fail: ' . mysqli_error($conn));
-
-    while ($row = mysqli_fetch_array($result)) {
-        $api_key = $row["api_key"];
-    }
-
-    return $api_key;
-}
-
 function getRelatedITSMModuleFromStatusID($StatusID)
 {
-    global $conn;
     global $functions;
 
-    $ModuleID = "";
+    $ReturnArray = [];
 
+    // SQL query to fetch the module and status code
     $sql = "SELECT ModuleID, StatusCode
-            FROM itsm_statuscodes
-            WHERE ID = $StatusID;";
+        FROM itsm_statuscodes
+        WHERE ID = ?";
 
-    $result = mysqli_query($conn, $sql) or die('Query fail: ' . mysqli_error($conn));
+    // Parameters for the query
+    $parameters = [$StatusID];
 
-    while ($row = mysqli_fetch_array($result)) {
-        $ModuleID = $row["ModuleID"];
-        $StatusCode = $row["StatusCode"];
-        $ReturnArray[] = array("ModuleID" => $ModuleID, "StatusCode" => $StatusCode);
+    // Execute the query using selectQuery
+    $result = $functions->selectQuery($sql, $parameters);
+
+    // Check if results are returned
+    if (!empty($result)) {
+        foreach ($result as $row) {
+            $ReturnArray[] = [
+                "ModuleID" => $row["ModuleID"],
+                "StatusCode" => $row["StatusCode"]
+            ];
+        }
     }
 
     return $ReturnArray;
@@ -21950,11 +21603,16 @@ function getRelatedITSMModuleFromStatusID($StatusID)
 
 function deleteRelatedSLAMatrixEntries($StatusID)
 {
-    global $conn;
     global $functions;
 
     // Retrieve ModuleID and StatusCode using the getRelatedITSMModuleFromStatusID function
     $RelatedModule = getRelatedITSMModuleFromStatusID($StatusID);
+
+    // Ensure we have valid data before proceeding
+    if (empty($RelatedModule) || !isset($RelatedModule[0]["ModuleID"], $RelatedModule[0]["StatusCode"])) {
+        $functions->errorlog("Failed to retrieve related module for StatusID: $StatusID", "deleteRelatedSLAMatrixEntries");
+        return false;
+    }
 
     // Extract ModuleID and StatusCode from the returned array
     $ModuleID = $RelatedModule[0]["ModuleID"];
@@ -21962,38 +21620,74 @@ function deleteRelatedSLAMatrixEntries($StatusID)
 
     // Prepare the DELETE query
     $sql = "DELETE FROM itsm_sla_matrix
-            WHERE RelatedModuleID = $ModuleID AND Status = $StatusCode";
+            WHERE RelatedModuleID = ? AND Status = ?";
 
-    // Execute the DELETE query
-    mysqli_query($conn, $sql) or die('Query fail: ' . mysqli_error($conn));
+    // Parameters for the query
+    $parameters = [$ModuleID, $StatusCode];
+
+    // Execute the DELETE query using dmlQuery
+    $result = $functions->dmlQuery($sql, $parameters, ["itsm_sla_matrix"]);
+
+    // Check if the query was successful
+    if ($result["LastID"] >= 0) {
+        return true;
+    } else {
+        $functions->errorlog(
+            "Failed to delete SLA matrix entries for ModuleID: $ModuleID and StatusCode: $StatusCode",
+            "deleteRelatedSLAMatrixEntries"
+        );
+        return false;
+    }
 }
 
 function deactivate2FA($UserID)
 {
-    global $conn;
     global $functions;
 
-    $sql = "UPDATE users SET google_secret_code = '0Km#9kQyfI1CLkthWhDb#F', QRUrl = ''
-            WHERE users.ID = $UserID";
+    // SQL query to update the user's 2FA settings
+    $sql = "
+        UPDATE users 
+        SET google_secret_code = '0Km#9kQyfI1CLkthWhDb#F', QRUrl = ''
+        WHERE ID = ?
+    ";
 
-    mysqli_query($conn, $sql) or die('Query fail: ' . mysqli_error($conn));
+    // Parameters for the query
+    $parameters = [$UserID];
+
+    // Execute the query using dmlQuery
+    $result = $functions->dmlQuery($sql, $parameters, ["users"]);
+
+    // Check if the update was successful
+    if ($result["LastID"] >= 0) {
+        return true;
+    } else {
+        $functions->errorlog("Failed to deactivate 2FA for UserID: $UserID", "deactivate2FA");
+        return false;
+    }
 }
 
 function getCMDBNameFromTableName($TableName)
 {
-    global $conn;
     global $functions;
 
     $Name = "";
 
-    $sql = "SELECT Name
-            FROM cmdb_cis
-            WHERE TableName = '$TableName'";
+    // SQL query to fetch the CMDB name based on the table name
+    $sql = "
+        SELECT Name
+        FROM cmdb_cis
+        WHERE TableName = ?
+    ";
 
-    $result = mysqli_query($conn, $sql) or die('Query fail: ' . mysqli_error($conn));
+    // Parameters for the query
+    $parameters = [$TableName];
 
-    while ($row = mysqli_fetch_array($result)) {
-        $Name = $row["Name"];
+    // Execute the query using selectQuery
+    $result = $functions->selectQuery($sql, $parameters);
+
+    // Check if results are returned
+    if (!empty($result)) {
+        $Name = $result[0]["Name"];
     }
 
     return $Name;
@@ -22001,19 +21695,26 @@ function getCMDBNameFromTableName($TableName)
 
 function getCMDBFieldLabelFromFieldName($FieldName, $RelCITypeID)
 {
-    global $conn;
     global $functions;
 
-    $Name = "";
+    $FieldLabel = "";
 
-    $sql = "SELECT FieldLabel
-            FROM cmdb_ci_fieldslist
-            WHERE FieldName = '$FieldName' AND RelatedCITypeID = $RelCITypeID";
+    // SQL query to fetch the FieldLabel based on FieldName and RelatedCITypeID
+    $sql = "
+        SELECT FieldLabel
+        FROM cmdb_ci_fieldslist
+        WHERE FieldName = ? AND RelatedCITypeID = ?
+    ";
 
-    $result = mysqli_query($conn, $sql) or die('Query fail: ' . mysqli_error($conn));
+    // Parameters for the query
+    $parameters = [$FieldName, $RelCITypeID];
 
-    while ($row = mysqli_fetch_array($result)) {
-        $FieldLabel = $row["FieldLabel"];
+    // Execute the query using selectQuery
+    $result = $functions->selectQuery($sql, $parameters);
+
+    // Check if results are returned
+    if (!empty($result)) {
+        $FieldLabel = $result[0]["FieldLabel"];
     }
 
     return $FieldLabel;
@@ -22021,22 +21722,28 @@ function getCMDBFieldLabelFromFieldName($FieldName, $RelCITypeID)
 
 function processSelectFieldOptions($tableName)
 {
-    global $conn;
     global $functions;
+
     $count = 0; // Initialize count variable
 
-    // Prepare the SQL query to select records with non-empty SelectFieldOptions
-    $sql = "SELECT ID, SelectFieldOptions FROM $tableName WHERE SelectFieldOptions IS NOT NULL AND SelectFieldOptions <> ''";
-    $result = mysqli_query($conn, $sql);
+    // SQL query to select records with non-empty SelectFieldOptions
+    $selectSql = "
+        SELECT ID, SelectFieldOptions 
+        FROM $tableName 
+        WHERE SelectFieldOptions IS NOT NULL AND SelectFieldOptions <> ''
+    ";
 
-    if (!$result) {
-        // Query failed
-        echo "Error: " . mysqli_error($conn);
-        return;
+    // Execute the select query
+    $selectResult = $functions->selectQuery($selectSql, []);
+
+    if (empty($selectResult)) {
+        // No records found or query failed
+        $functions->errorlog("No records found or error executing select query on table $tableName", "processSelectFieldOptions");
+        return $count;
     }
 
-    // Fetch each row from the result set
-    while ($row = mysqli_fetch_assoc($result)) {
+    // Iterate through each row
+    foreach ($selectResult as $row) {
         $id = $row['ID'];
         $selectFieldOptions = $row['SelectFieldOptions'];
 
@@ -22045,83 +21752,111 @@ function processSelectFieldOptions($tableName)
             // Decode the base64 encoded string
             $decodedOptions = base64_decode($selectFieldOptions);
 
-            // Check if the decoding resulted in a valid string
+            // Check if decoding resulted in a valid string
             if ($decodedOptions !== false) {
-                // Replace the SelectFieldOptions in the database with the decoded options
+                // Process the decoded options
                 $decodedOptions = explode("</option>", $decodedOptions);
                 $decodedOptions = implode("</option>#", $decodedOptions);
                 $decodedOptions = rtrim($decodedOptions, '#');
-                
-                $updateSql = "UPDATE $tableName SET SelectFieldOptions = '$decodedOptions' WHERE ID = $id";
-                $updateResult = mysqli_query($conn, $updateSql);
 
-                if ($updateResult) {
+                // Prepare the update query
+                $updateSql = "
+                    UPDATE $tableName 
+                    SET SelectFieldOptions = ? 
+                    WHERE ID = ?
+                ";
+
+                // Execute the update query
+                $updateResult = $functions->dmlQuery($updateSql, [$decodedOptions, $id], [$tableName]);
+
+                if ($updateResult["LastID"] >= 0) {
                     // Increment count if update was successful
                     $count++;
                 } else {
-                    // Update query failed
-                    echo "Error updating SelectFieldOptions: " . mysqli_error($conn);
-                    return;
+                    // Log update failure
+                    $functions->errorlog("Error updating SelectFieldOptions for ID $id in table $tableName", "processSelectFieldOptions");
                 }
             } else {
                 // Base64 decoding failed
-                echo "Error decoding SelectFieldOptions from base64: ID $id in table $tableName";
+                $functions->errorlog("Base64 decoding failed for SelectFieldOptions: ID $id in table $tableName", "processSelectFieldOptions");
                 continue; // Move to the next iteration
             }
         }
     }
 
-    // Return count along with success message
+    // Return count of successfully updated records
     return $count;
 }
 
 function getITSMRelationInfo($RelationID)
 {
-    global $conn;
     global $functions;
-    $count = 0; // Initialize count variable
 
-    // Prepare the SQL query to select records with non-empty SelectFieldOptions
-    $sql = "SELECT `Table1`, `Table2`, `ID1`, `ID2`
-            FROM `itsm_relations`
-            WHERE ID = $RelationID";
+    $ResultArray = [];
 
-    $result = mysqli_query($conn, $sql);
+    // SQL query to fetch relation information
+    $sql = "
+        SELECT `Table1`, `Table2`, `ID1`, `ID2`
+        FROM `itsm_relations`
+        WHERE ID = ?
+    ";
 
-    if (!$result) {
-        // Query failed
-        echo "Error: " . mysqli_error($conn);
-        return;
+    // Parameters for the query
+    $parameters = [$RelationID];
+
+    // Execute the query using selectQuery
+    $result = $functions->selectQuery($sql, $parameters);
+
+    // Check if results are returned
+    if (!empty($result)) {
+        foreach ($result as $row) {
+            $ResultArray[] = [
+                "Table1" => $row["Table1"],
+                "Table2" => $row["Table2"],
+                "ID1" => $row["ID1"],
+                "ID2" => $row["ID2"]
+            ];
+        }
+    } else {
+        // Log if no results are found
+        $functions->errorlog("No records found for RelationID: $RelationID", "getITSMRelationInfo");
     }
 
-    // Fetch each row from the result set
-    while ($row = mysqli_fetch_assoc($result)) {
-        $Table1 = $row['Table1'];
-        $Table2 = $row['Table2'];
-        $ID1 = $row['ID1'];
-        $ID2 = $row['ID2'];
-        $ResultArray[] = array("Table1" => $Table1, "Table2" => $Table2, "ID1" => $ID1, "ID2" => $ID2);
-    }
-
-    // Return count along with success message
+    // Return the result array
     return $ResultArray;
 }
 
 function deleteITSMRelation($RelationID)
 {
-    global $conn;
     global $functions;
 
-    $sql = "DELETE FROM `itsm_relations` WHERE ID = $RelationID";
+    // SQL query to delete the relation
+    $sql = "
+        DELETE FROM `itsm_relations`
+        WHERE ID = ?
+    ";
 
-    mysqli_query($conn, $sql);
+    // Parameters for the query
+    $parameters = [$RelationID];
+
+    // Execute the query using dmlQuery
+    $result = $functions->dmlQuery($sql, $parameters, ["itsm_relations"]);
+
+    // Check if the delete was successful
+    if ($result["LastID"] >= 0) {
+        return true;
+    } else {
+        // Log an error if the deletion fails
+        $functions->errorlog("Failed to delete ITSM relation with ID: $RelationID", "deleteITSMRelation");
+        return false;
+    }
 }
 
 function checkRelationShowField($TypeID, $Type)
 {
-    global $conn;
     global $functions;
 
+    // Determine the table and related type ID based on the type
     switch ($Type) {
         case "ci":
             $RelatedTypeID = "RelatedCITypeID";
@@ -22136,67 +21871,71 @@ function checkRelationShowField($TypeID, $Type)
             $Table = "itsm_fieldslist";
     }
 
-    $sql = "SELECT COUNT(*) as count FROM $Table WHERE $RelatedTypeID = ? AND RelationShowField = 1";
-    $stmt = $conn->prepare($sql);
+    // SQL query to count the relevant rows
+    $sql = "
+        SELECT COUNT(*) as count 
+        FROM $Table 
+        WHERE $RelatedTypeID = ? AND RelationShowField = 1
+    ";
 
-    if (!$stmt) {
-        $functions->errorlog("Prepare failed: " . $conn->error, "checkRelationShowField");
-        return false;
+    // Parameters for the query
+    $parameters = [$TypeID];
+
+    // Execute the query using selectQuery
+    $result = $functions->selectQuery($sql, $parameters);
+
+    // Check if results are returned and fetch the count
+    if (!empty($result)) {
+        return (int)$result[0]['count'];
+    } else {
+        $functions->errorlog("Failed to fetch count for TypeID: $TypeID in $Table", "checkRelationShowField");
+        return 0;
     }
-
-    $stmt->bind_param("i", $TypeID);
-    if (!$stmt->execute()) {
-        $functions->errorlog("Execute failed: " . $stmt->error, "checkRelationShowField");
-        return false;
-    }
-
-    $result = $stmt->get_result();
-    $row = $result->fetch_assoc();
-    $stmt->close();
-
-    return $row['count'];
 }
 
-function getCurrentRelationShowField($fieldID,$Type) {
-    global $conn;
+function getCurrentRelationShowField($fieldID, $Type)
+{
     global $functions;
 
+    // Determine the table based on the type
     switch ($Type) {
-    case "ci":
-        $Table = "cmdb_ci_fieldslist";
-        break;
-    case "form":
-        $Table = "forms_fieldslist";
-        break;
-    default:
-        $Table = "itsm_fieldslist";
+        case "ci":
+            $Table = "cmdb_ci_fieldslist";
+            break;
+        case "form":
+            $Table = "forms_fieldslist";
+            break;
+        default:
+            $Table = "itsm_fieldslist";
     }
 
-    $sql = "SELECT RelationShowField FROM $Table WHERE ID = ?";
-    $stmt = $conn->prepare($sql);
+    // SQL query to fetch the RelationShowField value
+    $sql = "
+        SELECT RelationShowField 
+        FROM $Table 
+        WHERE ID = ?
+    ";
 
-    if (!$stmt) {
-        $functions->errorlog("Prepare failed: " . $conn->error, "getCurrentRelationShowField");
+    // Parameters for the query
+    $parameters = [$fieldID];
+
+    // Execute the query using selectQuery
+    $result = $functions->selectQuery($sql, $parameters);
+
+    // Check if results are returned and fetch the RelationShowField value
+    if (!empty($result)) {
+        return $result[0]['RelationShowField'];
+    } else {
+        $functions->errorlog("Failed to fetch RelationShowField for FieldID: $fieldID in $Table", "getCurrentRelationShowField");
         return null;
     }
-
-    $stmt->bind_param("i", $fieldID);
-    if (!$stmt->execute()) {
-        $functions->errorlog("Execute failed: " . $stmt->error, "getCurrentRelationShowField");
-        return null;
-    }
-
-    $result = $stmt->get_result();
-    $row = $result->fetch_assoc();
-    $stmt->close();
-
-    return $row['RelationShowField'];
 }
 
-function removeOtherRelationShowField($Type,$TypeID) {
-    global $conn;
+function removeOtherRelationShowField($Type, $TypeID)
+{
     global $functions;
 
+    // Determine the table and related type ID based on the type
     switch ($Type) {
         case "ci":
             $RelatedTypeID = "RelatedCITypeID";
@@ -22211,101 +21950,88 @@ function removeOtherRelationShowField($Type,$TypeID) {
             $Table = "itsm_fieldslist";
     }
 
-    $sql = "UPDATE $Table SET RelationShowField = '0' WHERE $RelatedTypeID = ?";
-    $stmt = $conn->prepare($sql);
+    // SQL query to update RelationShowField
+    $sql = "
+        UPDATE $Table 
+        SET RelationShowField = '0' 
+        WHERE $RelatedTypeID = ?
+    ";
 
-    if (!$stmt) {
-        $functions->errorlog("Prepare failed: " . $conn->error, "removeOtherRelationShowField");
-        return null;
+    // Parameters for the query
+    $parameters = [$TypeID];
+
+    // Execute the query using dmlQuery
+    $result = $functions->dmlQuery($sql, $parameters, [$Table]);
+
+    // Check if the update was successful
+    if ($result["LastID"] >= 0) {
+        return true;
+    } else {
+        $functions->errorlog("Failed to update RelationShowField for TypeID: $TypeID in $Table", "removeOtherRelationShowField");
+        return false;
     }
-
-    $stmt->bind_param("i", $TypeID);
-    if (!$stmt->execute()) {
-        $functions->errorlog("Execute failed: " . $stmt->error, "removeOtherRelationShowField");
-        return null;
-    }
-
-    $stmt->close();
 }
 
 function getUserTransferObjectsCMDB($UserID)
 {
-    global $conn;
     global $functions;
 
-    $ciTypes = array();
+    $ciTypes = [];
 
-    $sql = "SELECT `ID`, `TableName`, `Description`
-            FROM `cmdb_cis`
-            WHERE `Active` = 1;";
+    // SQL query to fetch active CMDB objects
+    $sql = "
+        SELECT `ID`, `TableName`, `Description`
+        FROM `cmdb_cis`
+        WHERE `Active` = 1
+    ";
 
-    $stmt = $conn->prepare($sql);
+    // No parameters are required for this query
+    $parameters = [];
 
-    if (!$stmt) {
-        $functions->errorlog("Prepare failed: " . $conn->error, "getUserTransferObjectsCMDB");
-        return;
+    // Execute the query using selectQuery
+    $result = $functions->selectQuery($sql, $parameters);
+
+    // Check if results are returned
+    if (!empty($result)) {
+        foreach ($result as $row) {
+            $ciTypes[] = $row;
+        }
+    } else {
+        $functions->errorlog("Failed to fetch CMDB objects for UserID: $UserID", "getUserTransferObjectsCMDB");
     }
-
-    if (!$stmt->execute()) {
-        $functions->errorlog("Execute failed: " . $stmt->error, "getUserTransferObjectsCMDB");
-        return;
-    }
-
-    $result = $stmt->get_result();
-
-    if (!$result) {
-        $functions->errorlog("Getting result set failed: " . $stmt->error, "getUserTransferObjectsCMDB");
-        return;
-    }
-
-    while ($row = $result->fetch_assoc()) {
-        $ciTypes[] = $row;
-    }
-
-    $result->free();
-    $stmt->close();
 
     return $ciTypes;
 }
 
 function getUserTransferObjectsITSM($UserID)
 {
-    global $conn;
     global $functions;
 
-    $itsmTypes = array();
+    $itsmTypes = [];
 
-    $sql = "SELECT `ID`, `TableName`, `Name`
-            FROM `itsm_modules`
-            WHERE `Active` = 1 AND ID != 6 AND ID != 13;";
+    // SQL query to fetch active ITSM objects
+    $sql = "
+        SELECT `ID`, `TableName`, `Name`
+        FROM `itsm_modules`
+        WHERE `Active` = 1 AND ID NOT IN (6, 13)
+    ";
 
-    $stmt = $conn->prepare($sql);
+    // No parameters are required for this query
+    $parameters = [];
 
-    if (!$stmt) {
-        $functions->errorlog("Prepare failed: " . $conn->error, "getUserTransferObjectsCMDB");
-        return;
+    // Execute the query using selectQuery
+    $result = $functions->selectQuery($sql, $parameters);
+
+    // Check if results are returned
+    if (!empty($result)) {
+        foreach ($result as $row) {
+            // Translate the Name column
+            $row['Name'] = $functions->translate($row['Name']);
+            $itsmTypes[] = $row;
+        }
+    } else {
+        $functions->errorlog("Failed to fetch ITSM objects for UserID: $UserID", "getUserTransferObjectsITSM");
     }
-
-    if (!$stmt->execute()) {
-        $functions->errorlog("Execute failed: " . $stmt->error, "getUserTransferObjectsCMDB");
-        return;
-    }
-
-    $result = $stmt->get_result();
-
-    if (!$result) {
-        $functions->errorlog("Getting result set failed: " . $stmt->error, "getUserTransferObjectsCMDB");
-        return;
-    }
-
-    while ($row = $result->fetch_assoc()) {
-        // Translate the Name column
-        $row['Name'] = $functions->translate($row['Name']);
-        $itsmTypes[] = $row;
-    }
-
-    $result->free();
-    $stmt->close();
 
     return $itsmTypes;
 }
@@ -22341,48 +22067,38 @@ function getUserTransferObjectsMemberShips($UserID)
 
 function getUsersArray()
 {
-    global $conn;
     global $functions;
 
-    $users = array();
+    $users = [];
 
-    $sql = "SELECT ID, CONCAT(Firstname,' ',Lastname,' (',Username,')') AS Name
-            FROM users
-            WHERE Active = 1 AND RelatedUserTypeID IN (1,3)
-            ORDER BY Firstname ASC;";
+    // SQL query to fetch active users with specific user types
+    $sql = "
+        SELECT ID, CONCAT(Firstname, ' ', Lastname, ' (', Username, ')') AS Name
+        FROM users
+        WHERE Active = 1 AND RelatedUserTypeID IN (1, 3)
+        ORDER BY Firstname ASC
+    ";
 
-    $stmt = $conn->prepare($sql);
+    // No parameters are required for this query
+    $parameters = [];
 
-    if (!$stmt) {
-        $functions->errorlog("Prepare failed: " . $conn->error, "getUserTransferObjectsCMDB");
-        return;
+    // Execute the query using selectQuery
+    $result = $functions->selectQuery($sql, $parameters);
+
+    // Check if results are returned
+    if (!empty($result)) {
+        foreach ($result as $row) {
+            $users[] = $row;
+        }
+    } else {
+        $functions->errorlog("Failed to fetch active users", "getUsersArray");
     }
-
-    if (!$stmt->execute()) {
-        $functions->errorlog("Execute failed: " . $stmt->error, "getUserTransferObjectsCMDB");
-        return;
-    }
-
-    $result = $stmt->get_result();
-
-    if (!$result) {
-        $functions->errorlog("Getting result set failed: " . $stmt->error, "getUserTransferObjectsCMDB");
-        return;
-    }
-
-    while ($row = $result->fetch_assoc()) {
-        $users[] = $row;
-    }
-
-    $result->free();
-    $stmt->close();
 
     return $users;
 }
 
 function transferCMDBItems($item, $UserIDToMoveFrom, $UserToMoveTo, $UserSessionID)
 {
-    global $conn;
     global $functions;
 
     $CITypeID = $item["fieldvalue"];
@@ -22391,30 +22107,34 @@ function transferCMDBItems($item, $UserIDToMoveFrom, $UserToMoveTo, $UserSession
     $FromName = $functions->getUserFullName($UserIDToMoveFrom);
     $ToName = $functions->getUserFullName($UserToMoveTo);
 
-    // First, select the IDs of the rows that will be affected
-    $selectSQL = "SELECT ID FROM $CITableName
-                WHERE RelatedUserID = $UserIDToMoveFrom AND Active = 1;";
-    $result = mysqli_query($conn, $selectSQL);
+    // Select the IDs of the rows to be affected
+    $selectSQL = "
+        SELECT ID 
+        FROM $CITableName
+        WHERE RelatedUserID = ? AND Active = 1
+    ";
 
-    if (!$result) {
-        // Handle error if needed
-        error_log("Error selecting IDs: " . mysqli_error($conn));
-        return false;
+    $selectParams = [$UserIDToMoveFrom];
+    $affectedRows = $functions->selectQuery($selectSQL, $selectParams);
+
+    if (empty($affectedRows)) {
+        return false; // No rows to update
     }
 
     // Collect the IDs
-    $affectedIDs = [];
-    while ($row = mysqli_fetch_assoc($result)) {
-        $affectedIDs[] = $row['ID'];
-    }
+    $affectedIDs = array_column($affectedRows, 'ID');
 
     // Perform the update
-    $updateSQL = "UPDATE $CITableName SET RelatedUserID = $UserToMoveTo 
-                WHERE RelatedUserID = $UserIDToMoveFrom AND Active = 1;";
+    $updateSQL = "
+        UPDATE $CITableName 
+        SET RelatedUserID = ? 
+        WHERE RelatedUserID = ? AND Active = 1
+    ";
 
-    mysqli_query($conn, $updateSQL);
+    $updateParams = [$UserToMoveTo, $UserIDToMoveFrom];
+    $updateResult = $functions->dmlQuery($updateSQL, $updateParams, [$CITableName]);
 
-    if (mysqli_affected_rows($conn) > 0) {
+    if ($updateResult["LastID"] >= 0) {
         // Loop through the affected IDs and call createCILogEntry
         foreach ($affectedIDs as $ID) {
             $LogActionText = "$Name: Responsible changed from $FromName to $ToName;";
@@ -22427,48 +22147,48 @@ function transferCMDBItems($item, $UserIDToMoveFrom, $UserToMoveTo, $UserSession
 
 function transferITSMItems($item, $UserIDToMoveFrom, $UserToMoveTo, $UserSessionID)
 {
-    global $conn;
     global $functions;
 
     $ITSMTypeID = $item["fieldvalue"];
     $ITSMTableName = $functions->getITSMTableName($ITSMTypeID);
     $Name = getITSMNameFromITSMType($ITSMTypeID);
-    
     $FromName = $functions->getUserFullName($UserIDToMoveFrom);
     $ToName = $functions->getUserFullName($UserToMoveTo);
     $ClosedStatus = $functions->getITSMClosedStatus($ITSMTypeID);
-    // Convert the array to a comma-separated string
     $ClosedStatusString = "'" . implode("', '", $ClosedStatus) . "'";
 
-    // First, select the IDs of the rows that will be affected
-    $selectSQL = "SELECT ID FROM $ITSMTableName
-                WHERE Responsible = $UserIDToMoveFrom AND Status NOT IN ($ClosedStatusString);";
+    // Select the IDs of the rows to be affected
+    $selectSQL = "
+        SELECT ID 
+        FROM $ITSMTableName
+        WHERE Responsible = ? AND Status NOT IN ($ClosedStatusString)
+    ";
 
-    $result = mysqli_query($conn, $selectSQL);
+    $selectParams = [$UserIDToMoveFrom];
+    $affectedRows = $functions->selectQuery($selectSQL, $selectParams);
 
-    if (!$result) {
-        // Handle error if needed
-        error_log("Error selecting IDs: " . mysqli_error($conn));
-        return false;
+    if (empty($affectedRows)) {
+        return false; // No rows to update
     }
 
     // Collect the IDs
-    $affectedIDs = [];
-    while ($row = mysqli_fetch_assoc($result)) {
-        $affectedIDs[] = $row['ID'];
-    }
+    $affectedIDs = array_column($affectedRows, 'ID');
 
     // Perform the update
-    $updateSQL = "UPDATE $ITSMTableName SET Responsible = $UserToMoveTo
-                WHERE Responsible = $UserIDToMoveFrom AND Status NOT IN ($ClosedStatusString);";
+    $updateSQL = "
+        UPDATE $ITSMTableName 
+        SET Responsible = ? 
+        WHERE Responsible = ? AND Status NOT IN ($ClosedStatusString)
+    ";
 
-    mysqli_query($conn, $updateSQL);
+    $updateParams = [$UserToMoveTo, $UserIDToMoveFrom];
+    $updateResult = $functions->dmlQuery($updateSQL, $updateParams, [$ITSMTableName]);
 
-    if (mysqli_affected_rows($conn) > 0) {
-        // Loop through the affected IDs and call createCILogEntry
+    if ($updateResult["LastID"] >= 0) {
+        // Loop through the affected IDs and call createITSMLogEntry
         foreach ($affectedIDs as $ID) {
             $LogActionText = "$Name: Responsible changed from $FromName to $ToName";
-            createITSMLogEntry($ID, $ITSMTypeID, $UserSessionID, $LogActionText);
+            $functions->createITSMLogEntry($ID, $ITSMTypeID, $UserSessionID, $LogActionText);
         }
     }
 
@@ -22477,80 +22197,125 @@ function transferITSMItems($item, $UserIDToMoveFrom, $UserToMoveTo, $UserSession
 
 function transferOthersItems($item, $UserIDToMoveFrom, $UserToMoveTo, $UserSessionID)
 {
-    global $conn;
     global $functions;
-    
+
     $TypeID = $item["fieldvalue"];
 
+    // Define queries and parameters based on the TypeID
     switch ($TypeID) {
-        case "1":
-            //KanBan tasks
-            $sql = "UPDATE taskslist SET RelatedUserID = $UserToMoveTo WHERE RelatedUserID = $UserIDToMoveFrom AND Status != 4;";
-            mysqli_query($conn, $sql);
+        case "1": // KanBan tasks
+            $sql = "
+                UPDATE taskslist 
+                SET RelatedUserID = ? 
+                WHERE RelatedUserID = ? AND Status != 4
+            ";
+            $params = [$UserToMoveTo, $UserIDToMoveFrom];
+            $tables = ["taskslist"];
             break;
-        case "2":
-            //Workflow tasks
-            $sql = "UPDATE workflowsteps SET RelatedUserID = $UserToMoveTo WHERE RelatedUserID = $UserIDToMoveFrom AND RelatedStatusID != 3;";
-            mysqli_query($conn, $sql);
+
+        case "2": // Workflow tasks
+            $sql = "
+                UPDATE workflowsteps 
+                SET RelatedUserID = ? 
+                WHERE RelatedUserID = ? AND RelatedStatusID != 3
+            ";
+            $params = [$UserToMoveTo, $UserIDToMoveFrom];
+            $tables = ["workflowsteps"];
             break;
-        case "3":
-            //Projects
-            $sql = "UPDATE projects SET ProjectManager = $UserToMoveTo WHERE ProjectManager = $UserIDToMoveFrom AND Status NOT IN (7,8);";
-            mysqli_query($conn, $sql);
+
+        case "3": // Projects
+            $sql = "
+                UPDATE projects 
+                SET ProjectManager = ? 
+                WHERE ProjectManager = ? AND Status NOT IN (7, 8)
+            ";
+            $params = [$UserToMoveTo, $UserIDToMoveFrom];
+            $tables = ["projects"];
             break;
-        case "4":
-            //Project Tasks
-            $sql = "UPDATE project_tasks SET Responsible = $UserToMoveTo WHERE Responsible = $UserIDToMoveFrom AND Status != 7;";
-            mysqli_query($conn, $sql);
+
+        case "4": // Project Tasks
+            $sql = "
+                UPDATE project_tasks 
+                SET Responsible = ? 
+                WHERE Responsible = ? AND Status != 7
+            ";
+            $params = [$UserToMoveTo, $UserIDToMoveFrom];
+            $tables = ["project_tasks"];
             break;
+
         default:
-            return true;
+            return true; // No action needed for other cases
     }
-    
-    return true;
+
+    // Execute the query using dmlQuery
+    $result = $functions->dmlQuery($sql, $params, $tables);
+
+    // Check if the query executed successfully
+    if ($result["LastID"] >= 0) {
+        return true;
+    } else {
+        $functions->errorlog(
+            "Failed to transfer items for TypeID: $TypeID from UserID: $UserIDToMoveFrom to UserID: $UserToMoveTo",
+            "transferOthersItems"
+        );
+        return false;
+    }
 }
 
 function transferMS($item, $UserIDToMoveFrom, $UserToMoveTo, $UserSessionID)
 {
-    global $conn;
     global $functions;
+
     $TypeID = $item["fieldvalue"];
 
     switch ($TypeID) {
-        case "1":
-            //Roles
-            $sql = "SELECT RoleID FROM usersroles WHERE UserID = $UserIDToMoveFrom;";
-            $result = mysqli_query($conn, $sql);
+        case "1": // Roles
+            $sql = "
+                SELECT RoleID 
+                FROM usersroles 
+                WHERE UserID = ?
+            ";
+            $params = [$UserIDToMoveFrom];
 
-            if (!$result) {
-                error_log("Query failed: " . mysqli_error($conn));
-                return;
+            // Fetch roles using selectQuery
+            $result = $functions->selectQuery($sql, $params);
+
+            if (empty($result)) {
+                $functions->errorlog("No roles found for UserID: $UserIDToMoveFrom", "transferMS");
+                return false;
             }
 
-            // Loop through each RoleID and run addUserIDToRole
-            while ($row = mysqli_fetch_assoc($result)) {
-                $RoleID = $row['RoleID'];                
+            // Loop through each RoleID and add the new user to the role
+            foreach ($result as $row) {
+                $RoleID = $row['RoleID'];
                 $RoleName = getUserRoleName($RoleID);
                 $Status = addUserIDToRole($UserToMoveTo, $RoleID);
-                if($Status){
+                if ($Status) {
                     $LogActionText = "User got added to Role: $RoleName";
                     $LogTypeID = 2;
                     createUserLogEntry($UserToMoveTo, $UserSessionID, $LogTypeID, $LogActionText);
                 }
             }
             break;
-        case "2":
-            //Groups
-            $sql = "SELECT GroupID FROM usersgroups WHERE UserID = $UserIDToMoveFrom;";
-            $result = mysqli_query($conn, $sql);
 
-            if (!$result) {
-                error_log("Query failed: " . mysqli_error($conn));
-                return;
+        case "2": // Groups
+            $sql = "
+                SELECT GroupID 
+                FROM usersgroups 
+                WHERE UserID = ?
+            ";
+            $params = [$UserIDToMoveFrom];
+
+            // Fetch groups using selectQuery
+            $result = $functions->selectQuery($sql, $params);
+
+            if (empty($result)) {
+                $functions->errorlog("No groups found for UserID: $UserIDToMoveFrom", "transferMS");
+                return false;
             }
 
-            // Loop through each RoleID and run addUserIDToRole
-            while ($row = mysqli_fetch_assoc($result)) {
+            // Loop through each GroupID and add the new user to the group
+            foreach ($result as $row) {
                 $GroupID = $row['GroupID'];
                 $GroupName = getUserGroupName($GroupID);
                 $Status = addUserToGroup($UserToMoveTo, $GroupID);
@@ -22561,10 +22326,11 @@ function transferMS($item, $UserIDToMoveFrom, $UserToMoveTo, $UserSessionID)
                 }
             }
             break;
+
         default:
-            return true;
+            return true; // No action needed for other cases
     }
-    
+
     return true;
 }
 
@@ -22611,42 +22377,54 @@ function makeLookupFieldResultView($FieldID, $Type)
     return $ConcatString;
 }
 
-function checkAndUpdateCertificateExpireDate() {
-    global $conn;
+function checkAndUpdateCertificateExpireDate()
+{
     global $functions;
 
-    $sql = "SELECT cmdb_ci_fieldslist.ID,cmdb_ci_fieldslist.FieldName
-            FROM cmdb_ci_fieldslist
-            LEFT JOIN cmdb_cis ON cmdb_ci_fieldslist.RelatedCITypeID = cmdb_cis.ID
-            WHERE cmdb_cis.Active = '1' AND cmdb_ci_fieldslist.addon = '1';";
+    $Active = 1;
+    $Addon = 1;
 
-    $result = mysqli_query($conn, $sql) or die('Query fail: ' . mysqli_error($conn));
+    // Fetch fields with addon enabled and related active CI types
+    $sql = "
+        SELECT cmdb_ci_fieldslist.ID, cmdb_ci_fieldslist.FieldName
+        FROM cmdb_ci_fieldslist
+        LEFT JOIN cmdb_cis ON cmdb_ci_fieldslist.RelatedCITypeID = cmdb_cis.ID
+        WHERE cmdb_cis.Active = ? AND cmdb_ci_fieldslist.addon = ?
+    ";
 
-    while ($row = mysqli_fetch_array($result)) {
+    $fieldsArray = [];
+    $fieldsResult = $functions->selectQuery($sql, [$Active, $Addon]);
+
+    foreach ($fieldsResult as $row) {
         $FieldID = $row["ID"];
         $CITypeID = getCITypeIDFromFieldID($FieldID);
         $CITableName = getCITableName($CITypeID);
-        $FieldName = $row["FieldName"];
-        $FieldsArray[] = array("FieldID" => $FieldID, "FieldName" => $FieldName,"CITableName" => $CITableName,);
+        $fieldsArray[] = [
+            "FieldID" => $FieldID,
+            "FieldName" => $row["FieldName"],
+            "CITableName" => $CITableName,
+        ];
     }
 
-    foreach ($FieldsArray as $key){
-        $FieldID = $key["ID"];
-        $CITableName = $key["CITableName"];
-        $FieldName = $key["FieldName"];
+    foreach ($fieldsArray as $field) {
+        $fieldName = $field['FieldName'];
+        $tableName = $field['CITableName'];
 
-        $sql2 = "SELECT ID, $FieldName AS Domain
-                FROM $CITableName;";
+        $sql2 = "
+            SELECT ID, $fieldName AS Domain
+            FROM $tableName
+            WHERE Active = 1
+        ";
+        $functions->debuglog($sql2);
 
-        $result2 = mysqli_query($conn, $sql2) or die('Query fail: ' . mysqli_error($conn));
-
-        while ($row = mysqli_fetch_array($result2)) {
+        $result2 = $functions->selectQuery($sql2, []);
+        foreach ($result2 as $row) {
             $Domain = $row["Domain"];
             $CIID = $row["ID"];
             $ExpireDate = getCertificateExpireDateAuto($Domain);
 
-            if($ExpireDate){
-                updateCIFieldValue($CITableName, $CIID, "EndDate", $ExpireDate);
+            if ($ExpireDate != "error") {
+                updateCIFieldValue($field['CITableName'], $CIID, "EndDate", $ExpireDate);
             }
         }
     }
@@ -22654,19 +22432,20 @@ function checkAndUpdateCertificateExpireDate() {
 
 function updateCIFieldValue($CITableName, $CIID, $FieldName, $FieldValue)
 {
-    global $conn;
     global $functions;
 
-    $sql = "UPDATE $CITableName
-            SET $FieldName = '$FieldValue'
-            WHERE ID = $CIID;";
+    $sql = "
+        UPDATE $CITableName
+        SET $FieldName = ?
+        WHERE ID = ?
+    ";
 
-    mysqli_query($conn, $sql) or die('Query fail: ' . mysqli_error($conn));
+    $params = [$FieldValue, $CIID];
+    $functions->dmlQuery($sql, $params, [$CITableName]);
 }
 
 function getSelectOptionValue($LookupTable, $LookupField, $LookupFieldResult, $fieldValue, $AddEmpty)
 {
-    global $conn;
     global $functions;
 
     $Value = "";
@@ -22675,99 +22454,110 @@ function getSelectOptionValue($LookupTable, $LookupField, $LookupFieldResult, $f
         $Value .= "<option value=\"\"></option>"; // Add an empty option
     }
 
-    $sql = "SELECT $LookupFieldResult AS Result
-            FROM $LookupTable
-            WHERE $LookupField = $fieldValue;";
-    try {
-        $result = mysqli_query($conn, $sql) or die('Query fail: ' . mysqli_error($conn));
+    $sql = "
+        SELECT $LookupFieldResult AS Result
+        FROM $LookupTable
+        WHERE $LookupField = ?
+    ";
 
-        while ($row = mysqli_fetch_array($result)) {
-            $Value .= $row["Result"];
+    try {
+        $result = $functions->selectQuery($sql, [$fieldValue]);
+        foreach ($result as $row) {
+            $Value .= "<option value=\"{$row['Result']}\">{$row['Result']}</option>";
         }
     } catch (Exception $e) {
-        // Log the error with the full SQL query for debugging
-        $functions->errorlog($e->getMessage()." SQL: $sql", "getSelectOptionValue");
+        $functions->errorlog(
+            $e->getMessage() . " SQL: $sql",
+            "getSelectOptionValue"
+        );
     }
 
     return $Value;
 }
 
-function updateITSMUpdatedDate($ITSMTypeID,$ITSMID){
-    global $conn;
+function updateITSMUpdatedDate($ITSMTypeID, $ITSMID)
+{
     global $functions;
 
     $ITSMTableName = $functions->getITSMTableName($ITSMTypeID);
 
-    $sql = "UPDATE $ITSMTableName SET LastUpdated = NOW() WHERE ID = $ITSMID;";
+    $sql = "
+        UPDATE $ITSMTableName
+        SET LastUpdated = NOW()
+        WHERE ID = ?
+    ";
 
-    mysqli_query($conn, $sql);
+    $functions->dmlQuery($sql, [$ITSMID], [$ITSMTableName]);
 }
 
 function checkReadStatus($commentID, $userID)
 {
-    global $conn;
     global $functions;
 
-    $sql = "SELECT 1 FROM itsm_comments_readstatus WHERE CommentID = ? AND UserID = ?";
-    $stmt = mysqli_prepare($conn, $sql);
-    if ($stmt) {
-        mysqli_stmt_bind_param($stmt, "ii", $commentID, $userID);
-        mysqli_stmt_execute($stmt);
-        mysqli_stmt_store_result($stmt);
-        $isRead = mysqli_stmt_num_rows($stmt) > 0 ? 1 : 0;
+    // SQL query to check if the comment is read by the user
+    $sql = "
+        SELECT 1 
+        FROM itsm_comments_readstatus 
+        WHERE CommentID = ? AND UserID = ?
+    ";
 
-        mysqli_stmt_free_result($stmt);
-        mysqli_stmt_close($stmt);
-        return $isRead;
-    } else {
-        return 0; // Assuming unread if there's an error
-    }
+    // Parameters for the query
+    $parameters = [$commentID, $userID];
+
+    // Execute the query using selectQuery
+    $result = $functions->selectQuery($sql, $parameters);
+
+    // Return 1 if the record exists, otherwise 0
+    return !empty($result) ? 1 : 0;
 }
 
 function getNumberOfUnreadITSMComments($ITSMTypeID, $ITSMID, $userID)
 {
-    global $conn;
     global $functions;
 
-    $sql = "SELECT COUNT(*) AS unread_count
-            FROM itsm_comments c
-            LEFT JOIN itsm_comments_readstatus r ON c.ID = r.CommentID AND r.UserID = ?
-            WHERE c.RelatedElementID = ? AND c.ITSMType = ? AND r.CommentID IS NULL";
+    // SQL query to count unread comments
+    $sql = "
+        SELECT COUNT(*) AS unread_count
+        FROM itsm_comments c
+        LEFT JOIN itsm_comments_readstatus r 
+        ON c.ID = r.CommentID AND r.UserID = ?
+        WHERE c.RelatedElementID = ? AND c.ITSMType = ? AND r.CommentID IS NULL
+    ";
 
-    $stmt = mysqli_prepare($conn, $sql);
-    if ($stmt) {
-        mysqli_stmt_bind_param($stmt, "iii", $userID, $ITSMID, $ITSMTypeID);
-        mysqli_stmt_execute($stmt);
-        mysqli_stmt_bind_result($stmt, $unreadCount);
-        mysqli_stmt_fetch($stmt);
-        mysqli_stmt_close($stmt);
+    // Parameters for the query
+    $parameters = [$userID, $ITSMID, $ITSMTypeID];
 
-        return $unreadCount;
-    } else {
-        return 0; // Assuming 0 if there's an error
-    }
+    // Execute the query using selectQuery
+    $result = $functions->selectQuery($sql, $parameters);
+
+    // Return the unread count if the result is not empty, otherwise return 0
+    return !empty($result) ? (int)$result[0]['unread_count'] : 0;
 }
 
 function readITSMComments($ITSMTypeID, $ITSMID, $UserSessionID)
 {
-    global $conn;
     global $functions;
 
-    $sql = "INSERT IGNORE INTO itsm_comments_readstatus (UserID, CommentID)
-            SELECT ?, ID
-            FROM itsm_comments
-            WHERE RelatedElementID = ? AND ITSMType = ?;";
+    // SQL query to mark ITSM comments as read
+    $sql = "
+        INSERT IGNORE INTO itsm_comments_readstatus (UserID, CommentID)
+        SELECT ?, ID
+        FROM itsm_comments
+        WHERE RelatedElementID = ? AND ITSMType = ?
+    ";
 
-    $stmt = mysqli_prepare($conn, $sql);
-    if ($stmt) {
-        mysqli_stmt_bind_param($stmt, "iii", $UserSessionID, $ITSMID, $ITSMTypeID);
-        if (mysqli_stmt_execute($stmt)) {
-        } else {
-            $functions->errorlog("Error marking comments as read: " . mysqli_stmt_error($stmt), "readITSMComments");
-        }
-        mysqli_stmt_close($stmt);
-    } else {
-        $functions->errorlog("Statement preparation failed: " . mysqli_error($conn)," readITSMComments");
+    // Parameters for the query
+    $parameters = [$UserSessionID, $ITSMID, $ITSMTypeID];
+
+    // Execute the query using dmlQuery
+    $result = $functions->dmlQuery($sql, $parameters, ["itsm_comments_readstatus", "itsm_comments"]);
+
+    // Check if the execution was successful
+    if ($result["LastID"] < 0) {
+        $functions->errorlog(
+            "Error marking comments as read for ITSMTypeID: $ITSMTypeID, ITSMID: $ITSMID, UserSessionID: $UserSessionID",
+            "readITSMComments"
+        );
     }
 }
 
@@ -22833,46 +22623,52 @@ function sendSystemMailUserCreated($UserID,$TemplateID)
 
 function deleteITSMComment($commentID)
 {
-
-    global $conn;
     global $functions;
 
-    $sql = "DELETE FROM itsm_comments
-            WHERE ID = ?;";
+    // SQL query to delete a comment
+    $sql = "
+        DELETE FROM itsm_comments
+        WHERE ID = ?
+    ";
 
-    $stmt = mysqli_prepare($conn, $sql);
-    if ($stmt) {
-        mysqli_stmt_bind_param($stmt, "i", $commentID);
-        if (mysqli_stmt_execute($stmt)) {
-        } else {
-            $functions->errorlog("Error deleting comment: " . mysqli_stmt_error($stmt), "deleteITSMComment");
-        }
-        mysqli_stmt_close($stmt);
-    } else {
-        $functions->errorlog("Statement preparation failed: " . mysqli_error($conn), " deleteITSMComment");
+    // Parameters for the query
+    $parameters = [$commentID];
+
+    // Execute the query using dmlQuery
+    $result = $functions->dmlQuery($sql, $parameters, ["itsm_comments"]);
+
+    // Check if the execution was successful
+    if ($result["LastID"] < 0) {
+        $functions->errorlog(
+            "Error deleting comment with ID: $commentID",
+            "deleteITSMComment"
+        );
     }
 }
 
-function updateITSMCOmment($commentID, $itsmComment)
+function updateITSMComment($commentID, $itsmComment)
 {
-
-    global $conn;
     global $functions;
 
-    $sql = "UPDATE itsm_comments
-            SET Text = ?
-            WHERE ID = ?;";
+    // SQL query to update a comment's text
+    $sql = "
+        UPDATE itsm_comments
+        SET Text = ?
+        WHERE ID = ?
+    ";
 
-    $stmt = mysqli_prepare($conn, $sql);
-    if ($stmt) {
-        mysqli_stmt_bind_param($stmt, "si", $itsmComment,$commentID);
-        if (mysqli_stmt_execute($stmt)) {
-        } else {
-            $functions->errorlog("Error deleting comment: " . mysqli_stmt_error($stmt), "deleteITSMComment");
-        }
-        mysqli_stmt_close($stmt);
-    } else {
-        $functions->errorlog("Statement preparation failed: " . mysqli_error($conn), " deleteITSMComment");
+    // Parameters for the query
+    $parameters = [$itsmComment, $commentID];
+
+    // Execute the query using dmlQuery
+    $result = $functions->dmlQuery($sql, $parameters, ["itsm_comments"]);
+
+    // Check if the execution was successful
+    if ($result["LastID"] < 0) {
+        $functions->errorlog(
+            "Error updating comment with ID: $commentID",
+            "updateITSMComment"
+        );
     }
 }
 
@@ -22918,27 +22714,30 @@ function translateOptions($optionsString, $FieldDefaultValue)
 
 function getGroupsInRole($RoleID)
 {
-    global $conn;
     global $functions;
 
-    $GroupsArray = array();
+    $GroupsArray = [];
 
-    try {
-        $sql = "SELECT GroupID FROM usergroupsroles WHERE RoleID = ?";
-        $stmt = mysqli_prepare($conn, $sql);
+    // SQL query to fetch groups in a role
+    $sql = "
+        SELECT GroupID 
+        FROM usergroupsroles 
+        WHERE RoleID = ?
+    ";
 
-        mysqli_stmt_bind_param($stmt, "i", $RoleID);
-        mysqli_stmt_execute($stmt);
-        $result = mysqli_stmt_get_result($stmt);
+    // Parameters for the query
+    $parameters = [$RoleID];
 
-        while ($row = mysqli_fetch_assoc($result)) {
+    // Execute the query using selectQuery
+    $result = $functions->selectQuery($sql, $parameters);
+
+    // Check if results are returned
+    if (!empty($result)) {
+        foreach ($result as $row) {
             $GroupsArray[] = $row['GroupID'];
         }
-
-        mysqli_stmt_close($stmt);
-    } catch (mysqli_sql_exception $e) {
-        $functions->errorlog("Database error: " . $e->getMessage(), "getGroupsInRole");
-        return false;
+    } else {
+        $functions->errorlog("No groups found for RoleID: $RoleID", "getGroupsInRole");
     }
 
     return $GroupsArray;
@@ -22946,44 +22745,51 @@ function getGroupsInRole($RoleID)
 
 function getGroupFilter($Type, $FieldID)
 {
-    global $conn;
     global $functions;
 
+    // Determine the query based on the Type
     switch ($Type) {
         case 'itsm':
-            $sql = "SELECT GroupFilterOptions FROM itsm_fieldslist WHERE ID = ?";
+            $sql = "
+                SELECT GroupFilterOptions 
+                FROM itsm_fieldslist 
+                WHERE ID = ?
+            ";
             break;
 
         case 'ci':
-            $sql = "SELECT GroupFilterOptions FROM cmdb_ci_fieldslist WHERE ID = ?";
+            $sql = "
+                SELECT GroupFilterOptions 
+                FROM cmdb_ci_fieldslist 
+                WHERE ID = ?
+            ";
             break;
 
         case 'form':
-            $sql = "SELECT GroupFilterOptions FROM forms_fieldslist WHERE ID = ?";
+            $sql = "
+                SELECT GroupFilterOptions 
+                FROM forms_fieldslist 
+                WHERE ID = ?
+            ";
             break;
 
         default:
             throw new Exception("Invalid Type: " . $Type);
     }
-    try {
 
-        $stmt = mysqli_prepare($conn, $sql);
+    // Parameters for the query
+    $parameters = [$FieldID];
 
-        mysqli_stmt_bind_param($stmt, "i", $FieldID);
-        mysqli_stmt_execute($stmt);
-        $result = mysqli_stmt_get_result($stmt);
+    // Execute the query using selectQuery
+    $result = $functions->selectQuery($sql, $parameters);
 
-        while ($row = mysqli_fetch_assoc($result)) {
-            $GroupFilterOptions = $row['GroupFilterOptions'];
-        }
-
-        mysqli_stmt_close($stmt);
-    } catch (mysqli_sql_exception $e) {
-        $functions->errorlog("Database error: " . $e->getMessage(), "getGroupsInRole");
-        return false;
+    // Check if results are returned and fetch the GroupFilterOptions
+    if (!empty($result)) {
+        return $result[0]['GroupFilterOptions'];
+    } else {
+        $functions->errorlog("No group filter options found for FieldID: $FieldID in Type: $Type", "getGroupFilter");
+        return null;
     }
-
-    return $GroupFilterOptions;
 }
 
 function addGroupFilter($Type, $FieldID, $GroupID)

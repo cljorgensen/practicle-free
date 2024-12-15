@@ -232,6 +232,8 @@ setcookie($cookie_name, $cookie_value, time() + (86400 * 14), "/"); // 86400 = 1
   <!-- CSS Files -->
   <link id="pagestyle" href="./assets/css/material-dashboard.css" rel="stylesheet" />
   <link id="pagestyle" href="./assets/js/DataTables/datatables.min.css" rel="stylesheet" />
+  <link id="pagestyle" href="./assets/js/DataTables/SearchBuilder-1.5.0/css/searchBuilder.dataTables.min.css" rel="stylesheet" />
+  <link id="pagestyle" href="./assets/js/DataTables/DateTime-1.5.1/css/dataTables.dateTime.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="./assets/js/jquery-ui-1.13.2/jquery-ui.min.css">
   <!-- JQuery -->
   <script src="./assets/js/core/jquery-3.7.1.min.js"></script>
@@ -245,6 +247,9 @@ setcookie($cookie_name, $cookie_value, time() + (86400 * 14), "/"); // 86400 = 1
   <script src="./assets/js/plugins/toastr.min.js"></script>
   <!-- Core JS Files -->
   <script src="./assets/js/DataTables/datatables.min.js"></script>
+  <script src="./assets/js/DataTables/SearchBuilder-1.5.0/js/dataTables.searchBuilder.min.js"></script>
+  <script src="./assets/js/DataTables/SearchBuilder-1.5.0/js/searchBuilder.dataTables.min.js"></script>
+  <script src="./assets/js/DataTables/DateTime-1.5.1/js/dataTables.dateTime.min.js"></script>
   <script src="./assets/js/plugins/moment.min.js"></script>
   <script src="./assets/js/core/popper.min.js"></script>
   <script src="./assets/js/core/bootstrap.min.js"></script>
@@ -448,11 +453,10 @@ $ActiveModules[] = $functions->getActiveModules();
             } else {
               $MenuPage = "./" . $MenuPage . $ID;
             }
-            $RoleID = $Value["RoleID"];
-            $RoleGroups = getGroupsInRole($RoleID);
+            $GroupID = $Value["GroupID"];
 
             // Check if the user belongs to any of the groups associated with the role
-            if (in_array("100001", $group_array) || !empty(array_intersect($group_array, $RoleGroups))) {
+            if (in_array("100001", $group_array) || in_array("$GroupID", $group_array) || empty($GroupID)) {
               $TempArray[] = array("ID" => $ID, "Name" => $Name, "TypeIcon" => $TypeIcon, "MenuPage" => $MenuPage);
             }
 
@@ -612,25 +616,6 @@ $ActiveModules[] = $functions->getActiveModules();
 
   <main class="main-content position-relative max-height-vh-100 h-100 border-radius-lg">
     <?php include("./navbar.php"); ?>
-
-    <?php include("./modals/modal_view_ci.php"); ?>
-    <?php include("./modals/modal_view_itsm.php"); ?>
-    <?php include("./modals/modal_create_itsm.php"); ?>
-    <?php include("./modals/modal_editworkflowtask.php"); ?>
-    <?php include("./modals/modal_password_generator.php"); ?>
-    <?php include("./modals/modal_problemreport.php"); ?>
-    <?php include("./modals/modal_news_article.php"); ?>
-    <?php include("./modals/modal_news_category.php"); ?>
-    <?php include("./modals/modal_view_team.php"); ?>
-    <?php include("./modals/modal_view_element.php"); ?>
-    <?php include("./modals/modal_unit.php"); ?>
-    <?php include("./modals/modal_create_new_projecttask.php"); ?>
-    <?php include("./modals/modal_create_new_project.php"); ?>
-    <?php include("./modals/modal_view_archived_document.php"); ?>
-    <?php include("./modals/modal_view_itsm_email.php"); ?>
-    <?php include("./modals/modal_master.php"); ?>
-    <?php include("./modals/modal_view_message.php") ?>
-    <?php include("./modals/modal_create_ci.php") ?>
 
     <script>
       $(document).ready(function() {

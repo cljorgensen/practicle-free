@@ -178,7 +178,7 @@ function initiateAdvancedViewTable($tablename)
    $('#$tablename').dataTable().fnDestroy();
     
     var table = $('#$tablename').DataTable( {
-      sDom: 'Brftp',
+      sDom: 'QBlfrtip',
       bFilter: true,
       paging: true,
       info: false,
@@ -281,6 +281,11 @@ function initiateAdvancedViewTable($tablename)
               }
             }
           ],
+          searchBuilder: {
+          },
+          layout: {
+            topStart: 'searchBuilder' // Ensure SearchBuilder is positioned at the top
+          }
     } );
     ";
 }
@@ -426,7 +431,7 @@ function initiateSimpleViewTable($tablename, $pageLength, $hideColumns)
     $('#$tablename').dataTable().fnDestroy();
 
     var table = $('#$tablename').DataTable({
-        sDom: 'Brftip',
+        sDom: 'Blfrtip',
         bFilter: true,
         paging: true,
         info: false,
