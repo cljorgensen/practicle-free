@@ -6,7 +6,7 @@ DRY_RUN=false
 PHP_VERSION="8.3"
 FPM_POOL_CONF="/etc/php/$PHP_VERSION/fpm/pool.d/www.conf"
 WEB_PROJECT_PATH="/var/www/html/practicle"
-VERSION="3.93.117" # Replace with the desired Practicle release version
+VERSION="3.93.127" # Replace with the desired Practicle release version
 
 function run_command() {
     local command=$1

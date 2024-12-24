@@ -6500,6 +6500,17 @@ if (isset($_GET['deletenewsitem'])) {
   $result = $stmt->get_result();
 }
 
+if (isset($_GET['deleteLicenceEntry'])) {
+  $licenseId = $_POST['licenseId'];
+
+  $sql = "DELETE FROM licences WHERE ID = ?";
+
+  $stmt = mysqli_prepare($conn, $sql);
+  $stmt->bind_param("i", $licenseId);
+  $stmt->execute();
+  $result = $stmt->get_result();
+}
+
 if (isset($_GET['deleteDocument'])) {
   $UserID = $_SESSION['id'];
   $UserLanguageID = $functions->getUserLanguage($UserID);
@@ -9457,7 +9468,6 @@ if (isset($_GET['getITSMFieldsValues'])) {
   $exit = false;
   
   if (!empty($ITSMGroupID)) { // Check if $ITSMGroupID is not empty
-    $functions->debuglog("ITSMGroupID is not empty: $ITSMGroupID");
     // If "100001" is in $UsersGroups, continue
     if (in_array("100001", $UsersGroups)) {
     } else {
@@ -9623,65 +9633,79 @@ if (isset($_GET['cloneITSM'])) {
 
   $Fields = array();
 
- $sql = "
-      SELECT COLUMN_NAME
-      FROM INFORMATION_SCHEMA.COLUMNS
-      WHERE TABLE_NAME = ? AND TABLE_SCHEMA = ?
-  ";
+  $sql = "SELECT COLUMN_NAME
+          FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME = ?
+          AND TABLE_SCHEMA = ?;";
 
-  $params = [$ITSMTableName, $dbname];
-  $result = $functions->selectQuery($sql, $params);
+  $stmt = mysqli_prepare($conn, $sql);
+  $stmt->bind_param("ss", $ITSMTableName, $dbname);
+  $stmt->execute();
+  $result = $stmt->get_result();
 
-  $Fields = [];
-  if (!empty($result)) {
-      foreach ($result as $row) {
-          $Fields[] = $row["COLUMN_NAME"];
-      }
+  while ($row = mysqli_fetch_array($result)) {
+    array_push($Fields, $row[0]);
   }
- 
-  $values = [];
-  $placeholders = [];
-  $Subject = "";
+  $sql = "INSERT INTO $ITSMTableName (";
 
+  $lastElement = end($Fields);
   foreach ($Fields as $Field) {
-      $PreValue = getITSMFieldPreValue($ITSMID, $ITSMTableName, $Field);
+    if ($Field == $lastElement) {
+      $sql .= $Field;
+    } else {
+      $sql .= $Field . ",";
+    }
+  }
 
-      if ($Field === "ID" || $PreValue === "") {
-          $values[] = null;
-          $placeholders[] = "?";
-      } elseif ($Field === "CreatedBy") {
-          $values[] = $UserID;
-          $placeholders[] = "?";
-      } elseif ($Field === "Subject") {
-        $Subject = $PreValue;
-        $values[] = $functions->translate("Cloned") . " " . $PreValue;
-        $placeholders[] = "?";
-      } elseif (in_array($Field, ["LastUpdated", "Created"])) {
-          $placeholders[] = "NOW()"; // Directly add NOW() for datetime columns
-      } elseif ($Field === "Responsible" && $PreValue === "") {
-          $values[] = $UserID; // Set the current user as the default responsible user
-          $placeholders[] = "?";
+  $sql .= ") VALUES (";
+
+  $lastElement = end($Fields);
+  foreach ($Fields as $Field) {
+    $PreValue = getITSMFieldPreValue($ITSMID, $ITSMTableName, $Field);
+    if ($Field == $lastElement) {
+      if ($Field == "ID" || $PreValue == "") {
+        $sql .= "NULL";
+      } elseif ($Field == "CreatedBy") {
+        $sql .= "'$UserID'";
+      } elseif ($Field == "LastUpdated" || $Field == "Created") {
+        $sql .= "NOW()";
+      } elseif ($Field == "RelatedCompanyID") {
+        $CompanyID = $PreValue;
+        $sql .= "'$PreValue',";
+      } elseif ($Field == "BusinessService") {
+        $BusinessServiceID = $PreValue;
+        $sql .= "'$PreValue',";
+      } elseif ($Field == "Priority") {
+        $Priority = $PreValue;
+        $sql .= "'$PreValue',";
       } else {
-          $values[] = $PreValue;
-          $placeholders[] = "?";
+        $sql .= "'$PreValue'";
       }
+    } else {
+      if ($Field == "ID" || $PreValue == "") {
+        $sql .= "NULL,";
+      } elseif ($Field == "CreatedBy") {
+        $sql .= "'$UserID',";
+      } elseif ($Field == "LastUpdated" || $Field == "Created") {
+        $sql .= "NOW(),";
+      } elseif ($Field == "RelatedCompanyID") {
+        $CompanyID = $PreValue;
+        $sql .= "'$PreValue',";
+      } elseif ($Field == "BusinessService") {
+        $BusinessServiceID = $PreValue;
+        $sql .= "'$PreValue',";
+      } elseif ($Field == "Priority") {
+        $Priority = $PreValue;
+        $sql .= "'$PreValue',";
+      } else {
+        $sql .= "'$PreValue',";
+      }
+    }
   }
+  $sql .= ")";
 
-  // Build the INSERT query dynamically
-  $sql = "
-      INSERT INTO $ITSMTableName (" . implode(", ", $Fields) . ")
-      VALUES (" . implode(", ", $placeholders) . ")
-  ";
+  $result = mysqli_query($conn, $sql);
 
-  // Execute the query
-  $result = $functions->dmlQuery($sql, $values, [$ITSMTableName]);
-
-  if ($result["LastID"] < 0) {
-      throw new Exception("Error inserting ITSM record");
-  }
-
-  $NewITMSID = $result["LastID"];
-
+  $NewITMSID = $conn->insert_id;
   $Text = "Cloned from $ITSMID";
   $functions->createITSMLogEntry($NewITMSID, $ITSMTypeID, $UserID, $Text);
 
@@ -9719,10 +9743,6 @@ if (isset($_GET['cloneITSM'])) {
   }  
 
   if ($NewITMSID !== "") {
-    $Headline = $functions->translate("Cloned") . " " . $Subject;
-    $Text = $functions->translate("Cloned") . ": " . $Subject;
-    $Url = "javascript:viewITSM('$NewITMSID','$ITSMTypeID','1','modal');";
-    logActivity($NewITMSID, $ITSMTypeID, $Headline, $Text, $Url);
     //success
     $Array[] = array("Result" => "success", "ITSMID" => $NewITMSID, "ITSMTypeID" => $ITSMTypeID);
     echo json_encode($Array);
@@ -14759,7 +14779,7 @@ if (isset($_GET['closeAllTasksAssociatedWithITSM'])) {
 }
 
 if (isset($_GET['translate'])) {
-  $text = $_GET['text']; // Get the individual text to be translated
+  $text = $_POST['text']; // Get the individual text to be translated
   $translatedText = $functions->translate($text); // Call the 'translate' function for the individual text
   echo json_encode($translatedText); // Send the translated text as a JSON response
 }
@@ -17410,6 +17430,19 @@ if (isset($_GET['addGroupFilter'])) {
     echo json_encode($Array);
   } else {
     $Array[] = array("Result" => "fail");
+    echo json_encode($Array);
+  }  
+}
+
+if (isset($_GET['getFileSizeAllowed'])) {
+  $UserSessionID = $_SESSION['id'];
+  $Array = array();
+  $fileSizeAllowedInMB = getFileSizeAllowedInMB();
+
+  if($fileSizeAllowedInMB){
+    $Array[] = array("fileSizeAllowedInMB" => $fileSizeAllowedInMB);
+    echo json_encode($Array);
+  } else {
     echo json_encode($Array);
   }  
 }

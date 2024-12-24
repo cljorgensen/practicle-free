@@ -9,3 +9,6 @@ CHANGE COLUMN RoleID GroupID MEDIUMINT DEFAULT NULL;
 
 -- 3.93.121 -> 3.93.122
 ALTER TABLE `logsystem` CHANGE `ID` `ID` BIGINT NOT NULL AUTO_INCREMENT;
+
+-- 3.93.122 -> 3.93.123
+INSERT INTO `settings` (`ID`, `SettingsTypeID`, `SettingName`, `SettingDescription`, `SettingValue`, `Active`) VALUES ('65', '2', 'Max file size', 'Max file size for uploads in mb', '300', '1');

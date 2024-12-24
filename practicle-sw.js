@@ -1,4 +1,4 @@
-const cacheVersion = "393122";
+const cacheVersion = "393127";
 const cacheName = `Practicle-${cacheVersion}`;
 const filesToCache = [];
 

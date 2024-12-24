@@ -22,18 +22,6 @@ session_set_cookie_params([
   "samesite" => "Strict" // Optional: Prevent the cookie from being sent with cross-site requests
 ]);
 
-// Check if the user is already logged in, if yes then redirect him to welcome page
-if (isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true) {
-  $cookie_name = "practicle_visited_url";
-  if (!empty($_COOKIE[$cookie_name])) {
-    $url = $_COOKIE[$cookie_name];
-    echo "<script>window.location.href = '$url';</script>";
-  } else {
-    header("location: index.php");
-    exit;
-  }
-}
-
 require_once "./inc/dbconnection.php";
 require_once "./functions/functions.php";
 include_once "./locales/i18n_setup.php";
@@ -55,6 +43,19 @@ if (empty($_SESSION['csrf_token'])) {
 }
 
 $csrf_token = $_SESSION['csrf_token'];
+
+// Check if the user is already logged in, if yes then redirect him to welcome page
+if (isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true) {
+  $cookie_name = "practicle_visited_url";
+  if (!empty($_COOKIE[$cookie_name])) {
+    $url = $_COOKIE[$cookie_name];
+    header("location: $url");
+  } else {
+    header("location: index.php");
+    exit;
+  }
+}
+
 ?>
 
 <link rel="stylesheet" type="text/css" href="./assets/js/cookie_consent/cookieconsent.min.css" />
@@ -183,7 +184,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             // Lets grap the UserID
             $UserID = $id;
             // Check if user is in Active Directory
-            $LDAPStatus = @$functions->getSettingValue(56);
+            $LDAPStatus = $functions->getSettingValue(56);
             $validatedViaLDAP = false;
  
             if ($LDAPStatus == "1") {
@@ -192,10 +193,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 $databasePassword = $password;
                 $hashedPassword = $databasePassword;
               } else {
-                $hashedPassword = @$functions->SaltAndHashPasswordForCompare($password);
+                $hashedPassword = $functions->SaltAndHashPasswordForCompare($password);
               }
             } else {
-              $hashedPassword = @$functions->SaltAndHashPasswordForCompare($password);
+              $hashedPassword = $functions->SaltAndHashPasswordForCompare($password);
             }
 
             $count = 0;
@@ -219,7 +220,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             while ($row = mysqli_fetch_assoc($result)) {
               $count = $row['ANTAL'];
             }
-            //$count = @$functions->getNumberOfLogins($ip, $username);
+            //$count = $functions->getNumberOfLogins($ip, $username);
             if ($count > 5) {
               session_destroy();
               // Redirect to quarantine page
@@ -235,7 +236,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             }
 
             if ($hashedPassword === $databasePassword && $count < 6) {
-              @$functions->setUserSessionVariables($UserID);
+              $functions->setUserSessionVariables($UserID);
 
               if ($_SESSION['Active'] == "0" || $_SESSION['Active'] == "") {
                 echo "<script> alert('Your account has been deactivated!'); </script>";
@@ -249,11 +250,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
               $_SESSION["locked"] = false;
               $_SESSION["loggedin"] = true;
               $_SESSION['ValidAuth'] = 1;
-              $_SESSION['timeout_duration'] = intval(@$functions->getSettingValue(63)) - 1;
+              $_SESSION['timeout_duration'] = intval($functions->getSettingValue(63)) - 1;
               $_SESSION['LAST_ACTIVITY'] = time();
 
-              $TeamID = @$functions->getUserTeam($UserID);
-              $TeamName = @$functions->getUserTeamName($UserID);
+              $TeamID = $functions->getUserTeam($UserID);
+              $TeamName = $functions->getUserTeamName($UserID);
 
               if (!empty($TeamID)) {
                 $_SESSION['teamid'] = $TeamID;
@@ -263,7 +264,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 $_SESSION['Teamname'] = "";
               }
 
-              @$functions->instantiateUserGroupsRoles($UserID);
+              $functions->instantiateUserGroupsRoles($UserID);
 
               $LeaderOfArray = array();
               $sql = "SELECT users.ID AS UserID
@@ -281,11 +282,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
               createLastLoginUser($UserID);
               if (strcmp($_SESSION['googlesecretcode'], "0Km#9kQyfI1CLkthWhDb#F") !== 0) {
-                //@$functions->sessiondbcreate();
+                //$functions->sessiondbcreate();
                 header("Location: validate_login.php"); // Redirect user to validate auth code
                 exit;
               } elseif (strcmp($_SESSION['googlesecretcode'], "0Km#9kQyfI1CLkthWhDb#F") === 0) {
-                //@$functions->sessiondbcreate();
+                //$functions->sessiondbcreate();
 
                 if ($_SESSION['usertype'] !== 2) {
                   $cookie_name = "practicle_visited_url";
@@ -331,7 +332,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
   }
 }
-$SystemName = @$functions->getSettingValue(13);
+$SystemName = $functions->getSettingValue(13);
 ?>
 
 <head>
@@ -373,7 +374,7 @@ $SystemName = @$functions->getSettingValue(13);
   <!-- CSS Files -->
   <link id="pagestyle" href="./assets/css/material-dashboard.css?v=3.0.4" rel="stylesheet" />
 </head>
-<?php $url = @$functions->getLoginPicture(); ?>
+<?php $url = $functions->getLoginPicture(); ?>
 
 <body class="bg-gray-200">
   <!-- Navbar -->
@@ -393,13 +394,13 @@ $SystemName = @$functions->getSettingValue(13);
     </div>
   </nav>
   <?php
-  $FacebookUrl = @$functions->getSettingValue(45);
-  $HomepageUrl = @$functions->getSettingValue(46);
-  $LinkedIn = @$functions->getSettingValue(47);
-  $LDAPEnabled = @$functions->getSettingValue(56);
+  $FacebookUrl = $functions->getSettingValue(45);
+  $HomepageUrl = $functions->getSettingValue(46);
+  $LinkedIn = $functions->getSettingValue(47);
+  $LDAPEnabled = $functions->getSettingValue(56);
   
   if ($LDAPEnabled == "1") {
-    $Domain = @$functions->getSettingValue(57);
+    $Domain = $functions->getSettingValue(57);
   } else {
     $Domain = "";
   }

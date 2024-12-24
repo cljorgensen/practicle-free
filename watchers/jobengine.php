@@ -13,6 +13,7 @@ use benhall14\phpImapReader\Email as Email;
 use benhall14\phpImapReader\EmailAttachment as EmailAttachment;
 use benhall14\phpImapReader\Reader as Reader;
 
+//Lets create users
 $SystemName = $functions->getSettingValue(13);
 $SystemURL = $functions->getSettingValue(17);
 global $SystemName, $SystemURL;
@@ -34,11 +35,13 @@ define('IMAP_PASSWORD', "$IMAPPassword");
 define('IMAP_MAILBOX', "$IMAPServer");
 define('ATTACHMENT_PATH', __DIR__ . '/attachments');
 
+setUploadLimits();
+
 try {
-    // Main function to handle incoming emails
-    @handleIncomingEmails();
+  // Main function to handle incoming emails
+  handleIncomingEmails();
 } catch (Exception $e) {
-    echo $e->getMessage();
+  echo $e->getMessage();
 }
 
 // Function to handle incoming emails

@@ -1,12 +1,6 @@
 <?php
-// PHP configuration settings
-$postMaxSize = '200M';
-$uploadMaxSize = '200M';
-ini_set('post_max_size', $postMaxSize);
-ini_set('upload_max_filesize', $uploadMaxSize);
-
-$min = "-min";
-//$min = "";
+//$min = "-min";
+$min = "";
 // Set default timezone
 date_default_timezone_set('Europe/Copenhagen');
 
@@ -16,6 +10,12 @@ require_once "./functions/datatables.php";
 require_once "./getdata.php";
 require_once "./locales/i18n_setup.php";
 require_once "./vendor/autoload.php";
+
+$Size = getFileSizeAllowedInMB();
+$postMaxSize = $Size."M";
+$uploadMaxSize = $Size."M";
+ini_set('post_max_size', $postMaxSize);
+ini_set('upload_max_filesize', $uploadMaxSize);
 
 // debug error level: low, medium, high
 $functions->setDebugging("low");

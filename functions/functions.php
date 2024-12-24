@@ -3155,7 +3155,6 @@ function createNewProjectActivity($Content, $ProjectTaskID, $UserSessionID)
 
         // Verify if the operation affected any rows
         if (isset($result['LastID']) && $result['LastID'] > 0) {
-            // Use logActivity instead of debuglog
             $logTypeID = 1; // Define a log type ID, e.g., "1" for activity creation
             $logActionText = "Project activity created successfully for Task ID $ProjectTaskID by User ID $UserSessionID.";
             $functions->logActivity($logTypeID, $logActionText, $UserSessionID);
@@ -7978,6 +7977,164 @@ function getITSMFieldPreValue($ITSMID, $ITSMTableName, $Field)
     return $Value;
 }
 
+function incrementExistingFormFieldOrder($FormID, $FieldOrder)
+{
+    global $conn;
+    global $functions;
+
+    $sql = "UPDATE forms_fieldslist
+            SET FieldOrder = FieldOrder + 1
+            WHERE RelatedFormID = '$FormID' AND FieldOrder >= $FieldOrder;";
+
+    mysqli_query($conn, $sql);
+}
+
+function createNewRequestFromFormView($RequestID, $FormID, $RecordID, $UserSessionID, $RequestCustomer, $BusinessService, $RequestSubject, $RequestProblemText, $Priority, $RequestRespTeam, $RequestRespSup, $Base64Paste)
+{
+    global $conn;
+    global $functions;
+
+    $ModuleID = "7";
+    $RequestCompanyID = getCompanyIDFromUserID($RequestCustomer);
+    $RequestSubject = mysqli_real_escape_string($conn, $RequestSubject);
+    $RequestStatus = "2";
+    $RequestCreatedDateVal = date("Y-m-d H:i:s");
+
+    //if responsible team is empty force it to NULL value
+    if ($RequestRespTeam == "-1") {
+        $RequestRespTeam = "NULL";
+    }
+    //if responsible is empty force it to NULL value
+    if ($RequestRespSup == "-1") {
+        $RequestRespSup = "NULL";
+    }
+
+    //if BusinessService is empty force it to NULL value
+    if ($BusinessService == "-1") {
+        $BusinessService = "NULL";
+    }
+
+    //Get SLA ID for the company - first get Company ID as Companyname is unique, then RelatedSLATypeID
+    if ($BusinessService == "NULL") {
+        $RelatedSLAID = getRelatedSLAID($RequestCompanyID);
+    } else {
+        $RelatedSLAID = getRelatedSLAIDFromBS($BusinessService);
+    }
+
+    //Get SLA reactiontimes for the SLA ID according to the priority selected
+    $SLAAction = "ReceivedMinutes";
+    $ReactionTimeReceivedMinutes = getReactionTimeMinutes($Priority, $RelatedSLAID, $SLAAction, $ModuleID);
+    $SLAAction = "AssignedToTeamMinutes";
+    $ReactionTimeAssignedToTteamMinutes = getReactionTimeMinutes($Priority, $RelatedSLAID, $SLAAction, $ModuleID);
+    $SLAAction = "AssignedToTechnicianMinutes";
+    $ReactionTimeAssignedToTechnicianMinutes = getReactionTimeMinutes($Priority, $RelatedSLAID, $SLAAction, $ModuleID);
+    $SLAAction = "InResolutionProcessMinutes";
+    $ReactionTimeInResolutionProcessMinutes = getReactionTimeMinutes($Priority, $RelatedSLAID, $SLAAction, $ModuleID);
+    $SLAAction = "ResolvedMinutes";
+    $ReactionTimeResolvedMinutes = getReactionTimeMinutes($Priority, $RelatedSLAID, $SLAAction, $ModuleID);
+
+    //Create Request first so we can get related Request id for the timeline entries
+    $sql = "INSERT INTO requests (ID, Subject, RelatedCompanyID, Status, Priority, ProblemText, ProblemTextFullText, DateCreated, CreatedByUserID, ResponsibleTeam, Responsible, RelatedCustomerID, RelatedBusinessService, RelatedFormID, RelatedFormTableRowID) 
+            VALUES ($RequestID,'$RequestSubject','$RequestCompanyID','$RequestStatus','$Priority','$RequestProblemText','$RequestProblemText','$RequestCreatedDateVal','$UserSessionID',$RequestRespTeam,$RequestRespSup,'$RequestCustomer',$BusinessService,$FormID,$RecordID)";
+    //$debugsql = str_replace("'","#",$sql);
+
+    if (mysqli_query($conn, $sql) or die('Query fail: ' . mysqli_error($conn))) {
+        if ($RequestID == "0") {
+            $RequestID = mysqli_insert_id($conn);
+        }
+        // Create Request log entry
+        $LogTypeID = "2";
+        $LogActionText = "Request created";
+        createRequestLogEntry($RequestID, $UserSessionID, $LogTypeID, $LogActionText);
+        // Create Notification
+        //$NotificationtypeID = 2;
+        //createNewNotification($ModuleID, $RequestID, $RequestCustomer, $NotificationtypeID);
+
+    }
+
+    //Set timeline entries on the request for when the SLA times will be violated
+    $RecieveSLAViolationDateTime = getSLAViolatedDateTime($RequestCreatedDateVal, $ReactionTimeReceivedMinutes);
+    $AssignedToTeamSLAViolationDateTime = getSLAViolatedDateTime($RequestCreatedDateVal, $ReactionTimeAssignedToTteamMinutes);
+    $AssignedToTechnicianSLAViolationDateTime = getSLAViolatedDateTime($RequestCreatedDateVal, $ReactionTimeAssignedToTechnicianMinutes);
+    $InResolutionProcessSLAViolationDateTime = getSLAViolatedDateTime($RequestCreatedDateVal, $ReactionTimeInResolutionProcessMinutes);
+    $ResolvedSLAViolationDateTime = getSLAViolatedDateTime($RequestCreatedDateVal, $ReactionTimeResolvedMinutes);
+
+    $TimelineTable = "requestslatimeline";
+    //Insert new entries for this request to the requestslatimeline table
+    if ($RequestStatus == 2) {
+        $RelatedStatusCodeID = 2;
+        createTimelineSLAViolationDates($RequestID, $RelatedStatusCodeID, $RecieveSLAViolationDateTime, $TimelineTable);
+        updateTimelineUpdatedDate($RequestID, $RelatedStatusCodeID, $TimelineTable);
+
+        $LogTypeID = "2";
+        $LogActionText = "Request status set to: $RequestStatus";
+        createTicketLogEntry($RequestID, $UserSessionID, $LogTypeID, $LogActionText);
+    } else {
+        $RelatedStatusCodeID = 2;
+        createTimelineSLAViolationDates($RequestID, $RelatedStatusCodeID, $RecieveSLAViolationDateTime, $TimelineTable);
+        updateTimelineUpdatedDate($RequestID, $RelatedStatusCodeID, $TimelineTable);
+    }
+
+    if ($RequestRespTeam != "NULL") {
+        $RelatedStatusCodeID = 3;
+        $RequestStatusID = 3;
+        updateRequestStatus($RequestID, $RequestStatusID);
+        createTimelineSLAViolationDates($RequestID, $RelatedStatusCodeID, $AssignedToTeamSLAViolationDateTime, $TimelineTable);
+        $LogTypeID = "2";
+        $LogActionText = "Request team set to: $RequestRespTeam";
+        createRequestLogEntry($RequestID, $UserSessionID, $LogTypeID, $LogActionText);
+    } else {
+        $RelatedStatusCodeID = 3;
+        createTimelineSLAViolationDates($RequestID, $RelatedStatusCodeID, $AssignedToTeamSLAViolationDateTime, $TimelineTable);
+    }
+
+    if ($RequestRespSup != "NULL") {
+        $RelatedStatusCodeID = 4;
+        $RequestStatusID = 4;
+        updateRequestStatus($RequestID, $RequestStatusID);
+        createTimelineSLAViolationDates($RequestID, $RelatedStatusCodeID, $AssignedToTechnicianSLAViolationDateTime, $TimelineTable);
+        //Create log entry for request
+        $LogTypeID = "2";
+        $LogActionText = "Request technician set to: $RequestRespSup";
+        createRequestLogEntry($RequestID, $UserSessionID, $LogTypeID, $LogActionText);
+        //Send notification to technician
+        $NotificationtypeID = 2;
+        createNewNotification("7", $RequestID, $RequestRespSup, $NotificationtypeID);
+    } else {
+        $RelatedStatusCodeID = 4;
+        createTimelineSLAViolationDates($RequestID, $RelatedStatusCodeID, $AssignedToTechnicianSLAViolationDateTime, $TimelineTable);
+    }
+
+    if ($RequestStatus == 5) {
+        $RelatedStatusCodeID = 5;
+        createTimelineSLAViolationDates($RequestID, $RelatedStatusCodeID, $InResolutionProcessSLAViolationDateTime, $TimelineTable);
+        $LogTypeID = "2";
+        $LogActionText = "Request status set to: $RelatedStatusCodeID";
+        createRequestLogEntry($RequestID, $UserSessionID, $LogTypeID, $LogActionText);
+    } else {
+        $RelatedStatusCodeID = 5;
+        createTimelineSLAViolationDates($RequestID, $RelatedStatusCodeID, $InResolutionProcessSLAViolationDateTime, $TimelineTable);
+    }
+
+    if ($RequestStatus == 6) {
+        $RelatedStatusCodeID = 6;
+        createTimelineSLAViolationDates($RequestID, $RelatedStatusCodeID, $ResolvedSLAViolationDateTime, $TimelineTable);
+        $LogTypeID = "2";
+        $LogActionText = "Request status set to: $RelatedStatusCodeID";
+        createRequestLogEntry($RequestID, $UserSessionID, $LogTypeID, $LogActionText);
+    } else {
+        $RelatedStatusCodeID = 6;
+        createTimelineSLAViolationDates($RequestID, $RelatedStatusCodeID, $ResolvedSLAViolationDateTime, $TimelineTable);
+    }
+
+    $CustomerName = getUserFullName($RequestCustomer);
+    $SlackStatus = getSlackActivated();
+    if ($SlackStatus == 1) {
+        $Webhook = getSlackWebhookNewProblem();
+        sendMessageToSlack("Ticket recieved on practicle from $CustomerName: <https://practicle.practicle.dk/incidents_view.php?elementid=$NewRequestID|$RequestSubject>", $Webhook);
+    }
+    return $RequestID;
+}
 
 function getFormsFieldPreValue($ITSMID, $formsTableName, $Field)
 {
@@ -9547,6 +9704,36 @@ function QuickSearch($SearchTerm)
         }
     }
 
+    // Search in files_itsm based on relevant Modules
+    foreach ($ModulesArray as $rowFields) {
+        $ITSMID = $rowFields["ID"];
+        $Name = $rowFields["Name"];
+
+        $sqlFilesITSM = "SELECT ID, FileNameOriginal, MATCH(FileContent) AGAINST ('$SearchTerm' IN NATURAL LANGUAGE MODE) AS Score, RelatedElementID
+                        FROM files_itsm
+                        WHERE MATCH(FileContent) AGAINST ('$SearchTerm' IN NATURAL LANGUAGE MODE)
+                        AND RelatedType = $ITSMID
+                        HAVING Score > 0
+                        ORDER BY Score DESC;";
+
+        $resultFilesITSM = mysqli_query($conn, $sqlFilesITSM) or die('Query fail: ' . mysqli_error($conn));
+
+        while ($row = mysqli_fetch_array($resultFilesITSM)) {
+            $ID = $row['RelatedElementID'];
+            $FileNameOriginal = $row['FileNameOriginal'];
+            $SearchHit = strip_tags($row['FileNameOriginal']);
+
+            // Highlight the search term in $SearchHit
+            $HighlightedSearchHit = str_ireplace($SearchTerm, "<span style='background-color: yellow;color: black;'>$SearchTerm</span>", $SearchHit);
+
+            $Module = $functions->translate("$Name");
+            $ModuleID = "4";
+            $URL = "<a href=\"javascript:viewITSM('$ID','$ITSMID','0','modal');collapseSearch();\">$FileNameOriginal<br><small>" . $functions->translate("Found in file content") . "</small></a>";
+
+            $SearchResultsArray[] = array('ID' => $ID, 'Subject' => $FileNameOriginal, 'Module' => $Module, 'ModuleID' => $ModuleID, 'URL' => $URL);
+        }
+    }
+
     //Search CIs
     //Get all CIs
     if (in_array("100001", $group_array) || in_array("100014", $group_array) || in_array("100015", $group_array)
@@ -9614,7 +9801,34 @@ function QuickSearch($SearchTerm)
                         $SearchResultsArray[] = array('ID' => $ID, 'Subject' => $Subject, 'Module' => $Module, 'ModuleID' => $ModuleID, 'URL' => $URL);
                     }
                 }
+            }
+        }
 
+        // Search in files_cis based on the relevant CIs
+        foreach ($CIArray as $rowFields) {
+            $CITypeID = $rowFields["ID"];
+            $Name = $rowFields["Name"];
+
+            $sqlFilesCIS = "SELECT ID, FileNameOriginal, MATCH(FileContent) AGAINST ('$SearchTerm' IN NATURAL LANGUAGE MODE) AS Score, RelatedElementID
+                            FROM files_cis
+                            WHERE MATCH(FileContent) AGAINST ('$SearchTerm' IN NATURAL LANGUAGE MODE)
+                            AND RelatedType = $CITypeID
+                            HAVING Score > 0
+                            ORDER BY Score DESC;";
+
+            $resultFilesCIS = mysqli_query($conn, $sqlFilesCIS) or die('Query fail: ' . mysqli_error($conn));
+
+            while ($row = mysqli_fetch_array($resultFilesCIS)) {
+                $ID = $row['RelatedElementID'];
+                $FileNameOriginal = $row['FileNameOriginal'];
+                $SearchHit = strip_tags($row['FileNameOriginal']);
+
+                // Highlight the search term in $SearchHit
+                $HighlightedSearchHit = str_ireplace($SearchTerm, "<span style='background-color: yellow;color: black;'>$SearchTerm</span>", $SearchHit);
+                $Module = _("$Name");
+                $ModuleID = "4";
+                $URL = "<a href=\"javascript:runModalViewCI('$ID','$CITypeID','0');collapseSearch();\">$FileNameOriginal<br><small>" . $functions->translate("Found in file content") . "</small></a>";
+                $SearchResultsArray[] = array('ID' => $ID, 'Subject' => $FileNameOriginal, 'Module' => $Module, 'ModuleID' => $ModuleID, 'URL' => $URL);
             }
         }
     }
@@ -9711,7 +9925,6 @@ function QuickSearch($SearchTerm)
     $SearchResultsArray = $uniqueArray;
 
     return $SearchResultsArray;
-
 }
 
 function SearchITSM($ITSMTypeID, $SearchTerm, $StatusArray)
@@ -11844,14 +12057,18 @@ function getRequestFormID($ITSMID)
 
     $sql = "SELECT RelatedFormID
             FROM itsm_requests
-            WHERE ID = '$ITSMID';";
+            WHERE ID = ?;";
 
-    $result = mysqli_query($conn, $sql) or die('Query fail: ' . mysqli_error($conn));
-    while ($row = mysqli_fetch_array($result)) {
-        $RelatedFormID = $row["RelatedFormID"];
+    $params = [$ITSMID];    
+    $result = $functions->selectQuery($sql, $params);
+
+    // Check if a result was returned
+    if (!empty($result) && isset($result[0]['RelatedFormID'])) {
+        return $result[0]['RelatedFormID'];
+    } else {
+        $functions->errorlog("No RelatedFormID found for ITSMID: $ITSMID", "getRequestFormID");
+        return null;
     }
-
-    return $RelatedFormID;
 }
 
 function getFormTableName($FormID)
@@ -11861,14 +12078,18 @@ function getFormTableName($FormID)
 
     $sql = "SELECT TableName
             FROM forms
-            WHERE ID = '$FormID';";
+            WHERE ID = ?;";
 
-    $result = mysqli_query($conn, $sql) or die('Query fail: ' . mysqli_error($conn));
-    while ($row = mysqli_fetch_array($result)) {
-        $TableName = $row["TableName"];
+    $params = [$FormID];
+    $result = $functions->selectQuery($sql, $params);
+
+    // Check if a result was returned
+    if (!empty($result) && isset($result[0]['TableName'])) {
+        return $result[0]['TableName'];
+    } else {
+        $functions->errorlog("No TableName found for FormID: $FormID", "getFormTableName");
+        return null;
     }
-
-    return $TableName;
 }
 
 function duplicateFormEntry($ITSMID, $NewITMSID, $FormTableName){
@@ -11893,12 +12114,12 @@ function duplicateFormEntry($ITSMID, $NewITMSID, $FormTableName){
 
     $Temp = substr($Temp, 0, strlen($Temp) - 1);
 
-
     // Step 1: Insert a new form entry by duplicating an existing one
     $sqlInsert = "INSERT INTO $FormTableName($Temp)
                   SELECT $Temp
                   FROM $FormTableName
                   WHERE RelatedRequestID = ?";
+
     $paramsInsert = [$ITSMID];
     $tablesInsert = [$FormTableName];
 
@@ -15595,23 +15816,30 @@ function syncADUsers()
 
                 if ($Status == 0) {
                     disableUser($Username);
-                }
+                    $Action = "Disabled";
+                } else {
+                    // Check if the user exists
+                    $resultfromcheck = doesUsernameExist($Username, $Email);
 
-                $resultfromcheck = doesUsernameExist($Username, $Email);
-
-                if ($resultfromcheck) {
-                    $Action = "Update";
-                } elseif (!$resultfromcheck && $Status == 1) {
-                    $password = $functions->generateRandomString(20);
-                    $hashed_password = $functions->SaltAndHashPasswordForCompare($password);
-                    $RelatedCompanyID = $functions->getSettingValue(48);
-                    $JobTitel = "";
-                    $RelatedUserTypeID = "1";
-                    $RelatedManagerID = "";
-                    $StartDate = date('Y-m-d H:i:s');
-                    $NewPin = rand(0, 9) . rand(0, 9) . rand(0, 9) . rand(0, 9);
-                    createNewUser($Firstname, $Lastname, $Email, $Username, $hashed_password, $RelatedCompanyID, $JobTitel, $RelatedUserTypeID, $RelatedManagerID, $StartDate, $NewPin);
-                    $Action = "Imported";
+                    if ($resultfromcheck) {
+                        // Enable user if they were previously disabled
+                        if (enableUser($Username)) {
+                            $Action = "Enabled";
+                        } else {
+                            $functions->errorlog("Failed to enable user: $Username", "syncADUsers");
+                        }
+                    } elseif (!$resultfromcheck && $Status == 1) {
+                        $password = $functions->generateRandomString(20);
+                        $hashed_password = $functions->SaltAndHashPasswordForCompare($password);
+                        $RelatedCompanyID = $functions->getSettingValue(48);
+                        $JobTitel = "";
+                        $RelatedUserTypeID = "1";
+                        $RelatedManagerID = "";
+                        $StartDate = date('Y-m-d H:i:s');
+                        $NewPin = rand(0, 9) . rand(0, 9) . rand(0, 9) . rand(0, 9);
+                        createNewUser($Firstname, $Lastname, $Email, $Username, $hashed_password, $RelatedCompanyID, $JobTitel, $RelatedUserTypeID, $RelatedManagerID, $StartDate, $NewPin);
+                        $Action = "Imported";
+                    }
                 }
 
                 $Array[] = [
@@ -22415,7 +22643,6 @@ function checkAndUpdateCertificateExpireDate()
             FROM $tableName
             WHERE Active = 1
         ";
-        $functions->debuglog($sql2);
 
         $result2 = $functions->selectQuery($sql2, []);
         foreach ($result2 as $row) {
@@ -22875,6 +23102,34 @@ function checkRequiredExtensions()
 
     // Return array of missing extensions
     return $missingExtensions;
+}
+
+function getFileSizeAllowedInMB()
+{
+    global $functions;
+
+    // Get the size setting or default to 256 MB if not set
+    $size = (int)$functions->getSettingValue(65);
+    $uploadDZMaxFileSize = $size ? $size : 256;
+
+    // Return the allowed file size in MB
+    return $uploadDZMaxFileSize;
+}
+
+function setUploadLimits()
+{
+    global $functions;
+
+    $Size = getFileSizeAllowedInMB();
+
+    $size = (int)$Size . "M";
+    $userIniPath = $_SERVER['DOCUMENT_ROOT'] . '../.user.ini';
+
+    file_put_contents(
+        $userIniPath,
+        "upload_max_filesize = $size\n" .
+        "post_max_size = $size\n"
+    );
 }
 
 ?>

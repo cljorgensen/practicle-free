@@ -267,7 +267,7 @@ $ID = "";
     <div class="card-group">
       <div class="card">
         <div class="card-header">
-          <a href="index.php" class="float-left" data-bs-toggle="tooltip" data-bs-title="<?php echo _("This taskboard is a kanban based task board. You can add incidents, request, project tasks etc. to your taskboard to manage all your tasks on daily basis.") ?>">
+          <a href="index.php" class="float-left" title="<?php echo _("This taskboard is a kanban based task board. You can add incidents, request, project tasks etc. to your taskboard to manage all your tasks on daily basis.") ?>">
             <i class="fa-solid fa-list-check"></i> <?php echo _("Taskboard") ?>
           </a>
         </div>
