@@ -61,7 +61,7 @@ if (isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true) {
 <link rel="stylesheet" type="text/css" href="./assets/js/cookie_consent/cookieconsent.min.css" />
 <script src="./assets/js/cookie_consent/cookieconsent.min.js"></script>
 <script src="./jspracticle/initiate_cookie.js"></script>
-<script src="./jspracticle/service-worker-register.js"></script>
+<script src="./jspracticle/service-worker-register-min.js"></script>
 <script src="./jspracticle/login-min.js"></script>
 
 <?php

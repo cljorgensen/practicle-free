@@ -268,7 +268,7 @@ setcookie($cookie_name, $cookie_value, time() + (86400 * 14), "/"); // 86400 = 1
 <?php
 header('Content-Type: text/html; charset=utf-8');
 ?>
-<script src="./jspracticle/service-worker-register.js"></script>
+<script src="./jspracticle/service-worker-register-min.js"></script>
 <script type="text/javascript">
   function locksession() {
     userid = '<?php echo $UserSessionID ?>';
